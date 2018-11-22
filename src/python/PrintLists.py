@@ -2,7 +2,7 @@
 """
 Created on Thu Nov 22 11:05:55 2018
 
-@author: h.tang
+@author: Hao
 """
 
 # using for loop
