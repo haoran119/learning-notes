@@ -12,6 +12,7 @@ a = [1, 2, 3, 4, 5]
 # 1. Using for loop : Traverse from 0 to len(list) and print all elements of the list one by one uisng a for loop,
 # this is the standard practice of doing it.
 # =============================================================================
+
 #1
 #2
 #3
@@ -87,6 +88,7 @@ print str(a)[1:-1]
 # print the list by converting a list of
 # integers to string using map
 a = [1, 2, 3, 4, 5]
+
 #1 2 3 4 5
 #in new line
 #1
@@ -94,6 +96,7 @@ a = [1, 2, 3, 4, 5]
 #3
 #4
 #5
+
 print(' '.join(map(str, a)))
 
 print"in new line"
