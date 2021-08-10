@@ -231,3 +231,16 @@
   * [订单系统：从0到1设计思路 | 人人都是产品经理 (woshipm.com)](http://www.woshipm.com/pd/1392102.html)
 * [再见，公司的“烂系统” (qq.com)](https://mp.weixin.qq.com/s/d7MAW0PnekB3wKwXNtkShA)
   * [一个复杂系统的拆分改造实践 - zhanlijun - 博客园 (cnblogs.com)](https://www.cnblogs.com/LBSer/p/6195309.html)
+
+## TOOL
+
+* [学习笔记之Visual Studio Code (VSCode) & Clang - 浩然119 - 博客园 (cnblogs.com)
+
+* [程序员常用资源工具集合](https://mp.weixin.qq.com/s/gY9vL4Z5fwTpNJv_NswqNQ)
+* [安利 6 款电脑黑科技软件](https://mp.weixin.qq.com/s/PlJpmdjkCaHLCTBx1Fj1Kg)
+* [代码对比工具，我就用这6个](https://mp.weixin.qq.com/s/ZenTnFRodL2km0xX2OtY5g)
+  * https://blog.csdn.net/yueliang2100/article/details/82190257
+* [总结篇—阿里程序员常用的 15 款开发者工具](https://mp.weixin.qq.com/s/383cb4Z3c1bwRalX0YMIEw)
+  * https://mp.weixin.qq.com/s/sggWgqOgjtBVzMOo57QHcg
+  * [https://www.jianshu.com/p/58ec32eef2d4
+* [效率神器](https://mp.weixin.qq.com/s/L5UFIbQjAo8-dvmHg6DkhQ)
