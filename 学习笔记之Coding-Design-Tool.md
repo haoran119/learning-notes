@@ -234,7 +234,7 @@
 
 ## TOOL
 
-* [学习笔记之Visual Studio Code (VSCode) & Clang - 浩然119 - 博客园 (cnblogs.com)
+* [学习笔记之Visual Studio Code (VSCode) & Clang - 浩然119 - 博客园 (cnblogs.com)](https://www.cnblogs.com/pegasus923/p/10332770.html)
 
 * [程序员常用资源工具集合](https://mp.weixin.qq.com/s/gY9vL4Z5fwTpNJv_NswqNQ)
 * [安利 6 款电脑黑科技软件](https://mp.weixin.qq.com/s/PlJpmdjkCaHLCTBx1Fj1Kg)
