@@ -32,7 +32,7 @@
   * https://www.cnblogs.com/marvin/p/4133973.html
 * [一文搞懂参数传递原理 (qq.com)](https://mp.weixin.qq.com/s/0SDPM9Ek3H4u6OtAr6Qx3g)
 
-## if else
+### if else
 * [代码中大量的if/else，你有什么优化方案? (qq.com)](https://mp.weixin.qq.com/s/A0oLv_i58yXrHphXVI1JBg)
   * [代码中大量的if/else，你有什么优化方案? (qq.com)](https://mp.weixin.qq.com/s/lSBWCs-bGA9r9X611XepEA)
 * [优化if-else代码的八种方案 (qq.com)](https://mp.weixin.qq.com/s/mi0KVS-jO0rk96g7wRdhFw)
@@ -49,7 +49,7 @@
 
 * [还在用 if else？试试策略模式吧！ (qq.com)](https://mp.weixin.qq.com/s/VGoXu-QAuBL-Y892TFSNng)
 
-## try catch finally
+### try catch finally
 * [干掉 try catch ！ (qq.com)](https://mp.weixin.qq.com/s/0YnOEsPQJGG7G6KTl8iH5Q)
   * [Java生鲜电商平台-统一异常处理及架构实战 - 巨人大哥 - 博客园 (cnblogs.com)](https://www.cnblogs.com/jurendage/p/11255197.html)
 * [天呐，你竟然还在用 try–catch-finally (qq.com)](https://mp.weixin.qq.com/s/ov86Y04l02P4MOasq36Drg)
