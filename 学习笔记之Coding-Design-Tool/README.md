@@ -28,6 +28,7 @@
     * 提前退出机制
 * [在Github上，怎么写出教科书级别的readme](https://mp.weixin.qq.com/s/xF2hznI0nPHTvwh5_bzRAQ)
   * https://github.com/RichardLitt/standard-readme
+  * [Basic Syntax | Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 * [我是如何把3000行代码重构成15行](https://mp.weixin.qq.com/s/-BnN59jcg8ZSGL7hhrZjGA)
   * https://www.cnblogs.com/marvin/p/4133973.html
 * [一文搞懂参数传递原理 (qq.com)](https://mp.weixin.qq.com/s/0SDPM9Ek3H4u6OtAr6Qx3g)
