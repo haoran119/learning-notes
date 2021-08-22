@@ -92,16 +92,16 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
 * [动图演示11个必备 VS Code 插件](https://mp.weixin.qq.com/s/np7EBSMJwfDUBut-OxNRfQ)
 * [VSCode 插件](https://mp.weixin.qq.com/s/SWXW1SGw6IwL5yZ0uGHoLw)
 * [10款VS Code插件神器](https://mp.weixin.qq.com/s/E3Emku5IW9p8VlM1BiVC8Q)
-* [用 VS Code 写 Python，这8个扩展
-1、Python extension for Visual Studio Code
-2、Python Preview
-3、Sort lines
-4、Git Graph
-5、Python Snippets
-6、Better Comments
-7、autoDocstring
-8、Python Indent
-* [用 VS Code 写 Python，这几个插件
+* [用 VS Code 写 Python，这8个扩展](https://mp.weixin.qq.com/s/lUvXuWYfaUVYbsp18ChWyg)
+1. Python extension for Visual Studio Code
+2. Python Preview
+3. Sort lines
+4. Git Graph
+5. Python Snippets
+6. Better Comments
+7. autoDocstring
+8. Python Indent
+* [用 VS Code 写 Python，这几个插件](https://mp.weixin.qq.com/s/6Bgp99ASOduD-mbaM-M-6w)
   * Python
   * Python Snippets
   * Python Docstring Generator
@@ -112,9 +112,9 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
 * [VSCode 上也能画流程图了！](https://mp.weixin.qq.com/s/W-5LZuZTLH3dBGOf9zm8Sw)
   * https://github.com/hediet/vscode-drawio
 * [VS Code 变身小霸王游戏机！](https://mp.weixin.qq.com/s/x21GcqOEDP6ARguxAJ6jRA)
-* https://github.com/gamedilong/anes-repository
-* https://marketplace.visualstudio.com/items?itemName=gamedilong.anes
-* [Pylance 性能更新，微软新的VS Code Python 插件已趋于稳定 (qq.com)
+  * https://github.com/gamedilong/anes-repository
+  * https://marketplace.visualstudio.com/items?itemName=gamedilong.anes
+* [Pylance 性能更新，微软新的VS Code Python 插件已趋于稳定 (qq.com)](https://mp.weixin.qq.com/s/FrNTe-oYOdRyebjUX61tsw)
 
 ## FAQ
 
