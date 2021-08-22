@@ -38,25 +38,23 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
 * [微软VS Code已原生支持Jupyter笔记本，再也不用打开网页调试运行了](https://mp.weixin.qq.com/s/ZId-LFDDsnDlbA_j0B3jLw)
 * [VS Code上也能玩转Jupyter Notebook，这是一份完整教程](https://mp.weixin.qq.com/s/cb7r0QL8MOQRngEyBt3F-w)
   * https://towardsdatascience.com/getting-started-with-jupyter-notebooks-in-visual-studio-code-5dcccb3f739b
-* [为什么企业里用 VS Code 的这么多？]
-* 简洁而聚焦的产品定位，贯穿始终
-* UI 渲染与业务逻辑隔离，一致的用户体验
-* LSP—— 基于文本的协议
-* 集大成的 Remote Development
-* [微软发布 VS Code 4 月 Python 扩展更新：支持 Poetry 环境 (qq.com)
-
-* [如何将宇宙最强 VSCode 打造为刷题神器 (qq.com)
-
-* [从 VSCode 看大型 IDE 技术架构 (qq.com)
-  * [从 VSCode 看大型 IDE 技术架构 - 知乎 (zhihu.com)
-* [经验之谈：学习 Visual Studio Code 不会错！ (qq.com)
-  * [The Era of Visual Studio Code | Roben Kleene
-* [生产力终极指南：用了两年，如今才算真正会用VS Code (qq.com)
-  * [How to Configure VS Code Like a Pro | by Stefan Metodiev | Better Programming
-  * [Squiff88/vscodeSetup: Ultimate setup (github.com)
-* [利用 VS Code 构建基于容器的开发环境 (qq.com)
-  * [Building container-based development environment with Visual Studio Code | by Santhosh Sundar | May, 2021 | Medium
-  * [Developing inside a Container using Visual Studio Code Remote Development
+* [为什么企业里用 VS Code 的这么多？](https://mp.weixin.qq.com/s/M7waZKFx84yih7IhjxVz6Q)
+  * 简洁而聚焦的产品定位，贯穿始终
+  * UI 渲染与业务逻辑隔离，一致的用户体验
+  * LSP—— 基于文本的协议
+  * 集大成的 Remote Development
+* [微软发布 VS Code 4 月 Python 扩展更新：支持 Poetry 环境 (qq.com)](https://mp.weixin.qq.com/s/kZrV7Hw7bMbqjk0Xabeo1w)
+* [如何将宇宙最强 VSCode 打造为刷题神器 (qq.com)](https://mp.weixin.qq.com/s/dEdxxmpfKaZhE16Q9zPWAQ)
+* [从 VSCode 看大型 IDE 技术架构 (qq.com)](https://mp.weixin.qq.com/s/u45DUEWXB1SfzwEueoNs4Q)
+  * [从 VSCode 看大型 IDE 技术架构 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/96041706)
+* [经验之谈：学习 Visual Studio Code 不会错！ (qq.com)](https://mp.weixin.qq.com/s/_MbPPRraJe1a-1z9seOrWA)
+  * [The Era of Visual Studio Code | Roben Kleene](https://blog.robenkleene.com/2020/09/21/the-era-of-visual-studio-code/)
+* [生产力终极指南：用了两年，如今才算真正会用VS Code (qq.com)](https://mp.weixin.qq.com/s/SGDq8Rse6WeeK2cFKqr3IA)
+  * [How to Configure VS Code Like a Pro | by Stefan Metodiev | Better Programming](https://betterprogramming.pub/how-to-configure-vs-code-like-a-pro-782d2d718586)
+  * [Squiff88/vscodeSetup: Ultimate setup (github.com)](https://github.com/Squiff88/vscodeSetup)
+* [利用 VS Code 构建基于容器的开发环境 (qq.com)](https://mp.weixin.qq.com/s/SG8_lO_vjOgmXdUbRJ7N8Q)
+  * [Building container-based development environment with Visual Studio Code | by Santhosh Sundar | May, 2021 | Medium](https://santhoshsundar.medium.com/building-container-based-development-environment-with-visual-studio-code-2d7111c650bd)
+  * [Developing inside a Container using Visual Studio Code Remote Development](https://code.visualstudio.com/docs/remote/containers)
 
 ## EXTENSIONS
 
@@ -104,13 +102,13 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
 7、autoDocstring
 8、Python Indent
 * [用 VS Code 写 Python，这几个插件
-* Python
-* Python Snippets
-* Python Docstring Generator
-* Python Test Explorer for Visual Studio Code
-* Python Preview
-* Python Type Hint
-* Jupyter
+  * Python
+  * Python Snippets
+  * Python Docstring Generator
+  * Python Test Explorer for Visual Studio Code
+  * Python Preview
+  * Python Type Hint
+  * Jupyter
 * [VSCode 上也能画流程图了！](https://mp.weixin.qq.com/s/W-5LZuZTLH3dBGOf9zm8Sw)
   * https://github.com/hediet/vscode-drawio
 * [VS Code 变身小霸王游戏机！](https://mp.weixin.qq.com/s/x21GcqOEDP6ARguxAJ6jRA)
@@ -138,18 +136,20 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
   * /.ssh/id_rsa - Properties - Security - Advance - Disable inheritance - remove other users and just keep your user
 * How to set PYTHONPATH for src code ?
 * Add env in /.vscode/launch.json
-
+'''
 "configurations": [
 {
 "env": {
 "PYTHONPATH": "/a:/b"
 }
 }
-
+'''
 * Add PYTHONPATH in /.vscode/settings.json
+'''
 "terminal.integrated.env.linux": {
 "PYTHONPATH": "/a:/b"
 }
+'''
 * [Using Python Environments in Visual Studio Code](https://code.visualstudio.com/docs/python/environments#_use-of-the-pythonpath-variable)
 * [Setting Python source folders in Visual Studio Code - Binx](https://binx.io/blog/2020/03/05/setting-python-source-folders-vscode/)
 * [Visual Studio Code - How to add multiple paths to python path? - Stack Overflow](https://stackoverflow.com/questions/41471578/visual-studio-code-how-to-add-multiple-paths-to-python-path)
