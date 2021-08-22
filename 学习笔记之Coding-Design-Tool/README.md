@@ -193,5 +193,5 @@
   * https://blog.csdn.net/yueliang2100/article/details/82190257
 * [总结篇—阿里程序员常用的 15 款开发者工具](https://mp.weixin.qq.com/s/383cb4Z3c1bwRalX0YMIEw)
   * https://mp.weixin.qq.com/s/sggWgqOgjtBVzMOo57QHcg
-  * [https://www.jianshu.com/p/58ec32eef2d4
+  * https://www.jianshu.com/p/58ec32eef2d4
 * [效率神器](https://mp.weixin.qq.com/s/L5UFIbQjAo8-dvmHg6DkhQ)
