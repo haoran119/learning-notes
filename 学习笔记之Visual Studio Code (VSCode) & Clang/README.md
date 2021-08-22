@@ -2,27 +2,23 @@
 
 Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安装extension C/C++和Code Runner，配置Tasks: Configure Task，就可以开始Run C++ program了。
 
-Visual Studio Code - Code Editing. Redefined
+* [Visual Studio Code - Code Editing. Redefined](https://code.visualstudio.com/)
+  * [keyboard-shortcuts-windows.pdf](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+  * [C++ programming with Visual Studio Code](https://code.visualstudio.com/docs/languages/cpp)
+    * [Introductory Videos for C++ in Visual Studio Code](https://code.visualstudio.com/docs/cpp/introvideos-cpp)
+    * [c_cpp_properties.json reference](https://code.visualstudio.com/docs/cpp/c-cpp-properties-schema-reference)
+    * [Configure VS Code for Clang/LLVM on macOS](https://code.visualstudio.com/docs/cpp/config-clang-mac)
+  * [Java in Visual Studio Code](https://code.visualstudio.com/docs/languages/java)
+    * [Getting Started with Java in Visual Studio Code](https://code.visualstudio.com/docs/java/java-tutorial)
+* [Clang - Wikipedia](https://en.wikipedia.org/wiki/Clang)
+  * Clang/ˈklæŋ/[5] is a compiler front end for the C, C++, Objective-C and Objective-C++ programming languages, as well as the OpenMP,[6] OpenCL, RenderScript and CUDAframeworks. It uses the LLVM compiler infrastructure as its back end and has been part of the LLVM release cycle since LLVM 2.6.
+  It is designed to act as a drop-in replacement for the GNU Compiler Collection (GCC), supporting most of its compilation flags and unofficial language extensions.[7][8] Its contributors include Apple, Microsoft, Google, ARM, Sony, Intel and Advanced Micro Devices (AMD). It is open-source software,[9] with source code released under the University of Illinois/NCSA License, a permissive free software licence.
+  * The Clang project includes the Clang front end, a static analyzer and several code analysis tools.[10]
+* [Comparing Clang to other open source compilers](https://clang.llvm.org/comparison.html)
+* [Clang C/C++ Download and Installation Instructions](https://www.ics.uci.edu/~pattis/common/handouts/macclion/clang.html)
 
-https://code.visualstudio.com/
-https://code.visualstudio.com/docs/languages/cpp
-https://code.visualstudio.com/docs/cpp/config-clang-mac
-https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
-keyboard-shortcuts-windows.pdf
-Java in Visual Studio Code
-Getting Started with Java in Visual Studio Code
-Clang - Wikipedia
+## RESOURCES
 
-https://en.wikipedia.org/wiki/Clang
-Clang/ˈklæŋ/[5] is a compiler front end for the C, C++, Objective-C and Objective-C++ programming languages, as well as the OpenMP,[6] OpenCL, RenderScript and CUDAframeworks. It uses the LLVM compiler infrastructure as its back end and has been part of the LLVM release cycle since LLVM 2.6.
-It is designed to act as a drop-in replacement for the GNU Compiler Collection (GCC), supporting most of its compilation flags and unofficial language extensions.[7][8] Its contributors include Apple, Microsoft, Google, ARM, Sony, Intel and Advanced Micro Devices (AMD). It is open-source software,[9] with source code released under the University of Illinois/NCSA License, a permissive free software licence.
-The Clang project includes the Clang front end, a static analyzer and several code analysis tools.[10]
-Comparing Clang to other open source compilers
-
-https://clang.llvm.org/comparison.html
-Clang C/C++ Download and Installation Instructions
-
-https://www.ics.uci.edu/~pattis/common/handouts/macclion/clang.html
 Web 版 VS Code 来了！
 
 https://mp.weixin.qq.com/s/41SVP7zIL-5CCCGgt1VCOg
