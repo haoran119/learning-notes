@@ -121,6 +121,7 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
 * How to change the launched folder ?
   * Navigate to your project folder and type code .
   * [The Visual Studio Code Command Line Options](https://code.visualstudio.com/docs/editor/command-line#_launching-from-command-line)
+![image](https://user-images.githubusercontent.com/34557994/130347172-c6ace08a-1057-4297-a899-876213d3e1e3.png)
 
 * How to commit part of code changes ?
   * [Version Control in Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol#_commit)
