@@ -136,25 +136,25 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
 * How to fix "/.ssh/id_rsa is too open. It is required to be not accessible by others. The private key is ignored" ?
   * /.ssh/id_rsa - Properties - Security - Advance - Disable inheritance - remove other users and just keep your user
 * How to set PYTHONPATH for src code ?
-* Add env in /.vscode/launch.json
-'''
-"configurations": [
-{
-"env": {
-"PYTHONPATH": "/a:/b"
-}
-}
-'''
-* Add PYTHONPATH in /.vscode/settings.json
-'''
-"terminal.integrated.env.linux": {
-"PYTHONPATH": "/a:/b"
-}
-'''
-* [Using Python Environments in Visual Studio Code](https://code.visualstudio.com/docs/python/environments#_use-of-the-pythonpath-variable)
-* [Setting Python source folders in Visual Studio Code - Binx](https://binx.io/blog/2020/03/05/setting-python-source-folders-vscode/)
-* [Visual Studio Code - How to add multiple paths to python path? - Stack Overflow](https://stackoverflow.com/questions/41471578/visual-studio-code-how-to-add-multiple-paths-to-python-path)
-* [visual studio code - How to use PYTHONPATH with VSCode Python Extension for Debugging? - Stack Overflow](https://stackoverflow.com/questions/58570503/how-to-use-pythonpath-with-vscode-python-extension-for-debugging)
+  * Add env in /.vscode/launch.json
+  ```
+  "configurations": [
+  {
+  "env": {
+  "PYTHONPATH": "/a:/b"
+  }
+  }
+  ```
+  * Add PYTHONPATH in /.vscode/settings.json
+  ```
+  "terminal.integrated.env.linux": {
+  "PYTHONPATH": "/a:/b"
+  }
+  ```
+  * [Using Python Environments in Visual Studio Code](https://code.visualstudio.com/docs/python/environments#_use-of-the-pythonpath-variable)
+  * [Setting Python source folders in Visual Studio Code - Binx](https://binx.io/blog/2020/03/05/setting-python-source-folders-vscode/)
+  * [Visual Studio Code - How to add multiple paths to python path? - Stack Overflow](https://stackoverflow.com/questions/41471578/visual-studio-code-how-to-add-multiple-paths-to-python-path)
+  * [visual studio code - How to use PYTHONPATH with VSCode Python Extension for Debugging? - Stack Overflow](https://stackoverflow.com/questions/58570503/how-to-use-pythonpath-with-vscode-python-extension-for-debugging)
 * How to set vertical rulers for column ?
 * [vscode settings - Vertical rulers in Visual Studio Code - Stack Overflow (stackoverflow.com)](https://stackoverflow.com/questions/29968499/vertical-rulers-in-visual-studio-code)
 * To configure it, go to menu File → Preferences → Settings and add this to to your user or workspace settings:
