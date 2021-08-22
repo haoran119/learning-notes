@@ -158,11 +158,76 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
 * How to set vertical rulers for column ?
   * [vscode settings - Vertical rulers in Visual Studio Code - Stack Overflow (stackoverflow.com)](https://stackoverflow.com/questions/29968499/vertical-rulers-in-visual-studio-code)
   * To configure it, go to menu File → Preferences → Settings and add this to to your user or workspace settings:
-```
-"editor.rulers": [80,120]
-```
+  ```
+  "editor.rulers": [80,120]
+  ```
 * Why configuration setting could be found in run mode but couldn't be found in debug mode ?
   * Need to set workspaceFolder properly. Add workspace folder -> Open the project folder.
   * [Visual Studio Code Variables Reference](https://code.visualstudio.com/docs/editor/variables-reference)
   * [Visual Studio Code User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations)
   * [debugging - How do I set my workspace folder in Visual Studio Code? - Stack Overflow](https://stackoverflow.com/questions/56175608/how-do-i-set-my-workspace-folder-in-visual-studio-code)
+* How to change the C++ standard to run .cpp file with code runner via right click -> Run code ?
+  * Change settings.json e.g. ~/Library/Application Support/Code/User/settings.json.
+  ```
+      "code-runner.executorMap": {
+          "cpp": "cd $dir && g++ -std=c++11 -stdlib=libc++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+      }
+  ```
+  * [Running C++ with VStudio Code using CodeRunner extension - Stack Overflow](https://stackoverflow.com/questions/57502306/running-c-with-vstudio-code-using-coderunner-extension)
+  * Note that it is using c++98 as default in vscode. You could change c_cpp_properties.json to make it build and run with custom C++ standard, and change tasks.json to make it debug with custom C++ standard.
+  * ~/.vscode/c_cpp_properties.json
+  ```
+  {
+      "configurations": [
+          {
+              "name": "Mac",
+              "includePath": [
+                  "${workspaceFolder}/**"
+              ],
+              "defines": [],
+              "macFrameworkPath": [
+                  "/System/Library/Frameworks",
+                  "/Library/Frameworks"
+              ],
+              "intelliSenseMode": "clang-x64",
+              "compilerPath": "/usr/bin/clang",
+              "cppStandard": "c++11",
+              "cStandard": "c11"
+          }
+      ],
+      "version": 4
+  }
+  ```
+  * ~/.vscode/tasks.json
+  ```
+  {
+      "version": "2.0.0",
+      "tasks": [
+          {
+              "type": "cppbuild",
+              "label": "clang++ build active file",
+              "command": "/usr/bin/clang++",
+              "args": [
+                  "-std=c++11",
+                  "-stdlib=libc++",
+                  "-g",
+                  "${file}",
+                  "-o",
+                  "${fileDirname}/${fileBasenameNoExtension}"
+              ],
+              "options": {
+                  "cwd": "${fileDirname}"
+              },
+              "problemMatcher": [
+                  "$gcc"
+              ],
+              "group": {
+                  "kind": "build",
+                  "isDefault": true
+              },
+              "detail": "编译器: /usr/bin/clang++"
+          }
+      ]
+  }
+  ```
+  
