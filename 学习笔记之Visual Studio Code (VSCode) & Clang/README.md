@@ -156,11 +156,13 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
   * [Visual Studio Code - How to add multiple paths to python path? - Stack Overflow](https://stackoverflow.com/questions/41471578/visual-studio-code-how-to-add-multiple-paths-to-python-path)
   * [visual studio code - How to use PYTHONPATH with VSCode Python Extension for Debugging? - Stack Overflow](https://stackoverflow.com/questions/58570503/how-to-use-pythonpath-with-vscode-python-extension-for-debugging)
 * How to set vertical rulers for column ?
-* [vscode settings - Vertical rulers in Visual Studio Code - Stack Overflow (stackoverflow.com)](https://stackoverflow.com/questions/29968499/vertical-rulers-in-visual-studio-code)
-* To configure it, go to menu File → Preferences → Settings and add this to to your user or workspace settings:
+  * [vscode settings - Vertical rulers in Visual Studio Code - Stack Overflow (stackoverflow.com)](https://stackoverflow.com/questions/29968499/vertical-rulers-in-visual-studio-code)
+  * To configure it, go to menu File → Preferences → Settings and add this to to your user or workspace settings:
+```
 "editor.rulers": [80,120]
+```
 * Why configuration setting could be found in run mode but couldn't be found in debug mode ?
-* Need to set workspaceFolder properly. Add workspace folder -> Open the project folder.
-* [Visual Studio Code Variables Reference](https://code.visualstudio.com/docs/editor/variables-reference)
-* [Visual Studio Code User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations)
-* [debugging - How do I set my workspace folder in Visual Studio Code? - Stack Overflow](https://stackoverflow.com/questions/56175608/how-do-i-set-my-workspace-folder-in-visual-studio-code)
+  * Need to set workspaceFolder properly. Add workspace folder -> Open the project folder.
+  * [Visual Studio Code Variables Reference](https://code.visualstudio.com/docs/editor/variables-reference)
+  * [Visual Studio Code User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations)
+  * [debugging - How do I set my workspace folder in Visual Studio Code? - Stack Overflow](https://stackoverflow.com/questions/56175608/how-do-i-set-my-workspace-folder-in-visual-studio-code)
