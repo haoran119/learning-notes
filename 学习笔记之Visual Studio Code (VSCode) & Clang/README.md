@@ -169,9 +169,9 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
 * How to change the C++ standard to run .cpp file with code runner via right click -> Run code ?
   * Change settings.json e.g. ~/Library/Application Support/Code/User/settings.json.
   ```
-      "code-runner.executorMap": {
-          "cpp": "cd $dir && g++ -std=c++11 -stdlib=libc++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
-      }
+  "code-runner.executorMap": {
+      "cpp": "cd $dir && g++ -std=c++11 -stdlib=libc++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+  }
   ```
   * [Running C++ with VStudio Code using CodeRunner extension - Stack Overflow](https://stackoverflow.com/questions/57502306/running-c-with-vstudio-code-using-coderunner-extension)
   * Note that it is using c++98 as default in vscode. You could change c_cpp_properties.json to make it build and run with custom C++ standard, and change tasks.json to make it debug with custom C++ standard.
