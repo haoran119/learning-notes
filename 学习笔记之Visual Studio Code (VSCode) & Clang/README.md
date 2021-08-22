@@ -93,14 +93,14 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
 * [VSCode 插件](https://mp.weixin.qq.com/s/SWXW1SGw6IwL5yZ0uGHoLw)
 * [10款VS Code插件神器](https://mp.weixin.qq.com/s/E3Emku5IW9p8VlM1BiVC8Q)
 * [用 VS Code 写 Python，这8个扩展](https://mp.weixin.qq.com/s/lUvXuWYfaUVYbsp18ChWyg)
-1. Python extension for Visual Studio Code
-2. Python Preview
-3. Sort lines
-4. Git Graph
-5. Python Snippets
-6. Better Comments
-7. autoDocstring
-8. Python Indent
+  1. Python extension for Visual Studio Code
+  2. Python Preview
+  3. Sort lines
+  4. Git Graph
+  5. Python Snippets
+  6. Better Comments
+  7. autoDocstring
+  8. Python Indent
 * [用 VS Code 写 Python，这几个插件](https://mp.weixin.qq.com/s/6Bgp99ASOduD-mbaM-M-6w)
   * Python
   * Python Snippets
@@ -122,17 +122,14 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
   * Navigate to your project folder and type code .
   * [The Visual Studio Code Command Line Options](https://code.visualstudio.com/docs/editor/command-line#_launching-from-command-line)
 ![image](https://user-images.githubusercontent.com/34557994/130347172-c6ace08a-1057-4297-a899-876213d3e1e3.png)
-
 * How to commit part of code changes ?
   * [Version Control in Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol#_commit)
   * [Git version control in Visual Studio Code](https://code.visualstudio.com/docs/introvideos/versioncontrol)
   * [visual studio code - How can I commit some changes to a file, but not others, in VSCode? - Stack Overflow](https://stackoverflow.com/questions/34730585/how-can-i-commit-some-changes-to-a-file-but-not-others-in-vscode)
     * Click '...' then Stage Selected Ranges
-
 * How to fix remote connection error: The process tried to write to a nonexistent pipe ?
   * Remote Explorer - SSH TARGETS - Configure - Settings - Specify the absolute file path, e.g. C:\Users\hao\.ssh\config.
   * [ssh - VScode remote connection error: The process tried to write to a nonexistent pipe - Stack Overflow](https://stackoverflow.com/questions/60335069/vscode-remote-connection-error-the-process-tried-to-write-to-a-nonexistent-pipe)
-
 * How to fix "/.ssh/id_rsa is too open. It is required to be not accessible by others. The private key is ignored" ?
   * /.ssh/id_rsa - Properties - Security - Advance - Disable inheritance - remove other users and just keep your user
 * How to set PYTHONPATH for src code ?
