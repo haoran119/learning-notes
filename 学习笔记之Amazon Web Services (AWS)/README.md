@@ -8,6 +8,8 @@
 * [Amazon DocumentDB (with MongoDB compatibility)](https://aws.amazon.com/documentdb/)
   * Fast, scalable, highly available MongoDB-compatible database service
   * [What Is Amazon DocumentDB (with MongoDB Compatibility) - Amazon DocumentDB](https://docs.aws.amazon.com/documentdb/latest/developerguide/what-is.html)
+    * Amazon DocumentDB (with MongoDB compatibility) is a fast, reliable, and fully managed database service. Amazon DocumentDB makes it easy to set up, operate, and scale MongoDB-compatible databases in the cloud. With Amazon DocumentDB, you can run the same application code and use the same drivers and tools that you use with MongoDB.
+    * Before using Amazon DocumentDB, you should review the concepts and features described in How It Works. After that, complete the steps in Get Started Guide.
 * [Amazon DocumentDB - Wikipedia](https://en.wikipedia.org/wiki/Amazon_DocumentDB)
   * Amazon DocumentDB is a fully managed proprietary NoSQL database service that supports document data structures and MongoDB workloads. As a document database, Amazon DocumentDB makes it easy to store, query, and index JSON data. Amazon DocumentDB is currently available in 14 AWS regions of AWS.[2][3]
 
