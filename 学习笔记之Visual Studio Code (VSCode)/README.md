@@ -1,4 +1,4 @@
-# 学习笔记之Visual Studio Code (VSCode) & Clang
+# 学习笔记之Visual Studio Code (VSCode)
 
 Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安装extension C/C++和Code Runner，配置Tasks: Configure Task，就可以开始Run C++ program了。
 
