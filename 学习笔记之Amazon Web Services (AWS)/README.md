@@ -7,6 +7,7 @@
   * Amazon markets AWS to subscribers as a way of obtaining large scale computing capacity more quickly and cheaply than building an actual physical server farm.[12] All services are billed based on usage, but each service measures usage in varying ways. As of 2017, AWS owns a dominant 33% of all cloud (IaaS, PaaS) while the next two competitors Microsoft Azure and Google Cloud have 18%, and 9% respectively, according to Synergy Group.[13][14]
 * [Amazon DocumentDB (with MongoDB compatibility)](https://aws.amazon.com/documentdb/)
   * Fast, scalable, highly available MongoDB-compatible database service
+  * [What Is Amazon DocumentDB (with MongoDB Compatibility) - Amazon DocumentDB](https://docs.aws.amazon.com/documentdb/latest/developerguide/what-is.html)
 * [Amazon DocumentDB - Wikipedia](https://en.wikipedia.org/wiki/Amazon_DocumentDB)
   * Amazon DocumentDB is a fully managed proprietary NoSQL database service that supports document data structures and MongoDB workloads. As a document database, Amazon DocumentDB makes it easy to store, query, and index JSON data. Amazon DocumentDB is currently available in 14 AWS regions of AWS.[2][3]
 
