@@ -251,56 +251,53 @@
   * Keep the top commit, and change others to 's' for squashing
   * [Git - Rewriting History](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
 * How to merge feature branch into master ?
-* Swtich to feature branch and rebase
-```sh
-$ git fetch
-$ git checkout feature/xxx
-# note that git rebase origin/master may mess up the branch history
-$ git rebase --preserve-merges origin/master
-$ git push -f origin feature/xxx
-```
-* Squash commits
-```sh
-$ git rebase -i HEAD~7 # change 7 to the actual number of commits
-# In the interactive mode, keep the top one commit, and change others from pick to s
-$ git push -f origin feature/xxx
-```
-* Swtich to master branch
-```sh
-$ git checkout master
-$ git pull
-```
-* Merge feature branch
-```sh
-$ git merge --no-ff feature/xxx
-```
-* Check the merge locally
-```sh
-$ gitk
-```
-* If it looks wrong, reset the changes
-```sh
-$ git reset --hard origin/master
-```
-* Push merge to server
-```sh
-$ git push origin master
-```
-* Check git tag
-```sh
-$ git fetch --tags
-$ git describe
-```
+  * Swtich to feature branch and rebase
+  ```sh
+  $ git fetch
+  $ git checkout feature/xxx
+  # note that git rebase origin/master may mess up the branch history
+  $ git rebase --preserve-merges origin/master
+  $ git push -f origin feature/xxx
+  ```
+  * Squash commits
+  ```sh
+  $ git rebase -i HEAD~7 # change 7 to the actual number of commits
+  # In the interactive mode, keep the top one commit, and change others from pick to s
+  $ git push -f origin feature/xxx
+  ```
+  * Swtich to master branch
+  ```sh
+  $ git checkout master
+  $ git pull
+  ```
+  * Merge feature branch
+  ```sh
+  $ git merge --no-ff feature/xxx
+  ```
+  * Check the merge locally
+  ```sh
+  $ gitk
+  ```
+  * If it looks wrong, reset the changes
+  ```sh
+  $ git reset --hard origin/master
+  ```
+  * Push merge to server
+  ```sh
+  $ git push origin master
+  ```
+  * Check git tag
+  ```sh
+  $ git fetch --tags
+  $ git describe
+  ```
 * How to merge feature branch with conflict ?
-* [Resolve merge conflicts - Atlassian Documentation
-https://confluence.atlassian.com/bitbucket/resolve-merge-conflicts-704414003.html
-* [Solved: How can I solve a conflict in a pull request?
-https://community.atlassian.com/t5/Bitbucket-questions/How-can-I-solve-a-conflict-in-a-pull-request/qaq-p/577205
-* Tips : do it in VScode to just accecpt or reject conflicts for more convenient
+  * [Resolve merge conflicts - Atlassian Documentation](https://confluence.atlassian.com/bitbucket/resolve-merge-conflicts-704414003.html)
+  * [Solved: How can I solve a conflict in a pull request?](https://community.atlassian.com/t5/Bitbucket-questions/How-can-I-solve-a-conflict-in-a-pull-request/qaq-p/577205)
+  * Tips : do it in VScode to just accecpt or reject conflicts for more convenient
 * How to restore lost commits ?
-* [Git Cherry Pick | Atlassian Git Tutorial
-https://www.atlassian.com/git/tutorials/cherry-pick
-```sh
-$ git fetch
-$ git cherry-pick ***
-```
+  * [Git Cherry Pick | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/cherry-pick)
+  ```sh
+  $ git fetch
+  $ git cherry-pick ***
+  ```
