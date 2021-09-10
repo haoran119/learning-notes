@@ -78,18 +78,18 @@
 
 * [Git 12 岁了，为你送上 12 个 Git 的使用技巧！ - Linux学习](https://mp.weixin.qq.com/s/JZGmwYGp9ZGjYJfTu7SVJQ)
   * https://www.oschina.net/translate/12-git-tips-gits-12th-birthday
-1. 你的 ~/.gitconfig 文件
-2. 你的仓库的.gitconfig文件
-3、别名
-4. shell命令中的别名
-5. 可视化提交图
-6. 更优雅的强制推送(force-push)
-7. git add -N
-8. git add -p
-9. git checkout -p
-10. Rebase with command execution
-11. 基于时间修改的指南
-12. 全知的 reflog
+  1. 你的 ~/.gitconfig 文件
+  2. 你的仓库的.gitconfig文件
+  3. 别名
+  4. shell命令中的别名
+  5. 可视化提交图
+  6. 更优雅的强制推送(force-push)
+  7. git add -N
+  8. git add -p
+  9. git checkout -p
+  10. Rebase with command execution
+  11. 基于时间修改的指南
+  12. 全知的 reflog
 * [10种Git技巧，让你省时省力又省心！](https://mp.weixin.qq.com/s?__biz=MzIxODM4MjA5MA==&mid=2247490747&idx=1&sn=659415dda67813229d9e22ea6f3feb3a&chksm=97ea36dea09dbfc8403ac08354fc2e424d129535514b3d5e5437cf09066b32967ef0221f43bb&mpshare=1&scene=24&srcid=&sharer_sharetime=1567921736480&sharer_shareid=5ed4a849fa42d9599a974fa8eb45e8fa&key=5a37b8e9f2933463edafcb746a6bb5f5b98d6bcf34bfab0e92617ea276b27583fd9174edd408a53d07c8d1153ad57172c3953e572d1828a5f393ba9ef49571900ad79539ef29f6bbbe1a03beeb200e71&ascene=14&uin=MTMzMzc3MjY4MQ%3D%3D&devicetype=Windows+10&version=62060833&lang=en&pass_ticket=tT3maEfznKd3xtVT4L8%2Bl%2B2KKdhrJZ3ERaWEoIpqIMB2I2ssKo%2BTfx0v80L7rMTL)
 * [你可能不太会用的10个Git命令 - 机器之心](https://mp.weixin.qq.com/s/2K8coqrcCajUtzx67jlZYg)
   * https://towardsdatascience.com/learn-enough-git-to-be-useful-281561eef959
