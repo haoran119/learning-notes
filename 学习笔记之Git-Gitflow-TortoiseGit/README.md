@@ -131,7 +131,7 @@
     $ git branch -D branch_name
     ```
 * [Rename a local and remote branch in git – Multiple States Knowledge Base](https://multiplestates.wordpress.com/2015/02/05/rename-a-local-and-remote-branch-in-git/)
-  1. Rename your local branch.
+  * Rename your local branch.
     * If you are on the branch you want to rename:
     ```sh
     $ git branch -m new-name
@@ -140,11 +140,11 @@
     ```sh
     $ git branch -m old-name new-name
     ```
-  2. Delete the old-name remote branch and push the new-name local branch.
+  * Delete the old-name remote branch and push the new-name local branch.
   ```sh
   $ git push origin :old-name new-name
   ```
-  3. Reset the upstream branch for the new-name local branch.
+  * Reset the upstream branch for the new-name local branch.
     * Switch to the branch and then:
     ```sh
     $ git push origin -u new-name
