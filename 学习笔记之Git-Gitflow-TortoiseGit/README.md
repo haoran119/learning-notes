@@ -46,15 +46,15 @@
   * 推荐阅读
 * [Git原理入门解析](https://mp.weixin.qq.com/s/kw7fChfvLsfFYTgmO0-hsw)
 * [20 分钟教你搞懂 Git！- 机器学习算法与Python学习](https://mp.weixin.qq.com/s/pyThc93faTz0N1gmHybFxw)
-1. 初始化
-2. 保存对象
-3. 更新索引
-4. git add命令
-5. 提交（Commit）
-6. 完成提交
-7. git commit命令
-8. 分支（branch）
-9. 更新分支
+  1. 初始化
+  2. 保存对象
+  3. 更新索引
+  4. git add命令
+  5. 提交（Commit）
+  6. 完成提交
+  7. git commit命令
+  8. 分支（branch）
+  9. 更新分支
 * [git 版本控制初学者指南](https://mp.weixin.qq.com/s/PAF365YSP-EOOlz6AzFkXA)
 * [git 操作规范 - 程序猿](https://mp.weixin.qq.com/s/gshJ7HeHVCnUjTssJYeSSw)
   * https://segmentfault.com/a/1190000014461898
