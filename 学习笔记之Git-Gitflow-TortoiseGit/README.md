@@ -209,23 +209,23 @@
 
 * How to create and apply changes in working directory ?
   * [Create a git patch from the changes in the current working directory - Stack Overflow](https://stackoverflow.com/questions/5159185/create-a-git-patch-from-the-changes-in-the-current-working-directory)
-  * If you haven't yet commited the changes, then:
-  ```sh
-  $ git diff > mypatch.patch
-  ```
-  * But sometimes it happens that part of the stuff you're doing are new files that are untracked and won't be in your git diff output. So, one way to do a patch is to stage everything for a new commit (git add each file, or just git add .) but don't do the commit, and then:
-  ```sh
-  $ git diff --cached > mypatch.patch
-  ```
-  * Add the 'binary' option if you want to add binary files to the patch (e.g. mp3 files):
-  ```sh
-  $ git diff --cached --binary > mypatch.patch
-  ```
-  * You can later apply the patch:
-  ```sh
-  $ git apply mypatch.patch
-  ```
-  * Note: You can also use --staged as a synonym of --cached.
+    * If you haven't yet commited the changes, then:
+    ```sh
+    $ git diff > mypatch.patch
+    ```
+    * But sometimes it happens that part of the stuff you're doing are new files that are untracked and won't be in your git diff output. So, one way to do a patch is to stage everything for a new commit (git add each file, or just git add .) but don't do the commit, and then:
+    ```sh
+    $ git diff --cached > mypatch.patch
+    ```
+    * Add the 'binary' option if you want to add binary files to the patch (e.g. mp3 files):
+    ```sh
+    $ git diff --cached --binary > mypatch.patch
+    ```
+    * You can later apply the patch:
+    ```sh
+    $ git apply mypatch.patch
+    ```
+    * Note: You can also use --staged as a synonym of --cached.
 * How to sync up feature branch with master branch code changes ?
   * Do git rebase to pick up the master branch code changes.
   ```sh
