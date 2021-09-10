@@ -4,7 +4,7 @@
   * Git (/ɡɪt/) is a version control system for tracking changes in computer files and coordinating work on those files among multiple people. It is primarily used for source code management in software development, but it can be used to keep track of changes in any set of files. As a distributed revision control system it is aimed at speed, data integrity, and support for distributed, non-linear workflows.
 * [Gitflow Workflow | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
   * [Gitflow Workflow is a Git workflow design that was first published and made popular by Vincent Driessen at nvie. The Gitflow Workflow defines a strict branching model designed around the project release. This provides a robust framework for managing larger projects. 
-* [Git cheat sheet | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
+  * [Git cheat sheet | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
 * [Introducing GitFlow](https://datasift.github.io/gitflow/IntroducingGitFlow.html)
   * GitFlow is a branching model for Git, created by Vincent Driessen. It has attracted a lot of attention because it is very well suited to collaboration and scaling the development team.
 * [Pull Requests and Gitflow](https://blog.axosoft.com/pull-requests-gitflow/?utm_campaign=GitKraken%20Promos&utm_medium=email&_hsenc=p2ANqtz--5kZ-hsMZwcIFWuqofU-Oa0iqSOfNS72XNKNaK7CpgtDt6A865oAJYYgDGwDy9KV3_VBTX1DzFJun_PtkOHa1HRm5ptQ&_hsmi=61804615&utm_content=61804282&utm_source=hs_email&hsCtaTracking=61c5ea4a-e8bd-4ffd-bdfa-7de19a1b53e1%7Cfba6e886-1dff-473b-8c6b-f5a02ebef2c2)
