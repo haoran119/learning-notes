@@ -38,3 +38,12 @@
 * [开源 Docker 工具分享](https://mp.weixin.qq.com/s/dt7E0KLKcyg3N-4QBGRiYQ)
   * https://dzone.com/articles/5-docker-utilities-you-should-know
 * [机器学习开发的灵药—Docker容器](https://mp.weixin.qq.com/s/igFxiuUZ_8i9dGDeF694vA)
+
+## FAQ
+
+* What's Docker image ?
+  * [What is a Docker Image? Introduction and use cases](https://searchitoperations.techtarget.com/definition/Docker-image)
+    * A Docker image is a file used to execute code in a Docker container. Docker images act as a set of instructions to build a Docker container, like a template. Docker images also act as the starting point when using Docker. An image is comparable to a snapshot in virtual machine (VM) environments.
+    * Docker is used to create, run and deploy applications in containers. A Docker image contains application code, libraries, tools, dependencies and other files needed to make an application run. When a user runs an image, it can become one or many instances of a container.
+    * Docker images have multiple layers, each one originates from the previous layer but is different from it. The layers speed up Docker builds while increasing reusability and decreasing disk use. Image layers are also read-only files. Once a container is created, a writable layer is added on top of the unchangeable images, allowing a user to make changes.
+    * References to disk space in Docker images and containers can be confusing. It's important to distinguish between size and virtual size. Size refers to the disk space that the writable layer of a container uses, while virtual size is the disk space used for the container and the writeable layer. The read-only layers of an image can be shared between any container started from the same image.
