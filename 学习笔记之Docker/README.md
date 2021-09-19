@@ -50,3 +50,9 @@
     * Docker is used to create, run and deploy applications in containers. A Docker image contains application code, libraries, tools, dependencies and other files needed to make an application run. When a user runs an image, it can become one or many instances of a container.
     * Docker images have multiple layers, each one originates from the previous layer but is different from it. The layers speed up Docker builds while increasing reusability and decreasing disk use. Image layers are also read-only files. Once a container is created, a writable layer is added on top of the unchangeable images, allowing a user to make changes.
     * References to disk space in Docker images and containers can be confusing. It's important to distinguish between size and virtual size. Size refers to the disk space that the writable layer of a container uses, while virtual size is the disk space used for the container and the writeable layer. The read-only layers of an image can be shared between any container started from the same image.
+* How to build docker image ?
+  * [docker build | Docker Documentation](https://docs.docker.com/engine/reference/commandline/build/)
+  * Build an image from a Dockerfile
+  ```sh
+  docker build [OPTIONS] PATH | URL | -
+  ```
