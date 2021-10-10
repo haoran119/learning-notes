@@ -14,3 +14,12 @@
 * [Essential COM - Don Box - Google Books](https://books.google.co.uk/books?id=kfRWvKSePmAC&dq=essential+com&printsec=frontcover&source=bn&hl=en&sa=X&oi=book_result&ct=result#v=onepage&q=essential%20com&f=false)
 * [Migrating COM/DCOM Applications in Microsoft .NET Framework](https://www.c-sharpcorner.com/article/migrating-comdcom-applications-in-microsoft-net-framework/)
 * [Managed and Unmanaged Code - Key Differences - ParTech](https://www.partech.nl/en/publications/2021/03/managed-and-unmanaged-code---key-differences#)
+  * DIFFERENCE BETWEEN MANAGED AND UNMANAGED CODE?
+    * Managed code is the one that is executed by the CLR of the .NET framework while unmanaged or unsafe code is executed by the operating system.
+    * The managed code provides security to the code while undamaged code creates security threats.
+    * In unsafe or unmanaged code the unsafe modifier is used to write the block of code while any other code written outside the unsafe code block is managed code.
+    * Memory buffer overflow problems do not occur in managed code as it is taken care of by the runtime environment but these problems occur in unmanaged code.
+    * Runtime services are provided in managed code while they are not provided in unmanaged code.
+    * Source code is first converted to intermediate language and then to native language in managed code while it is directly converted into the native language in unmanaged code.
+    * Unmanaged code provides low-level access while managed code does not provide that.
+    * In unsafe or unmanaged code the unsafe modifier is used to write the block of code while any other code written outside the unsafe code block is managed code.
