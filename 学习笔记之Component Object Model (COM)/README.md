@@ -11,5 +11,6 @@
 * [Is component object model still used?](https://livebook.manning.com/book/powershell-in-depth-second-edition/chapter-34/)
   * .NET Framework, folks relied on an earlier technology called the Component Object Model (COM). COM is basically a set of rules that enable developers to write software components that can easily interoperate. COM is still in wide use today, although it's considered an older cousin to the . NET Framework.
 * [c++ - What is COM (Component Object Model) in a nutshell? - Stack Overflow](https://stackoverflow.com/questions/455687/what-is-com-component-object-model-in-a-nutshell)
+* [Essential COM - Don Box - Google Books](https://books.google.co.uk/books?id=kfRWvKSePmAC&dq=essential+com&printsec=frontcover&source=bn&hl=en&sa=X&oi=book_result&ct=result#v=onepage&q=essential%20com&f=false)
 * [Migrating COM/DCOM Applications in Microsoft .NET Framework](https://www.c-sharpcorner.com/article/migrating-comdcom-applications-in-microsoft-net-framework/)
 * [Managed and Unmanaged Code - Key Differences - ParTech](https://www.partech.nl/en/publications/2021/03/managed-and-unmanaged-code---key-differences#)
