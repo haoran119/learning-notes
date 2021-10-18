@@ -14,3 +14,4 @@
   * Microsoft XML Core Services (MSXML) are set of services that allow applications written in JScript, VBScript, and Microsoft development tools to build Windows-native XML-based applications. It supports XML 1.0, DOM, SAX, an XSLT 1.0 processor, XML schema support including XSD and XDR, as well as other XML-related technologies.
 * [IXMLDOMParseError | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ms757019(v=vs.85))
   * Returns detailed information about the last parse error, including the error number, line number, character position, and a text description.
+  * [IXMLDOMParseError Members | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ms767720(v=vs.85))
