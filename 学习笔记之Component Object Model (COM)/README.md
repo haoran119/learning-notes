@@ -23,3 +23,11 @@
     * Source code is first converted to intermediate language and then to native language in managed code while it is directly converted into the native language in unmanaged code.
     * Unmanaged code provides low-level access while managed code does not provide that.
     * In unsafe or unmanaged code the unsafe modifier is used to write the block of code while any other code written outside the unsafe code block is managed code.
+* [HRESULT - Wikipedia](https://en.wikipedia.org/wiki/HRESULT)
+  * In the field of computer programming, the HRESULT is a data type used in Windows operating systems, and the earlier IBM/Microsoft OS/2 operating system, to represent error conditions, and warning conditions.
+  * The original purpose of HRESULTs was to formally lay out ranges of error codes for both public and Microsoft internal use in order to prevent collisions between error codes in different subsystems of the OS/2 operating system.
+  * HRESULTs are numerical error codes. Various bits within an HRESULT encode information about the nature of the error code, and where it came from.
+  * HRESULT error codes are most commonly encountered in COM programming, where they form the basis for a standardized COM error handling convention.
+  * [HRESULT | Microsoft Docs](https://docs.microsoft.com/en-us/office/client-developer/outlook/mapi/hresult)
+  * [Common HRESULT Values - Win32 apps | Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/com/com-error-codes-1)
+  * [COM Error Codes (Generic) (Winerror.h) - Win32 apps | Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/com/com-error-codes-1)
