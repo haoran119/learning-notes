@@ -71,6 +71,10 @@
 * [面试总结之MISC（操作系统，网络，软件开发，测试，工具，系统设计, MISC) - 浩然119 - 博客园 (cnblogs.com)](https://www.cnblogs.com/pegasus923/p/7594332.html)
 * [学习笔记之设计模式 - 浩然119 - 博客园 (cnblogs.com)](https://www.cnblogs.com/pegasus923/p/5574883.html)
 * [学习笔记之UML ( Unified Modeling Language ) - 浩然119 - 博客园 (cnblogs.com)](https://www.cnblogs.com/pegasus923/p/11640500.html)
+* [Application binary interface (ABI) - Wikipedia](https://en.wikipedia.org/wiki/Application_binary_interface)
+  * In computer software, an application binary interface (ABI) is an interface between two binary program modules. Often, one of these modules is a library or operating system facility, and the other is a program that is being run by a user.
+  * An ABI defines how data structures or computational routines are accessed in machine code, which is a low-level, hardware-dependent format. In contrast, an API defines this access in source code, which is a relatively high-level, hardware-independent, often human-readable format. A common aspect of an ABI is the calling convention, which determines how data is provided as input to, or read as output from, computational routines. Examples of this are the x86 calling conventions.
+  * Adhering to an ABI (which may or may not be officially standardized) is usually the job of a compiler, operating system, or library author. However, an application programmer may have to deal with an ABI directly when writing a program in a mix of programming languages, or even compiling a program written in the same language with different compilers.
 * [如何画出优秀的架构图？ (qq.com)](https://mp.weixin.qq.com/s/gdAp_ublVEn1M1ColgGfaw)
 * [优秀的代码都是如何分层的？](https://mp.weixin.qq.com/s/wduYacv8ulO9JVg4ALDPhw)
   * https://juejin.im/post/5b44e62e6fb9a04fc030f216
