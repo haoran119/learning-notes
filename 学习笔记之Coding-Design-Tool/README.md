@@ -68,7 +68,7 @@
 
 ## DESIGN
 
-* [面试总结之MISC（操作系统，网络，软件开发，测试，工具，系统设计, MISC) - 浩然119 - 博客园 (cnblogs.com)](https://www.cnblogs.com/pegasus923/p/7594332.html)
+* [interview/面试总结之MISC(操作系统, 网络, 软件开发, 测试, 工具, 系统设计, MISC) at main · haoran119/interview](https://github.com/haoran119/interview/tree/main/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93%E4%B9%8BMISC(%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%2C%20%E7%BD%91%E7%BB%9C%2C%20%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%2C%20%E6%B5%8B%E8%AF%95%2C%20%E5%B7%A5%E5%85%B7%2C%20%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%2C%20MISC))
 * [学习笔记之设计模式 - 浩然119 - 博客园 (cnblogs.com)](https://www.cnblogs.com/pegasus923/p/5574883.html)
 * [学习笔记之UML ( Unified Modeling Language ) - 浩然119 - 博客园 (cnblogs.com)](https://www.cnblogs.com/pegasus923/p/11640500.html)
 * [Application binary interface (ABI) - Wikipedia](https://en.wikipedia.org/wiki/Application_binary_interface)
