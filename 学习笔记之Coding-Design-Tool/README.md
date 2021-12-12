@@ -145,6 +145,7 @@
 * [断点续传、秒传究竟是如何实现的？](https://mp.weixin.qq.com/s/X0aZ7075sqFXbWqA35kJQA)
 * [最近学到的「短链接」知识](https://mp.weixin.qq.com/s/J_pZXGIK-NTF0h1JmyEwkw)
 * [最近我学到的ABTest知识](https://mp.weixin.qq.com/s/gSxhO9eDtoGLWjwJazp4DA)
+* [小团队中微服务的可怕之处](https://mp.weixin.qq.com/s/Df21LGRj60m98fN0PJLGVA)
 
 ### 无服务 SERVERLESS
 
@@ -153,6 +154,8 @@
   * https://towardsdatascience.com/kubernetes-serverless-differences-84699f370609
 * [干货！一文搞懂无状态服务 (qq.com)](https://mp.weixin.qq.com/s/Sb9TbS2SBqmYCaxXR5XT7A)
 * [一招上手！这样设计扛住亿级流量活动系统 (qq.com)](https://mp.weixin.qq.com/s/jtshanQz35tSY-DjTq_R0g)
+* [私有化 Serverless Application 的探索与思考](https://mp.weixin.qq.com/s/vIUrn15hPeupEc7nXb305g)
+* [新零售：从上云到云原生 Serverless](https://mp.weixin.qq.com/s/-hxM-wjwxxQ7t0GrgC8NfA)
 
 ### APPLICATION
 
