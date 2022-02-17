@@ -2,7 +2,7 @@
 
 * [Cloud computing - Wikipedia](https://en.wikipedia.org/wiki/Cloud_computing)
 * [Cloud computing - 随笔分类 - 浩然119 - 博客园](https://www.cnblogs.com/pegasus923/category/1186049.html)
-* [learning-notes/学习笔记之Amazon Web Services (AWS) at main · haoran119/learning-notes](https://github.com/haoran119/learning-notes/tree/main/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8BAmazon%20Web%20Services%20(AWS))
+* [learning-notes/学习笔记之AWS(Amazon Web Services) at main · haoran119/learning-notes](https://github.com/haoran119/learning-notes/tree/main/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8BAWS(Amazon%20Web%20Services))
 * [learning-notes/学习笔记之Docker at main · haoran119/learning-notes](https://github.com/haoran119/learning-notes/tree/main/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8BDocker)
 * [learning-notes/学习笔记之Kubernetes at main · haoran119/learning-notes](https://www.cnblogs.com/pegasus923/p/8656046.html)
 
