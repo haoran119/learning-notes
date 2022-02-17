@@ -38,3 +38,5 @@
 
 * [还不知道 AWS 是什么？这 11 个重点带你认识 AWS ！ (qq.com)](https://mp.weixin.qq.com/s/E7nkDxM3KbnXhqto0ZbkyQ)
   * [A Sneak Peek Into Amazon Web Services Cloud (AWS) - DZone Cloud](https://dzone.com/articles/a-sneak-peek-into-amazon-web-services-cloud-aws)
+* [AWS Cheat Sheet - Amazon Web Services Quick Guide [2022]](https://intellipaat.com/blog/tutorial/amazon-web-services-aws-tutorial/aws-cheat-sheet/)
+* [Exploring the Basics of AWS: AWS Cheat Sheet - Whizlabs Blog](https://www.whizlabs.com/blog/aws-cheat-sheet/#:~:text=%20AWS%20Cheat%20Sheet%20%201%20Definition%20of,is%20the%20AWS%20regions.%20These%20entries...%20More%20)
