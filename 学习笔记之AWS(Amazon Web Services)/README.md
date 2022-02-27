@@ -16,6 +16,34 @@
     * Before using Amazon DocumentDB, you should review the concepts and features described in How It Works. After that, complete the steps in Get Started Guide.
 * [Amazon DocumentDB - Wikipedia](https://en.wikipedia.org/wiki/Amazon_DocumentDB)
   * Amazon DocumentDB is a fully managed proprietary NoSQL database service that supports document data structures and MongoDB workloads. As a document database, Amazon DocumentDB makes it easy to store, query, and index JSON data. Amazon DocumentDB is currently available in 14 AWS regions of AWS.[2][3]
+* [Fully Managed Container Solution – Amazon Elastic Container Service (Amazon ECS) - Amazon Web Services](https://aws.amazon.com/ecs/?nc1=h_ls)
+  * Amazon Elastic Container Service (Amazon ECS)
+  * Run highly secure, reliable, and scalable containers
+  * Launch thousands of containers across the cloud using your preferred continuous integration and delivery (CI/CD) and automation tools.
+  * Optimize your time with AWS Fargate serverless compute for containers, which eliminates the need to configure and manage control plane, nodes, and instances.
+  * Save up to 50 percent on compute costs with autonomous provisioning, auto-scaling, and pay-as-you-go pricing.
+  * Integrate seamlessly with AWS management and governance solutions, standardized for compliance with virtually every regulatory agency around the globe.
+  * How it works
+    * Amazon ECS is a fully managed container orchestration service that makes it easy for you to deploy, manage, and scale containerized applications.
+  * Introduction to Amazon ECS
+    * Amazon ECS is a fully managed container orchestration service that helps you easily deploy, manage, and scale containerized applications. It deeply integrates with the rest of the AWS platform to provide a secure and easy-to-use solution for running container workloads in the cloud and now on your infrastructure with Amazon ECS Anywhere.
+  * Use cases
+    * Deploy in a hybrid environment
+      * Build container-based applications on-premises or in the cloud with Amazon ECS Anywhere and enjoy consistent tooling, management, workload scheduling, and monitoring across environments.
+    * Support batch processing
+      * Plan, schedule, and execute batch computing workloads across the full range of AWS services, including Amazon Elastic Compute Cloud (EC2), Fargate, and Amazon EC2 Spot Instances.
+    * Scale web applications
+      * Automatically scale and run web applications in multiple Availability Zones with the performance, scale, reliability, and availability of AWS.
+  * [Gentle Introduction to How AWS ECS Works with Example Tutorial | by Tung Nguyen | BoltOps | Medium](https://medium.com/boltops/gentle-introduction-to-how-aws-ecs-works-with-example-tutorial-cea3d27ce63d) 
+    * Tutorial Example
+      * In this tutorial example I will create a small Sinatra web service that prints the meaning of life: 42.
+        * Create ECS Cluster with 1 Container Instance
+        * Create a Task Definition
+        * Create an ELB and Target Group to later associate with the ECS Service
+        * Create a Service that runs the Task Definition
+        * Confirm Everything is Working
+        * Scale Up the Service to 4 Tasks.
+        * Clean It All Up
 * [Amazon FSx | Feature-Rich & Highly-Performant File Systems | Amazon Web Services](https://aws.amazon.com/fsx/)
   * Launch, run, and scale feature-rich and highly-performant file systems with just a few clicks
   * Amazon FSx makes it easy and cost effective to launch, run, and scale feature-rich, high-performance file systems in the cloud. It supports a wide range of workloads with its reliability, security, scalability, and broad set of capabilities. Amazon FSx is built on the latest AWS compute, networking, and disk technologies to provide high performance and lower TCO. And as a fully managed service, it handles hardware provisioning, patching, and backups -- freeing you up to focus on your applications, your end users, and your business.
