@@ -69,11 +69,6 @@
 ## DESIGN
 
 * [interview/面试总结之MISC(操作系统, 网络, 软件开发, 测试, 工具, 系统设计, MISC) at main · haoran119/interview](https://github.com/haoran119/interview/tree/main/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93%E4%B9%8BMISC(%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%2C%20%E7%BD%91%E7%BB%9C%2C%20%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%2C%20%E6%B5%8B%E8%AF%95%2C%20%E5%B7%A5%E5%85%B7%2C%20%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%2C%20MISC))
-* [学习笔记之设计模式 - 浩然119 - 博客园 (cnblogs.com)](https://www.cnblogs.com/pegasus923/p/5574883.html)
-  * [经典永不过时！重温设计模式](https://mp.weixin.qq.com/s?__biz=Mzg4MjYzMjI1MA==&mid=2247517558&idx=1&sn=da321f7d75f0ed5ca9748f744af1f13f&source=41#wechat_redirect)
-    * [Refactoring and Design Patterns](https://refactoring.guru/)
-      * [Refactoring.Guru](https://github.com/RefactoringGuru)
-  * ![image](https://user-images.githubusercontent.com/34557994/156351826-ba7ee836-49f0-4e37-a836-beb3307dacdd.png)
 * [学习笔记之UML ( Unified Modeling Language ) - 浩然119 - 博客园 (cnblogs.com)](https://www.cnblogs.com/pegasus923/p/11640500.html)
 * [Application binary interface (ABI) - Wikipedia](https://en.wikipedia.org/wiki/Application_binary_interface)
   * In computer software, an application binary interface (ABI) is an interface between two binary program modules. Often, one of these modules is a library or operating system facility, and the other is a program that is being run by a user.
@@ -85,8 +80,6 @@
 * [一文说透架构设计的本质 (qq.com)](https://mp.weixin.qq.com/s/nyj1YOoT4PXXM3S0EawDmg)
 * [如何搞定高并发系统设计？](https://mp.weixin.qq.com/s/IywlX7jTt7a-hPdVMtEM0A)
 * [架构师必备技能：教你画出一张合格的技术架构图](https://mp.weixin.qq.com/s/66e_P13tVATDtqKf96vcdA)
-* [8 种架构设计模式优缺点大曝光 | 原力计划](https://mp.weixin.qq.com/s/95PwzyntH6HPbM1TlGkQYw)
-  * https://blog.csdn.net/bjmsb/article/details/105951508
 * [数据中心服务器基础知识大全](https://mp.weixin.qq.com/s/Au9zfuwpWagZedePU4uwiA)
 * [聊聊前后端分离接口规范](https://mp.weixin.qq.com/s/vIWqI1WyYAH7PFshN0TRmQ)
   * https://www.jianshu.com/p/c81008b68350
@@ -94,6 +87,16 @@
   * https://juejin.im/post/5d0a298bf265da1b827aa06f
 * [MQ 的那些事儿，你不好奇吗？ (qq.com)](https://mp.weixin.qq.com/s/g2yrE-40UdidUdmNQQtxYA)
 * [代码搜索引擎：基础篇 (qq.com)](https://mp.weixin.qq.com/s/glv55BpDNvHWTZBjyAT-gg)
+
+### 设计模式 DESIGN PATTERN
+
+* [学习笔记之设计模式 - 浩然119 - 博客园 (cnblogs.com)](https://www.cnblogs.com/pegasus923/p/5574883.html)
+  * [经典永不过时！重温设计模式](https://mp.weixin.qq.com/s?__biz=Mzg4MjYzMjI1MA==&mid=2247517558&idx=1&sn=da321f7d75f0ed5ca9748f744af1f13f&source=41#wechat_redirect)
+    * [Refactoring and Design Patterns](https://refactoring.guru/)
+      * [Refactoring.Guru](https://github.com/RefactoringGuru)
+  * ![image](https://user-images.githubusercontent.com/34557994/156351826-ba7ee836-49f0-4e37-a836-beb3307dacdd.png)
+* [8 种架构设计模式优缺点大曝光 | 原力计划](https://mp.weixin.qq.com/s/95PwzyntH6HPbM1TlGkQYw)
+  * https://blog.csdn.net/bjmsb/article/details/105951508
 
 ### 分布式 DISTRIBUTED SYSTEM
 
