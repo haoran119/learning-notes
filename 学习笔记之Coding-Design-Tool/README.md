@@ -90,7 +90,7 @@
 
 ### 设计模式 DESIGN PATTERN
 
-* [学习笔记之设计模式 - 浩然119 - 博客园 (cnblogs.com)](https://www.cnblogs.com/pegasus923/p/5574883.html)
+* [learning-notes/学习笔记之设计模式(Design Patterns) at main · haoran119/learning-notes](https://github.com/haoran119/learning-notes/tree/main/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8B%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F(Design%20Patterns))
   * [经典永不过时！重温设计模式](https://mp.weixin.qq.com/s?__biz=Mzg4MjYzMjI1MA==&mid=2247517558&idx=1&sn=da321f7d75f0ed5ca9748f744af1f13f&source=41#wechat_redirect)
     * [Refactoring and Design Patterns](https://refactoring.guru/)
       * [Refactoring.Guru](https://github.com/RefactoringGuru)
