@@ -19,21 +19,18 @@
 ## 结构型模式
 
 * [详解设计模式之结构型模式（上）](https://mp.weixin.qq.com/s/0PTiheUOw3FKJ6kKFZte-Q)
-* [漫话：如何给女朋友解释什么是适配器模式?](https://mp.weixin.qq.com/s/xYHpA4cNUPZxqdrVMjfvuA)
 * [漫画设计模式：什么是 “装饰器模式” ？ (qq.com)](https://mp.weixin.qq.com/s/mz9rJELjcWlTv4LFzmKmTA)
 * [漫画：设计模式之 “外观模式” (qq.com)](https://mp.weixin.qq.com/s/b2N4kkX4_KPffl7Kt5x4iA)
 * [了解组合模式](https://mp.weixin.qq.com/s/o9kXMnu2pygrvVy51s-Qiw)
 
 ## 行为型模式
 
-* [漫话：如何给女朋友解释什么是策略模式？](https://mp.weixin.qq.com/s?__biz=MzA3NTUzNjk1OA==&mid=2651562302&idx=1&sn=8eb6fbc8590191edf81d00c4f7ae35c3&scene=21#wechat_redirect)
 * [还在用 if else？试试策略模式吧！](https://mp.weixin.qq.com/s/VGoXu-QAuBL-Y892TFSNng)
 * [别再用if-else了，用注解去代替他吧](https://mp.weixin.qq.com/s/7mr1F6ujFR8659bhUfDeJw)
   * 经常在网上看到一些名为“别再if-else走天下了”，“教你干掉if-else”等之类的文章，大部分都会讲到用策略模式去代替if-else。策略模式实现的方式也大同小异。主要是定义统一行为（接口或抽象类），并实现不同策略下的处理逻辑（对应实现类）。客户端使用时自己选择相应的处理类，利用工厂或其他方式。
   * 本文要说的是用注解实现策略模式的方式，以及一些注意点。
 * [if-else嵌套太深？设计模式搞定！](https://mp.weixin.qq.com/s/-MuBaAIlbm6-xUCY7LkLpg)
-* 责任链模式，顾名思义，就是用来处理相关事务责任的一条执行链，执行链上有多个节点，每个节点都有机会（条件匹配）处理请求事务，如果某个节点处理完了就可以根据实际业务需求传递给下一个节点继续处理或者返回处理完毕。
-* [漫画：设计模式中的 “观察者模式”](https://mp.weixin.qq.com/s/vdyq4SAl8ijFoba5Q8PdZA)
+  * 责任链模式，顾名思义，就是用来处理相关事务责任的一条执行链，执行链上有多个节点，每个节点都有机会（条件匹配）处理请求事务，如果某个节点处理完了就可以根据实际业务需求传递给下一个节点继续处理或者返回处理完毕。
 * [如何用「设计模式」制作珍珠奶茶？](https://mp.weixin.qq.com/s/QWM079Z_zoU_2WxsMxw48g)
 
 ### [Visitor pattern](https://en.wikipedia.org/wiki/Visitor_pattern)
