@@ -301,3 +301,10 @@
   $ git fetch
   $ git cherry-pick ***
   ```
+* How to push from a detached head ?
+  * [Making a Git push from a detached head - Stack Overflow](https://stackoverflow.com/questions/35736116/making-a-git-push-from-a-detached-head)
+  * [git - Updates were rejected because the tip of your current branch is behind its remote counterpart - Stack Overflow](https://stackoverflow.com/questions/39399804/updates-were-rejected-because-the-tip-of-your-current-branch-is-behind-its-remot)
+  ```sh
+  git checkout -b BRANCH_NAME
+  git push origin BRANCH_NAME
+  ```
