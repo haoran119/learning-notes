@@ -38,3 +38,10 @@
 * In object-oriented programming and software engineering, the visitor design pattern is a way of separating an algorithm from an object structure on which it operates. A practical result of this separation is the ability to add new operations to existing object structures without modifying the structures. It is one way to follow the open/closed principle.
 * In essence, the visitor allows adding new virtual functions to a family of classes, without modifying the classes. Instead, a visitor class is created that implements all of the appropriate specializations of the virtual function. The visitor takes the instance reference as input, and implements the goal through double dispatch.
 * [Design Patterns - Visitor Pattern (tutorialspoint.com)](https://www.tutorialspoint.com/design_pattern/visitor_pattern.htm)
+* [Design patterns Tutorial => Visitor Pattern example in C++](https://riptutorial.com/design-patterns/example/15127/visitor-pattern-example-in-cplusplus)
+* [Visitor](https://refactoring.guru/design-patterns/visitor)
+  * [Design Patterns: Visitor in C++](https://refactoring.guru/design-patterns/visitor/cpp/example)
+  * [design-patterns-cpp/main.cc at main · RefactoringGuru/design-patterns-cpp](https://github.com/RefactoringGuru/design-patterns-cpp/blob/main/src/Visitor/Conceptual/main.cc)
+* [Shape Interface Implementation: Java Exercise - Interview Sansar](https://www.interviewsansar.com/shape-interface-implementation-java-exercise/)
+* [java - Implement a Shape abstract class - Code Review Stack Exchange](https://codereview.stackexchange.com/questions/83769/implement-a-shape-abstract-class)
+* [C++ Visitor pattern with smart pointers - Stack Overflow](https://stackoverflow.com/questions/39765398/c-visitor-pattern-with-smart-pointers)
