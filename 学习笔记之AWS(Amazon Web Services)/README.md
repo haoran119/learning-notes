@@ -15,14 +15,15 @@
   * Aurora includes a high-performance storage subsystem. Its MySQL- and PostgreSQL-compatible database engines are customized to take advantage of that fast distributed storage. The underlying storage grows automatically as needed. An Aurora cluster volume can grow to a maximum size of 128 tebibytes (TiB). Aurora also automates and standardizes database clustering and replication, which are typically among the most challenging aspects of database configuration and administration.
   * Aurora is part of the managed database service Amazon Relational Database Service (Amazon RDS). Amazon RDS is a web service that makes it easier to set up, operate, and scale a relational database in the cloud. If you are not already familiar with Amazon RDS, see the [Amazon Relational Database Service User Guide](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html).
 
-## [Amazon DocumentDB (with MongoDB compatibility)](https://aws.amazon.com/documentdb/)
+## [Amazon DocumentDB](https://aws.amazon.com/documentdb/)
 
-* Fast, scalable, highly available MongoDB-compatible database service
+* (with MongoDB compatibility)
+* Scale JSON workloads with ease using a fully managed document database service
 * [What Is Amazon DocumentDB (with MongoDB Compatibility) - Amazon DocumentDB](https://docs.aws.amazon.com/documentdb/latest/developerguide/what-is.html)
   * Amazon DocumentDB (with MongoDB compatibility) is a fast, reliable, and fully managed database service. Amazon DocumentDB makes it easy to set up, operate, and scale MongoDB-compatible databases in the cloud. With Amazon DocumentDB, you can run the same application code and use the same drivers and tools that you use with MongoDB.
   * Before using Amazon DocumentDB, you should review the concepts and features described in How It Works. After that, complete the steps in Get Started Guide.
 * [Amazon DocumentDB - Wikipedia](https://en.wikipedia.org/wiki/Amazon_DocumentDB)
-* Amazon DocumentDB is a fully managed proprietary NoSQL database service that supports document data structures and MongoDB workloads. As a document database, Amazon DocumentDB makes it easy to store, query, and index JSON data. Amazon DocumentDB is currently available in 14 AWS regions of AWS.[2][3]
+  * Amazon DocumentDB is a fully managed proprietary NoSQL database service that supports document data structures and MongoDB workloads. As a document database, Amazon DocumentDB makes it easy to store, query, and index JSON data. Amazon DocumentDB is currently available in 14 AWS regions of AWS.[2][3]
 
 ## [Amazon ECS](https://aws.amazon.com/ecs/?nc1=h_ls)
 
@@ -63,9 +64,10 @@
 * [Getting Started – Amazon FSx for Windows File Server – AWS](https://aws.amazon.com/cn/fsx/windows/getting-started/)
   * [Introduction to Amazon FSx for Windows File Server](https://www.youtube.com/watch?v=7ThyV2IP27A)
 
-## [AWS Lambda – Serverless Compute - Amazon Web Services](https://aws.amazon.com/lambda/)
+## [AWS Lambda](https://aws.amazon.com/lambda/)
 
-* AWS Lambda – Serverless Compute - Amazon Web Services
+* Serverless Computing - AWS Lambda - Amazon Web Services
+* Run code without thinking about servers or clusters
 * AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers, creating workload-aware cluster scaling logic, maintaining event integrations, or managing runtimes. With Lambda, you can run code for virtually any type of application or backend service - all with zero administration. Just upload your code as a ZIP file or container image, and Lambda automatically and precisely allocates compute execution power and runs your code based on the incoming request or event, for any scale of traffic. You can set up your code to automatically trigger from over 200 AWS services and SaaS applications or call it directly from any web or mobile app. You can write Lambda functions in your favorite language (Node.js, Python, Go, Java, and more) and use both serverless and container tools, such as AWS SAM or Docker CLI, to build, test, and deploy your functions.
 * [AWS Lambda – Getting Started](https://aws.amazon.com/lambda/getting-started/)
   * Here you will find tutorials and documentation on how to get started building serverless applications with AWS Lambda. You will also learn about Serverless Application Developer Tools like the AWS Serverless Application Model (SAM) or AWS Cloud9.
