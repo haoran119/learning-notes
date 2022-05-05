@@ -1,4 +1,4 @@
-# 学习笔记之CI/CD
+# 学习笔记之CI / CD
 
 * Continuous integration（CI）
   * [Continuous integration - Wikipedia](https://en.wikipedia.org/wiki/Continuous_integration)
