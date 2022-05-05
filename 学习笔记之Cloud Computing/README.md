@@ -15,7 +15,7 @@
 * [全面讲解OpenStack技术知识](https://mp.weixin.qq.com/s/toUgYy609GhzBJXrTKiM5g)
 * [Spark面试题](https://mp.weixin.qq.com/s/Z9JpqTUKfcqddffDUbXtuw)
 
-## 学习笔记之Amazon Web Services (AWS)
+## AWS
 
 * [Amazon Web Services (AWS) - Cloud Computing Services](https://aws.amazon.com/?nc2=h_lg)
 * [Amazon Web Services - Wikipedia](https://en.wikipedia.org/wiki/Amazon_Web_Services)
