@@ -30,3 +30,5 @@
 
 * TeamCity: the Hassle-Free CI and CD Server by JetBrains
 * Powerful continuous integration for DevOps-centric teams
+* [TeamCity - Wikipedia](https://en.wikipedia.org/wiki/TeamCity)
+  * TeamCity is a build management and continuous integration server from JetBrains. It was first released on October 2, 2006[2] and is commercial software and licensed under a proprietary license: a freemium license for up to 100 build configurations and three free Build Agent licenses are available. Open Source projects may request a free license.
