@@ -250,6 +250,12 @@
 * [DevOps with GitLab CI Course - Build Pipelines and Deploy to AWS - YouTube](https://www.youtube.com/watch?v=PGyhBwLyK2U&t=2119s)
 * [Understanding DevOps](https://www.redhat.com/en/topics/devops)
 
+#### [Bitbucket](https://bitbucket.org/product?&aceid=&adposition=&adgroup=92542376375&campaign=1407242819&creative=544675970074&device=c&keyword=bitbucket%20software&matchtype=e&network=g&placement=&ds_kids=p51241220772&ds_e=GOOGLE&ds_eid=700000001551985&ds_e1=GOOGLE&gclid=EAIaIQobChMIgM27uqXK9wIVQYNLBR3VYwKsEAAYASAAEgLc4fD_BwE&gclsrc=aw.ds)
+
+* Bitbucket | Git solution for teams using Jira
+* Code & CI/CD, optimized for teams using Jira
+* With best-in-class Jira integration, and built-in CI/CD, Bitbucket Cloud is the native Git tool in Atlassian’s Open DevOps solution. Join millions of developers who choose to build on Bitbucket. 
+
 #### [Jenkins](https://www.jenkins.io/)
   
 * Jenkins是开源CI&CD软件领导者， 提供超过1000个插件来支持构建、部署、自动化， 满足任何项目的需要。
