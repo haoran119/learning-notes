@@ -338,6 +338,10 @@
 * [我花了10个小时，写出了这篇K8S架构解析](https://mp.weixin.qq.com/s/ieIALsPmy7I3vk3jiCI0YA)
 * [Docker不香吗，为啥还要K8s？](https://mp.weixin.qq.com/s/i_s-gUF53MGIEaLx_EWY3A)
 
+### Git
+
+* [learning-notes/学习笔记之Git at main · haoran119/learning-notes](https://github.com/haoran119/learning-notes/tree/main/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8BGit)
+
 ### Microsoft Visual Studio
 
 * [学习笔记之Visual Studio Code (VSCode) & Clang - 浩然119 - 博客园 (cnblogs.com)](https://www.cnblogs.com/pegasus923/p/10332770.html)
