@@ -98,7 +98,7 @@
   * Unlike Amazon EC2, which is priced by the hour but metered by the second, AWS Lambda is metered by rounding up to the nearest millisecond with no minimum execution time.
   * In 2019, at AWS' annual cloud computing conference (AWS re:Invent), the AWS Lambda team announced "Provisioned Concurrency", a feature that "keeps functions initialized and hyper-ready to respond in double-digit milliseconds."[7] The Lambda team described Provisioned Concurrency as "ideal for implementing interactive services, such as web and mobile backends, latency-sensitive microservices, or synchronous APIs."[8]
 
-### RESOURCES
+### Resources
 
 * [还不知道 AWS 是什么？这 11 个重点带你认识 AWS ！ (qq.com)](https://mp.weixin.qq.com/s/E7nkDxM3KbnXhqto0ZbkyQ)
   * [A Sneak Peek Into Amazon Web Services Cloud (AWS) - DZone Cloud](https://dzone.com/articles/a-sneak-peek-into-amazon-web-services-cloud-aws)
