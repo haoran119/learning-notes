@@ -255,6 +255,9 @@
 * Bitbucket | Git solution for teams using Jira
 * Code & CI/CD, optimized for teams using Jira
 * With best-in-class Jira integration, and built-in CI/CD, Bitbucket Cloud is the native Git tool in Atlassian’s Open DevOps solution. Join millions of developers who choose to build on Bitbucket. 
+* [Bitbucket Cloud support | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/)
+  * [Build, test, and deploy with Pipelines | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/build-test-and-deploy-with-pipelines/)
+    * [Get started with Bitbucket Pipelines | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/get-started-with-bitbucket-pipelines/)
 
 #### [Jenkins](https://www.jenkins.io/)
   
