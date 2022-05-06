@@ -88,12 +88,6 @@
 * [MQ 的那些事儿，你不好奇吗？ (qq.com)](https://mp.weixin.qq.com/s/g2yrE-40UdidUdmNQQtxYA)
 * [代码搜索引擎：基础篇 (qq.com)](https://mp.weixin.qq.com/s/glv55BpDNvHWTZBjyAT-gg)
 
-### 容器 CONTAINER
-
-* [微服务、容器、DevOps三者之间的关系你清楚吗? (qq.com)](https://mp.weixin.qq.com/s/AHD0P1kLvlTQlWeWyQLndQ)
-* [你真的了解容器吗？](https://mp.weixin.qq.com/s/UgffpM3pnQwG4YeMz1CBJA)
-  * https://mp.weixin.qq.com/s/uCiRPDfWXTnPtWL8ArUzCw
-
 ### 设计模式 DESIGN PATTERN
 
 * [learning-notes/学习笔记之设计模式(Design Patterns) at main · haoran119/learning-notes](https://github.com/haoran119/learning-notes/tree/main/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8B%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F(Design%20Patterns))
@@ -247,7 +241,13 @@
 * [TeamCity - Wikipedia](https://en.wikipedia.org/wiki/TeamCity)
   * TeamCity is a build management and continuous integration server from JetBrains. It was first released on October 2, 2006[2] and is commercial software and licensed under a proprietary license: a freemium license for up to 100 build configurations and three free Build Agent licenses are available. Open Source projects may request a free license.
 
-### Visual Studio
+### CONTAINER 容器
+
+* [微服务、容器、DevOps三者之间的关系你清楚吗? (qq.com)](https://mp.weixin.qq.com/s/AHD0P1kLvlTQlWeWyQLndQ)
+* [你真的了解容器吗？](https://mp.weixin.qq.com/s/UgffpM3pnQwG4YeMz1CBJA)
+  * https://mp.weixin.qq.com/s/uCiRPDfWXTnPtWL8ArUzCw
+
+### VISUAL STUDIO
 
 * [学习笔记之Visual Studio Code (VSCode) & Clang - 浩然119 - 博客园 (cnblogs.com)](https://www.cnblogs.com/pegasus923/p/10332770.html)
 * [Profiling (computer programming) - Wikipedia](https://en.wikipedia.org/wiki/Profiling_(computer_programming))
