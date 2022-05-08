@@ -11,6 +11,7 @@
   * https://www.ibm.com/developerworks/cn/linux/l-cn-vt/index.html
 * [全面讲解OpenStack技术知识](https://mp.weixin.qq.com/s/toUgYy609GhzBJXrTKiM5g)
 * [Spark面试题](https://mp.weixin.qq.com/s/Z9JpqTUKfcqddffDUbXtuw)
+* [Understanding cloud-native apps](https://www.redhat.com/en/topics/cloud-native-apps)
 
 ## [AWS](https://aws.amazon.com/?nc2=h_lg)
 
