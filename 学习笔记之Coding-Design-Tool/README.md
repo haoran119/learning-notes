@@ -301,6 +301,9 @@
   * 容器是完全使用沙箱机制，相互之间不会有任何接口（类似 iPhone 的 app）,更重要的是容器性能开销极低。
   * Docker 使用客户端-服务器 (C/S) 架构模式，使用远程API来管理和创建Docker容器。Docker 容器通过 Docker 镜像来创建。容器与镜像的关系类似于面向对象编程中的对象与类。
   * [Docker 资源汇总 | 菜鸟教程](http://www.runoob.com/docker/docker-resources.html)
+* [Docker Hub Container Image Library | App Containerization](https://hub.docker.com/)
+  * Build and Ship any Application Anywhere
+  * Docker Hub is the world's easiest way to create, manage, and deliver your team's container applications.
 
 ##### Resources
 
