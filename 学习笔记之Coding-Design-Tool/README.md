@@ -249,6 +249,12 @@
 
 * [DevOps with GitLab CI Course - Build Pipelines and Deploy to AWS - YouTube](https://www.youtube.com/watch?v=PGyhBwLyK2U&t=2119s)
 * [Understanding DevOps](https://www.redhat.com/en/topics/devops)
+  * [What is CI/CD?](https://www.redhat.com/en/topics/devops/what-is-ci-cd)
+    * CI/CD is a method to frequently deliver apps to customers by introducing automation into the stages of app development. The main concepts attributed to CI/CD are continuous integration, continuous delivery, and continuous deployment. CI/CD is a solution to the problems integrating new code can cause for development and operations teams (AKA "integration hell").
+    * Specifically, CI/CD introduces ongoing automation and continuous monitoring throughout the lifecycle of apps, from integration and testing phases to delivery and deployment. Taken together, these connected practices are often referred to as a "CI/CD pipeline" and are supported by development and operations teams working together in an agile way with either a DevOps or site reliability engineering (SRE) approach.
+  * [What is a CI/CD pipeline?](https://www.redhat.com/en/topics/devops/what-cicd-pipeline)
+    * A CI/CD pipeline is a series of steps that must be performed in order to deliver a new version of software. Continuous integration/continuous delivery (CI/CD) pipelines are a practice focused on improving software delivery using either a DevOps or site reliability engineering (SRE) approach.
+    * A CI/CD pipeline introduces monitoring and automation to improve the process of application development, particularly at the integration and testing phases, as well as during delivery and deployment. Although it is possible to manually execute each of the steps of a CI/CD pipeline, the true value of CI/CD pipelines is realized through automation.
 
 #### [Bitbucket](https://bitbucket.org/product?&aceid=&adposition=&adgroup=92542376375&campaign=1407242819&creative=544675970074&device=c&keyword=bitbucket%20software&matchtype=e&network=g&placement=&ds_kids=p51241220772&ds_e=GOOGLE&ds_eid=700000001551985&ds_e1=GOOGLE&gclid=EAIaIQobChMIgM27uqXK9wIVQYNLBR3VYwKsEAAYASAAEgLc4fD_BwE&gclsrc=aw.ds)
 
