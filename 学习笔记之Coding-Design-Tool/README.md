@@ -247,7 +247,6 @@
 
 #### Resources
 
-* [DevOps with GitLab CI Course - Build Pipelines and Deploy to AWS - YouTube](https://www.youtube.com/watch?v=PGyhBwLyK2U&t=2119s)
 * [Understanding DevOps](https://www.redhat.com/en/topics/devops)
   * [What is CI/CD?](https://www.redhat.com/en/topics/devops/what-is-ci-cd)
     * CI/CD is a method to frequently deliver apps to customers by introducing automation into the stages of app development. The main concepts attributed to CI/CD are continuous integration, continuous delivery, and continuous deployment. CI/CD is a solution to the problems integrating new code can cause for development and operations teams (AKA "integration hell").
@@ -273,11 +272,16 @@
     * [GitHub Actions](https://docs.github.com/en/actions)
       * [Overview](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions)
       * [Quickstart](https://docs.github.com/en/actions/quickstart)
+* [Continuous Integration and Continuous Delivery (CI/CD) Fundamentals | GitHub Resources](https://resources.github.com/ci-cd/)
+* [edonosotti/ci-cd-tutorial-sample-app: A sample Python app that implements a REST API, with database migrations and CI/CD support.](https://github.com/edonosotti/ci-cd-tutorial-sample-app)
 
 #### [GitLab](https://about.gitlab.com/)
 
 * The One DevOps Platform
 * From planning to production, bring teams together in one application. Ship secure code faster, deploy to any cloud, and drive business results.
+* [GitLab CI/CD Examples | GitLab](https://docs.gitlab.com/ee/ci/examples/)
+* [GitLab vs GitHub – A 2022 Comparison - Incredibuild](https://www.incredibuild.com/blog/gitlab-vs-github-comparison#:~:text=GitLab's%20platform%20concept%20includes%20options,and%20community%20projects%20to%20support.)
+* [DevOps with GitLab CI Course - Build Pipelines and Deploy to AWS - YouTube](https://www.youtube.com/watch?v=PGyhBwLyK2U&t=2119s)
 
 #### [Jenkins](https://www.jenkins.io/)
   
