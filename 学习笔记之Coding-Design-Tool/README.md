@@ -255,6 +255,7 @@
   * [What is a CI/CD pipeline?](https://www.redhat.com/en/topics/devops/what-cicd-pipeline)
     * A CI/CD pipeline is a series of steps that must be performed in order to deliver a new version of software. Continuous integration/continuous delivery (CI/CD) pipelines are a practice focused on improving software delivery using either a DevOps or site reliability engineering (SRE) approach.
     * A CI/CD pipeline introduces monitoring and automation to improve the process of application development, particularly at the integration and testing phases, as well as during delivery and deployment. Although it is possible to manually execute each of the steps of a CI/CD pipeline, the true value of CI/CD pipelines is realized through automation.
+    * ![image](https://user-images.githubusercontent.com/34557994/167294724-f258550d-fcfb-4e26-b041-c006569e455e.png)
 
 #### [Bitbucket](https://bitbucket.org/product?&aceid=&adposition=&adgroup=92542376375&campaign=1407242819&creative=544675970074&device=c&keyword=bitbucket%20software&matchtype=e&network=g&placement=&ds_kids=p51241220772&ds_e=GOOGLE&ds_eid=700000001551985&ds_e1=GOOGLE&gclid=EAIaIQobChMIgM27uqXK9wIVQYNLBR3VYwKsEAAYASAAEgLc4fD_BwE&gclsrc=aw.ds)
 
