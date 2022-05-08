@@ -281,7 +281,7 @@
 * From planning to production, bring teams together in one application. Ship secure code faster, deploy to any cloud, and drive business results.
 * [GitLab CI/CD Examples | GitLab](https://docs.gitlab.com/ee/ci/examples/)
 * [GitLab vs GitHub – A 2022 Comparison - Incredibuild](https://www.incredibuild.com/blog/gitlab-vs-github-comparison#:~:text=GitLab's%20platform%20concept%20includes%20options,and%20community%20projects%20to%20support.)
-* [DevOps with GitLab CI Course - Build Pipelines and Deploy to AWS - YouTube](https://www.youtube.com/watch?v=PGyhBwLyK2U&t=2119s)
+* [DevOps with GitLab CI Course - Build Pipelines and Deploy to AWS - YouTube](https://www.youtube.com/watch?v=PGyhBwLyK2U)
 
 #### [Jenkins](https://www.jenkins.io/)
   
