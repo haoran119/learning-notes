@@ -282,6 +282,8 @@
 
 ### CONTAINER 容器
 
+* [What is containerization?](https://www.redhat.com/en/topics/cloud-native-apps/what-is-containerization#:~:text=Containerization%20is%20the%20packaging%20together,in%20their%20own%20%22container.%22)
+  * Containerization is the packaging together of software code with all it’s necessary components like libraries, frameworks, and other dependencies so that they are isolated in their own "container."
 * [微服务、容器、DevOps三者之间的关系你清楚吗? (qq.com)](https://mp.weixin.qq.com/s/AHD0P1kLvlTQlWeWyQLndQ)
 * [你真的了解容器吗？](https://mp.weixin.qq.com/s/UgffpM3pnQwG4YeMz1CBJA)
   * https://mp.weixin.qq.com/s/uCiRPDfWXTnPtWL8ArUzCw
