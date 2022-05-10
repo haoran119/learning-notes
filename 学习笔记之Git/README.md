@@ -294,6 +294,8 @@
 * How to merge feature branch with conflict ?
   * [Resolve merge conflicts - Atlassian Documentation](https://confluence.atlassian.com/bitbucket/resolve-merge-conflicts-704414003.html)
   * [Solved: How can I solve a conflict in a pull request?](https://community.atlassian.com/t5/Bitbucket-questions/How-can-I-solve-a-conflict-in-a-pull-request/qaq-p/577205)
+  * [The Git experience in Visual Studio | Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/version-control/git-with-visual-studio?view=vs-2022)
+    * [Resolve merge conflicts in Visual Studio | Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/version-control/git-resolve-conflicts?view=vs-2022)
   * Tips : do it in VScode to just accecpt or reject conflicts for more convenient
 * How to restore lost commits ?
   * [Git Cherry Pick | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/cherry-pick)
