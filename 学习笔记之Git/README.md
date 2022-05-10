@@ -304,6 +304,12 @@
   $ git fetch
   $ git cherry-pick ***
   ```
+* How to revert to a previous commit ?
+  * [git checkout - How do I revert a Git repository to a previous commit? - Stack Overflow](https://stackoverflow.com/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit)
+  ```sh
+  # This will detach your HEAD, that is, leave you with no branch checked out:
+  git checkout 0d1d7fc32
+  ```
 * How to push from a detached head ?
   * [Making a Git push from a detached head - Stack Overflow](https://stackoverflow.com/questions/35736116/making-a-git-push-from-a-detached-head)
   * [git - Updates were rejected because the tip of your current branch is behind its remote counterpart - Stack Overflow](https://stackoverflow.com/questions/39399804/updates-were-rejected-because-the-tip-of-your-current-branch-is-behind-its-remot)
