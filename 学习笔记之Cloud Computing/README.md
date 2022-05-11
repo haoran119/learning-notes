@@ -96,6 +96,12 @@
   * Unlike Amazon EC2, which is priced by the hour but metered by the second, AWS Lambda is metered by rounding up to the nearest millisecond with no minimum execution time.
   * In 2019, at AWS' annual cloud computing conference (AWS re:Invent), the AWS Lambda team announced "Provisioned Concurrency", a feature that "keeps functions initialized and hyper-ready to respond in double-digit milliseconds."[7] The Lambda team described Provisioned Concurrency as "ideal for implementing interactive services, such as web and mobile backends, latency-sensitive microservices, or synchronous APIs."[8]
 
+### [Amazon S3](https://aws.amazon.com/s3/?nc2=h_ql_prod_fs_s3)
+
+* Cloud Object Storage – Amazon S3 – Amazon Web Services
+* Object storage built to retrieve any amount of data from anywhere
+* Amazon Simple Storage Service (Amazon S3) is an object storage service offering industry-leading scalability, data availability, security, and performance. Customers of all sizes and industries can store and protect any amount of data for virtually any use case, such as data lakes, cloud-native applications, and mobile apps. With cost-effective storage classes and easy-to-use management features, you can optimize costs, organize data, and configure fine-tuned access controls to meet specific business, organizational, and compliance requirements.
+
 ### Resources
 
 * [还不知道 AWS 是什么？这 11 个重点带你认识 AWS ！ (qq.com)](https://mp.weixin.qq.com/s/E7nkDxM3KbnXhqto0ZbkyQ)
