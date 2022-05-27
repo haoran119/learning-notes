@@ -487,3 +487,9 @@ Thank you.
   	* [tyoma/micro-profiler: Cross-platform low-footprint realtime C/C++ Profiler](https://github.com/tyoma/micro-profiler)
 * [Remote debugging - Visual Studio (Windows) | Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/debugger/remote-debugging?view=vs-2022)
   * [Remote Debug a C++ Project - Visual Studio (Windows) | Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/debugger/remote-debugging-cpp?view=vs-2022)
+
+### MISC
+
+#### jq
+ 
+* [学习笔记之jq - 浩然119 - 博客园](https://www.cnblogs.com/pegasus923/p/13845186.html)
