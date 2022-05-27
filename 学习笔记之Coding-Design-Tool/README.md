@@ -76,6 +76,10 @@
 * [Hypertext Markup Language - 2.0 - The HTML Coded Character Set](https://www.w3.org/MarkUp/html-spec/html-spec_13.html)
   * This list details the code positions and characters of the HTML document character set, specified in section SGML Declaration for HTML. This coded character set is based on [ISO-8859-1].
 
+### JSON
+
+* [学习笔记之JSON - 浩然119 - 博客园](https://www.cnblogs.com/pegasus923/p/8650168.html)
+
 ### SOAP
 
 * [SOAP Specifications](https://www.w3.org/TR/soap/)
@@ -83,6 +87,74 @@
 * [SOAP - Wikipedia](https://en.wikipedia.org/wiki/SOAP)
   * SOAP (formerly an acronym for `Simple Object Access Protocol`) is a messaging protocol specification for exchanging structured information in the implementation of web services in computer networks. It uses XML Information Set for its message format, and relies on application layer protocols, most often Hypertext Transfer Protocol (HTTP), although some legacy systems communicate over Simple Mail Transfer Protocol (SMTP), for message negotiation and transmission.
   * SOAP allows developers to invoke processes running on disparate operating systems (such as Windows, macOS, and Linux) to authenticate, authorize, and communicate using Extensible Markup Language (XML). Since Web protocols like HTTP are installed and running on all operating systems, SOAP allows clients to invoke web services and receive responses independent of language and platforms.
+
+### SMTP
+
+* [Simple Mail Transfer Protocol - Wikipedia](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol)
+  * The Simple Mail Transfer Protocol (SMTP) is an internet standard communication protocol for electronic mail transmission. Mail servers and other message transfer agents use SMTP to send and receive mail messages. User-level email clients typically use SMTP only for sending messages to a mail server for relaying, and typically submit outgoing email to the mail server on port 587 or 465 per RFC 8314. For retrieving messages, IMAP (which replaced the older POP3) is standard, but proprietary servers also often implement proprietary protocols, e.g., Exchange ActiveSync.
+  * SMTP's origins began in 1980, building on concepts implemented on the ARPANET since 1971. It has been updated, modified and extended multiple times. The protocol version in common use today has extensible structure with various extensions for authentication, encryption, binary data transfer, and internationalized email addresses. SMTP servers commonly use the Transmission Control Protocol on port number 25 (for plaintext) and 587 (for encrypted communications).
+* [Sending HTML mail via SMTP part 1 - Article - CodeStore](http://www.codestore.net/store.nsf/unid/EPSD-587VVX?OpenDocument)
+```sh
+HELO JakesDominoApp
+MAIL FROM: jake@jakehowlett.com
+RCPT To: jhowlett@EITS
+DATA
+From: My Self <me@you.com>
+To: A secret list <you@me.com>
+Subject: A simple test
+Mime-Version: 1.0;
+Content-Type: text/html; charset="ISO-8859-1";
+Content-Transfer-Encoding: 7bit;
+
+<html>
+<body>
+<h2>An important link to look at!</h2>
+Here's an <a href="http://www.codestore.net">important link</a>
+</body>
+</html>
+.
+QUIT
+```
+* [HowTo: Send Email from an SMTP Server using the Command Line - ShellHacks](https://www.shellhacks.com/send-email-smtp-server-command-line/)
+```sh
+$ telnet smtp.domain.ext 25
+220 smtp.domain.ext ESMTP Sendmail ?version-number?; ?date+time+gmtoffset?
+> HELO local.domain.name
+250 smtp.domain.ext Hello local.domain.name [xxx.xxx.xxx.xxx], pleased to meet you
+> MAIL FROM: sender@adress.ext
+250 2.1.0 sender@adress.ext... Sender ok
+> RCPT TO: recipient@adress.ext
+250 2.1.5 recipient@adress.ext... Recipient ok
+> DATA
+354 Enter mail, end with "." on a line by itself
+> SUBJECT: Test message
+Hello,
+this is a TEST message, 
+please don't reply.
+Thank you.
+> .
+250 2.0.0 ???????? Message accepted for delivery
+> QUIT
+221 2.0.0 server.com closing connection
+```
+
+### XML
+
+* [学习笔记之XML - 浩然119 - 博客园](https://www.cnblogs.com/pegasus923/p/1998574.html)
+* [XML 教程 | 菜鸟教程](https://www.runoob.com/xml/xml-tutorial.html)
+
+### XSL / XSLT
+
+* [XSLT 教程 | 菜鸟教程](https://www.runoob.com/xsl/xsl-tutorial.html)
+* [XSL(T) Languages](https://www.w3schools.com/xml/xsl_languages.asp)
+* [XSLT Tryit Editor v1.2](https://www.w3schools.com/xml/tryxslt.asp?xmlfile=cdcatalog&xsltfile=cdcatalog)
+* [XSL Transformations (XSLT)](https://www.w3.org/TR/1999/REC-xslt-19991116)
+* [xml - How to insert html text in XSLT? - Stack Overflow](https://stackoverflow.com/questions/39161929/how-to-insert-html-text-in-xslt)
+  * use `&lt;` to replace `<`, `&gt;` to replace `>`
+
+### YAML
+
+* [学习笔记之YAML - 浩然119 - 博客园](https://www.cnblogs.com/pegasus923/p/8650744.html)
 
 ## DESIGN
 
