@@ -147,6 +147,9 @@ Thank you.
 
 * [XSLT 教程 | 菜鸟教程](https://www.runoob.com/xsl/xsl-tutorial.html)
 * [XSL(T) Languages](https://www.w3schools.com/xml/xsl_languages.asp)
+  * XSLT is a language for transforming XML documents.
+  * XPath is a language for navigating in XML documents.
+  * XQuery is a language for querying XML documents.
 * [XSLT Tryit Editor v1.2](https://www.w3schools.com/xml/tryxslt.asp?xmlfile=cdcatalog&xsltfile=cdcatalog)
 * [XSL Transformations (XSLT)](https://www.w3.org/TR/1999/REC-xslt-19991116)
 * [xml - How to insert html text in XSLT? - Stack Overflow](https://stackoverflow.com/questions/39161929/how-to-insert-html-text-in-xslt)
