@@ -68,6 +68,14 @@
 * [天呐，你竟然还在用 try–catch-finally (qq.com)](https://mp.weixin.qq.com/s/ov86Y04l02P4MOasq36Drg)
 * [try-catch-finally中的4个巨坑，老程序员也搞不定！ (qq.com)](https://mp.weixin.qq.com/s/8tJ8g1JKW_z6ZugQI4gb8Q)
 
+### HTML
+
+* [学习笔记之HTML - 浩然119 - 博客园](https://www.cnblogs.com/pegasus923/p/9887187.html)
+* [HTML 教程 | 菜鸟教程](https://www.runoob.com/html/html-tutorial.html)
+* [Online HTML Editor - 𝗛𝗧𝗠𝗟-𝗢𝗻𝗹𝗶𝗻𝗲.𝗰𝗼𝗺](https://html-online.com/editor/)
+* [Hypertext Markup Language - 2.0 - The HTML Coded Character Set](https://www.w3.org/MarkUp/html-spec/html-spec_13.html)
+  * This list details the code positions and characters of the HTML document character set, specified in section SGML Declaration for HTML. This coded character set is based on [ISO-8859-1].
+
 ### SOAP
 
 * [SOAP Specifications](https://www.w3.org/TR/soap/)
