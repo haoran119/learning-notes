@@ -49,25 +49,6 @@
 * [三种处理异常的套路](https://mp.weixin.qq.com/s/FeRF6KtJo2LmvA6p1H2ikA)
   * https://dzone.com/articles/good-exception-handling
 
-### if else
-
-* [代码中大量的if/else，你有什么优化方案? (qq.com)](https://mp.weixin.qq.com/s/A0oLv_i58yXrHphXVI1JBg)
-  * [代码中大量的if/else，你有什么优化方案? (qq.com)](https://mp.weixin.qq.com/s/lSBWCs-bGA9r9X611XepEA)
-* [优化if-else代码的八种方案 (qq.com)](https://mp.weixin.qq.com/s/mi0KVS-jO0rk96g7wRdhFw)
-* [脑壳疼！代码中那么多“烦人”的if else (qq.com)](https://mp.weixin.qq.com/s/2kGXD4M1788_9zXPRJSueQ)
-* [为什么程序员都不喜欢使用 switch ，而是大量的 if……else if ？ (qq.com)](https://mp.weixin.qq.com/s/wX-4UkAQE0UaDTzVQb_bEA)
-* [CTO：再写if-else (qq.com)](https://mp.weixin.qq.com/s/eR_eymyPKixCS0VFO7U6Uw)
-* [干掉if-else，多点套路，少点弯路！ (qq.com)](https://mp.weixin.qq.com/s/CUpKCqS4KSL44IYPIVsr-w)
-* [刚来的大神彻底干掉了代码中的if else... (qq.com)](https://mp.weixin.qq.com/s/pSqyGcAb8Ca05g9l8SCqkA)
-* [还在用 if else？试试策略模式吧！ (qq.com)](https://mp.weixin.qq.com/s/VGoXu-QAuBL-Y892TFSNng)
-
-### try catch finally
-
-* [干掉 try catch ！ (qq.com)](https://mp.weixin.qq.com/s/0YnOEsPQJGG7G6KTl8iH5Q)
-  * [Java生鲜电商平台-统一异常处理及架构实战 - 巨人大哥 - 博客园 (cnblogs.com)](https://www.cnblogs.com/jurendage/p/11255197.html)
-* [天呐，你竟然还在用 try–catch-finally (qq.com)](https://mp.weixin.qq.com/s/ov86Y04l02P4MOasq36Drg)
-* [try-catch-finally中的4个巨坑，老程序员也搞不定！ (qq.com)](https://mp.weixin.qq.com/s/8tJ8g1JKW_z6ZugQI4gb8Q)
-
 ### HTML
 
 * [学习笔记之HTML - 浩然119 - 博客园](https://www.cnblogs.com/pegasus923/p/9887187.html)
@@ -158,6 +139,27 @@ Thank you.
 ### YAML
 
 * [学习笔记之YAML - 浩然119 - 博客园](https://www.cnblogs.com/pegasus923/p/8650744.html)
+
+### Best Practice
+
+#### if else
+
+* [代码中大量的if/else，你有什么优化方案? (qq.com)](https://mp.weixin.qq.com/s/A0oLv_i58yXrHphXVI1JBg)
+  * [代码中大量的if/else，你有什么优化方案? (qq.com)](https://mp.weixin.qq.com/s/lSBWCs-bGA9r9X611XepEA)
+* [优化if-else代码的八种方案 (qq.com)](https://mp.weixin.qq.com/s/mi0KVS-jO0rk96g7wRdhFw)
+* [脑壳疼！代码中那么多“烦人”的if else (qq.com)](https://mp.weixin.qq.com/s/2kGXD4M1788_9zXPRJSueQ)
+* [为什么程序员都不喜欢使用 switch ，而是大量的 if……else if ？ (qq.com)](https://mp.weixin.qq.com/s/wX-4UkAQE0UaDTzVQb_bEA)
+* [CTO：再写if-else (qq.com)](https://mp.weixin.qq.com/s/eR_eymyPKixCS0VFO7U6Uw)
+* [干掉if-else，多点套路，少点弯路！ (qq.com)](https://mp.weixin.qq.com/s/CUpKCqS4KSL44IYPIVsr-w)
+* [刚来的大神彻底干掉了代码中的if else... (qq.com)](https://mp.weixin.qq.com/s/pSqyGcAb8Ca05g9l8SCqkA)
+* [还在用 if else？试试策略模式吧！ (qq.com)](https://mp.weixin.qq.com/s/VGoXu-QAuBL-Y892TFSNng)
+
+#### try catch finally
+
+* [干掉 try catch ！ (qq.com)](https://mp.weixin.qq.com/s/0YnOEsPQJGG7G6KTl8iH5Q)
+  * [Java生鲜电商平台-统一异常处理及架构实战 - 巨人大哥 - 博客园 (cnblogs.com)](https://www.cnblogs.com/jurendage/p/11255197.html)
+* [天呐，你竟然还在用 try–catch-finally (qq.com)](https://mp.weixin.qq.com/s/ov86Y04l02P4MOasq36Drg)
+* [try-catch-finally中的4个巨坑，老程序员也搞不定！ (qq.com)](https://mp.weixin.qq.com/s/8tJ8g1JKW_z6ZugQI4gb8Q)
 
 ## DESIGN
 
