@@ -15,6 +15,8 @@
 * [漫画：设计模式之 “工厂模式” (qq.com)](https://mp.weixin.qq.com/s/lFhWPx9h3DCZQ62xxLg1_g)
 * [简约不简单的单例模式 (qq.com)](https://mp.weixin.qq.com/s/HmgUhWeXuim2LxZStuHPOw)
 * [一个单例还能写出花来吗？ (qq.com)](https://mp.weixin.qq.com/s/0n4TKGbK2UrKarutOxFd7g)
+* [Design Patterns: Singleton in C++](https://refactoring.guru/design-patterns/singleton/cpp/example#example-1)
+* [Thread-Safe Initialization of a Singleton - ModernesCpp.com](https://www.modernescpp.com/index.php/thread-safe-initialization-of-a-singleton)
 
 ## 结构型模式
 
