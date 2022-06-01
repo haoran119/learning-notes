@@ -507,3 +507,12 @@ Thank you.
  
 * [学习笔记之jq - 浩然119 - 博客园](https://www.cnblogs.com/pegasus923/p/13845186.html)
 
+#### [WinDirStat - Windows Directory Statistics](https://windirstat.net/)
+
+* WinDirStat is a disk usage statistics viewer and cleanup tool for various versions of Microsoft Windows.
+* Note: if you are looking for an alternative for Linux, you are looking for KDirStat (apt-get install kdirstat or apt-get install k4dirstat on Debian-derivatives) or QDirStat and for MacOS X it would be Disk Inventory X or GrandPerspective.
+* Please visit the WinDirStat blog for more up-to-date information about the program.
+* On start up, it reads the whole directory tree once and then presents it in three useful views:
+  * The directory list, which resembles the tree view of the Windows Explorer but is sorted by file/subtree size,
+  * The treemap, which shows the whole contents of the directory tree straight away,
+  * The extension list, which serves as a legend and shows statistics about the file types.
