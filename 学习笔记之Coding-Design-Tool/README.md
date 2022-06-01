@@ -490,6 +490,20 @@ Thank you.
 
 ### MISC
 
+#### [Doxygen](https://www.doxygen.nl/)
+
+* Doxygen is the de facto standard tool for generating documentation from annotated C++ sources, but it also supports other popular programming languages such as C, Objective-C, C#, PHP, Java, Python, IDL (Corba, Microsoft, and UNO/OpenOffice flavors), Fortran, and to some extent D. Doxygen also supports the hardware description language VHDL.
+* Doxygen can help you in three ways:
+  * It can generate an on-line documentation browser (in HTML) and/or an off-line reference manual (in $\mbox{\LaTeX}$) from a set of documented source files. There is also support for generating output in RTF (MS-Word), PostScript, hyperlinked PDF, compressed HTML, and Unix man pages. The documentation is extracted directly from the sources, which makes it much easier to keep the documentation consistent with the source code.
+  * You can configure doxygen to extract the code structure from undocumented source files. This is very useful to quickly find your way in large source distributions. Doxygen can also visualize the relations between the various elements by means of include dependency graphs, inheritance diagrams, and collaboration diagrams, which are all generated automatically.
+  * You can also use doxygen for creating normal documentation (as I did for the doxygen user manual and web-site).
+* Doxygen is developed under Mac OS X and Linux, but is set-up to be highly portable. As a result, it runs on most other Unix flavors as well. Furthermore, executables for Windows are available.
+* [doxygen/doxygen: Official doxygen git repository](https://github.com/doxygen/doxygen)
+* [Doxygen - Wikipedia](https://en.wikipedia.org/wiki/Doxygen)
+  * Doxygen (/ˈdɒksidʒən/ DOK-see-jən)[3] is a documentation generator[4][5][6][7] and static analysis tool for software source trees. When used as a documentation generator, Doxygen extracts information from specially-formatted comments within the code. When used for analysis, Doxygen uses its parse tree to generate diagrams and charts of the code structure. Doxygen can cross reference documentation and code, so that the reader of a document can easily refer to the actual code.
+  * Doxygen is free software, released under the terms of the GNU General Public License version 2 (GPLv2).
+
 #### jq
  
 * [学习笔记之jq - 浩然119 - 博客园](https://www.cnblogs.com/pegasus923/p/13845186.html)
+
