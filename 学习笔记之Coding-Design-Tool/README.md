@@ -512,6 +512,11 @@ Thank you.
  
 * [学习笔记之jq - 浩然119 - 博客园](https://www.cnblogs.com/pegasus923/p/13845186.html)
 
+#### [mRemoteNG](https://mremoteng.org/)
+
+* mRemoteNG is a fork of mRemote: an open source, tabbed, multi-protocol, remote connections manager for Windows. mRemoteNG adds bug fixes and new features to mRemote and allows you to view all of your remote connections in a simple yet powerful tabbed interface.
+* [mRemoteNG/mRemoteNG: mRemoteNG is the next generation of mRemote, open source, tabbed, multi-protocol, remote connections manager.](https://github.com/mRemoteNG/mRemoteNG)
+
 #### [WinDirStat](https://windirstat.net/)
 
 * `Windows Directory Statistics`
