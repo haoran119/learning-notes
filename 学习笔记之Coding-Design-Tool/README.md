@@ -508,8 +508,21 @@ Thank you.
   * Doxygen (/ˈdɒksidʒən/ DOK-see-jən)[3] is a documentation generator[4][5][6][7] and static analysis tool for software source trees. When used as a documentation generator, Doxygen extracts information from specially-formatted comments within the code. When used for analysis, Doxygen uses its parse tree to generate diagrams and charts of the code structure. Doxygen can cross reference documentation and code, so that the reader of a document can easily refer to the actual code.
   * Doxygen is free software, released under the terms of the GNU General Public License version 2 (GPLv2).
 
-#### jq
- 
+#### [jq](https://stedolan.github.io/jq/)
+
+* jq is a lightweight and flexible command-line JSON processor.
+* jq is like sed for JSON data - you can use it to slice and filter and map and transform structured data with the same ease that sed, awk, grep and friends let you play with text.
+* jq is written in portable C, and it has zero runtime dependencies. You can download a single binary, scp it to a far away machine of the same type, and expect it to work.
+* jq can mangle the data format that you have into the one that you want with very little effort, and the program to do so is often shorter and simpler than you'd expect.
+* https://stedolan.github.io/jq/tutorial/
+```sh
+curl 'https://api.github.com/repos/stedolan/jq/commits?per_page=5' | jq '.'
+curl 'https://api.github.com/repos/stedolan/jq/commits?per_page=5' | jq '.[0]'
+jq '.[0] | {message: .commit.message, name: .commit.committer.name}'
+curl 'http://...' | jq '.[] | "curl " + .url + "| jq .message > test.json"'
+cat test.json | jq . > new.json
+```
+* https://stedolan.github.io/jq/manual/ 
 * [学习笔记之jq - 浩然119 - 博客园](https://www.cnblogs.com/pegasus923/p/13845186.html)
 
 #### [mRemoteNG](https://mremoteng.org/)
