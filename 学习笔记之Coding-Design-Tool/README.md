@@ -118,6 +118,11 @@ Thank you.
 > QUIT
 221 2.0.0 server.com closing connection
 ```
+* How to fix messy code in HTML email ?
+  * remove \<Content-Transfer-Encoding>7bit\</Content-Transfer-Encoding>
+  * [Setting the HTTP charset parameter](https://www.w3.org/International/articles/http-charset/index)
+  * [Content-Type: text | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/office/developer/exchange-server-2010/aa563067(v=exchg.140))
+  * [Content-Transfer-Encoding | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/office/developer/exchange-server-2010/aa563317(v=exchg.140))
 
 ### XML
 
