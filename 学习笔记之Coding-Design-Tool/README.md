@@ -137,6 +137,7 @@ Thank you.
   * XPath is a language for navigating in XML documents.
   * XQuery is a language for querying XML documents.
 * [XSLT Tryit Editor v1.2](https://www.w3schools.com/xml/tryxslt.asp?xmlfile=cdcatalog&xsltfile=cdcatalog)
+* [Online XSLT Test Tool](https://xslttest.appspot.com/)
 * [XSL Transformations (XSLT)](https://www.w3.org/TR/1999/REC-xslt-19991116)
 * [xml - How to insert html text in XSLT? - Stack Overflow](https://stackoverflow.com/questions/39161929/how-to-insert-html-text-in-xslt)
   * use `&lt;` to replace `<`, `&gt;` to replace `>`
