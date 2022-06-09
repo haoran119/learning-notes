@@ -4,7 +4,6 @@
 
 * [学习笔记之代码大全2 - 浩然119 - 博客园 (cnblogs.com)](https://www.cnblogs.com/pegasus923/p/5301123.html)
 * [学习笔记之编程珠玑 Programming Pearls - 浩然119 - 博客园 (cnblogs.com)](https://www.cnblogs.com/pegasus923/p/11207378.html)
-* [学习笔记之C++入门到精通（名师教学·手把手教会）【职坐标】_腾讯课堂 - 浩然119 - 博客园 (cnblogs.com)](https://www.cnblogs.com/pegasus923/p/7904482.html)
 * [学习笔记之编译器的工作过程 | 菜鸟教程 - 浩然119 - 博客园 (cnblogs.com)](https://www.cnblogs.com/pegasus923/p/8073355.html)
 * [学习笔记之Lazy evaluation - 浩然119 - 博客园 (cnblogs.com)](https://www.cnblogs.com/pegasus923/p/8757085.html)
 * [学习笔记之三十年软件开发之路 - Things I Learnt The Hard Way (in 30 Years of Software Development) - 浩然119 - 博客园 (cnblogs.com)](https://www.cnblogs.com/pegasus923/p/11300983.html)
