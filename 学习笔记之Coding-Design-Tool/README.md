@@ -536,6 +536,11 @@ cat test.json | jq . > new.json
 * mRemoteNG is a fork of mRemote: an open source, tabbed, multi-protocol, remote connections manager for Windows. mRemoteNG adds bug fixes and new features to mRemote and allows you to view all of your remote connections in a simple yet powerful tabbed interface.
 * [mRemoteNG/mRemoteNG: mRemoteNG is the next generation of mRemote, open source, tabbed, multi-protocol, remote connections manager.](https://github.com/mRemoteNG/mRemoteNG)
 
+#### [MobaXterm](https://mobaxterm.mobatek.net/)
+
+* MobaXterm free Xserver and tabbed SSH client for Windows
+* Enhanced terminal for Windows with X11 server, tabbed SSH client, network tools and much more
+
 #### [WinDirStat](https://windirstat.net/)
 
 * `Windows Directory Statistics`
