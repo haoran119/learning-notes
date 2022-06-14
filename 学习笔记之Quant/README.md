@@ -4,6 +4,15 @@
 * [Beginner's Guide to Quantitative Trading | QuantStart](https://www.quantstart.com/articles/Beginners-Guide-to-Quantitative-Trading/)
 * [Self-Study Plan for Becoming a Quantitative Developer | QuantStart](https://www.quantstart.com/articles/Self-Study-Plan-for-Becoming-a-Quantitative-Developer/)
 * [A Simple Guide to Become a Quantitative Developer](https://blog.quantinsti.com/quantitative-developer/) 
+* [Stock market simulator - Wikipedia](https://en.wikipedia.org/wiki/Stock_market_simulator)
+  * A stock market simulator is computer software that reproduces behavior and features of a stock market, so that a user may practice trading stocks without financial risk. `Paper trading`, sometimes also called "virtual stock trading", is a simulated trading process in which would-be investors   can practice investing without committing money.[1]
+* [Paper Trade Definition](https://www.investopedia.com/terms/p/papertrade.asp)
+  * A paper trade is a simulated trade that allows an investor to practice buying and selling without risking real money. The term dates back to a time when (before the proliferation of online trading platforms) aspiring traders would practice on paper before risking money in live markets. While learning, a paper trader records all trades by hand to keep track of hypothetical trading positions, portfolios, and profits or losses. Today, most practice trading involves the use of an electronic stock market simulator, which looks and feels like an actual trading platform.
+  * KEY TAKEAWAYS
+    * Paper trading is simulated trading that allows investors to practice buying and selling securities.
+    * Paper trading can test a new investment strategy before employing it in a live account.
+    * Many online brokers offer clients paper trade accounts.
+    * Paper trades teach novices how to navigate platforms and make trades, but may not represent the true emotions that occur during real market conditions.
 
 ## [HFT](https://en.wikipedia.org/wiki/High-frequency_trading)
 
