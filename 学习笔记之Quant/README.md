@@ -13,6 +13,14 @@
     * Paper trading can test a new investment strategy before employing it in a live account.
     * Many online brokers offer clients paper trade accounts.
     * Paper trades teach novices how to navigate platforms and make trades, but may not represent the true emotions that occur during real market conditions.
+* [Backtesting - Wikipedia](https://en.wikipedia.org/wiki/Backtesting)
+  * Backtesting is a term used in modeling to refer to testing a predictive model on historical data. Backtesting is a type of retrodiction, and a special type of cross-validation applied to previous time period(s).
+* [Backtesting Definition](https://www.investopedia.com/terms/b/backtesting.asp)
+  * Backtesting is the general method for seeing how well a strategy or model would have done ex-post. Backtesting assesses the viability of a trading strategy by discovering how it would play out using historical data. If backtesting works, traders and analysts may have the confidence to employ it going forward.
+  * KEY TAKEAWAYS
+    * Backtesting assesses the viability of a trading strategy or pricing model by discovering how it would have played out retrospectively using historical data.
+    * The underlying theory is that any strategy that worked well in the past is likely to work well in the future, and conversely, any strategy that performed poorly in the past is likely to perform poorly in the future.
+    * When testing an idea on historical data, it is beneficial to reserve a time period of historical data for testing purposes. If it is successful, testing it on alternate time periods or out-of-sample data can help confirm its potential viability.
 
 ## [HFT](https://en.wikipedia.org/wiki/High-frequency_trading)
 
