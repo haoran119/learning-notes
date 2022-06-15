@@ -17,9 +17,6 @@
   * If 语句
     * 用选项替换多条件判断
     * 提前退出机制
-* [在Github上，怎么写出教科书级别的readme](https://mp.weixin.qq.com/s/xF2hznI0nPHTvwh5_bzRAQ)
-  * https://github.com/RichardLitt/standard-readme
-  * [Basic Syntax | Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 * [我是如何把3000行代码重构成15行](https://mp.weixin.qq.com/s/-BnN59jcg8ZSGL7hhrZjGA)
   * https://www.cnblogs.com/marvin/p/4133973.html
 * [一文搞懂参数传递原理 (qq.com)](https://mp.weixin.qq.com/s/0SDPM9Ek3H4u6OtAr6Qx3g)
@@ -358,6 +355,9 @@ Thank you.
 
 #### [GitHub](https://github.com/)
 
+* [在Github上，怎么写出教科书级别的readme](https://mp.weixin.qq.com/s/xF2hznI0nPHTvwh5_bzRAQ)
+  * https://github.com/RichardLitt/standard-readme
+  * [Basic Syntax | Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 * [GitHub Documentation](https://docs.github.com/en)
   * CI/CD and DevOps
     * [GitHub Actions](https://docs.github.com/en/actions)
@@ -372,6 +372,10 @@ Thank you.
 * From planning to production, bring teams together in one application. Ship secure code faster, deploy to any cloud, and drive business results.
 * [GitLab CI/CD Examples | GitLab](https://docs.gitlab.com/ee/ci/examples/)
 * [GitLab vs GitHub – A 2022 Comparison - Incredibuild](https://www.incredibuild.com/blog/gitlab-vs-github-comparison#:~:text=GitLab's%20platform%20concept%20includes%20options,and%20community%20projects%20to%20support.)
+* [GitHub还是GitLab？谈谈两者的区别](https://mp.weixin.qq.com/s/5AbrSQ_fmIX4xS_laEw0Og)
+  * 您真的需要用到分布式版本控制系统吗？
+  * GitHub VS. GitLab
+    * 若是更看重代码的安全性，GitLab无疑是更好的选择；但是若是开源项目，GitHub仍然是首选。
 * [DevOps with GitLab CI Course - Build Pipelines and Deploy to AWS - YouTube](https://www.youtube.com/watch?v=PGyhBwLyK2U)
 
 #### [Jenkins](https://www.jenkins.io/)
