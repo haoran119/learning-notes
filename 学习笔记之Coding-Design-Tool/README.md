@@ -122,7 +122,7 @@ Thank you.
 * How to send email to multiple email address ?
   * multiple "RCPT TO"
   * [c# - How to add multiple e-mail recipients in a mail , but send the mail to only a selected few addresses? - Stack Overflow](https://stackoverflow.com/questions/44108487/how-to-add-multiple-e-mail-recipients-in-a-mail-but-send-the-mail-to-only-a-se)
-  * [Simple Mail Transfer Protocol - Wikipedia](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol#SMTP_vs_mail_retrieval)  * 
+  * [Simple Mail Transfer Protocol - Wikipedia](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol#SMTP_vs_mail_retrieval) 
 
 ### XML
 
