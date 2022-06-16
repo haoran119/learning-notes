@@ -136,11 +136,48 @@ Thank you.
   * XSLT is a language for transforming XML documents.
   * XPath is a language for navigating in XML documents.
   * XQuery is a language for querying XML documents.
+  * [xsl:copy](https://www.w3schools.com/xml/ref_xsl_el_copy.asp)
+  * [XSLT <xsl:for-each> Element](https://www.w3schools.com/xml/xsl_for_each.asp)
 * [XSLT Tryit Editor v1.2](https://www.w3schools.com/xml/tryxslt.asp?xmlfile=cdcatalog&xsltfile=cdcatalog)
 * [Online XSLT Test Tool](https://xslttest.appspot.com/)
 * [XSL Transformations (XSLT)](https://www.w3.org/TR/1999/REC-xslt-19991116)
 * [xml - How to insert html text in XSLT? - Stack Overflow](https://stackoverflow.com/questions/39161929/how-to-insert-html-text-in-xslt)
   * use `&lt;` to replace `<`, `&gt;` to replace `>`
+* How to split string by comma ?
+  * [string - Does xslt have split() function? - Stack Overflow](https://stackoverflow.com/questions/3336424/does-xslt-have-split-function)
+  * [XSLT split a string into items](https://gist.github.com/netsi1964/2648824)
+  * [Split comma separated string into multiple values using xslt - Stack Overflow](https://stackoverflow.com/questions/48319822/split-comma-separated-string-into-multiple-values-using-xslt)
+  * [Comma separated string parsing XSLT to for-each node - Stack Overflow](https://stackoverflow.com/questions/8500652/comma-separated-string-parsing-xslt-to-for-each-node)
+  * [substring-before Function | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms256071(v=vs.100))
+  * [substring-after Function | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms256455(v=vs.100))
+```xslt
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:template match="@*|node()">
+        <xsl:copy>
+            <xsl:apply-templates select="@*|node()"/>
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="contact/text()" name="tokenize">
+        <xsl:param name="text" select="."/>
+        <xsl:param name="delimiter" select="','"/>
+        <xsl:choose>
+            <xsl:when test="not(contains($text, $delimiter))">
+                <item>
+                    <xsl:value-of select="normalize-space($text)"/>
+                </item>
+            </xsl:when>
+            <xsl:otherwise>
+                <item>
+                    <xsl:value-of select="normalize-space(substring-before($text, $delimiter))"/>
+                </item>
+                <xsl:call-template name="tokenize">
+                    <xsl:with-param name="text" select="substring-after($text, $delimiter)"/>
+                </xsl:call-template>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+</xsl:stylesheet>
+```
 
 ### YAML
 
