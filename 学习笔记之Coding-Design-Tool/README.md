@@ -119,6 +119,10 @@ Thank you.
   * [Setting the HTTP charset parameter](https://www.w3.org/International/articles/http-charset/index)
   * [Content-Type: text | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/office/developer/exchange-server-2010/aa563067(v=exchg.140))
   * [Content-Transfer-Encoding | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/office/developer/exchange-server-2010/aa563317(v=exchg.140))
+* How to send email to multiple email address ?
+  * multiple "RCPT TO"
+  * [c# - How to add multiple e-mail recipients in a mail , but send the mail to only a selected few addresses? - Stack Overflow](https://stackoverflow.com/questions/44108487/how-to-add-multiple-e-mail-recipients-in-a-mail-but-send-the-mail-to-only-a-se)
+  * [Simple Mail Transfer Protocol - Wikipedia](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol#SMTP_vs_mail_retrieval)  * 
 
 ### XML
 
