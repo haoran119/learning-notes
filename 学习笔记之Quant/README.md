@@ -39,3 +39,7 @@
   * Non blocking as much as possible
   * Async as much as possible
   * Parallelize as much as possible
+
+## MFT
+
+* [What is a medium to low frequency trading strategy and why is it less hyped? - Quantitative Finance Stack Exchange](https://quant.stackexchange.com/questions/2218/what-is-a-medium-to-low-frequency-trading-strategy-and-why-is-it-less-hyped)
