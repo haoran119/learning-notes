@@ -526,6 +526,8 @@ Thank you.
 ### Git
 
 * [learning-notes/学习笔记之Git at main · haoran119/learning-notes](https://github.com/haoran119/learning-notes/tree/main/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8BGit)
+* [Sourcetree | Free Git GUI for Mac and Windows](https://www.sourcetreeapp.com/)
+  * Sourcetree simplifies how you interact with your Git repositories so you can focus on coding. Visualize and manage your repositories through Sourcetree's simple Git GUI.
 
 ### Microsoft Visual Studio
 
