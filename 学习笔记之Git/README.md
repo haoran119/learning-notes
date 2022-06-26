@@ -154,6 +154,12 @@
   ```sh
   $ git bundle create mybundle v1.0.0..master
   ```
+* [git config | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config)
+  * In this document, we'll take an in-depth look at the git config command. We briefly discussed git config usage on our Setting up a Repository page. The git config command is a convenience function that is used to set Git configuration values on a global or local project level. These configuration levels correspond to .gitconfig text files. Executing git config will modify a configuration text file. We'll be covering common configuration settings like email, username, and editor. We'll discuss Git aliases, which allow you to create shortcuts for frequently used Git operations. Becoming familiar with git config and the various Git configuration settings will help you create a powerful, customized Git workflow.
+```sh
+git config --global user.name "name"
+git config --global user.email "name@test.com"
+```
 * [Git Diff | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/saving-changes/git-diff)
   * Comparing files: git diff file
   ```sh
