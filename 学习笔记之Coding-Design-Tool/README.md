@@ -345,7 +345,6 @@ Thank you.
 ## TOOL
 
 * [程序员常用资源工具集合](https://mp.weixin.qq.com/s/gY9vL4Z5fwTpNJv_NswqNQ)
-* [安利 6 款电脑黑科技软件](https://mp.weixin.qq.com/s/PlJpmdjkCaHLCTBx1Fj1Kg)
 * [代码对比工具，我就用这6个](https://mp.weixin.qq.com/s/ZenTnFRodL2km0xX2OtY5g)
   * https://blog.csdn.net/yueliang2100/article/details/82190257
 * [总结篇—阿里程序员常用的 15 款开发者工具](https://mp.weixin.qq.com/s/383cb4Z3c1bwRalX0YMIEw)
