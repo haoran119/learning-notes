@@ -637,6 +637,15 @@ $ ssh my_id@server.org
     * If you use an SSH key for logging in, you can add a key after you have saved the tunnel.
     * Now, you could access server.org:1234 on your local laptop at localhost:1234
 
+#### [PuTTY](https://www.putty.org/)
+
+* Download PuTTY - a free SSH and telnet client for Windows
+* PuTTY is an SSH and telnet client, developed originally by Simon Tatham for the Windows platform. PuTTY is open source software that is available with source code and is developed and supported by a group of volunteers.
+* [PuTTY - Wikipedia](https://en.wikipedia.org/wiki/PuTTY)
+  * PuTTY (/ˈpʌti/)[4] is a free and open-source terminal emulator, serial console and network file transfer application. It supports several network protocols, including SCP, SSH, Telnet, rlogin, and raw socket connection. It can also connect to a serial port. The name "PuTTY" has no official meaning.[5]
+  * PuTTY was originally written for Microsoft Windows, but it has been ported to various other operating systems. Official ports are available for some Unix-like platforms, with work-in-progress ports to Classic Mac OS and macOS, and unofficial ports have been contributed to platforms such as Symbian,[6][7] Windows Mobile and Windows Phone.
+  * PuTTY was written and is maintained primarily by Simon Tatham, a British programmer.
+
 #### [TeamViewer](https://www.teamviewer.com/en-us/)
 
 * TeamViewer: The Remote Desktop Software
