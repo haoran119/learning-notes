@@ -587,6 +587,55 @@ cat test.json | jq . > new.json
 
 * MobaXterm free Xserver and tabbed SSH client for Windows
 * Enhanced terminal for Windows with X11 server, tabbed SSH client, network tools and much more
+* [如何使用MobaXterm-百度经验](https://jingyan.baidu.com/article/86f4a73e98c37137d65269ce.html)
+* How to ssh to server via MobaXterm ?
+```sh
+$ ssh-keygen
+$ ssh-copy-id my_id@server.org
+...
+Are you sure you want to continue connecting (yes/no)? yes
+...
+$ ssh my_id@server.org 
+# MobaXterm - Edit Session - Specify username - my_id
+```
+* How to set up a tunnel on windows to ssh to linux server if your local application can't access the remote server ?
+  * Change the config file C:\Users\USERNAME\.ssh\config to add proxy
+  ```sh
+  # host proxy_wld
+  Hostname proxy.**
+  TCPKeepAlive yes
+  User h.tang
+  Identityfile ~/.ssh/id_rsa
+
+  # host test_wld
+  Hostname test.**
+  TCPKeepAlive yes
+  ServerAliveInterval 120
+  User h.tang
+  Identityfile ~/.ssh/id_rsa
+  ProxyCommand C:/WINDOWS/System32/OpenSSH/ssh.exe proxy_wld nc %h %p
+
+  # host proxy_example
+  Hostname proxy.**
+  TCPKeepAlive yes
+  ServerAliveInterval 120
+  User h.tang
+  Identityfile ~/.ssh/id_rsa
+  LocalForward 1234 remote.**:1234
+  ```
+  * Use MobaXterm to set up ssh tunnel
+    * [ssh - How do I set up tunneling in MobaXterm similar to my current PuTTY setup? - Super User](https://superuser.com/questions/1492146/how-do-i-set-up-tunneling-in-mobaxterm-similar-to-my-current-putty-setup)
+    * MobaXterm - Tunneling - New SSH tunnel - Local port forwarding
+    ```sh
+    Forwarded port : e.g. 1234 so that you can access the website on localhost:1234
+    SSH server - the IP address of your remote server. E.g. server.org (may be different than remote server)
+    SSH login - your username on the remote server. E.g. my_id
+    SSH port - the port on the SSH server that you use (usually 22).
+    Remote server - e.g. server.org
+    Remote port - e.g. 1234
+    ```
+    * If you use an SSH key for logging in, you can add a key after you have saved the tunnel.
+    * Now, you could access server.org:1234 on your local laptop at localhost:1234
 
 #### [TeamViewer](https://www.teamviewer.com/en-us/)
 
