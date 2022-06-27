@@ -649,6 +649,9 @@ $ ssh my_id@server.org
       * the Telnet, rlogin, and SSH client itself, which can also connect to a serial port
     * Pageant
       * an SSH authentication agent for PuTTY, PSCP and Plink
+* How to generate ssh private key for linux ?
+  * [Generate SSH Keys on Linux](https://linuxhint.com/generate-ssh-keys-on-linux/)
+  * [How to convert ssh private key id_rsa to Putty .ppk - Daniel Han's Technical Notes](https://sites.google.com/site/xiangyangsite/home/technical-tips/linux-unix/common-tips/how-to-convert-ssh-id_rsa-keys-to-putty-ppk)
 
 #### [TeamViewer](https://www.teamviewer.com/en-us/)
 
