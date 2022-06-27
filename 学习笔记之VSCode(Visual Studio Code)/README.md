@@ -60,6 +60,8 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
 
 * [All Autocomplete](https://marketplace.visualstudio.com/items?itemName=Atishay-Jain.All-Autocomplete)
   * Create autocomplete items from open files in VSCode.
+* [Bookmarks - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
+  * Mark lines and jump to them
 * [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
   * A customizable extension for colorizing matching brackets
 * [Browser Preview](https://marketplace.visualstudio.com/items?itemName=auchenberg.vscode-browser-preview)
