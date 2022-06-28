@@ -392,7 +392,8 @@ Thank you.
   * [Build, test, and deploy with Pipelines | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/build-test-and-deploy-with-pipelines/)
     * [Get started with Bitbucket Pipelines | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/get-started-with-bitbucket-pipelines/)
     * [Use Pipelines in different software languages | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/use-pipelines-in-different-software-languages/#C-----Make)
-* [Set up an SSH key | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/)
+* [Configure SSH and two-step verification | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/configure-ssh-and-two-step-verification/)
+  * [Set up an SSH key | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/)
 
 #### [GitHub](https://github.com/)
 
