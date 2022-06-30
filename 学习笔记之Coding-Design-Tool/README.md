@@ -670,3 +670,8 @@ $ ssh my_id@server.org
   * The directory list, which resembles the tree view of the Windows Explorer but is sorted by file/subtree size,
   * The treemap, which shows the whole contents of the directory tree straight away,
   * The extension list, which serves as a legend and shows statistics about the file types.
+
+#### [WinMerge](https://winmerge.org/?lang=en)
+
+* WinMerge - You will see the difference…
+* WinMerge is an Open Source differencing and merging tool for Windows. WinMerge can compare both folders and files, presenting differences in a visual text format that is easy to understand and handle.
