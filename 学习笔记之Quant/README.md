@@ -39,6 +39,7 @@
   * Non blocking as much as possible
   * Async as much as possible
   * Parallelize as much as possible
+* [Developing High-Frequency Trading Systems - Google Books](https://www.google.com.au/books/edition/_/HBp2EAAAQBAJ?hl=en&gbpv=0)
 
 ## MFT
 
