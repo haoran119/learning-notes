@@ -392,8 +392,14 @@ Thank you.
   * [Build, test, and deploy with Pipelines | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/build-test-and-deploy-with-pipelines/)
     * [Get started with Bitbucket Pipelines | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/get-started-with-bitbucket-pipelines/)
     * [Use Pipelines in different software languages | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/use-pipelines-in-different-software-languages/#C-----Make)
-* [Configure SSH and two-step verification | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/configure-ssh-and-two-step-verification/)
-  * [Set up an SSH key | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/)
+* How to add ssh key for git operation on Windows?
+  * Go to SSH Keys for Account in Bitbucket
+    * View Profile -> Manage account -> SSH -> Add key w/ the above generated key
+  * Open PuTTY to register the key, and save it as id_rsa.ppk (private key file).
+  * Open Pageant and add key file id_rsa.ppk whenever check-in.
+  * id_rsa.pub is public key file.
+  * [Configure SSH and two-step verification | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/configure-ssh-and-two-step-verification/)
+    * [Set up an SSH key | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/)
 
 #### [GitHub](https://github.com/)
 
