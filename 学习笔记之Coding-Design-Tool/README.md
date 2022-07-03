@@ -655,6 +655,75 @@ $ ssh my_id@server.org
   * [Generate SSH Keys on Linux](https://linuxhint.com/generate-ssh-keys-on-linux/)
   * [How to convert ssh private key id_rsa to Putty .ppk - Daniel Han's Technical Notes](https://sites.google.com/site/xiangyangsite/home/technical-tips/linux-unix/common-tips/how-to-convert-ssh-id_rsa-keys-to-putty-ppk)
 
+#### [Slurm](https://slurm.schedmd.com/overview.html)
+
+* Slurm Workload Manager
+  * Slurm is an open source, fault-tolerant, and highly scalable cluster management and job scheduling system for large and small Linux clusters. Slurm requires no kernel modifications for its operation and is relatively self-contained. As a cluster workload manager, Slurm has three key functions. First, it allocates exclusive and/or non-exclusive access to resources (compute nodes) to users for some duration of time so they can perform work. Second, it provides a framework for starting, executing, and monitoring work (normally a parallel job) on the set of allocated nodes. Finally, it arbitrates contention for resources by managing a queue of pending work. Optional plugins can be used for accounting, advanced reservation, gang scheduling (time sharing for parallel jobs), backfill scheduling, topology optimized resource selection, resource limits by user or bank account, and sophisticated multifactor job prioritization algorithms.
+* [Slurm Workload Manager - Quick Start User Guide](https://slurm.schedmd.com/quickstart.html)
+* [Slurm Workload Manager - Wikipedia](https://en.wikipedia.org/wiki/Slurm_Workload_Manager)
+  * The Slurm Workload Manager (formerly known as Simple Linux Utility for Resource Management or SLURM), or Slurm, is a free and open-sourcejob scheduler for Linux and Unix-likekernels, used by many of the world's supercomputers and computer clusters.
+  * It provides three key functions:
+  * allocating exclusive and/or non-exclusive access to resources (computer nodes) to users for some duration of time so they can perform work,
+providing a framework for starting, executing, and monitoring work (typically a parallel job such as MPI) on a set of allocated nodes, and
+arbitrating contention for resources by managing a queue of pending jobs.
+  * Slurm is the workload manager on about 60% of the TOP500 supercomputers.[1]
+  * Slurm uses a best fit algorithm based on Hilbert curve scheduling or fat tree network topology in order to optimize locality of task assignments on parallel computers.[2]
+* [Slurm Workload Manager - sacct](https://slurm.schedmd.com/sacct.html)
+* [sbatch - Submit a batch script to Slurm](https://slurm.schedmd.com/sbatch.html)
+```sh
+$ sbatch mytestsbatch.sh
+# Actually the second srun will start only when the previous srun is completed, so no sleep is required.
+
+# =============================================================================
+# mytestscript.sh
+# =============================================================================
+#!/bin/sh
+date &
+
+# =============================================================================
+# mytestsbatch.sh
+# =============================================================================
+#!/bin/sh
+#SBATCH -N 2
+#SBATCH -n 10
+
+srun -n10 -o testscript1.log mytestscript.sh
+sleep 10; srun -n10 -o testscript2.log mytestscript.sh
+wait
+```
+* [scancel - Used to signal jobs or job steps that are under the control of Slurm](https://slurm.schedmd.com/scancel.html)
+```sh
+$ scancel 123
+```
+* [scontrol - view or modify Slurm configuration and state](https://slurm.schedmd.com/scontrol.html)
+```sh
+$ scontrol show job 123
+```
+* [squeue - view information about jobs located in the Slurm scheduling queue](https://slurm.schedmd.com/squeue.html)
+```sh
+$ squeue
+$ squeue -u username
+```
+* [srun - Run parallel jobs](https://slurm.schedmd.com/srun.html)
+```sh
+$ cat testscript.sh
+#!/bin/sh
+python mytest.py --arg test
+$ chmod +x testscript.sh
+$ srun -N5 -n100 testscript.sh
+Run it on 5 nodes with 100 tasks
+$ srun -n5 --nodelist=host1, host2 -o testscript.log testscript.sh
+$ srun -n10 -o testscript.log --begin=now+2hour testscript.sh
+$ srun --begin=now+10 date &
+```
+* [Convenient SLURM Commands | FAS Research Computing](https://www.rc.fas.harvard.edu/resources/documentation/convenient-slurm-commands/)
+* How to fix srun: error: --begin is ignored because nodes are already allocated.
+  * use sleep in lieu of --begin
+  * [bash - Can you help me run tasks in parallel in Slurm? - Stack Overflow](https://stackoverflow.com/questions/56727579/can-you-help-me-run-tasks-in-parallel-in-slurm/56769363)
+* How to fix srun: error: Unable to create job step: More processors requested than permitted
+  * In the submission script, you request resources with the #SBATCH directives, and you cannot use more resource than than in the subsequent calls to srun.
+  * [slurm - Questions on alternative ways to run 4 parallel jobs - Stack Overflow](https://stackoverflow.com/questions/46493726/questions-on-alternative-ways-to-run-4-parallel-jobs)
+
 #### [TeamViewer](https://www.teamviewer.com/en-us/)
 
 * TeamViewer: The Remote Desktop Software
