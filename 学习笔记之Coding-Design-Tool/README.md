@@ -723,6 +723,23 @@ $ srun --begin=now+10 date &
 * How to fix srun: error: Unable to create job step: More processors requested than permitted
   * In the submission script, you request resources with the #SBATCH directives, and you cannot use more resource than than in the subsequent calls to srun.
   * [slurm - Questions on alternative ways to run 4 parallel jobs - Stack Overflow](https://stackoverflow.com/questions/46493726/questions-on-alternative-ways-to-run-4-parallel-jobs)
+* How to see the Slurm Workload which affected the DB query performance ?
+```sh
+$ sinfo
+
+PARTITION AVAIL  TIMELIMIT� NODES  STATE NODELIST
+generic*     up  infinite     12< style='mso-spacerun:yes'>  alloc cc[4-5,7,10-18]
+ 
+$ squeue
+  JOBID PARTITION     NAME   USER  ST       TIME� NODES NODELIST(REASON)
+ 889218   generic depconso   kaymes span style='mso-spacerun:yes'>Â  PDÂ  Â Â� 0:00      1 (Depend )
+ 889318   generic depconso   kaymes span style='mso-spacerun:yes'>Â  PDÂ  Â Â� 0:00      1 (Depend )
+ 889418   generic depconso   kaymes span style='mso-spacerun:yes'>Â  PDÂ  Â Â� 0:00      1 (Depend )
+ 889518   generic depconso   kaymes span style='mso-spacerun:yes'>Â  PDÂ  Â Â� 0:00      1 (Depend )
+ 889435   generic proto_20   kaymes span style='mso-spacerun:yes'>Â  PDÂ  Â Â� 0:00      1 (Resour
+ 889436   generic proto_20   kaymes span style='mso-spacerun:yes'>Â  PDÂ  Â Â� 0:00      1 (Priori /p>
+ 889437   generic proto_20   kaymes span style='mso-spacerun:yes'>Â  PDÂ  Â Â� 0:00      1 (Priori /p>
+```
 
 #### [TeamViewer](https://www.teamviewer.com/en-us/)
 
