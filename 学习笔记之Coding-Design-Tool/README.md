@@ -660,6 +660,24 @@ $ ssh my_id@server.org
 * TeamViewer: The Remote Desktop Software
 * Securely connect to any device from any device. No matter where you are.
 
+#### [tmux](https://github.com/tmux/tmux/wiki)
+
+* tmux is a terminal multiplexer. It lets you switch easily between several programs in one terminal, detach them (they keep running in the background) and reattach them to a different terminal. And do a lot more. See the tmux(1) manual page and the README.
+* [tmux(1) - OpenBSD manual pages](http://man.openbsd.org/OpenBSD-current/man1/tmux.1#session_attached)
+* [tmux - Wikipedia](https://en.wikipedia.org/wiki/Tmux)
+  * tmux is a terminal multiplexer, allowing a user to access multiple separate terminal sessions inside a single terminal window or remote terminal session. It is useful for dealing with multiple programs from a command-line interface, and for separating programs from the Unix shell that started the program.[2] It provides much of the same functionality as GNU Screen, but it is distributed under a BSD-like license.
+* [tmux_百度百科](https://baike.baidu.com/item/tmux/10234491)
+  * tmux是指通过一个终端登录远程主机并运行后，在其中可以开启多个控制台的终端复用软件。
+* [Tmux Cheat Sheet & Quick Reference](https://tmuxcheatsheet.com/)
+* How to use tmux to start a background job ?
+```sh
+$ tmux new -s mysession
+$ tmux ls
+mysession: 1 windows (created Thu Aug 23 14:20:07 2018) [207x66]
+$ tmux attach -t mysession
+Note : Ctrl-d b to exit session
+```
+
 #### [WinDirStat](https://windirstat.net/)
 
 * `Windows Directory Statistics`
