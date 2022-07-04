@@ -174,10 +174,12 @@ git config --global user.email "name@test.com"
 ```sh
 $ git rm Documentation/\*.txt
 # Removes all *.txt files from the index that are under the Documentation directory and any of its subdirectories.
-# Note that the asterisk * is quoted from the shell in this example; this lets Git, and not the shell, expand the pathnames of files and subdirectories under the Documentation/ directory.
+# Note that the asterisk * is quoted from the shell in this example; this lets Git, and not the shell, 
+# expand the pathnames of files and subdirectories under the Documentation/ directory.
 
 $ git rm -f git-*.sh
-# Because this example lets the shell expand the asterisk (i.e. you are listing the files explicitly), it does not remove subdir/git-foo.sh.
+# Because this example lets the shell expand the asterisk (i.e. you are listing the files explicitly), 
+# it does not remove subdir/git-foo.sh.
 ```
 * [git stash - Saving Changes | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)
   * git stash temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on. Stashing is handy if you need to quickly switch context and work on something else, but you're mid-way through a code change and aren't quite ready to commit.
