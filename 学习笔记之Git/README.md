@@ -74,46 +74,8 @@
   * https://juejin.im/post/5d0b3f8c6fb9a07ec07fc5d0
 * [Git 分支设计规范](https://mp.weixin.qq.com/s/6d6r-Z86mxvuUfFtT2cetg)
 
-## BEST PRACTICE
+## COMMANDS
 
-* [Git 12 岁了，为你送上 12 个 Git 的使用技巧！ - Linux学习](https://mp.weixin.qq.com/s/JZGmwYGp9ZGjYJfTu7SVJQ)
-  * https://www.oschina.net/translate/12-git-tips-gits-12th-birthday
-  1. 你的 ~/.gitconfig 文件
-  2. 你的仓库的.gitconfig文件
-  3. 别名
-  4. shell命令中的别名
-  5. 可视化提交图
-  6. 更优雅的强制推送(force-push)
-  7. git add -N
-  8. git add -p
-  9. git checkout -p
-  10. Rebase with command execution
-  11. 基于时间修改的指南
-  12. 全知的 reflog
-* [10种Git技巧，让你省时省力又省心！](https://mp.weixin.qq.com/s?__biz=MzIxODM4MjA5MA==&mid=2247490747&idx=1&sn=659415dda67813229d9e22ea6f3feb3a&chksm=97ea36dea09dbfc8403ac08354fc2e424d129535514b3d5e5437cf09066b32967ef0221f43bb&mpshare=1&scene=24&srcid=&sharer_sharetime=1567921736480&sharer_shareid=5ed4a849fa42d9599a974fa8eb45e8fa&key=5a37b8e9f2933463edafcb746a6bb5f5b98d6bcf34bfab0e92617ea276b27583fd9174edd408a53d07c8d1153ad57172c3953e572d1828a5f393ba9ef49571900ad79539ef29f6bbbe1a03beeb200e71&ascene=14&uin=MTMzMzc3MjY4MQ%3D%3D&devicetype=Windows+10&version=62060833&lang=en&pass_ticket=tT3maEfznKd3xtVT4L8%2Bl%2B2KKdhrJZ3ERaWEoIpqIMB2I2ssKo%2BTfx0v80L7rMTL)
-* [你可能不太会用的10个Git命令 - 机器之心](https://mp.weixin.qq.com/s/2K8coqrcCajUtzx67jlZYg)
-  * https://towardsdatascience.com/learn-enough-git-to-be-useful-281561eef959
-* [20 个最常用的 Git 命令用法说明及示例](https://mp.weixin.qq.com/s/acP4yklWYf5TwOrLB41JYg)
-  * https://dzone.com/articles/top-20-git-commands-with-examples
-* [工作流一目了然，动图展示 10 大 Git 命令](https://mp.weixin.qq.com/s/xsQ_YKgPFpqxV8ju-K1BsQ)
-  * https://dev.to/lydiahallie/cs-visualized-useful-git-commands-37p1
-* [常用的Git命令清单](https://mp.weixin.qq.com/s/r68M3qQ3Ed1J5ge1kLxrYQ)
-  * https://blog.csdn.net/dqy19901103/article/details/107380601
-* [团队开发中的 Git 实践](https://mp.weixin.qq.com/s/Jo8Z7EqNUiQD9VSOKXQUKQ)
-  * https://ourai.ws/posts/working-with-git-in-team/
-* [这有一份 Git 日常使用清单](https://mp.weixin.qq.com/s/DtHfpMy5O6pGzP40m4HJ3Q)
-  * https://juejin.im/post/5d5b4c6951882569eb570958
-* [Git 提交错了不用慌，这三招帮你修改记录](https://mp.weixin.qq.com/s/xtol-m1QDJPlJE74cBUAeQ)
-  * 修改最后一次提交
-  * 修改多个信息
-  * 顺序变更、合并、拆分
-  * 最后的最后，大家需要注意，虽然这些手段在修改记录的时候非常好用。但是如果这些 commit 已经被提交到了远程，我们是不可以直接 git push 同步的。因为 git 会校验我们提交的 hash 值，发现对不上之后会禁止我们的提交。所以如果想要提交到远程的话，只能使用 git push -f 强制覆盖。但是这是一个非常非常危险的操作，如果你 git push -f 了，没有人会知道你到底修改了什么，只建议在自己独有的分支上如此操作，一定一定要谨慎使用。
-* [通过 .git 目录深入理解 Git！](https://mp.weixin.qq.com/s/q6tI0qctvciJhNz_5KLx-w)
-  * https://www.daolf.com/posts/git-series-part-1/
-* Merging vs Rebasing
-  * [Merging vs. Rebasing | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
-  * [Learn Git: Merging vs Rebasing](https://blog.axosoft.com/learn-git-merging-rebasing/)
-    * In this quick Git tutorial video, we’ll answer the question, “What’s the difference between merging and rebasing in Git?”
 * [git-blame - Show what revision and author last modified each line of a file](https://git-scm.com/docs/git-blame)
 * [git-branch - List, create, or delete branches](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt--d)
   * [How do I delete a Git branch locally and remotely? - Stack Overflow](https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely#targetText=Simply%20do%20git%20push%20origin,local%20branch%20ONLY!...)
@@ -225,6 +187,47 @@ $ git rm -f git-*.sh
   $ git pull
   $ git stash pop
   ```
+
+## BEST PRACTICE
+
+* [Git 12 岁了，为你送上 12 个 Git 的使用技巧！ - Linux学习](https://mp.weixin.qq.com/s/JZGmwYGp9ZGjYJfTu7SVJQ)
+  * https://www.oschina.net/translate/12-git-tips-gits-12th-birthday
+  1. 你的 ~/.gitconfig 文件
+  2. 你的仓库的.gitconfig文件
+  3. 别名
+  4. shell命令中的别名
+  5. 可视化提交图
+  6. 更优雅的强制推送(force-push)
+  7. git add -N
+  8. git add -p
+  9. git checkout -p
+  10. Rebase with command execution
+  11. 基于时间修改的指南
+  12. 全知的 reflog
+* [10种Git技巧，让你省时省力又省心！](https://mp.weixin.qq.com/s?__biz=MzIxODM4MjA5MA==&mid=2247490747&idx=1&sn=659415dda67813229d9e22ea6f3feb3a&chksm=97ea36dea09dbfc8403ac08354fc2e424d129535514b3d5e5437cf09066b32967ef0221f43bb&mpshare=1&scene=24&srcid=&sharer_sharetime=1567921736480&sharer_shareid=5ed4a849fa42d9599a974fa8eb45e8fa&key=5a37b8e9f2933463edafcb746a6bb5f5b98d6bcf34bfab0e92617ea276b27583fd9174edd408a53d07c8d1153ad57172c3953e572d1828a5f393ba9ef49571900ad79539ef29f6bbbe1a03beeb200e71&ascene=14&uin=MTMzMzc3MjY4MQ%3D%3D&devicetype=Windows+10&version=62060833&lang=en&pass_ticket=tT3maEfznKd3xtVT4L8%2Bl%2B2KKdhrJZ3ERaWEoIpqIMB2I2ssKo%2BTfx0v80L7rMTL)
+* [你可能不太会用的10个Git命令 - 机器之心](https://mp.weixin.qq.com/s/2K8coqrcCajUtzx67jlZYg)
+  * https://towardsdatascience.com/learn-enough-git-to-be-useful-281561eef959
+* [20 个最常用的 Git 命令用法说明及示例](https://mp.weixin.qq.com/s/acP4yklWYf5TwOrLB41JYg)
+  * https://dzone.com/articles/top-20-git-commands-with-examples
+* [工作流一目了然，动图展示 10 大 Git 命令](https://mp.weixin.qq.com/s/xsQ_YKgPFpqxV8ju-K1BsQ)
+  * https://dev.to/lydiahallie/cs-visualized-useful-git-commands-37p1
+* [常用的Git命令清单](https://mp.weixin.qq.com/s/r68M3qQ3Ed1J5ge1kLxrYQ)
+  * https://blog.csdn.net/dqy19901103/article/details/107380601
+* [团队开发中的 Git 实践](https://mp.weixin.qq.com/s/Jo8Z7EqNUiQD9VSOKXQUKQ)
+  * https://ourai.ws/posts/working-with-git-in-team/
+* [这有一份 Git 日常使用清单](https://mp.weixin.qq.com/s/DtHfpMy5O6pGzP40m4HJ3Q)
+  * https://juejin.im/post/5d5b4c6951882569eb570958
+* [Git 提交错了不用慌，这三招帮你修改记录](https://mp.weixin.qq.com/s/xtol-m1QDJPlJE74cBUAeQ)
+  * 修改最后一次提交
+  * 修改多个信息
+  * 顺序变更、合并、拆分
+  * 最后的最后，大家需要注意，虽然这些手段在修改记录的时候非常好用。但是如果这些 commit 已经被提交到了远程，我们是不可以直接 git push 同步的。因为 git 会校验我们提交的 hash 值，发现对不上之后会禁止我们的提交。所以如果想要提交到远程的话，只能使用 git push -f 强制覆盖。但是这是一个非常非常危险的操作，如果你 git push -f 了，没有人会知道你到底修改了什么，只建议在自己独有的分支上如此操作，一定一定要谨慎使用。
+* [通过 .git 目录深入理解 Git！](https://mp.weixin.qq.com/s/q6tI0qctvciJhNz_5KLx-w)
+  * https://www.daolf.com/posts/git-series-part-1/
+* Merging vs Rebasing
+  * [Merging vs. Rebasing | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+  * [Learn Git: Merging vs Rebasing](https://blog.axosoft.com/learn-git-merging-rebasing/)
+    * In this quick Git tutorial video, we’ll answer the question, “What’s the difference between merging and rebasing in Git?”
 
 ## FAQ
 
