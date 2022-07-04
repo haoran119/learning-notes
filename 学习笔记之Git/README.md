@@ -173,7 +173,8 @@ git config --global user.email "name@test.com"
   * git-rm - Remove files from the working tree and from the index
 ```sh
 $ git rm Documentation/\*.txt
-# Removes all *.txt files from the index that are under the Documentation directory and any of its subdirectories.
+# Removes all *.txt files from the index that are under the Documentation directory and any of its 
+# subdirectories.
 # Note that the asterisk * is quoted from the shell in this example; this lets Git, and not the shell, 
 # expand the pathnames of files and subdirectories under the Documentation/ directory.
 
