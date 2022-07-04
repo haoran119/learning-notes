@@ -66,6 +66,8 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
   * A customizable extension for colorizing matching brackets
 * [Browser Preview](https://marketplace.visualstudio.com/items?itemName=auchenberg.vscode-browser-preview)
   * A real browser preview inside your editor that you can debug.
+* [Code Runner - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
+  * Run C, C++, Java, JS, PHP, Python, Perl, Ruby, Go, Lua, Groovy, PowerShell, CMD, BASH, F#, C#, VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml, R, AppleScript, Elixir, VB.NET, Clojure, Haxe, Obj-C, Rust, Racket, Scheme, AutoHotkey, AutoIt, Kotlin, Dart, Pascal, Haskell, Nim,
 * [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
   * Supercharge the Git capabilities built into Visual Studio Code — Visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more
 * [Nord Wave](https://marketplace.visualstudio.com/items?itemName=dnlytras.nord-wave)
@@ -124,6 +126,8 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
   * Navigate to your project folder and type code .
   * [The Visual Studio Code Command Line Options](https://code.visualstudio.com/docs/editor/command-line#_launching-from-command-line)
 ![image](https://user-images.githubusercontent.com/34557994/130347172-c6ace08a-1057-4297-a899-876213d3e1e3.png)
+* How to change indentation ?
+  * [VS Code: How To Change Indentation (2 spaces, 4 spaces) - Kindacode](https://www.kindacode.com/article/vs-code-how-to-change-indentation-2-spaces-4-spaces/)
 * How to commit part of code changes ?
   * [Version Control in Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol#_commit)
   * [Git version control in Visual Studio Code](https://code.visualstudio.com/docs/introvideos/versioncontrol)
