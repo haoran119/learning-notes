@@ -753,6 +753,16 @@ $ squeue
  889437   generic proto_20   kaymes span style='mso-spacerun:yes'>Â  PDÂ  Â Â� 0:00      1 (Priori /p>
 ```
 
+#### [Sublime Text](https://www.sublimetext.com/)
+
+* Sublime Text - Text Editing, Done Right
+* [Installation - Package Control](https://packagecontrol.io/installation)
+* How to install packages ?
+  * command+shift+p to bring up the Command Palette
+  * Type in “Package Control” and select Package Control: Install Package.
+  * Type in "codemap"
+  * https://packagecontrol.io/packages/CodeMap 
+
 #### [TeamViewer](https://www.teamviewer.com/en-us/)
 
 * TeamViewer: The Remote Desktop Software
