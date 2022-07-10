@@ -31,10 +31,6 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
   * https://zhuanlan.zhihu.com/p/89662757
 * [实时可视化Debug：VS Code 开源新工具，一键解析代码结构](https://mp.weixin.qq.com/s/943dZHSZyQbjlxTpv54w7Q)
   * https://github.com/hediet/vscode-debug-visualizer
-* [不光要用Python，还要在VSCode里用](https://mp.weixin.qq.com/s/KnMcDbP0_k6OBxR3NSOa5A)
-  * https://blog.csdn.net/bigbennyguo/article/details/104704023
-* [用 VSCode 写 python 的正确姿势](https://mp.weixin.qq.com/s/qIcMpsOiaZqgHVFW3LmoHg)
-* [推荐一款Python编辑器，集Pycharm和Sublime优点于一身的王者](https://mp.weixin.qq.com/s/zdSVszyE_6sSXva1ZKVswQ)
 * [微软VS Code已原生支持Jupyter笔记本，再也不用打开网页调试运行了](https://mp.weixin.qq.com/s/ZId-LFDDsnDlbA_j0B3jLw)
 * [VS Code上也能玩转Jupyter Notebook，这是一份完整教程](https://mp.weixin.qq.com/s/cb7r0QL8MOQRngEyBt3F-w)
   * https://towardsdatascience.com/getting-started-with-jupyter-notebooks-in-visual-studio-code-5dcccb3f739b
@@ -43,7 +39,6 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
   * UI 渲染与业务逻辑隔离，一致的用户体验
   * LSP—— 基于文本的协议
   * 集大成的 Remote Development
-* [微软发布 VS Code 4 月 Python 扩展更新：支持 Poetry 环境 (qq.com)](https://mp.weixin.qq.com/s/kZrV7Hw7bMbqjk0Xabeo1w)
 * [如何将宇宙最强 VSCode 打造为刷题神器 (qq.com)](https://mp.weixin.qq.com/s/dEdxxmpfKaZhE16Q9zPWAQ)
 * [从 VSCode 看大型 IDE 技术架构 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/96041706)
 * [经验之谈：学习 Visual Studio Code 不会错！ (qq.com)](https://mp.weixin.qq.com/s/_MbPPRraJe1a-1z9seOrWA)
@@ -54,7 +49,24 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
 * [利用 VS Code 构建基于容器的开发环境 (qq.com)](https://mp.weixin.qq.com/s/SG8_lO_vjOgmXdUbRJ7N8Q)
   * [Building container-based development environment with Visual Studio Code | by Santhosh Sundar | May, 2021 | Medium](https://santhoshsundar.medium.com/building-container-based-development-environment-with-visual-studio-code-2d7111c650bd)
   * [Developing inside a Container using Visual Studio Code Remote Development](https://code.visualstudio.com/docs/remote/containers)
+
+### C++
+
+* [Get Started with C++ on Linux in Visual Studio Code](https://code.visualstudio.com/docs/cpp/config-linux)
+  * In this tutorial, you will configure Visual Studio Code to use the GCC C++ compiler (g++) and GDB debugger on Linux. GCC stands for GNU Compiler Collection; GDB is the GNU debugger.
+* [Get started with CMake Tools on Linux](https://code.visualstudio.com/docs/cpp/cmake-linux)
+  * CMake is an open-source, cross-platform tool that uses compiler and platform independent configuration files to generate native build tool files specific to your compiler and platform.
+  * The CMake Tools extension integrates Visual Studio Code and CMake to make it easy to configure, build, and debug your C++ project.
+  * In this tutorial, you'll use the CMake Tools extension for Visual Studio Code to configure, build, and debug a simple C++ CMake project on Linux. Aside from installing CMake, your compiler, debugger, and build tools, the steps in this tutorial apply generally to how you'd use CMake on other platforms, like Windows.
 * [VS Code | Compile and Run in C++ - GeeksforGeeks](https://www.geeksforgeeks.org/vs-code-compile-and-run-in-c/)
+
+### PYTHON
+
+* [不光要用Python，还要在VSCode里用](https://mp.weixin.qq.com/s/KnMcDbP0_k6OBxR3NSOa5A)
+  * https://blog.csdn.net/bigbennyguo/article/details/104704023
+* [用 VSCode 写 python 的正确姿势](https://mp.weixin.qq.com/s/qIcMpsOiaZqgHVFW3LmoHg)
+* [推荐一款Python编辑器，集Pycharm和Sublime优点于一身的王者](https://mp.weixin.qq.com/s/zdSVszyE_6sSXva1ZKVswQ)
+* [微软发布 VS Code 4 月 Python 扩展更新：支持 Poetry 环境 (qq.com)](https://mp.weixin.qq.com/s/kZrV7Hw7bMbqjk0Xabeo1w)
 
 ## EXTENSIONS
 
