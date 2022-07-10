@@ -45,8 +45,7 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
   * 集大成的 Remote Development
 * [微软发布 VS Code 4 月 Python 扩展更新：支持 Poetry 环境 (qq.com)](https://mp.weixin.qq.com/s/kZrV7Hw7bMbqjk0Xabeo1w)
 * [如何将宇宙最强 VSCode 打造为刷题神器 (qq.com)](https://mp.weixin.qq.com/s/dEdxxmpfKaZhE16Q9zPWAQ)
-* [从 VSCode 看大型 IDE 技术架构 (qq.com)](https://mp.weixin.qq.com/s/u45DUEWXB1SfzwEueoNs4Q)
-  * [从 VSCode 看大型 IDE 技术架构 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/96041706)
+* [从 VSCode 看大型 IDE 技术架构 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/96041706)
 * [经验之谈：学习 Visual Studio Code 不会错！ (qq.com)](https://mp.weixin.qq.com/s/_MbPPRraJe1a-1z9seOrWA)
   * [The Era of Visual Studio Code | Roben Kleene](https://blog.robenkleene.com/2020/09/21/the-era-of-visual-studio-code/)
 * [生产力终极指南：用了两年，如今才算真正会用VS Code (qq.com)](https://mp.weixin.qq.com/s/SGDq8Rse6WeeK2cFKqr3IA)
@@ -55,6 +54,7 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
 * [利用 VS Code 构建基于容器的开发环境 (qq.com)](https://mp.weixin.qq.com/s/SG8_lO_vjOgmXdUbRJ7N8Q)
   * [Building container-based development environment with Visual Studio Code | by Santhosh Sundar | May, 2021 | Medium](https://santhoshsundar.medium.com/building-container-based-development-environment-with-visual-studio-code-2d7111c650bd)
   * [Developing inside a Container using Visual Studio Code Remote Development](https://code.visualstudio.com/docs/remote/containers)
+* [VS Code | Compile and Run in C++ - GeeksforGeeks](https://www.geeksforgeeks.org/vs-code-compile-and-run-in-c/)
 
 ## EXTENSIONS
 
