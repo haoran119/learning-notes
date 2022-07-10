@@ -234,5 +234,5 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
   }
   ```
 * How to trim trailing whitespace when save file ?
- * menu File > Preferences > Settings > User Settings > "files.trimTrailingWhitespace": true
- * [visual studio code - Remove trailing spaces automatically or with a shortcut - Stack Overflow](https://stackoverflow.com/questions/30884131/remove-trailing-spaces-automatically-or-with-a-shortcut)
+  * menu File > Preferences > Settings > User Settings > "files.trimTrailingWhitespace": true
+  * [visual studio code - Remove trailing spaces automatically or with a shortcut - Stack Overflow](https://stackoverflow.com/questions/30884131/remove-trailing-spaces-automatically-or-with-a-shortcut)
