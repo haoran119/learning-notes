@@ -40,6 +40,8 @@
   * Async as much as possible
   * Parallelize as much as possible
 * [Developing High-Frequency Trading Systems - Google Books](https://www.google.com.au/books/edition/_/HBp2EAAAQBAJ?hl=en&gbpv=0)
+* [Nimrod_High_Frequency_Trading.pdf](https://corecppil.github.io/CoreCpp2019/Presentations/Nimrod_High_Frequency_Trading.pdf)
+  * High-Frequency Trading and Ultra Low Latency Development Techniques
 
 ## MFT
 
