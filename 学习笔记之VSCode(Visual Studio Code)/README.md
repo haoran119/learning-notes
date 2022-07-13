@@ -150,6 +150,36 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
   * [ssh - VScode remote connection error: The process tried to write to a nonexistent pipe - Stack Overflow](https://stackoverflow.com/questions/60335069/vscode-remote-connection-error-the-process-tried-to-write-to-a-nonexistent-pipe)
 * How to fix "/.ssh/id_rsa is too open. It is required to be not accessible by others. The private key is ignored" ?
   * /.ssh/id_rsa - Properties - Security - Advance - Disable inheritance - remove other users and just keep your user
+* How to set current active file for debug in launch.json ?
+ * `"program": "${fileDirname}/${fileBasenameNoExtension}"`
+```json
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description":  "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+    ]
+```
 * How to set folders to be ignored during search ?
   * [Choose folders to be ignored during search in VS Code - Stack Overflow](https://stackoverflow.com/questions/29971600/choose-folders-to-be-ignored-during-search-in-vs-code)
   * [Basic Editing in Visual Studio Code](https://code.visualstudio.com/docs/editor/codebasics#_search-across-files)
