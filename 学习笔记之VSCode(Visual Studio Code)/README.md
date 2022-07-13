@@ -151,7 +151,7 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
 * How to fix "/.ssh/id_rsa is too open. It is required to be not accessible by others. The private key is ignored" ?
   * /.ssh/id_rsa - Properties - Security - Advance - Disable inheritance - remove other users and just keep your user
 * How to set current active file for debug in launch.json ?
- * `"program": "${fileDirname}/${fileBasenameNoExtension}"`
+  * `"program": "${fileDirname}/${fileBasenameNoExtension}"`
 ```json
     "configurations": [
         {
