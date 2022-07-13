@@ -392,6 +392,9 @@ Thank you.
   * [Build, test, and deploy with Pipelines | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/build-test-and-deploy-with-pipelines/)
     * [Get started with Bitbucket Pipelines | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/get-started-with-bitbucket-pipelines/)
     * [Use Pipelines in different software languages | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/use-pipelines-in-different-software-languages/#C-----Make)
+* How to add App passwords for git operation on Windows?
+  * [Using App passwords | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/using-app-passwords/)
+    * git clone https://{bitbucket_username}:{app_password}@bitbucket.org/{workspace}/{repository}.git
 * How to add ssh key for git operation on Windows?
   * Go to SSH Keys for Account in Bitbucket
     * View Profile -> Manage account -> SSH -> Add key w/ the above generated key
