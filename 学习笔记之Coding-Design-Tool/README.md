@@ -394,7 +394,10 @@ Thank you.
     * [Use Pipelines in different software languages | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/use-pipelines-in-different-software-languages/#C-----Make)
 * How to add App passwords for git operation on Windows?
   * [Using App passwords | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/using-app-passwords/)
-    * git clone https://{bitbucket_username}:{app_password}@bitbucket.org/{workspace}/{repository}.git
+    * To use App passwords without an interactive password prompt, you can include the App password in the URL. For example: when cloning the repository, run the following command:
+      * `git clone https://{bitbucket_username}:{app_password}@bitbucket.org/{workspace}/{repository}.git`
+    * For repositories already cloned to the local device, update the remote URL with the following command:
+      * `git remote set-url origin https://{bitbucket_username}:{app_password}@bitbucket.org/{workspace}/{repository}.git`
 * How to add ssh key for git operation on Windows?
   * Go to SSH Keys for Account in Bitbucket
     * View Profile -> Manage account -> SSH -> Add key w/ the above generated key
