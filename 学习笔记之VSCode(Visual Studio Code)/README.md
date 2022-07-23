@@ -80,6 +80,8 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
   * A real browser preview inside your editor that you can debug.
 * [Code Runner - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
   * Run C, C++, Java, JS, PHP, Python, Perl, Ruby, Go, Lua, Groovy, PowerShell, CMD, BASH, F#, C#, VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml, R, AppleScript, Elixir, VB.NET, Clojure, Haxe, Obj-C, Rust, Racket, Scheme, AutoHotkey, AutoIt, Kotlin, Dart, Pascal, Haskell, Nim,
+* [Excel Viewer - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer)
+  * Powered by Wijmo, this extension provides custom editors and previews for CSV files and Excel spreadsheets in Visual Studio Code and Visual Studio Code for the Web.
 * [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
   * Supercharge the Git capabilities built into Visual Studio Code — Visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more
 * [Nord Wave](https://marketplace.visualstudio.com/items?itemName=dnlytras.nord-wave)
