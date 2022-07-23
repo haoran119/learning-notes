@@ -768,6 +768,8 @@ $ squeue
   * Type in “Package Control” and select Package Control: Install Package.
   * Type in "codemap"
   * https://packagecontrol.io/packages/CodeMap 
+* [sublimetext3 - How to wrap each line in quotes in SublimeText? - Stack Overflow](https://stackoverflow.com/questions/32127604/how-to-wrap-each-line-in-quotes-in-sublimetext#:~:text=After%20Ctrl%2BShift%2BL%20just,sides%20of%20the%20selected%20text.)
+  * After Ctrl+Shift+L just press "
 
 #### [TeamViewer](https://www.teamviewer.com/en-us/)
 
