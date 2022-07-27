@@ -76,6 +76,7 @@
 
 ## COMMANDS
 
+* [git add](https://www.atlassian.com/git/tutorials/saving-changes)
 * [git-blame - Show what revision and author last modified each line of a file](https://git-scm.com/docs/git-blame)
 * [git-branch - List, create, or delete branches](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt--d)
   * [How do I delete a Git branch locally and remotely? - Stack Overflow](https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely#targetText=Simply%20do%20git%20push%20origin,local%20branch%20ONLY!...)
