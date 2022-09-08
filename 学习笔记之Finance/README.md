@@ -1,4 +1,6 @@
-# 学习笔记之Quant
+# 学习笔记之Finance
+
+## Quant
 
 * [Quants: What They Do and How They've Evolved](https://www.investopedia.com/articles/active-trading/111214/quants-what-they-do-and-how-theyve-evolved.asp#:~:text=Key%20Takeaways-,Quantitative%20trading%20(also%20called%20quant%20trading)%20involves%20the%20use%20of,aim%20to%20identify%20profit%20opportunities.)
 * [Beginner's Guide to Quantitative Trading | QuantStart](https://www.quantstart.com/articles/Beginners-Guide-to-Quantitative-Trading/)
@@ -22,7 +24,7 @@
     * The underlying theory is that any strategy that worked well in the past is likely to work well in the future, and conversely, any strategy that performed poorly in the past is likely to perform poorly in the future.
     * When testing an idea on historical data, it is beneficial to reserve a time period of historical data for testing purposes. If it is successful, testing it on alternate time periods or out-of-sample data can help confirm its potential viability.
 
-## [HFT](https://en.wikipedia.org/wiki/High-frequency_trading)
+### [HFT](https://en.wikipedia.org/wiki/High-frequency_trading)
 
 * High-frequency trading (HFT) is a type of algorithmic financial trading characterized by high speeds, high turnover rates, and high order-to-trade ratios that leverages high-frequency financial data and electronic trading tools.[1] While there is no single definition of HFT, among its key attributes are highly sophisticated algorithms, co-location, and very short-term investment horizons.[2] HFT can be viewed as a primary form of algorithmic trading in finance.[3][4] Specifically, it is the use of sophisticated technological tools and computer algorithms to rapidly trade securities.[5][6][7] HFT uses proprietary trading strategies carried out by computers to move in and out of positions in seconds or fractions of a second.[8]
 * [High-Frequency Trading (HFT) Definition](https://www.investopedia.com/terms/h/high-frequency-trading.asp)
@@ -43,6 +45,6 @@
 * [Nimrod_High_Frequency_Trading.pdf](https://corecppil.github.io/CoreCpp2019/Presentations/Nimrod_High_Frequency_Trading.pdf)
   * High-Frequency Trading and Ultra Low Latency Development Techniques
 
-## MFT
+### MFT
 
 * [What is a medium to low frequency trading strategy and why is it less hyped? - Quantitative Finance Stack Exchange](https://quant.stackexchange.com/questions/2218/what-is-a-medium-to-low-frequency-trading-strategy-and-why-is-it-less-hyped)
