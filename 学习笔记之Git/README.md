@@ -225,6 +225,27 @@ $ git rm -f git-*.sh
   * https://ourai.ws/posts/working-with-git-in-team/
 * [这有一份 Git 日常使用清单](https://mp.weixin.qq.com/s/DtHfpMy5O6pGzP40m4HJ3Q)
   * https://juejin.im/post/5d5b4c6951882569eb570958
+* [Git 各指令的本质，真是通俗易懂啊](https://mp.weixin.qq.com/s/KHVbPzzrLtafyeDbiadfng)
+  * https://juejin.cn/post/6895246702614806542
+  * 1. 基本概念
+    * 1.1 Git的优势
+    * 1.2 文件状态
+    * 1.3 commit 节点
+    * 1.4 HEAD
+    * 1.5 远程仓库
+  * 2. 分支
+    * 2.1 什么是分支？
+  * 3. 命令详解
+    * 3.1 提交相关
+    * 3.2 分支相关
+    * 3.3 合并相关
+    * 3.4 回退相关
+    * 3.5 远程相关
+  * 不管是HEAD还是分支，它们都只是引用而已，引用+节点是 Git 构成分布式的关键
+  * merge相比于rebase有更明确的时间历史，而rebase会使提交更加线性应当优先使用
+  * 通过移动HEAD可以查看每个提交对应的代码
+  * clone或fetch都会将远程仓库的所有提交、引用保存在本地一份
+  * pull的本质其实就是fetch+merge，也可以加入--rebase通过rebase方式合并
 * [Git 提交错了不用慌，这三招帮你修改记录](https://mp.weixin.qq.com/s/xtol-m1QDJPlJE74cBUAeQ)
   * 修改最后一次提交
   * 修改多个信息
