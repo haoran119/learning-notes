@@ -25,6 +25,9 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
   * https://www.cnblogs.com/tu-0718/p/10935910.html
 * [VS Code 必知必会的 20 个快捷键！](https://mp.weixin.qq.com/s/t7TLBOcnOs0AkncCVsYr9Q)
   * https://medium.com/better-programming/20-vs-code-shortcuts-for-fast-coding-cheatsheet-10b0e72fd5d
+  * Linux：https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf
+  * Window：https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+  * macOS：https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
 * [在用VSCode? 看完这篇文章, 开发效率翻倍!](https://mp.weixin.qq.com/s/XiT6uNQPIPGvkLbUcPnRqw)
 * [手把手教你配置VS Code 远程开发工具](https://mp.weixin.qq.com/s/JBKAAe2lonKGX1wFynIPvQ)
 * [使用VSCode进行远程炼丹](https://mp.weixin.qq.com/s/hFCAeQFPAd1eb-z-r75ZUw)
