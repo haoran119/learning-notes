@@ -147,6 +147,70 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
 ![image](https://user-images.githubusercontent.com/34557994/130347172-c6ace08a-1057-4297-a899-876213d3e1e3.png)
 * How to change indentation ?
   * [VS Code: How To Change Indentation (2 spaces, 4 spaces) - Kindacode](https://www.kindacode.com/article/vs-code-how-to-change-indentation-2-spaces-4-spaces/)
+* How to change the C++ standard to run .cpp file with code runner via right click -> Run code ?
+  * Change settings.json e.g. ~/Library/Application Support/Code/User/settings.json.
+  ```
+  "code-runner.executorMap": {
+      "cpp": "cd $dir && g++ -std=c++11 -stdlib=libc++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+  }
+  ```
+  * [Running C++ with VStudio Code using CodeRunner extension - Stack Overflow](https://stackoverflow.com/questions/57502306/running-c-with-vstudio-code-using-coderunner-extension)
+  * Note that it is using c++98 as default in vscode. You could change c_cpp_properties.json to make it build and run with custom C++ standard, and change tasks.json to make it debug with custom C++ standard.
+  * ~/.vscode/c_cpp_properties.json
+  ```
+  {
+      "configurations": [
+          {
+              "name": "Mac",
+              "includePath": [
+                  "${workspaceFolder}/**"
+              ],
+              "defines": [],
+              "macFrameworkPath": [
+                  "/System/Library/Frameworks",
+                  "/Library/Frameworks"
+              ],
+              "intelliSenseMode": "clang-x64",
+              "compilerPath": "/usr/bin/clang",
+              "cppStandard": "c++11",
+              "cStandard": "c11"
+          }
+      ],
+      "version": 4
+  }
+  ```
+  * ~/.vscode/tasks.json
+  ```
+  {
+      "version": "2.0.0",
+      "tasks": [
+          {
+              "type": "cppbuild",
+              "label": "clang++ build active file",
+              "command": "/usr/bin/clang++",
+              "args": [
+                  "-std=c++11",
+                  "-stdlib=libc++",
+                  "-g",
+                  "${file}",
+                  "-o",
+                  "${fileDirname}/${fileBasenameNoExtension}"
+              ],
+              "options": {
+                  "cwd": "${fileDirname}"
+              },
+              "problemMatcher": [
+                  "$gcc"
+              ],
+              "group": {
+                  "kind": "build",
+                  "isDefault": true
+              },
+              "detail": "编译器: /usr/bin/clang++"
+          }
+      ]
+  }
+  ```
 * How to commit part of code changes ?
   * [Version Control in Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol#_commit)
   * [Git version control in Visual Studio Code](https://code.visualstudio.com/docs/introvideos/versioncontrol)
@@ -216,75 +280,15 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
   ```
   "editor.rulers": [80,120]
   ```
+* How to switch between editor groups ?
+  * `Ctrl+1 / Ctrl+2 / Ctrl+3`
+  * [visual studio code - Is there a hotkey to switch between split window panes? - Stack Overflow](https://stackoverflow.com/questions/36328029/is-there-a-hotkey-to-switch-between-split-window-panes)
+  * https://code.visualstudio.com/docs/getstarted/keybindings#_editorwindow-management
+* How to trim trailing whitespace when save file ?
+  * menu File > Preferences > Settings > User Settings > "files.trimTrailingWhitespace": true
+  * [visual studio code - Remove trailing spaces automatically or with a shortcut - Stack Overflow](https://stackoverflow.com/questions/30884131/remove-trailing-spaces-automatically-or-with-a-shortcut)
 * Why configuration setting could be found in run mode but couldn't be found in debug mode ?
   * Need to set workspaceFolder properly. Add workspace folder -> Open the project folder.
   * [Visual Studio Code Variables Reference](https://code.visualstudio.com/docs/editor/variables-reference)
   * [Visual Studio Code User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations)
   * [debugging - How do I set my workspace folder in Visual Studio Code? - Stack Overflow](https://stackoverflow.com/questions/56175608/how-do-i-set-my-workspace-folder-in-visual-studio-code)
-* How to change the C++ standard to run .cpp file with code runner via right click -> Run code ?
-  * Change settings.json e.g. ~/Library/Application Support/Code/User/settings.json.
-  ```
-  "code-runner.executorMap": {
-      "cpp": "cd $dir && g++ -std=c++11 -stdlib=libc++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
-  }
-  ```
-  * [Running C++ with VStudio Code using CodeRunner extension - Stack Overflow](https://stackoverflow.com/questions/57502306/running-c-with-vstudio-code-using-coderunner-extension)
-  * Note that it is using c++98 as default in vscode. You could change c_cpp_properties.json to make it build and run with custom C++ standard, and change tasks.json to make it debug with custom C++ standard.
-  * ~/.vscode/c_cpp_properties.json
-  ```
-  {
-      "configurations": [
-          {
-              "name": "Mac",
-              "includePath": [
-                  "${workspaceFolder}/**"
-              ],
-              "defines": [],
-              "macFrameworkPath": [
-                  "/System/Library/Frameworks",
-                  "/Library/Frameworks"
-              ],
-              "intelliSenseMode": "clang-x64",
-              "compilerPath": "/usr/bin/clang",
-              "cppStandard": "c++11",
-              "cStandard": "c11"
-          }
-      ],
-      "version": 4
-  }
-  ```
-  * ~/.vscode/tasks.json
-  ```
-  {
-      "version": "2.0.0",
-      "tasks": [
-          {
-              "type": "cppbuild",
-              "label": "clang++ build active file",
-              "command": "/usr/bin/clang++",
-              "args": [
-                  "-std=c++11",
-                  "-stdlib=libc++",
-                  "-g",
-                  "${file}",
-                  "-o",
-                  "${fileDirname}/${fileBasenameNoExtension}"
-              ],
-              "options": {
-                  "cwd": "${fileDirname}"
-              },
-              "problemMatcher": [
-                  "$gcc"
-              ],
-              "group": {
-                  "kind": "build",
-                  "isDefault": true
-              },
-              "detail": "编译器: /usr/bin/clang++"
-          }
-      ]
-  }
-  ```
-* How to trim trailing whitespace when save file ?
-  * menu File > Preferences > Settings > User Settings > "files.trimTrailingWhitespace": true
-  * [visual studio code - Remove trailing spaces automatically or with a shortcut - Stack Overflow](https://stackoverflow.com/questions/30884131/remove-trailing-spaces-automatically-or-with-a-shortcut)
