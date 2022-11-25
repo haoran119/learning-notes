@@ -7,7 +7,7 @@
 * [Self-Study Plan for Becoming a Quantitative Developer | QuantStart](https://www.quantstart.com/articles/Self-Study-Plan-for-Becoming-a-Quantitative-Developer/)
 * [A Simple Guide to Become a Quantitative Developer](https://blog.quantinsti.com/quantitative-developer/) 
 * [Stock market simulator - Wikipedia](https://en.wikipedia.org/wiki/Stock_market_simulator)
-  * A stock market simulator is computer software that reproduces behavior and features of a stock market, so that a user may practice trading stocks without financial risk. `Paper trading`, sometimes also called "virtual stock trading", is a simulated trading process in which would-be investors   can practice investing without committing money.[1]
+  * A stock market simulator is computer software that reproduces behavior and features of a stock market, so that a user may practice trading stocks without financial risk. `Paper trading`, sometimes also called "virtual stock trading", is a simulated trading process in which would-be investors can practice investing without committing money.[1]
 * [Paper Trade Definition](https://www.investopedia.com/terms/p/papertrade.asp)
   * A paper trade is a simulated trade that allows an investor to practice buying and selling without risking real money. The term dates back to a time when (before the proliferation of online trading platforms) aspiring traders would practice on paper before risking money in live markets. While learning, a paper trader records all trades by hand to keep track of hypothetical trading positions, portfolios, and profits or losses. Today, most practice trading involves the use of an electronic stock market simulator, which looks and feels like an actual trading platform.
   * KEY TAKEAWAYS
@@ -50,3 +50,13 @@
 * [What is a medium to low frequency trading strategy and why is it less hyped? - Quantitative Finance Stack Exchange](https://quant.stackexchange.com/questions/2218/what-is-a-medium-to-low-frequency-trading-strategy-and-why-is-it-less-hyped)
 
 ## [Option](https://en.wikipedia.org/wiki/Option_(finance))
+
+* [Strike price - Wikipedia](https://en.wikipedia.org/wiki/Strike_price)
+* [Volume-weighted average price - Wikipedia](https://en.wikipedia.org/wiki/Volume-weighted_average_price)
+* [Volume-Weighted Average Price (VWAP): Definition and Calculation](https://www.investopedia.com/terms/v/vwap.asp#:~:text=VWAP%20is%20calculated%20by%20totaling,by%20the%20total%20shares%20traded.)
+* [Option time value - Wikipedia](https://en.wikipedia.org/wiki/Option_time_value)
+* [Intrinsic value (finance) - Wikipedia](https://en.wikipedia.org/wiki/Intrinsic_value_(finance))
+* [Spot contract - Wikipedia](https://en.wikipedia.org/wiki/Spot_contract)
+* [Volatility (finance) - Wikipedia](https://en.wikipedia.org/wiki/Volatility_(finance))
+* [Black–Scholes model - Wikipedia](https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_model)
+* [Greeks (finance) - Wikipedia](https://en.wikipedia.org/wiki/Greeks_(finance))
