@@ -342,6 +342,13 @@ Thank you.
 * [再见，公司的“烂系统” (qq.com)](https://mp.weixin.qq.com/s/d7MAW0PnekB3wKwXNtkShA)
   * [一个复杂系统的拆分改造实践 - zhanlijun - 博客园 (cnblogs.com)](https://www.cnblogs.com/LBSer/p/6195309.html)
 * [高频交易总延迟？2张表告诉你如何进行热点设计！](https://mp.weixin.qq.com/s/K8Qd9NYAG2ep2zje2a5e5Q)
+* [“一天宕机三次”，为什么高并发这么难？](https://mp.weixin.qq.com/s/g4c7ovftzkTYRSfuRtgn7A)
+  * 过去多年间，我的技术也在不断变化：
+    * 后端：C -> C++ -> Java -> Go
+    * Web：Perl -> ASP -> PHP -> Java、jQuery -> React.js
+    * 操作系统：Unix/Windows -> Linux
+    * 部署：Ansible -> Docker -> Kubernetes
+    * 架构：单机 -> CS -> BS- > 三层架构 -> SOA -> 微服务 -> 云原生
 
 ## TOOL
 
