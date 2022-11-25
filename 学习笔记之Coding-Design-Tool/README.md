@@ -341,6 +341,7 @@ Thank you.
   * [订单系统：从0到1设计思路 | 人人都是产品经理 (woshipm.com)](http://www.woshipm.com/pd/1392102.html)
 * [再见，公司的“烂系统” (qq.com)](https://mp.weixin.qq.com/s/d7MAW0PnekB3wKwXNtkShA)
   * [一个复杂系统的拆分改造实践 - zhanlijun - 博客园 (cnblogs.com)](https://www.cnblogs.com/LBSer/p/6195309.html)
+* [高频交易总延迟？2张表告诉你如何进行热点设计！](https://mp.weixin.qq.com/s/K8Qd9NYAG2ep2zje2a5e5Q)
 
 ## TOOL
 
