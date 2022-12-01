@@ -11,6 +11,7 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
   * [Java in Visual Studio Code](https://code.visualstudio.com/docs/languages/java)
     * [Getting Started with Java in Visual Studio Code](https://code.visualstudio.com/docs/java/java-tutorial)
   * [Debugging configurations for Python apps in Visual Studio Code](https://code.visualstudio.com/docs/python/debugging)
+  * [Debugging in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging)
 * [Clang - Wikipedia](https://en.wikipedia.org/wiki/Clang)
   * Clang/ˈklæŋ/[5] is a compiler front end for the C, C++, Objective-C and Objective-C++ programming languages, as well as the OpenMP,[6] OpenCL, RenderScript and CUDAframeworks. It uses the LLVM compiler infrastructure as its back end and has been part of the LLVM release cycle since LLVM 2.6.
   It is designed to act as a drop-in replacement for the GNU Compiler Collection (GCC), supporting most of its compilation flags and unofficial language extensions.[7][8] Its contributors include Apple, Microsoft, Google, ARM, Sony, Intel and Advanced Micro Devices (AMD). It is open-source software,[9] with source code released under the University of Illinois/NCSA License, a permissive free software licence.
@@ -62,6 +63,8 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
   * The CMake Tools extension integrates Visual Studio Code and CMake to make it easy to configure, build, and debug your C++ project.
   * In this tutorial, you'll use the CMake Tools extension for Visual Studio Code to configure, build, and debug a simple C++ CMake project on Linux. Aside from installing CMake, your compiler, debugger, and build tools, the steps in this tutorial apply generally to how you'd use CMake on other platforms, like Windows.
 * [VS Code | Compile and Run in C++ - GeeksforGeeks](https://www.geeksforgeeks.org/vs-code-compile-and-run-in-c/)
+* [Debug C++ in Visual Studio Code](https://code.visualstudio.com/docs/cpp/cpp-debug)
+* [Configure launch.json for C/C++ debugging in Visual Studio Code](https://code.visualstudio.com/docs/cpp/launch-json-reference)
 
 ### PYTHON
 
@@ -106,7 +109,7 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
 * [Test Explorer UI](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer)
   * Run your tests in the Sidebar of Visual Studio Code
 
-#
+### MISC
 
 * [VS Code 最强插件指南 - CSDN](https://mp.weixin.qq.com/s/MshppwwRFmbFx3aR7FVpEQ)
   * https://www.freecodecamp.org/news/favorite-vs-code-extensions-2017-786ea235812f/
@@ -138,6 +141,7 @@ Mac上XCode太占空间，卸载然后安装VSCode和Clang。在VSCode中再安�
   * https://github.com/gamedilong/anes-repository
   * https://marketplace.visualstudio.com/items?itemName=gamedilong.anes
 * [Pylance 性能更新，微软新的VS Code Python 插件已趋于稳定 (qq.com)](https://mp.weixin.qq.com/s/FrNTe-oYOdRyebjUX61tsw)
+* [60 个神级 VS Code 插件！](https://mp.weixin.qq.com/s/FKPXhoxss7nme7CwoS1yvA)
 
 ## FAQ
 
