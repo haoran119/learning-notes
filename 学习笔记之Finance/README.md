@@ -23,6 +23,14 @@
     * Backtesting assesses the viability of a trading strategy or pricing model by discovering how it would have played out retrospectively using historical data.
     * The underlying theory is that any strategy that worked well in the past is likely to work well in the future, and conversely, any strategy that performed poorly in the past is likely to perform poorly in the future.
     * When testing an idea on historical data, it is beneficial to reserve a time period of historical data for testing purposes. If it is successful, testing it on alternate time periods or out-of-sample data can help confirm its potential viability.
+* [Understanding Value at Risk (VaR) and How It's Computed](https://www.investopedia.com/terms/v/var.asp#:~:text=VaR%20modeling%20determines%20the%20potential,of%20loss%2C%20and%20the%20timeframe.)
+  * What Is Value at Risk (VaR)?
+    * Value at risk (VaR) is a statistic that quantifies the extent of possible financial losses within a firm, portfolio, or position over a specific time frame. This metric is most commonly used by investment and commercial banks to determine the extent and probabilities of potential losses in their institutional portfolios.
+    * Risk managers use VaR to measure and control the level of risk exposure. One can apply VaR calculations to specific positions or whole portfolios or use them to measure firm-wide risk exposure.
+    * KEY TAKEAWAYS
+      * Value at risk (VaR) is a way to quantify the risk of potential losses for a firm or an investment.
+      * This metric can be computed in several ways, including the historical, variance-covariance, and Monte Carlo methods.
+      * Investment banks commonly apply VaR modeling to firm-wide risk due to the potential for independent trading desks to unintentionally expose the firm to highly correlated assets.
 
 ### [HFT](https://en.wikipedia.org/wiki/High-frequency_trading)
 
