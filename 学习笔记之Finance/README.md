@@ -31,6 +31,39 @@
       * Value at risk (VaR) is a way to quantify the risk of potential losses for a firm or an investment.
       * This metric can be computed in several ways, including the historical, variance-covariance, and Monte Carlo methods.
       * Investment banks commonly apply VaR modeling to firm-wide risk due to the potential for independent trading desks to unintentionally expose the firm to highly correlated assets.
+* [Forex (FX): Definition, How to Trade Currencies, and Examples](https://www.investopedia.com/terms/f/forex.asp)
+  * What is Forex (FX)?
+    * Forex (FX) refers to the global electronic marketplace for trading international currencies and currency derivatives. It has no central physical location, yet the forex market is the largest, most liquid market in the world by trading volume, with trillions of dollars changing hands every day. Most of the trading is done through banks, brokers, and financial institutions.
+    * The forex market is open 24 hours a day, five days a week, except for holidays. The forex market is open on many holidays on which stock markets are closed, though the trading volume may be lower.
+    * Its name, forex, is a portmanteau of foreign and exchange. It's often abbreviated as fx.
+    * KEY TAKEAWAYS
+      * Forex (FX) market is a global electronic network for currency trading.
+      * Formerly limited to governments and financial institutions, individuals can now directly buy and sell currencies on forex.
+      * In the forex market, a profit or loss results from the difference in the price at which the trader bought and sold a currency pair.
+      * Currency traders do not deal in cash. Brokers generally roll over their positions at the end of each day.
+* [What Is a Commodity and Understanding Its Role in the Stock Market](https://www.investopedia.com/terms/c/commodity.asp)
+  * What Is a Commodity?
+    * A commodity is a basic good used in commerce that is interchangeable with other goods of the same type. Commodities are most often used as inputs in the production of other goods or services. A commodity thus usually refers to a raw material used to manufacture finished goods. A product, on the other hand, is the finished good sold to consumers.
+    * The quality of a given commodity may differ slightly, but it is essentially uniform across producers. When they are traded on an exchange, commodities must also meet specified minimum standards, also known as a basis grade.
+    * KEY TAKEAWAYS
+      * A commodity is a basic good used in commerce that is interchangeable with other commodities of the same type.
+      * Commodities are most often used as inputs in the production of other goods or services.
+      * Investors and traders can buy and sell commodities directly in the spot (cash) market or via derivatives such as futures and options.
+      * Hard commodities refer to energy and metals products while soft commodities are often agricultural goods.
+      * Owning commodities in a broader portfolio is encouraged as a hedge against inflation.
+* [Credit Derivative: Definition, Types, and Potential Misuse](https://www.investopedia.com/terms/c/creditderivative.asp)
+  * What Is a Credit Derivative?
+    * A credit derivative is a financial contract that allows parties to minimize their exposure to credit risk. Credit derivatives consist of a privately held, negotiable bilateral contract traded over-the-counter (OTC) between two parties in a creditor/debtor relationship. These allow the creditor to effectively transfer some or all of the risk of a debtor defaulting to a third party. This third party accepts the risk in return for payment, known as the premium.
+    * Several types of credit derivatives exist, including:
+      * Credit default swaps (CDS)
+      * Collateralized debt obligations (CDO)
+      * Total return swaps
+      * Credit spread options/forwards
+    * In all cases, the price of a credit derivative is driven by the creditworthiness of the party or parties involved. Often a credit derivative will be triggered by a qualifying credit event, such as a default, missed interest payment, credit downgrade, or bankruptcy.
+    * KEY TAKEAWAYS
+      * A credit derivative allows creditors to transfer to a third party the potential risk of the debtor defaulting, in exchange for paying a fee, known as the premium.
+      * A credit derivative is a contract whose value depends on the creditworthiness or a credit event experienced by the entity referenced in the contract.
+      * Credit derivatives include credit default swaps, collateralized debt obligations, total return swaps, credit default swap options, and credit spread forwards.
 
 ### [HFT](https://en.wikipedia.org/wiki/High-frequency_trading)
 
