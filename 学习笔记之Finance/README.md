@@ -112,5 +112,5 @@
     * The most common of the Greeks are the first order derivatives: delta, vega, theta and rho as well as gamma, a second-order derivative of the value function. The remaining sensitivities in this list are common enough that they have common names, but this list is by no means exhaustive.
   * First-order Greeks
     * Delta
-      * Delta, measures the rate of change of the theoretical option value with respect to changes in the underlying asset's price. Delta is the first derivative of the value V of the option with respect to the underlying instrument's price S.
+      * `Delta, measures the rate of change of the theoretical option value with respect to changes in the underlying asset's price.` Delta is the first derivative of the value V of the option with respect to the underlying instrument's price S.
       * ![image](https://user-images.githubusercontent.com/34557994/205422083-07aa574c-8524-4467-8f80-8b0a2fa07d76.png)
