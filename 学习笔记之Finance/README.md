@@ -112,12 +112,18 @@
   * In mathematical finance, the Greeks are the quantities representing the sensitivity of the price of derivatives such as options to a change in underlying parameters on which the value of an instrument or portfolio of financial instruments is dependent. The name is used because the most common of these sensitivities are denoted by Greek letters (as are some other finance measures). Collectively these have also been called the risk sensitivities,[1] risk measures[2]: 742  or hedge parameters.[3]
   * Use of the Greeks
     * The Greeks are vital tools in risk management. Each Greek measures the sensitivity of the value of a portfolio to a small change in a given underlying parameter, so that component risks may be treated in isolation, and the portfolio rebalanced accordingly to achieve a desired exposure; see for example delta hedging.
-    * The Greeks in the Black–Scholes model are relatively easy to calculate, a desirable property of financial models, and are very useful for derivatives traders, especially those who seek to hedge their portfolios from adverse changes in market conditions. For this reason, those Greeks which are particularly useful for hedging—such as delta, theta, and vega—are well-defined for measuring changes in Price, Time and Volatility. Although rho is a primary input into the Black–Scholes model, the overall impact on the value of an option corresponding to changes in the risk-free interest rate is generally insignificant and therefore higher-order derivatives involving the risk-free interest rate are not common.
+    * The Greeks in the Black–Scholes model are relatively easy to calculate, a desirable property of financial models, and are very useful for derivatives traders, especially those who seek to hedge their portfolios from adverse changes in market conditions. For this reason, those Greeks which are particularly useful for hedging—such as `delta, theta, and vega`—are well-defined for measuring `changes in Price, Time and Volatility`. Although rho is a primary input into the Black–Scholes model, the overall impact on the value of an option corresponding to changes in the risk-free interest rate is generally insignificant and therefore higher-order derivatives involving the risk-free interest rate are not common.
     * The most common of the Greeks are the first order derivatives: delta, vega, theta and rho as well as gamma, a second-order derivative of the value function. The remaining sensitivities in this list are common enough that they have common names, but this list is by no means exhaustive.
   * First-order Greeks
     * Delta
-      * `Delta, measures the rate of change of the theoretical option value with respect to changes in the underlying asset's price.` Delta is the first derivative of the value V of the option with respect to the underlying instrument's price S.
+      * `Delta, measures the rate of change of the theoretical option value with respect to changes in the underlying asset's price.` Delta is the first derivative of the `value V of the option with respect to the underlying instrument's price S`.
       * ![image](https://user-images.githubusercontent.com/34557994/205422083-07aa574c-8524-4467-8f80-8b0a2fa07d76.png)
+    * Vega
+      * `Vega[4] measures sensitivity to volatility`. Vega is the `derivative of the option value with respect to the volatility of the underlying asset`.
+    * Theta
+      * `Theta, measures the sensitivity of the value of the derivative to the passage of time (see Option time value): the "time decay."`
+    * Rho
+      * `Rho, measures sensitivity to the interest rate`: it is the derivative of the `option value with respect to the risk free interest rate (for the relevant outstanding term)`.
 * [Understanding the Difference: European vs. American Style Options - CME Group](https://www.cmegroup.com/education/courses/introduction-to-options/understanding-the-difference-european-vs-american-style-options.html)
   * European Style Options: can be exercised only at expiration.
   * American Style Options: can be exercised at any time prior to expiration.
