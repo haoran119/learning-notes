@@ -127,3 +127,5 @@
 * [Understanding the Difference: European vs. American Style Options - CME Group](https://www.cmegroup.com/education/courses/introduction-to-options/understanding-the-difference-european-vs-american-style-options.html)
   * European Style Options: can be exercised only at expiration.
   * American Style Options: can be exercised at any time prior to expiration.
+
+# END
