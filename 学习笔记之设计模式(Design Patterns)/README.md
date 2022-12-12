@@ -10,9 +10,9 @@
 * [经典永不过时！重温设计模式 (qq.com)](https://mp.weixin.qq.com/s/i32AmhApR0jjAu2a8LZX7w)
     * [经典永不过时！重温设计模式 (qq.com)](https://mp.weixin.qq.com/s/EzYsYkAw-vs1bABvdfZKHA)
 
-## 创建型模式
+## [Creational Pattern 创建型模式](https://en.wikipedia.org/wiki/Creational_pattern)
 
-* [漫画：设计模式之 “工厂模式” (qq.com)](https://mp.weixin.qq.com/s/lFhWPx9h3DCZQ62xxLg1_g)
+* In software engineering, creational design patterns are design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. The basic form of object creation could result in design problems or in added complexity to the design. Creational design patterns solve this problem by somehow controlling this object creation.
 
 ### [Singleton pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
 
@@ -330,15 +330,22 @@
 * [简约不简单的单例模式 (qq.com)](https://mp.weixin.qq.com/s/HmgUhWeXuim2LxZStuHPOw)
 * [一个单例还能写出花来吗？ (qq.com)](https://mp.weixin.qq.com/s/0n4TKGbK2UrKarutOxFd7g)
 
-## 结构型模式
+### [Factory method pattern](https://en.wikipedia.org/wiki/Factory_method_pattern)
 
+* [Factory Method in C++ / Design Patterns](https://refactoring.guru/design-patterns/factory-method/cpp/example#example-0)
+* [漫画：设计模式之 “工厂模式” (qq.com)](https://mp.weixin.qq.com/s/lFhWPx9h3DCZQ62xxLg1_g)
+
+## [Structural Pattern 结构型模式](https://en.wikipedia.org/wiki/Structural_pattern)
+
+* In software engineering, structural design patterns are design patterns that ease the design by identifying a simple way to realize relationships among entities.
 * [详解设计模式之结构型模式（上）](https://mp.weixin.qq.com/s/0PTiheUOw3FKJ6kKFZte-Q)
 * [漫画设计模式：什么是 “装饰器模式” ？ (qq.com)](https://mp.weixin.qq.com/s/mz9rJELjcWlTv4LFzmKmTA)
 * [漫画：设计模式之 “外观模式” (qq.com)](https://mp.weixin.qq.com/s/b2N4kkX4_KPffl7Kt5x4iA)
 * [了解组合模式](https://mp.weixin.qq.com/s/o9kXMnu2pygrvVy51s-Qiw)
 
-## 行为型模式
+## [Behavioral Pattern 行为型模式](https://en.wikipedia.org/wiki/Behavioral_pattern)
 
+* In software engineering, behavioral design patterns are design patterns that identify common communication patterns among objects. By doing so, these patterns increase flexibility in carrying out communication.
 * [还在用 if else？试试策略模式吧！](https://mp.weixin.qq.com/s/VGoXu-QAuBL-Y892TFSNng)
 * [别再用if-else了，用注解去代替他吧](https://mp.weixin.qq.com/s/7mr1F6ujFR8659bhUfDeJw)
     * 经常在网上看到一些名为“别再if-else走天下了”，“教你干掉if-else”等之类的文章，大部分都会讲到用策略模式去代替if-else。策略模式实现的方式也大同小异。主要是定义统一行为（接口或抽象类），并实现不同策略下的处理逻辑（对应实现类）。客户端使用时自己选择相应的处理类，利用工厂或其他方式。
