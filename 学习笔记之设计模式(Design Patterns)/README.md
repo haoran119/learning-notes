@@ -24,6 +24,309 @@
 * The term comes from the mathematical concept of a singleton.
 * [Design Patterns: Singleton in C++](https://refactoring.guru/design-patterns/singleton/cpp/example#example-1)
 * [Thread-Safe Initialization of a Singleton - ModernesCpp.com](https://www.modernescpp.com/index.php/thread-safe-initialization-of-a-singleton)
+    * Guarantees of the C++ runtime
+        * I already presented the details to the thread-safe initialization of variables in the post [Thread-safe initialization of data](https://www.modernescpp.com/index.php/thread-safe-initialization-of-data).
+        * Meyers Singleton
+            * The beauty of the Meyers Singleton in C++11 is that it's automatically thread-safe. That is guaranteed by the standard: Static variables with block scope. The Meyers Singleton is a static variable with block scope, so we are done. It's still left to rewrite the program for four threads.
+            ```c++
+            // singletonMeyers.cpp
+
+            #include <chrono>
+            #include <iostream>
+            #include <future>
+
+            constexpr auto tenMill= 10000000;
+
+            class MySingleton{
+            public:
+              static MySingleton& getInstance(){
+                static MySingleton instance;
+                // volatile int dummy{};
+                return instance;
+              }
+            private:
+              MySingleton()= default;
+              ~MySingleton()= default;
+              MySingleton(const MySingleton&)= delete;
+              MySingleton& operator=(const MySingleton&)= delete;
+
+            };
+
+            std::chrono::duration<double> getTime(){
+
+              auto begin= std::chrono::system_clock::now();
+              for ( size_t i= 0; i <= tenMill; ++i){
+                  MySingleton::getInstance();
+              }
+              return std::chrono::system_clock::now() - begin;
+
+            };
+
+            int main(){
+
+                auto fut1= std::async(std::launch::async,getTime);
+                auto fut2= std::async(std::launch::async,getTime);
+                auto fut3= std::async(std::launch::async,getTime);
+                auto fut4= std::async(std::launch::async,getTime);
+
+                auto total= fut1.get() + fut2.get() + fut3.get() + fut4.get();
+
+                std::cout << total.count() << std::endl;
+
+            }
+            ```
+        * The function std::call_once and the flag std::once_flag
+            * You can use the function std::call_once to register a callable which will be executed exactly once. The flag std::call_once in the following implementation guarantees that the singleton will be thread-safe initialized.
+            ```c++
+            // singletonCallOnce.cpp
+
+            #include <chrono>
+            #include <iostream>
+            #include <future>
+            #include <mutex>
+            #include <thread>
+
+            constexpr auto tenMill= 10000000;
+
+            class MySingleton{
+            public:
+              static MySingleton& getInstance(){
+                std::call_once(initInstanceFlag, &MySingleton::initSingleton);
+                // volatile int dummy{};
+                return *instance;
+              }
+            private:
+              MySingleton()= default;
+              ~MySingleton()= default;
+              MySingleton(const MySingleton&)= delete;
+              MySingleton& operator=(const MySingleton&)= delete;
+
+              static MySingleton* instance;
+              static std::once_flag initInstanceFlag;
+
+              static void initSingleton(){
+                instance= new MySingleton;
+              }
+            };
+
+            MySingleton* MySingleton::instance= nullptr;
+            std::once_flag MySingleton::initInstanceFlag;
+
+            std::chrono::duration<double> getTime(){
+
+              auto begin= std::chrono::system_clock::now();
+              for ( size_t i= 0; i <= tenMill; ++i){
+                  MySingleton::getInstance();
+              }
+              return std::chrono::system_clock::now() - begin;
+
+            };
+
+            int main(){
+
+                auto fut1= std::async(std::launch::async,getTime);
+                auto fut2= std::async(std::launch::async,getTime);
+                auto fut3= std::async(std::launch::async,getTime);
+                auto fut4= std::async(std::launch::async,getTime);
+
+                auto total= fut1.get() + fut2.get() + fut3.get() + fut4.get();
+
+                std::cout << total.count() << std::endl;
+
+            }
+            ```
+        * Lock
+            * The mutex wrapped in a lock guarantees that the singleton will be thread-safe initialized.
+            ```c++
+            // singletonLock.cpp
+
+            #include <chrono>
+            #include <iostream>
+            #include <future>
+            #include <mutex>
+
+            constexpr auto tenMill= 10000000;
+
+            std::mutex myMutex;
+
+            class MySingleton{
+            public:
+              static MySingleton& getInstance(){
+                std::lock_guard<std::mutex> myLock(myMutex);
+                if ( !instance ){
+                    instance= new MySingleton();
+                }
+                // volatile int dummy{};
+                return *instance;
+              }
+            private:
+              MySingleton()= default;
+              ~MySingleton()= default;
+              MySingleton(const MySingleton&)= delete;
+              MySingleton& operator=(const MySingleton&)= delete;
+
+              static MySingleton* instance;
+            };
+
+
+            MySingleton* MySingleton::instance= nullptr;
+
+            std::chrono::duration<double> getTime(){
+
+              auto begin= std::chrono::system_clock::now();
+              for ( size_t i= 0; i <= tenMill; ++i){
+                   MySingleton::getInstance();
+              }
+              return std::chrono::system_clock::now() - begin;
+
+            };
+
+            int main(){
+
+                auto fut1= std::async(std::launch::async,getTime);
+                auto fut2= std::async(std::launch::async,getTime);
+                auto fut3= std::async(std::launch::async,getTime);
+                auto fut4= std::async(std::launch::async,getTime);
+
+                auto total= fut1.get() + fut2.get() + fut3.get() + fut4.get();
+
+                std::cout << total.count() << std::endl;
+            }
+            ```
+        * Atomic variables
+            * With atomic variables, my job becomes extremely challenging. Now I have to use the [C++ memory model](https://www.modernescpp.com/index.php/c-memory-model). I base my implementation on the well-known [double-checked locking pattern](https://www.modernescpp.com/index.php/thread-safe-initialization-of-data).
+            * Sequential consistency
+                * The handle to the singleton is atomic. Because I didn't specify the C++ memory model the default applies: [Sequential consistency](https://www.modernescpp.com/index.php/sequential-consistency).
+                ```c++
+                // singletonAcquireRelease.cpp
+
+                #include <atomic>
+                #include <iostream>
+                #include <future>
+                #include <mutex>
+                #include <thread>
+
+                constexpr auto tenMill= 10000000;
+
+                class MySingleton{
+                public:
+                  static MySingleton* getInstance(){
+                    MySingleton* sin= instance.load();
+                    if ( !sin ){
+                      std::lock_guard<std::mutex> myLock(myMutex);
+                      sin= instance.load();
+                      if( !sin ){
+                        sin= new MySingleton();
+                        instance.store(sin);
+                      }
+                    }   
+                    // volatile int dummy{};
+                    return sin;
+                  }
+                private:
+                  MySingleton()= default;
+                  ~MySingleton()= default;
+                  MySingleton(const MySingleton&)= delete;
+                  MySingleton& operator=(const MySingleton&)= delete;
+
+                  static std::atomic<MySingleton*> instance;
+                  static std::mutex myMutex;
+                };
+
+
+                std::atomic<MySingleton*> MySingleton::instance;
+                std::mutex MySingleton::myMutex;
+
+                std::chrono::duration<double> getTime(){
+
+                  auto begin= std::chrono::system_clock::now();
+                  for ( size_t i= 0; i <= tenMill; ++i){
+                       MySingleton::getInstance();
+                  }
+                  return std::chrono::system_clock::now() - begin;
+
+                };
+
+
+                int main(){
+
+                    auto fut1= std::async(std::launch::async,getTime);
+                    auto fut2= std::async(std::launch::async,getTime);
+                    auto fut3= std::async(std::launch::async,getTime);
+                    auto fut4= std::async(std::launch::async,getTime);
+
+                    auto total= fut1.get() + fut2.get() + fut3.get() + fut4.get();
+
+                    std::cout << total.count() << std::endl;
+
+                }
+                ```
+            * Acquire-release Semantic
+                * The reading of the singleton (line 14) is an acquire operation, the writing a release operation (line 20). Because both operations take place on the same atomic I don't need sequential consistency. The C++ standard guarantees that an acquire operation synchronizes with a release operation on the same atomic. These conditions hold in this case therefore I can weaken the C++ memory model in line 14 and 20. [Acquire-release semantic](https://www.modernescpp.com/index.php/acquire-release-semantic) is sufficient.
+                ```c++
+                // singletonAcquireRelease.cpp
+
+                #include <atomic>
+                #include <iostream>
+                #include <future>
+                #include <mutex>
+                #include <thread>
+
+                constexpr auto tenMill= 10000000;
+
+                class MySingleton{
+                public:
+                  static MySingleton* getInstance(){
+                    MySingleton* sin= instance.load(std::memory_order_acquire);
+                    if ( !sin ){
+                      std::lock_guard<std::mutex> myLock(myMutex);
+                      sin= instance.load(std::memory_order_relaxed);
+                      if( !sin ){
+                        sin= new MySingleton();
+                        instance.store(sin,std::memory_order_release);
+                      }
+                    }   
+                    // volatile int dummy{};
+                    return sin;
+                  }
+                private:
+                  MySingleton()= default;
+                  ~MySingleton()= default;
+                  MySingleton(const MySingleton&)= delete;
+                  MySingleton& operator=(const MySingleton&)= delete;
+
+                  static std::atomic<MySingleton*> instance;
+                  static std::mutex myMutex;
+                };
+
+
+                std::atomic<MySingleton*> MySingleton::instance;
+                std::mutex MySingleton::myMutex;
+
+                std::chrono::duration<double> getTime(){
+
+                  auto begin= std::chrono::system_clock::now();
+                  for ( size_t i= 0; i <= tenMill; ++i){
+                       MySingleton::getInstance();
+                  }
+                  return std::chrono::system_clock::now() - begin;
+
+                };
+
+
+                int main(){
+
+                    auto fut1= std::async(std::launch::async,getTime);
+                    auto fut2= std::async(std::launch::async,getTime);
+                    auto fut3= std::async(std::launch::async,getTime);
+                    auto fut4= std::async(std::launch::async,getTime);
+
+                    auto total= fut1.get() + fut2.get() + fut3.get() + fut4.get();
+
+                    std::cout << total.count() << std::endl;
+
+                }
+                ```
 * [简约不简单的单例模式 (qq.com)](https://mp.weixin.qq.com/s/HmgUhWeXuim2LxZStuHPOw)
 * [一个单例还能写出花来吗？ (qq.com)](https://mp.weixin.qq.com/s/0n4TKGbK2UrKarutOxFd7g)
 
