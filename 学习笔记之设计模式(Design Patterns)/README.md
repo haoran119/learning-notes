@@ -16,6 +16,12 @@
 
 ### [Singleton pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
 
+* In software engineering, the singleton pattern is a software design pattern that restricts the instantiation of a class to a singular instance. One of the well-known "Gang of Four" design patterns, which describe how to solve recurring problems in object-oriented software,[1] the pattern is useful when exactly one object is needed to coordinate actions across a system.
+* More specifically, the singleton pattern allows objects to:[2]
+    * Ensure they only have one instance
+    * Provide easy access to that instance
+    * Control their instantiation (for example, hiding the constructors of a class)
+* The term comes from the mathematical concept of a singleton.
 * [Design Patterns: Singleton in C++](https://refactoring.guru/design-patterns/singleton/cpp/example#example-1)
 * [Thread-Safe Initialization of a Singleton - ModernesCpp.com](https://www.modernescpp.com/index.php/thread-safe-initialization-of-a-singleton)
 * [简约不简单的单例模式 (qq.com)](https://mp.weixin.qq.com/s/HmgUhWeXuim2LxZStuHPOw)
