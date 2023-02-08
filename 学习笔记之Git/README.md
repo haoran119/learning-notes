@@ -131,6 +131,7 @@ git commit -am "commit message"
 ```sh
 git config --global user.name "name"
 git config --global user.email "name@test.com"
+git config --list
 ```
 * [Git Diff | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/saving-changes/git-diff)
   * Comparing files: git diff file
