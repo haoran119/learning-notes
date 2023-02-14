@@ -547,6 +547,10 @@ Thank you.
 ### Git
 
 * [learning-notes/学习笔记之Git at main · haoran119/learning-notes](https://github.com/haoran119/learning-notes/tree/main/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8BGit)
+* [Git for Windows](https://gitforwindows.org/)
+  * Git for Windows focuses on offering a lightweight, native set of tools that bring the full feature set of the Git SCM to Windows while providing appropriate user interfaces for experienced Git users and novices alike.
+* [TortoiseGit – Windows Shell Interface to Git](https://tortoisegit.org/)
+  * TortoiseGit provides overlay icons showing the file status, a powerful context menu for Git and much more!
 * [Sourcetree | Free Git GUI for Mac and Windows](https://www.sourcetreeapp.com/)
   * Sourcetree simplifies how you interact with your Git repositories so you can focus on coding. Visualize and manage your repositories through Sourcetree's simple Git GUI.
 
