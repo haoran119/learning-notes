@@ -181,6 +181,19 @@ $ git config --global core.autocrlf false
   ```sh
   $ git checkout master ./rollback_test.txt
   ```
+* [Git - git-remote Documentation](https://git-scm.com/docs/git-remote)
+    * Manage the set of repositories ("remotes") whose branches you track.
+    * [Managing remote repositories - GitHub Docs](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)
+        * Learn to work with your local repositories on your computer and remote repositories hosted on GitHub.
+    ```sh
+    $ git remote add origin https://github.com/USER/REPO.git
+    # Set a new remote
+    $ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+    $ git remote -v
+    # Verify new remote
+    > origin  https://github.com/USER/REPO.git (fetch)
+    > origin  https://github.com/USER/REPO.git (push)
+    ```
 * [Git - git-reset Documentation](https://git-scm.com/docs/git-reset)
   * git-reset - Reset current HEAD to the specified state
   ```sh
