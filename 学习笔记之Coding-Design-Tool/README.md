@@ -568,6 +568,12 @@ Thank you.
 
 ### MISC
 
+#### [Beyond Compare](https://www.scootersoftware.com/)
+
+* Compare files and folders using simple, powerful commands that focus on the differences you're interested in and ignore those you're not.  Merge changes, synchronize files, and generate reports.
+* [Beyond Compare - Wikipedia](https://en.wikipedia.org/wiki/Beyond_Compare)
+  * Beyond Compare is a proprietary data comparison utility. Aside from comparing files, the program is capable of doing side-by-side comparison of directories, FTP and SFTP directories, Dropbox directories, Amazon S3 directories, and archives.[1] It is available for Windows, Mac OS, and Linux operating systems. A strength of Beyond Compare is that it can be configured as difftool and mergetool of version control systems, such as git.[2]
+
 #### [Dependencies](https://github.com/lucasg/Dependencies)
 
 * lucasg/Dependencies: A rewrite of the old legacy software "depends.exe" in C# for Windows devs to troubleshoot dll load dependencies issues.
