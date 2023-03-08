@@ -421,6 +421,8 @@ Thank you.
   * https://github.com/RichardLitt/standard-readme
   * [Basic Syntax | Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 * [GitHub Documentation](https://docs.github.com/en)
+  * [About Git - GitHub Docs](https://docs.github.com/en/get-started/using-git/about-git)
+    * Learn about the version control system, Git, and how it works with GitHub.
   * CI/CD and DevOps
     * [GitHub Actions](https://docs.github.com/en/actions)
       * [Overview](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions)
