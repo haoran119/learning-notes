@@ -228,8 +228,14 @@ $ git checkout hello.c
 #       
 * [Git - git-reset Documentation](https://git-scm.com/docs/git-reset)
   * git-reset - Reset current HEAD to the specified state
+  * --hard
+    * Resets the index and working tree. Any changes to tracked files in the working tree since `<commit>` are discarded. Any untracked files or directories in the way of writing any tracked files are simply deleted.
 ```sh
 $ git reset HEAD test.py
+
+# reset your local branch to match the state of the origin/master branch in the remote repository 
+# and discard any local changes that are not in the remote branch.
+$ git reset --hard origin/master
 
 # Undo commits permanently
 $ git commit ...
