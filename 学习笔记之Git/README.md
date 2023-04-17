@@ -78,6 +78,7 @@
 
 * [git add](https://www.atlassian.com/git/tutorials/saving-changes)
 * [git-blame - Show what revision and author last modified each line of a file](https://git-scm.com/docs/git-blame)
+#
 * [git-branch - List, create, or delete branches](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt--d)
   * -a / --all
     * List both remote-tracking branches and local branches. Combine with --list to match optional pattern(s).
@@ -116,15 +117,21 @@
     ```sh
     $ git push origin -u new-name
     ```
+#
 * [Git - git-bundle Documentation](https://git-scm.com/docs/git-bundle)
   * git-bundle - Move objects and refs by archive
   ```sh
   $ git bundle create mybundle v1.0.0..master
   ```
+* [Git - git-clone Documentation](https://git-scm.com/docs/git-clone)
+  * git-clone - Clone a repository into a new directory
+```sh
+$ git clone git://git.kernel.org/pub/scm/.../linux.git my-linux
+```
 * [Git Commit | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/saving-changes/git-commit#:~:text=The%20git%20commit%20command%20captures,you%20explicitly%20ask%20it%20to.)
   * A power user shortcut command that combines the -a and -m options. This combination immediately creates a commit of all the staged changes and takes an inline commit message.
 ```sh
-git commit -am "commit message"
+$ git commit -am "commit message"
 ```
 * [Git - git-config Documentation](https://git-scm.com/docs/git-config)
   * [git config | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config)
