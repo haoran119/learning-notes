@@ -220,9 +220,23 @@ $ git checkout hello.c
     ```
 * [Git - git-reset Documentation](https://git-scm.com/docs/git-reset)
   * git-reset - Reset current HEAD to the specified state
-  ```sh
-  $ git reset HEAD test.py
-  ```
+```sh
+$ git reset HEAD test.py
+
+# Undo commits permanently
+$ git commit ...
+$ git reset --hard HEAD~3   (1)
+# The last three commits (HEAD, HEAD^, and HEAD~2) were bad and you do not want to ever see them again. 
+# Do not do this if you have already given these commits to somebody else. 
+# (See the "RECOVERING FROM UPSTREAM REBASE" section in git-rebase[1] for the implications of doing so.)
+```
+  * How to delete a local commit?
+    * To delete a local commit in Git, you can use the git reset command. Here are the steps:
+      * Use `git log` to find the commit ID of the local commit you want to delete.
+      * Use `git reset HEAD~` to remove the most recent commit from your local branch. If you want to delete a specific commit, `replace HEAD~ with the commit ID`.
+      * Optionally, use `git reset --hard HEAD~` to remove the commit and discard any changes made in that commit. This command will remove the commit and reset your working directory to the state it was in before the commit was made.
+      * Use `git push -f` to force push the updated branch to the remote repository if the commit has already been pushed to the remote repository.
+      * Note that deleting a local commit can be risky if the commit has already been pushed to a remote repository and other developers are working on the same branch. It is recommended to communicate with other developers and consider the potential impact of deleting a commit before doing so.
 * [Git - git-rm Documentation](https://git-scm.com/docs/git-rm)
   * git-rm - Remove files from the working tree and from the index
 ```sh
