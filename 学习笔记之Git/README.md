@@ -190,10 +190,17 @@ $ git config --global core.autocrlf false
   ```sh
   $ git mv old.py new.py
   ```
-* [Git Push | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/syncing/git-push)
-  ```sh
-  $ git push origin master
-  ```
+* [Git - git-push Documentation](https://git-scm.com/docs/git-push)
+  * git-push - Update remote refs along with associated objects
+  * [Git Push | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/syncing/git-push)
+```sh
+# Find a ref that matches master in the source repository (most likely, it would find refs/heads/master), 
+# and update the same ref (e.g. refs/heads/master) in origin repository with it. 
+# If master did not exist remotely, it would be created.
+$ git push origin master
+
+$ git push --progress "origin" local_branch1:branch1
+```
 * [Git - git-checkout Documentation](https://git-scm.com/docs/git-checkout)
   * git-checkout - Switch branches or restore working tree files
   * [Resetting, Checking Out & Reverting | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
