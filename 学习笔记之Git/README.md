@@ -188,7 +188,8 @@ $ git config --global core.autocrlf false
   * git-checkout - Switch branches or restore working tree files
   * [Resetting, Checking Out & Reverting | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
 ```sh
-# The following sequence checks out the master branch, reverts the Makefile to two revisions back, deletes hello.c by mistake, and gets it back from the index.
+# The following sequence checks out the master branch, reverts the Makefile to two revisions back, deletes hello.c by mistake, 
+# and gets it back from the index.
 $ git checkout master
 $ git checkout master~2 Makefile
 $ rm -f hello.c
