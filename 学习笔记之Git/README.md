@@ -120,9 +120,19 @@
 #
 * [Git - git-bundle Documentation](https://git-scm.com/docs/git-bundle)
   * git-bundle - Move objects and refs by archive
-  ```sh
-  $ git bundle create mybundle v1.0.0..master
-  ```
+```sh
+$ git bundle create mybundle v1.0.0..master
+```
+#  
+* [Git - git-cherry-pick Documentation](https://git-scm.com/docs/git-cherry-pick)
+  * git-cherry-pick - Apply the changes introduced by some existing commits
+* How to restore lost commits ?
+  * [Git Cherry Pick | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/cherry-pick)
+```sh
+$ git fetch
+$ git cherry-pick ***
+```
+#
 * [Git - git-clone Documentation](https://git-scm.com/docs/git-clone)
   * git-clone - Clone a repository into a new directory
 ```sh
@@ -390,12 +400,6 @@ $ git rm -f git-*.sh
     * [Manage Git repos in Visual Studio | Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/version-control/git-manage-repository?view=vs-2022)
     * [Resolve merge conflicts in Visual Studio | Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/version-control/git-resolve-conflicts?view=vs-2022)
   * Tips : do it in VScode to just accecpt or reject conflicts for more convenient
-* How to restore lost commits ?
-  * [Git Cherry Pick | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/cherry-pick)
-  ```sh
-  $ git fetch
-  $ git cherry-pick ***
-  ```
 * How to revert to a previous commit ?
   * [git checkout - How do I revert a Git repository to a previous commit? - Stack Overflow](https://stackoverflow.com/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit)
   ```sh
