@@ -218,6 +218,7 @@ $ git checkout hello.c
     > origin  https://github.com/USER/REPO.git (fetch)
     > origin  https://github.com/USER/REPO.git (push)
     ```
+#       
 * [Git - git-reset Documentation](https://git-scm.com/docs/git-reset)
   * git-reset - Reset current HEAD to the specified state
 ```sh
@@ -237,6 +238,7 @@ $ git reset --hard HEAD~3   (1)
       * Optionally, use `git reset --hard HEAD~` to remove the commit and discard any changes made in that commit. This command will remove the commit and reset your working directory to the state it was in before the commit was made.
       * Use `git push -f` to force push the updated branch to the remote repository if the commit has already been pushed to the remote repository.
       * Note that deleting a local commit can be risky if the commit has already been pushed to a remote repository and other developers are working on the same branch. It is recommended to communicate with other developers and consider the potential impact of deleting a commit before doing so.
+#
 * [Git - git-rm Documentation](https://git-scm.com/docs/git-rm)
   * git-rm - Remove files from the working tree and from the index
 ```sh
