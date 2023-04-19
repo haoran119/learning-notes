@@ -429,6 +429,7 @@ Thank you.
             * [Quickstart](https://docs.github.com/en/actions/quickstart)
 * [Continuous Integration and Continuous Delivery (CI/CD) Fundamentals | GitHub Resources](https://resources.github.com/ci-cd/)
 * [edonosotti/ci-cd-tutorial-sample-app: A sample Python app that implements a REST API, with database migrations and CI/CD support.](https://github.com/edonosotti/ci-cd-tutorial-sample-app)
+* [Git Large File Storage | Git Large File Storage (LFS) replaces large files such as audio samples, videos, datasets, and graphics with text pointers inside Git, while storing the file contents on a remote server like GitHub.com or GitHub Enterprise.](https://git-lfs.com/)
 
 #### [GitLab](https://about.gitlab.com/)
 
