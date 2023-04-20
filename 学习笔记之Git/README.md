@@ -123,6 +123,17 @@
 ```sh
 $ git bundle create mybundle v1.0.0..master
 ```
+* [Git - git-checkout Documentation](https://git-scm.com/docs/git-checkout)
+  * git-checkout - Switch branches or restore working tree files
+  * [Resetting, Checking Out & Reverting | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
+```sh
+# The following sequence checks out the master branch, reverts the Makefile to two revisions back, deletes hello.c by mistake, 
+# and gets it back from the index.
+$ git checkout master
+$ git checkout master~2 Makefile
+$ rm -f hello.c
+$ git checkout hello.c
+```
 #  
 * [Git - git-cherry-pick Documentation](https://git-scm.com/docs/git-cherry-pick)
   * git-cherry-pick - Apply the changes introduced by some existing commits
@@ -222,17 +233,6 @@ $ git config --global core.autocrlf false
 $ git push origin master
 
 $ git push --progress "origin" local_branch1:branch1
-```
-* [Git - git-checkout Documentation](https://git-scm.com/docs/git-checkout)
-  * git-checkout - Switch branches or restore working tree files
-  * [Resetting, Checking Out & Reverting | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
-```sh
-# The following sequence checks out the master branch, reverts the Makefile to two revisions back, deletes hello.c by mistake, 
-# and gets it back from the index.
-$ git checkout master
-$ git checkout master~2 Makefile
-$ rm -f hello.c
-$ git checkout hello.c
 ```
 * [Git - git-remote Documentation](https://git-scm.com/docs/git-remote)
     * Manage the set of repositories ("remotes") whose branches you track.
