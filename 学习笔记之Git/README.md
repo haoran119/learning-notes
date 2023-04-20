@@ -161,7 +161,9 @@ $ git config --global credential.helper wincred
 # Turn off auto-converting CRLF line endings into LF
 $ git config --global core.autocrlf false
 ```
-* [Git Diff | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/saving-changes/git-diff)
+#
+* [Git - git-diff Documentation](https://git-scm.com/docs/git-diff)
+  * [Git Diff | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/saving-changes/git-diff)
   * Comparing files: git diff file
   ```sh
   $ git diff master ./diff_test.txt
@@ -174,6 +176,26 @@ $ git config --global core.autocrlf false
   ```sh
   $ git diff master new_branch ./diff_test.txt　　
   ```
+* How to create and apply changes in working directory ?
+  * [Create a git patch from the changes in the current working directory - Stack Overflow](https://stackoverflow.com/questions/5159185/create-a-git-patch-from-the-changes-in-the-current-working-directory)
+    * If you haven't yet commited the changes, then:
+    ```sh
+    $ git diff > mypatch.patch
+    ```
+    * But sometimes it happens that part of the stuff you're doing are new files that are untracked and won't be in your git diff output. So, one way to do a patch is to stage everything for a new commit (git add each file, or just git add .) but don't do the commit, and then:
+    ```sh
+    $ git diff --cached > mypatch.patch
+    ```
+    * Add the 'binary' option if you want to add binary files to the patch (e.g. mp3 files):
+    ```sh
+    $ git diff --cached --binary > mypatch.patch
+    ```
+    * You can later apply the patch:
+    ```sh
+    $ git apply mypatch.patch
+    ```
+    * Note: You can also use --staged as a synonym of --cached.
+#
 * [Git - git-gui Documentation](https://git-scm.com/docs/git-gui)
   * git-gui - A portable graphical interface to Git
 * [Git - gitk Documentation](https://git-scm.com/docs/gitk)
@@ -338,25 +360,7 @@ $ git rm -f git-*.sh
 
 ## FAQ
 
-* How to create and apply changes in working directory ?
-  * [Create a git patch from the changes in the current working directory - Stack Overflow](https://stackoverflow.com/questions/5159185/create-a-git-patch-from-the-changes-in-the-current-working-directory)
-    * If you haven't yet commited the changes, then:
-    ```sh
-    $ git diff > mypatch.patch
-    ```
-    * But sometimes it happens that part of the stuff you're doing are new files that are untracked and won't be in your git diff output. So, one way to do a patch is to stage everything for a new commit (git add each file, or just git add .) but don't do the commit, and then:
-    ```sh
-    $ git diff --cached > mypatch.patch
-    ```
-    * Add the 'binary' option if you want to add binary files to the patch (e.g. mp3 files):
-    ```sh
-    $ git diff --cached --binary > mypatch.patch
-    ```
-    * You can later apply the patch:
-    ```sh
-    $ git apply mypatch.patch
-    ```
-    * Note: You can also use --staged as a synonym of --cached.
+
 * How to sync up feature branch with master branch code changes ?
   * Do git rebase to pick up the master branch code changes.
   ```sh
