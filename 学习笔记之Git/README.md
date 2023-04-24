@@ -234,6 +234,25 @@ $ git push origin master
 
 $ git push --progress "origin" local_branch1:branch1
 ```
+#
+* [Git - git-rebase Documentation](https://git-scm.com/docs/git-rebase)
+  * git-rebase - Reapply commits on top of another base tip
+* How to sync up feature branch with master branch code changes ?
+  * Do git rebase to pick up the master branch code changes.
+  ```sh
+  $ git fetch
+  $ git checkout feature/xxx
+  $ git rebase origin/master
+  
+  # If any issues, fix it and continue 
+  $ git mergetool
+  $ git rebase --continue
+
+  $ git push -f origin feature/xxx
+  ```
+  * [git rebase | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
+  * [An introduction to Git merge and rebase: what they are, and how to use them](https://www.freecodecamp.org/news/an-introduction-to-git-merge-and-rebase-what-they-are-and-how-to-use-them-131b863785f/#:~:text=Rebase%20is%20another%20way%20to,from%20one%20branch%20to%20another. )
+#
 * [Git - git-remote Documentation](https://git-scm.com/docs/git-remote)
     * Manage the set of repositories ("remotes") whose branches you track.
     * [Managing remote repositories - GitHub Docs](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)
@@ -360,22 +379,6 @@ $ git rm -f git-*.sh
 
 ## FAQ
 
-
-* How to sync up feature branch with master branch code changes ?
-  * Do git rebase to pick up the master branch code changes.
-  ```sh
-  $ git fetch
-  $ git checkout feature/xxx
-  $ git rebase origin/master
-  
-  # If any issues, fix it and continue 
-  $ git mergetool
-  $ git rebase --continue
-
-  $ git push -f origin feature/xxx
-  ```
-  * [git rebase | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
-  * [An introduction to Git merge and rebase: what they are, and how to use them](https://www.freecodecamp.org/news/an-introduction-to-git-merge-and-rebase-what-they-are-and-how-to-use-them-131b863785f/#:~:text=Rebase%20is%20another%20way%20to,from%20one%20branch%20to%20another. )
 * How to squash commits into one commit ?
   * Do git rebase -i to squash commits interactively. 
   ```sh
