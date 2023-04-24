@@ -84,6 +84,8 @@ git add <directory>
 # This will present you with a chunk of changes and prompt you for a command. Use y to stage the chunk, 
 # n to ignore the chunk, s to split it into smaller chunks, e to manually edit the chunk, and q to exit.
 git add -p
+# create an initial commit of the current directory
+git add .
 ```
 * [git-blame - Show what revision and author last modified each line of a file](https://git-scm.com/docs/git-blame)
 #
