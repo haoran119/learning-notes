@@ -227,7 +227,7 @@ $ git config --global credential.helper wincred
 $ git config --global core.autocrlf false
 ```
 
-### [Git - git-diff Documentation](https://git-scm.com/docs/git-diff)
+### [git diff](https://git-scm.com/docs/git-diff)
 
 * git-diff - Show changes between commits, commit and working tree, etc
 * [Git Diff | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/saving-changes/git-diff)
