@@ -76,7 +76,15 @@
 
 ## COMMANDS
 
-* [git add](https://www.atlassian.com/git/tutorials/saving-changes)
+* [Git Add | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/saving-changes)
+```sh
+git add <file>
+git add <directory>
+# Begin an interactive staging session that lets you choose portions of a file to add to the next commit. 
+# This will present you with a chunk of changes and prompt you for a command. Use y to stage the chunk, 
+# n to ignore the chunk, s to split it into smaller chunks, e to manually edit the chunk, and q to exit.
+git add -p
+```
 * [git-blame - Show what revision and author last modified each line of a file](https://git-scm.com/docs/git-blame)
 #
 * [git-branch - List, create, or delete branches](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt--d)
