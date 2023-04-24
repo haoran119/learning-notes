@@ -76,6 +76,9 @@
 
 ## COMMANDS
 
+### [git add](https://git-scm.com/docs/git-add)
+
+* git-add - Add file contents to the index
 * [Git Add | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/saving-changes)
 ```sh
 git add <file>
@@ -87,13 +90,36 @@ git add -p
 # create an initial commit of the current directory
 git add .
 ```
-* [git-blame - Show what revision and author last modified each line of a file](https://git-scm.com/docs/git-blame)
-#
-* [git-branch - List, create, or delete branches](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt--d)
-  * -a / --all
-    * List both remote-tracking branches and local branches. Combine with --list to match optional pattern(s).
-  * -l / --list
-    * List branches. With optional \<pattern>..., e.g. git branch --list 'maint-*', list only the branches that match the pattern(s).
+
+### [git blame](https://git-scm.com/docs/git-blame)
+
+* git-blame - Show what revision and author last modified each line of a file
+
+### [git branch](https://git-scm.com/docs/git-branch)
+
+* git-branch - List, create, or delete branches
+```sh
+git branch [--color[=<when>] | --no-color] [--show-current]
+	[-v [--abbrev=<n> | --no-abbrev]]
+	[--column[=<options>] | --no-column] [--sort=<key>]
+	[--merged [<commit>]] [--no-merged [<commit>]]
+	[--contains [<commit>]] [--no-contains [<commit>]]
+	[--points-at <object>] [--format=<format>]
+	[(-r | --remotes) | (-a | --all)]
+	[--list] [<pattern>…]
+git branch [--track[=(direct|inherit)] | --no-track] [-f]
+	[--recurse-submodules] <branchname> [<start-point>]
+git branch (--set-upstream-to=<upstream> | -u <upstream>) [<branchname>]
+git branch --unset-upstream [<branchname>]
+git branch (-m | -M) [<oldbranch>] <newbranch>
+git branch (-c | -C) [<oldbranch>] <newbranch>
+git branch (-d | -D) [-r] <branchname>…
+git branch --edit-description [<branchname>]
+```
+* -a / --all
+  * List both remote-tracking branches and local branches. Combine with --list to match optional pattern(s).
+* -l / --list
+  * List branches. With optional \<pattern>..., e.g. git branch --list 'maint-*', list only the branches that match the pattern(s).
 * [How do I delete a Git branch locally and remotely? - Stack Overflow](https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely#targetText=Simply%20do%20git%20push%20origin,local%20branch%20ONLY!...)
   * Executive Summary
     * Note that in most cases the remote name is origin.
@@ -127,16 +153,18 @@ git add .
     ```sh
     $ git push origin -u new-name
     ```
-#
-* [Git - git-bundle Documentation](https://git-scm.com/docs/git-bundle)
-  * git-bundle - Move objects and refs by archive
+
+### [git bundle](https://git-scm.com/docs/git-bundle)
+
+* git-bundle - Move objects and refs by archive
 ```sh
 $ git bundle create mybundle v1.0.0..master
 ```
-#
-* [Git - git-checkout Documentation](https://git-scm.com/docs/git-checkout)
-  * git-checkout - Switch branches or restore working tree files
-  * [Resetting, Checking Out & Reverting | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
+
+### [git checkout](https://git-scm.com/docs/git-checkout)
+
+* git-checkout - Switch branches or restore working tree files
+* [Resetting, Checking Out & Reverting | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
 ```sh
 # The following sequence checks out the master branch, reverts the Makefile to two revisions back, deletes hello.c by mistake, 
 # and gets it back from the index.
@@ -151,29 +179,38 @@ $ git checkout hello.c
   # This will detach your HEAD, that is, leave you with no branch checked out:
   git checkout 0d1d7fc32
   ```
-#  
-* [Git - git-cherry-pick Documentation](https://git-scm.com/docs/git-cherry-pick)
-  * git-cherry-pick - Apply the changes introduced by some existing commits
+  
+### [git cherry-pick](https://git-scm.com/docs/git-cherry-pick)
+
+* git-cherry-pick - Apply the changes introduced by some existing commits
 * How to restore lost commits ?
   * [Git Cherry Pick | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/cherry-pick)
 ```sh
 $ git fetch
 $ git cherry-pick ***
 ```
-#
-* [Git - git-clone Documentation](https://git-scm.com/docs/git-clone)
-  * git-clone - Clone a repository into a new directory
+
+### [git clone](https://git-scm.com/docs/git-clone)
+
+* git-clone - Clone a repository into a new directory
 ```sh
 $ git clone git://git.kernel.org/pub/scm/.../linux.git my-linux
 ```
+
+### [git commit](https://git-scm.com/docs/git-commit)
+
+* git-commit - Record changes to the repository
 * [Git Commit | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/saving-changes/git-commit#:~:text=The%20git%20commit%20command%20captures,you%20explicitly%20ask%20it%20to.)
   * A power user shortcut command that combines the -a and -m options. This combination immediately creates a commit of all the staged changes and takes an inline commit message.
 ```sh
 $ git commit -am "commit message"
 ```
-* [Git - git-config Documentation](https://git-scm.com/docs/git-config)
-  * [git config | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config)
-    * In this document, we'll take an in-depth look at the git config command. We briefly discussed git config usage on our Setting up a Repository page. The git config command is a convenience function that is used to set Git configuration values on a global or local project level. These configuration levels correspond to .gitconfig text files. Executing git config will modify a configuration text file. We'll be covering common configuration settings like email, username, and editor. We'll discuss Git aliases, which allow you to create shortcuts for frequently used Git operations. Becoming familiar with git config and the various Git configuration settings will help you create a powerful, customized Git workflow.
+
+### [git config](https://git-scm.com/docs/git-config)
+
+* git-config - Get and set repository or global options
+* [git config | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config)
+  * In this document, we'll take an in-depth look at the git config command. We briefly discussed git config usage on our Setting up a Repository page. The git config command is a convenience function that is used to set Git configuration values on a global or local project level. These configuration levels correspond to .gitconfig text files. Executing git config will modify a configuration text file. We'll be covering common configuration settings like email, username, and editor. We'll discuss Git aliases, which allow you to create shortcuts for frequently used Git operations. Becoming familiar with git config and the various Git configuration settings will help you create a powerful, customized Git workflow.
   * [credentials - How can I save username and password in Git? - Stack Overflow](https://stackoverflow.com/questions/35942754/how-can-i-save-username-and-password-in-git#:~:text=So%2C%20the%20full%20command%20will,encryption%2C%20so%20to%20say)
 ```sh
 $ git config --global user.name "name"
@@ -189,9 +226,11 @@ $ git config --global credential.helper wincred
 # Turn off auto-converting CRLF line endings into LF
 $ git config --global core.autocrlf false
 ```
-#
-* [Git - git-diff Documentation](https://git-scm.com/docs/git-diff)
-  * [Git Diff | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/saving-changes/git-diff)
+
+### [Git - git-diff Documentation](https://git-scm.com/docs/git-diff)
+
+* git-diff - Show changes between commits, commit and working tree, etc
+* [Git Diff | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/saving-changes/git-diff)
   * Comparing files: git diff file
   ```sh
   $ git diff master ./diff_test.txt
@@ -223,23 +262,29 @@ $ git config --global core.autocrlf false
     $ git apply mypatch.patch
     ```
     * Note: You can also use --staged as a synonym of --cached.
-#
-* [Git - git-gui Documentation](https://git-scm.com/docs/git-gui)
-  * git-gui - A portable graphical interface to Git
-* [Git - gitk Documentation](https://git-scm.com/docs/gitk)
-  * gitk - The Git repository browser
-  * [Git - gitk and git-gui | git Tutorial](https://riptutorial.com/git/example/18336/gitk-and-git-gui)
-* [Git - git-log Documentation](https://git-scm.com/docs/git-log)
-  * git-log - Show commit logs
-  * [Advanced Git Log | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/git-log)
-  * The advanced features of git log can be split into two categories: formatting how each commit is displayed, and filtering which commits are included in the output.
+
+### [git gui](https://git-scm.com/docs/git-gui)
+  
+* git-gui - A portable graphical interface to Git
+
+### [gitk](https://git-scm.com/docs/gitk)
+
+* gitk - The Git repository browser
+* [Git - gitk and git-gui | git Tutorial](https://riptutorial.com/git/example/18336/gitk-and-git-gui)
+
+### [git log](https://git-scm.com/docs/git-log)
+
+* git-log - Show commit logs
+* [Advanced Git Log | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/git-log)
+* The advanced features of git log can be split into two categories: formatting how each commit is displayed, and filtering which commits are included in the output.
 ```sh
 $ git log -5
 $ git log --after='2019-8-8'
 ```
-#
-* [Git - git-merge Documentation](https://git-scm.com/docs/git-merge)
-  * git-merge - Join two or more development histories together
+
+### [git merge](https://git-scm.com/docs/git-merge)
+
+* git-merge - Join two or more development histories together
 ```sh
 git merge [-n] [--stat] [--no-commit] [--squash] [--[no-]edit]
 	[--no-verify] [-s <strategy>] [-X <strategy-option>] [-S[<keyid>]]
@@ -300,16 +345,18 @@ git merge (--continue | --abort | --quit)
     * [Manage Git repos in Visual Studio | Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/version-control/git-manage-repository?view=vs-2022)
     * [Resolve merge conflicts in Visual Studio | Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/version-control/git-resolve-conflicts?view=vs-2022)
   * Tips : do it in VScode to just accecpt or reject conflicts for more convenient
-#
-* [Git - git-mv Documentation](https://git-scm.com/docs/git-mv)
-  * git-mv - Move or rename a file, a directory, or a symlink
-  ```sh
-  $ git mv old.py new.py
-  ```
-#
-* [Git - git-push Documentation](https://git-scm.com/docs/git-push)
-  * git-push - Update remote refs along with associated objects
-  * [Git Push | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/syncing/git-push)
+
+### [git mv](https://git-scm.com/docs/git-mv)
+
+* git-mv - Move or rename a file, a directory, or a symlink
+```sh
+$ git mv old.py new.py
+```
+
+### [git push](https://git-scm.com/docs/git-push)
+
+* git-push - Update remote refs along with associated objects
+* [Git Push | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/syncing/git-push)
 ```sh
 # Find a ref that matches master in the source repository (most likely, it would find refs/heads/master), 
 # and update the same ref (e.g. refs/heads/master) in origin repository with it. 
@@ -325,9 +372,10 @@ $ git push --progress "origin" local_branch1:branch1
   git checkout -b BRANCH_NAME
   git push origin BRANCH_NAME
   ```
-#
-* [Git - git-rebase Documentation](https://git-scm.com/docs/git-rebase)
-  * git-rebase - Reapply commits on top of another base tip
+
+### [git rebase](https://git-scm.com/docs/git-rebase)
+
+* git-rebase - Reapply commits on top of another base tip
 * How to sync up feature branch with master branch code changes ?
   * Do git rebase to pick up the master branch code changes.
   ```sh
@@ -352,25 +400,27 @@ $ git push --progress "origin" local_branch1:branch1
   ```
   * Keep the top commit, and change others to 's' for squashing
   * [Git - Rewriting History](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
-#
-* [Git - git-remote Documentation](https://git-scm.com/docs/git-remote)
-    * Manage the set of repositories ("remotes") whose branches you track.
-    * [Managing remote repositories - GitHub Docs](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)
-        * Learn to work with your local repositories on your computer and remote repositories hosted on GitHub.
-    ```sh
-    $ git remote add origin https://github.com/USER/REPO.git
-    # Set a new remote
-    $ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
-    $ git remote -v
-    # Verify new remote
-    > origin  https://github.com/USER/REPO.git (fetch)
-    > origin  https://github.com/USER/REPO.git (push)
-    ```
-#       
-* [Git - git-reset Documentation](https://git-scm.com/docs/git-reset)
-  * git-reset - Reset current HEAD to the specified state
-  * --hard
-    * Resets the index and working tree. Any changes to tracked files in the working tree since `<commit>` are discarded. Any untracked files or directories in the way of writing any tracked files are simply deleted.
+
+### [git remote](https://git-scm.com/docs/git-remote)
+
+* Manage the set of repositories ("remotes") whose branches you track.
+* [Managing remote repositories - GitHub Docs](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)
+    * Learn to work with your local repositories on your computer and remote repositories hosted on GitHub.
+```sh
+$ git remote add origin https://github.com/USER/REPO.git
+# Set a new remote
+$ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+$ git remote -v
+# Verify new remote
+> origin  https://github.com/USER/REPO.git (fetch)
+> origin  https://github.com/USER/REPO.git (push)
+```
+       
+### [git reset](https://git-scm.com/docs/git-reset)
+
+* git-reset - Reset current HEAD to the specified state
+* --hard
+  * Resets the index and working tree. Any changes to tracked files in the working tree since `<commit>` are discarded. Any untracked files or directories in the way of writing any tracked files are simply deleted.
 ```sh
 $ git reset HEAD test.py
 
@@ -392,9 +442,10 @@ $ git reset --hard HEAD~3   (1)
       * Optionally, use `git reset --hard HEAD~` to remove the commit and discard any changes made in that commit. This command will remove the commit and reset your working directory to the state it was in before the commit was made.
       * Use `git push -f` to force push the updated branch to the remote repository if the commit has already been pushed to the remote repository.
       * Note that deleting a local commit can be risky if the commit has already been pushed to a remote repository and other developers are working on the same branch. It is recommended to communicate with other developers and consider the potential impact of deleting a commit before doing so.
-#
-* [Git - git-rm Documentation](https://git-scm.com/docs/git-rm)
-  * git-rm - Remove files from the working tree and from the index
+
+### [git rm](https://git-scm.com/docs/git-rm)
+
+* git-rm - Remove files from the working tree and from the index
 ```sh
 $ git rm Documentation/\*.txt
 # Removes all *.txt files from the index that are under the Documentation directory and any of its 
@@ -406,6 +457,10 @@ $ git rm -f git-*.sh
 # Because this example lets the shell expand the asterisk (i.e. you are listing the files explicitly), 
 # it does not remove subdir/git-foo.sh.
 ```
+
+### [git stash](https://git-scm.com/docs/git-stash)
+
+* git-stash - Stash the changes in a dirty working directory away
 * [git stash - Saving Changes | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)
   * git stash temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on. Stashing is handy if you need to quickly switch context and work on something else, but you're mid-way through a code change and aren't quite ready to commit.
   ```sh
