@@ -238,6 +238,10 @@ git merge [-n] [--stat] [--no-commit] [--squash] [--[no-]edit]
 	[--into-name <branch>] [<commit>…]
 git merge (--continue | --abort | --quit)
 ```
+* Merging vs Rebasing
+  * [Merging vs. Rebasing | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+  * [Learn Git: Merging vs Rebasing](https://blog.axosoft.com/learn-git-merging-rebasing/)
+    * In this quick Git tutorial video, we’ll answer the question, “What’s the difference between merging and rebasing in Git?”
 * How to merge feature branch into master ?
   * Swtich to feature branch and rebase
   ```sh
@@ -458,10 +462,6 @@ $ git rm -f git-*.sh
   * 最后的最后，大家需要注意，虽然这些手段在修改记录的时候非常好用。但是如果这些 commit 已经被提交到了远程，我们是不可以直接 git push 同步的。因为 git 会校验我们提交的 hash 值，发现对不上之后会禁止我们的提交。所以如果想要提交到远程的话，只能使用 git push -f 强制覆盖。但是这是一个非常非常危险的操作，如果你 git push -f 了，没有人会知道你到底修改了什么，只建议在自己独有的分支上如此操作，一定一定要谨慎使用。
 * [通过 .git 目录深入理解 Git！](https://mp.weixin.qq.com/s/q6tI0qctvciJhNz_5KLx-w)
   * https://www.daolf.com/posts/git-series-part-1/
-* Merging vs Rebasing
-  * [Merging vs. Rebasing | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
-  * [Learn Git: Merging vs Rebasing](https://blog.axosoft.com/learn-git-merging-rebasing/)
-    * In this quick Git tutorial video, we’ll answer the question, “What’s the difference between merging and rebasing in Git?”
 
 ## FAQ
 
