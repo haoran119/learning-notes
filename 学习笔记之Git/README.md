@@ -252,6 +252,15 @@ $ git push --progress "origin" local_branch1:branch1
   ```
   * [git rebase | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
   * [An introduction to Git merge and rebase: what they are, and how to use them](https://www.freecodecamp.org/news/an-introduction-to-git-merge-and-rebase-what-they-are-and-how-to-use-them-131b863785f/#:~:text=Rebase%20is%20another%20way%20to,from%20one%20branch%20to%20another. )
+* How to squash commits into one commit ?
+  * Do git rebase -i to squash commits interactively. 
+  ```sh
+  $ git fetch
+  $ git checkout feature/xxx
+  $ git rebase -i HEAD~7 # change 7 to the actual number of commits
+  ```
+  * Keep the top commit, and change others to 's' for squashing
+  * [Git - Rewriting History](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
 #
 * [Git - git-remote Documentation](https://git-scm.com/docs/git-remote)
     * Manage the set of repositories ("remotes") whose branches you track.
@@ -379,15 +388,6 @@ $ git rm -f git-*.sh
 
 ## FAQ
 
-* How to squash commits into one commit ?
-  * Do git rebase -i to squash commits interactively. 
-  ```sh
-  $ git fetch
-  $ git checkout feature/xxx
-  $ git rebase -i HEAD~7 # change 7 to the actual number of commits
-  ```
-  * Keep the top commit, and change others to 's' for squashing
-  * [Git - Rewriting History](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
 * How to merge feature branch into master ?
   * Swtich to feature branch and rebase
   ```sh
