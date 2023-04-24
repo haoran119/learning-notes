@@ -123,6 +123,7 @@
 ```sh
 $ git bundle create mybundle v1.0.0..master
 ```
+#
 * [Git - git-checkout Documentation](https://git-scm.com/docs/git-checkout)
   * git-checkout - Switch branches or restore working tree files
   * [Resetting, Checking Out & Reverting | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
@@ -134,6 +135,12 @@ $ git checkout master~2 Makefile
 $ rm -f hello.c
 $ git checkout hello.c
 ```
+* How to revert to a previous commit ?
+  * [git checkout - How do I revert a Git repository to a previous commit? - Stack Overflow](https://stackoverflow.com/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit)
+  ```sh
+  # This will detach your HEAD, that is, leave you with no branch checked out:
+  git checkout 0d1d7fc32
+  ```
 #  
 * [Git - git-cherry-pick Documentation](https://git-scm.com/docs/git-cherry-pick)
   * git-cherry-pick - Apply the changes introduced by some existing commits
@@ -212,17 +219,80 @@ $ git config --global core.autocrlf false
 * [Git - gitk Documentation](https://git-scm.com/docs/gitk)
   * gitk - The Git repository browser
   * [Git - gitk and git-gui | git Tutorial](https://riptutorial.com/git/example/18336/gitk-and-git-gui)
-* [Advanced Git Log | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/git-log)
+* [Git - git-log Documentation](https://git-scm.com/docs/git-log)
+  * git-log - Show commit logs
+  * [Advanced Git Log | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/git-log)
   * The advanced features of git log can be split into two categories: formatting how each commit is displayed, and filtering which commits are included in the output.
+```sh
+$ git log -5
+$ git log --after='2019-8-8'
+```
+#
+* [Git - git-merge Documentation](https://git-scm.com/docs/git-merge)
+  * git-merge - Join two or more development histories together
+```sh
+git merge [-n] [--stat] [--no-commit] [--squash] [--[no-]edit]
+	[--no-verify] [-s <strategy>] [-X <strategy-option>] [-S[<keyid>]]
+	[--[no-]allow-unrelated-histories]
+	[--[no-]rerere-autoupdate] [-m <msg>] [-F <file>]
+	[--into-name <branch>] [<commit>…]
+git merge (--continue | --abort | --quit)
+```
+* How to merge feature branch into master ?
+  * Swtich to feature branch and rebase
   ```sh
-  $ git log -5
-  $ git log --after='2019-8-8'
+  $ git fetch
+  $ git checkout feature/xxx
+  # note that git rebase origin/master may mess up the branch history
+  $ git rebase --preserve-merges origin/master
+  $ git push -f origin feature/xxx
   ```
+  * Squash commits
+  ```sh
+  $ git rebase -i HEAD~7 # change 7 to the actual number of commits
+  # In the interactive mode, keep the top one commit, and change others from pick to s
+  $ git push -f origin feature/xxx
+  ```
+  * Swtich to master branch
+  ```sh
+  $ git checkout master
+  $ git pull
+  ```
+  * Merge feature branch
+  ```sh
+  $ git merge --no-ff feature/xxx
+  ```
+  * Check the merge locally
+  ```sh
+  $ gitk
+  ```
+  * If it looks wrong, reset the changes
+  ```sh
+  $ git reset --hard origin/master
+  ```
+  * Push merge to server
+  ```sh
+  $ git push origin master
+  ```
+  * Check git tag
+  ```sh
+  $ git fetch --tags
+  $ git describe
+  ```
+* How to merge feature branch with conflict ?
+  * [Resolve merge conflicts - Atlassian Documentation](https://confluence.atlassian.com/bitbucket/resolve-merge-conflicts-704414003.html)
+  * [Solved: How can I solve a conflict in a pull request?](https://community.atlassian.com/t5/Bitbucket-questions/How-can-I-solve-a-conflict-in-a-pull-request/qaq-p/577205)
+  * [The Git experience in Visual Studio | Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/version-control/git-with-visual-studio?view=vs-2022)
+    * [Manage Git repos in Visual Studio | Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/version-control/git-manage-repository?view=vs-2022)
+    * [Resolve merge conflicts in Visual Studio | Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/version-control/git-resolve-conflicts?view=vs-2022)
+  * Tips : do it in VScode to just accecpt or reject conflicts for more convenient
+#
 * [Git - git-mv Documentation](https://git-scm.com/docs/git-mv)
   * git-mv - Move or rename a file, a directory, or a symlink
   ```sh
   $ git mv old.py new.py
   ```
+#
 * [Git - git-push Documentation](https://git-scm.com/docs/git-push)
   * git-push - Update remote refs along with associated objects
   * [Git Push | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/syncing/git-push)
@@ -234,6 +304,13 @@ $ git push origin master
 
 $ git push --progress "origin" local_branch1:branch1
 ```
+* How to push from a detached head ?
+  * [Making a Git push from a detached head - Stack Overflow](https://stackoverflow.com/questions/35736116/making-a-git-push-from-a-detached-head)
+  * [git - Updates were rejected because the tip of your current branch is behind its remote counterpart - Stack Overflow](https://stackoverflow.com/questions/39399804/updates-were-rejected-because-the-tip-of-your-current-branch-is-behind-its-remot)
+  ```sh
+  git checkout -b BRANCH_NAME
+  git push origin BRANCH_NAME
+  ```
 #
 * [Git - git-rebase Documentation](https://git-scm.com/docs/git-rebase)
   * git-rebase - Reapply commits on top of another base tip
@@ -388,66 +465,5 @@ $ git rm -f git-*.sh
 
 ## FAQ
 
-* How to merge feature branch into master ?
-  * Swtich to feature branch and rebase
-  ```sh
-  $ git fetch
-  $ git checkout feature/xxx
-  # note that git rebase origin/master may mess up the branch history
-  $ git rebase --preserve-merges origin/master
-  $ git push -f origin feature/xxx
-  ```
-  * Squash commits
-  ```sh
-  $ git rebase -i HEAD~7 # change 7 to the actual number of commits
-  # In the interactive mode, keep the top one commit, and change others from pick to s
-  $ git push -f origin feature/xxx
-  ```
-  * Swtich to master branch
-  ```sh
-  $ git checkout master
-  $ git pull
-  ```
-  * Merge feature branch
-  ```sh
-  $ git merge --no-ff feature/xxx
-  ```
-  * Check the merge locally
-  ```sh
-  $ gitk
-  ```
-  * If it looks wrong, reset the changes
-  ```sh
-  $ git reset --hard origin/master
-  ```
-  * Push merge to server
-  ```sh
-  $ git push origin master
-  ```
-  * Check git tag
-  ```sh
-  $ git fetch --tags
-  $ git describe
-  ```
-* How to merge feature branch with conflict ?
-  * [Resolve merge conflicts - Atlassian Documentation](https://confluence.atlassian.com/bitbucket/resolve-merge-conflicts-704414003.html)
-  * [Solved: How can I solve a conflict in a pull request?](https://community.atlassian.com/t5/Bitbucket-questions/How-can-I-solve-a-conflict-in-a-pull-request/qaq-p/577205)
-  * [The Git experience in Visual Studio | Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/version-control/git-with-visual-studio?view=vs-2022)
-    * [Manage Git repos in Visual Studio | Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/version-control/git-manage-repository?view=vs-2022)
-    * [Resolve merge conflicts in Visual Studio | Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/version-control/git-resolve-conflicts?view=vs-2022)
-  * Tips : do it in VScode to just accecpt or reject conflicts for more convenient
-* How to revert to a previous commit ?
-  * [git checkout - How do I revert a Git repository to a previous commit? - Stack Overflow](https://stackoverflow.com/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit)
-  ```sh
-  # This will detach your HEAD, that is, leave you with no branch checked out:
-  git checkout 0d1d7fc32
-  ```
-* How to push from a detached head ?
-  * [Making a Git push from a detached head - Stack Overflow](https://stackoverflow.com/questions/35736116/making-a-git-push-from-a-detached-head)
-  * [git - Updates were rejected because the tip of your current branch is behind its remote counterpart - Stack Overflow](https://stackoverflow.com/questions/39399804/updates-were-rejected-because-the-tip-of-your-current-branch-is-behind-its-remot)
-  ```sh
-  git checkout -b BRANCH_NAME
-  git push origin BRANCH_NAME
-  ```
 
 # END
