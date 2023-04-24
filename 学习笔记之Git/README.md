@@ -205,6 +205,13 @@ $ git clone git://git.kernel.org/pub/scm/.../linux.git my-linux
 ```sh
 $ git commit -am "commit message"
 ```
+* How to amend last commit on remote ?
+  * It is generally `not recommended to amend the last commit on a remote repository` since it can cause issues for other users who have already cloned or pulled the repository. However, if you need to do this for some reason, you can follow these steps:
+  * Make sure you have the latest version of the remote repository by pulling the changes: `git pull origin <branch-name>`.
+  * Create a new commit with the changes you want to amend to the previous commit using the command `git commit --amend`. This will open up the default editor with the last commit message. You can make changes to the message or keep it as it is.
+  * After making any changes to the commit message, save the file and exit the editor.
+  * Push the changes to the remote repository using the `--force` option to overwrite the previous commit: `git push --force origin <branch-name>`.
+  * Note that using `--force` to overwrite a commit on a remote repository can cause issues for other users who have already pulled the repository, as it will rewrite the repository history. It is generally recommended to avoid using `--force` unless absolutely necessary, and to communicate with other users before making such changes.
 
 ### [git config](https://git-scm.com/docs/git-config)
 
