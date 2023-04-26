@@ -360,6 +360,23 @@ git merge (--continue | --abort | --quit)
 $ git mv old.py new.py
 ```
 
+### [git pull](https://git-scm.com/docs/git-pull)
+
+* git-pull - Fetch from and integrate with another repository or a local branch
+  * OPTIONS
+    * -r
+    * --rebase[=false|true|merges|interactive]
+      * When true, rebase the current branch on top of the upstream branch after fetching. If there is a remote-tracking branch corresponding to the upstream branch and the upstream branch was rebased since last fetched, the rebase uses that information to avoid rebasing non-local changes.
+      * When set to merges, rebase using git rebase --rebase-merges so that the local merge commits are included in the rebase (see git-rebase[1] for details).
+      * When false, merge the upstream branch into the current branch.
+      * When interactive, enable the interactive mode of rebase.
+```sh
+git pull [<options>] [<repository> [<refspec>…]]
+
+# pull changes from remote
+git pull --rebase origin master
+```
+
 ### [git push](https://git-scm.com/docs/git-push)
 
 * git-push - Update remote refs along with associated objects
