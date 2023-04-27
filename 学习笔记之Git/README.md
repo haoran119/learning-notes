@@ -119,7 +119,24 @@ git branch --edit-description [<branchname>]
 * -a / --all
   * List both remote-tracking branches and local branches. Combine with --list to match optional pattern(s).
 * -l / --list
-  * List branches. With optional \<pattern>..., e.g. git branch --list 'maint-*', list only the branches that match the pattern(s).
+  * List branches. With optional `<pattern>`..., e.g. `git branch --list 'maint-*'`, list only the branches that match the pattern(s).
+* Start development from a known tag
+  * 1. This step and the next one could be combined into a single step with "checkout -b my2.6.14 v2.6.14".
+```sh
+$ git clone git://git.kernel.org/pub/scm/.../linux-2.6 my2.6
+$ cd my2.6
+$ git branch my2.6.14 v2.6.14   (1)
+$ git switch my2.6.14
+```
+* Delete an unneeded branch
+  * 1. Delete the remote-tracking branches "todo", "html" and "man". The next fetch or pull will create them again unless you configure them not to. See git-fetch[1].
+  * 2. Delete the "test" branch even if the "master" branch (or whichever branch is currently checked out) does not have all commits from the test branch.
+```sh
+$ git clone git://git.kernel.org/.../git.git my.git
+$ cd my.git
+$ git branch -d -r origin/todo origin/html origin/man   (1)
+$ git branch -D test                                    (2)
+```
 * [How do I delete a Git branch locally and remotely? - Stack Overflow](https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely#targetText=Simply%20do%20git%20push%20origin,local%20branch%20ONLY!...)
   * Executive Summary
     * Note that in most cases the remote name is origin.
