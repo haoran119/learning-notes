@@ -402,6 +402,7 @@ $ git push --progress "origin" local_branch1:branch1
 * git-rebase - Reapply commits on top of another base tip
 * How to sync up feature branch with master branch code changes ?
   * Do git rebase to pick up the master branch code changes.
+  * Be careful to use if branch has already pushed to remote
   ```sh
   $ git fetch
   $ git checkout feature/xxx
