@@ -181,15 +181,49 @@ $ git bundle create mybundle v1.0.0..master
 ### [git checkout](https://git-scm.com/docs/git-checkout)
 
 * git-checkout - Switch branches or restore working tree files
-* [Resetting, Checking Out & Reverting | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
 ```sh
-# The following sequence checks out the master branch, reverts the Makefile to two revisions back, deletes hello.c by mistake, 
-# and gets it back from the index.
+git checkout [-q] [-f] [-m] [<branch>]
+git checkout [-q] [-f] [-m] --detach [<branch>]
+git checkout [-q] [-f] [-m] [--detach] <commit>
+git checkout [-q] [-f] [-m] [[-b|-B|--orphan] <new-branch>] [<start-point>]
+git checkout [-f|--ours|--theirs|-m|--conflict=<style>] [<tree-ish>] [--] <pathspec>…
+git checkout [-f|--ours|--theirs|-m|--conflict=<style>] [<tree-ish>] --pathspec-from-file=<file> [--pathspec-file-nul]
+git checkout (-p|--patch) [<tree-ish>] [--] [<pathspec>…]
+```
+* Updates files in the working tree to match the version in the index or the specified tree. If no pathspec was given, `git checkout` will also update `HEAD` to set the specified branch as the current branch.
+* `git checkout [<branch>]`
+  * To prepare for working on `<branch>`, switch to it by updating the index and the files in the working tree, and by pointing `HEAD` at the branch. Local modifications to the files in the working tree are kept, so that they can be committed to the `<branch>`.
+  * If `<branch>` is not found but there does exist a tracking branch in exactly one remote (call it `<remote>`) with a matching name and `--no-guess` is not specified, treat as equivalent to
+    * `$ git checkout -b <branch> --track <remote>/<branch>`
+  * You could omit `<branch>`, in which case the command degenerates to "check out the current branch", which is a glorified no-op with rather expensive side-effects to show only the tracking information, if exists, for the current branch.
+* `git checkout -b|-B <new-branch> [<start-point>]`
+  * Specifying `-b` causes a new branch to be created as if git-branch[1] were called and then checked out. In this case you can use the `--track` or `--no-track` options, which will be passed to git branch. As a convenience, `--track` without `-b` implies branch creation; see the description of `--track` below.
+  * If `-B` is given, `<new-branch>` is created if it doesn’t exist; otherwise, it is reset. This is the transactional equivalent of
+    * `$ git branch -f <branch> [<start-point>]`
+    * `$ git checkout <branch>`
+  * that is to say, the branch is not reset/created unless "git checkout" is successful.
+* How to create a local branch from master ?
+```sh
+$ git fetch
+$ git checkout master
+$ git checkout -b local_branch
+```
+* How to create a local branch to track remote branch ?
+  * This will create a new local branch named "local" that is based on the "remote" branch. The "-b" option specifies that you want to create a new branch, and the "origin/remote" argument specifies the remote branch that you want to base your new branch on.
+  * Once you have created the new branch, you can start making changes to your code and committing them to the new branch as you normally would. Note that the new branch will only exist locally until you push it to a remote repository using `git push`.
+```sh
+$ git fetch
+# Create a new local branch named "local" that tracks the "remote" branch
+$ git checkout -b local_branch origin/remote_branch
+```
+* The following sequence checks out the master branch, reverts the Makefile to two revisions back, deletes hello.c by mistake, and gets it back from the index.
+```sh
 $ git checkout master
 $ git checkout master~2 Makefile
 $ rm -f hello.c
 $ git checkout hello.c
 ```
+* [Resetting, Checking Out & Reverting | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
 * How to revert to a previous commit ?
   * [git checkout - How do I revert a Git repository to a previous commit? - Stack Overflow](https://stackoverflow.com/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit)
   ```sh
