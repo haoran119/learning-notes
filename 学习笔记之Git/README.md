@@ -424,6 +424,10 @@ $ git mv old.py new.py
 ```sh
 git pull [<options>] [<repository> [<refspec>…]]
 
+# pull changes from remote_branch to local_branch
+git checkout local_branch
+git pull origin remote_branch
+
 # pull changes from remote
 git pull --rebase origin master
 ```
