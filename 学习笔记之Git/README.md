@@ -428,7 +428,8 @@ git pull [<options>] [<repository> [<refspec>…]]
 git checkout local_branch
 git pull origin remote_branch
 
-# This leaves a copy of remote_branch temporarily in FETCH_HEAD, and updates the remote-tracking branch origin/remote_branch. 
+# This leaves a copy of remote_branch temporarily in FETCH_HEAD, and updates the remote-tracking branch 
+# origin/remote_branch. 
 # The same can be done by invoking fetch and merge:
 git fetch origin
 git merge origin/remote_branch
