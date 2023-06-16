@@ -424,11 +424,18 @@ $ git mv old.py new.py
 ```sh
 git pull [<options>] [<repository> [<refspec>…]]
 
-# pull changes from remote_branch to local_branch
+# Merge into the current branch local_branch the remote branch remote_branch
 git checkout local_branch
 git pull origin remote_branch
 
-# pull changes from remote
+# This leaves a copy of remote_branch temporarily in FETCH_HEAD, and updates the remote-tracking branch origin/remote_branch. 
+# The same can be done by invoking fetch and merge:
+git fetch origin
+git merge origin/remote_branch
+
+# If you tried a pull which resulted in complex conflicts and would want to start over, you can recover with git reset.
+
+# !BE CAREFUL! pull changes from remote and rebase the current branch on top of the upstream branch after fetching.
 git pull --rebase origin master
 ```
 
