@@ -358,9 +358,37 @@ git merge --no-commit maint
 # Small fixups like bumping release/version name would be acceptable.
 ```
 * Merging vs Rebasing
-  * [Merging vs. Rebasing | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
-  * [Learn Git: Merging vs Rebasing](https://blog.axosoft.com/learn-git-merging-rebasing/)
-    * In this quick Git tutorial video, we’ll answer the question, “What’s the difference between merging and rebasing in Git?”
+    * [Merging vs. Rebasing | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+        * The Merge Option
+            * The easiest option is to merge the `main` branch into the `feature` branch using something like the following:
+            ```sh
+            git checkout feature
+            git merge main
+            
+            # Or, you can condense this to a one-liner:
+            git merge feature main
+            ```
+            * This creates a new “merge commit” in the `feature` branch that ties together the histories of both branches
+            * Merging is nice because it’s a `non-destructive` operation. The existing branches are not changed in any way. This avoids all of the potential pitfalls of rebasing (discussed below).
+            * On the other hand, this also means that the `feature` branch will have an extraneous merge commit every time you need to incorporate upstream changes. If `main` is very active, this can pollute your feature branch’s history quite a bit. While it’s possible to mitigate this issue with advanced `git log` options, it can make it hard for other developers to understand the history of the project.
+        * The Rebase Option
+            * As an alternative to merging, you can rebase the `feature` branch onto `main` branch using the following commands:
+            ```sh
+            git checkout feature
+            git rebase main
+            ```
+            * This moves the entire `feature` branch to begin on the tip of the `main` branch, effectively incorporating all of the new commits in `main`. But, instead of using a merge commit, rebasing `re-writes` the project history by creating brand new commits for each commit in the original branch.
+            * `The major benefit of rebasing is that you get a much cleaner project history.` First, it eliminates the unnecessary merge commits required by `git merge`. Second, as you can see in the above diagram, rebasing also results in a perfectly linear project history—you can follow the tip of `feature` all the way to the beginning of the project without any forks. This makes it easier to navigate your project with commands like `git log`, `git bisect`, and `gitk`.
+            * `But, there are two trade-offs for this pristine commit history: safety and traceability.` If you don’t follow the [Golden Rule of Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing), re-writing project history can be potentially catastrophic for your collaboration workflow. And, less importantly, rebasing loses the context provided by a merge commit—you can’t see when upstream changes were incorporated into the feature.
+        * The Golden Rule of Rebasing
+            * Once you understand what rebasing is, the most important thing to learn is when `not` to do it. `The golden rule of git rebase is to never use it on public branches.`
+            * Force-Pushing
+                * If you try to push the rebased `main` branch back to a remote repository, Git will prevent you from doing so because it conflicts with the remote `main` branch. But, you can force the push to go through by passing the `--force` flag, like so:
+                * `Be very careful with this command! git push --force`
+                * This overwrites the remote `main` branch to match the rebased one from your repository and makes things very confusing for the rest of your team. `So, be very careful to use this command only when you know exactly what you’re doing.`
+                * One of the only times you should be force-pushing is when you’ve performed a local cleanup `after` you’ve pushed a private feature branch to a remote repository (e.g., for backup purposes). This is like saying, “Oops, I didn’t really want to push that original version of the feature branch. Take the current one instead.” `Again, it’s important that nobody is working off of the commits from the original version of the feature branch.`
+    * [Learn Git: Merging vs Rebasing](https://blog.axosoft.com/learn-git-merging-rebasing/)
+        * In this quick Git tutorial video, we’ll answer the question, “What’s the difference between merging and rebasing in Git?”
 * How to merge feature branch into master ?
   * Swtich to feature branch and rebase
   ```sh
