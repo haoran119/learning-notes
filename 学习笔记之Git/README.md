@@ -350,6 +350,12 @@ git merge [-n] [--stat] [--no-commit] [--squash] [--[no-]edit]
 	[--[no-]rerere-autoupdate] [-m <msg>] [-F <file>]
 	[--into-name <branch>] [<commit>…]
 git merge (--continue | --abort | --quit)
+
+# Merge branch maint into the current branch, but do not make a new commit automatically:
+git merge --no-commit maint
+# This can be used when you want to include further changes to the merge, or want to write your own merge commit message.
+# You should refrain from abusing this option to sneak substantial changes into a merge commit. 
+# Small fixups like bumping release/version name would be acceptable.
 ```
 * Merging vs Rebasing
   * [Merging vs. Rebasing | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
