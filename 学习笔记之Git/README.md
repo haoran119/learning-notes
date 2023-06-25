@@ -331,7 +331,8 @@ $ git config --global core.autocrlf false
 ```sh
 # Update the remote-tracking branches:
 $ git fetch origin
-# The above command copies all branches from the remote refs/heads/ namespace and stores them to the local refs/remotes/origin/ namespace, unless the remote.<repository>.fetch option is used to specify a non-default refspec.
+# The above command copies all branches from the remote refs/heads/ namespace and stores them to the local 
+# refs/remotes/origin/ namespace, unless the remote.<repository>.fetch option is used to specify a non-default refspec.
 ```
 
 ### [git gui](https://git-scm.com/docs/git-gui)
