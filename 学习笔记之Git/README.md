@@ -321,6 +321,19 @@ $ git config --global core.autocrlf false
     ```
     * Note: You can also use --staged as a synonym of --cached.
 
+### [git fetch](https://git-scm.com/docs/git-fetch)
+
+* git-fetch - Download objects and refs from another repository
+    * -p
+    * --prune
+        * Before fetching, remove any remote-tracking references that no longer exist on the remote. Tags are not subject to pruning if they are fetched only because of the default tag auto-following or due to a --tags option. However, if tags are fetched due to an explicit refspec (either on the command line or in the remote configuration, for example if the remote was cloned with the --mirror option), then they are also subject to pruning. Supplying --prune-tags is a shorthand for providing the tag refspec.
+        * See the PRUNING section below for more details.
+```sh
+# Update the remote-tracking branches:
+$ git fetch origin
+# The above command copies all branches from the remote refs/heads/ namespace and stores them to the local refs/remotes/origin/ namespace, unless the remote.<repository>.fetch option is used to specify a non-default refspec.
+```
+
 ### [git gui](https://git-scm.com/docs/git-gui)
   
 * git-gui - A portable graphical interface to Git
