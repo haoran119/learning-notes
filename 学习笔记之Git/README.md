@@ -128,7 +128,7 @@ $ cd my2.6
 $ git branch my2.6.14 v2.6.14   (1)
 $ git switch my2.6.14
 ```
-* Delete an unneeded branch
+* Delete an unwanted branch
   * 1. Delete the remote-tracking branches "todo", "html" and "man". The next fetch or pull will create them again unless you configure them not to. See git-fetch[1].
   * 2. Delete the "test" branch even if the "master" branch (or whichever branch is currently checked out) does not have all commits from the test branch.
 ```sh
@@ -138,19 +138,20 @@ $ git branch -d -r origin/todo origin/html origin/man   (1)
 $ git branch -D test                                    (2)
 ```
 * [How do I delete a Git branch locally and remotely? - Stack Overflow](https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely#targetText=Simply%20do%20git%20push%20origin,local%20branch%20ONLY!...)
-  * Executive Summary
-    * Note that in most cases the remote name is origin.
-  ```sh
-  $ git push --delete <remote_name> <branch_name>
-  $ git branch -d <branch_name>
-  ```
-  * Delete Local Branch
-    * To delete the local branch use one of the following:
-    * Note: The -d option is an alias for --delete, which only deletes the branch if it has already been fully merged in its upstream branch. You could also use -D, which is an alias for --delete --force, which deletes the branch "irrespective of its merged status." [Source: man git-branch]
-  ```sh
-  $ git branch -d branch_name
-  $ git branch -D branch_name
-  ```
+    * Executive Summary
+        * Note that in most cases the remote name is origin.
+        ```sh
+        $ git push --delete <remote_name> <branch_name>
+        $ git branch -d <branch_name>
+        ```
+    * Delete Local Branch
+        * To delete the local branch use one of the following:
+        * Note: The -d option is an alias for --delete, which only deletes the branch if it has already been fully merged in its upstream branch. You could also use -D, which is an alias for --delete --force, which deletes the branch "irrespective of its merged status." [Source: man git-branch]
+        ```sh
+        $ git branch -d branch_name
+        $ git branch -D branch_name
+        ```
+    * Or delete remote branch on git web first, e.g. github, then run `git fetch --all --prune` locally to update local branch  
 * [Rename a local and remote branch in git – Multiple States Knowledge Base](https://multiplestates.wordpress.com/2015/02/05/rename-a-local-and-remote-branch-in-git/)
   * Rename your local branch.
     * If you are on the branch you want to rename:
