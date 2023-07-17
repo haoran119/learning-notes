@@ -600,7 +600,7 @@ $ git revert HEAD~3
 
 $ git revert -n master~5..master~2
 # Revert the changes done by commits from the fifth last commit in master (included) to the third last commit in master
-# (included), but do not create any commit with the reverted changes. The revert only modifies the working tree and the index.
+# (included), but do not create any commit with the reverted changes. The revert only modifies the working tree and the index
 
 # Revert the changes but don't create a commit yet
 $ git revert -n abc123
