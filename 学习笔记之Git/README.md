@@ -572,13 +572,53 @@ $ git reset --hard HEAD~3   (1)
 # Do not do this if you have already given these commits to somebody else. 
 # (See the "RECOVERING FROM UPSTREAM REBASE" section in git-rebase[1] for the implications of doing so.)
 ```
-  * How to delete a local commit?
+* How to delete a local commit?
     * To delete a local commit in Git, you can use the git reset command. Here are the steps:
-      * Use `git log` to find the commit ID of the local commit you want to delete.
-      * Use `git reset HEAD~` to remove the most recent commit from your local branch. If you want to delete a specific commit, `replace HEAD~ with the commit ID`.
-      * Optionally, use `git reset --hard HEAD~` to remove the commit and discard any changes made in that commit. This command will remove the commit and reset your working directory to the state it was in before the commit was made.
-      * Use `git push -f` to force push the updated branch to the remote repository if the commit has already been pushed to the remote repository.
-      * Note that deleting a local commit can be risky if the commit has already been pushed to a remote repository and other developers are working on the same branch. It is recommended to communicate with other developers and consider the potential impact of deleting a commit before doing so.
+        * Use `git log` to find the commit ID of the local commit you want to delete.
+        * Use `git reset HEAD~` to remove the most recent commit from your local branch. If you want to delete a specific commit, `replace HEAD~ with the commit ID`.
+        * Optionally, use `git reset --hard HEAD~` to remove the commit and discard any changes made in that commit. This command will remove the commit and reset your working directory to the state it was in before the commit was made.
+        * Use `git push -f` to force push the updated branch to the remote repository if the commit has already been pushed to the remote repository.
+        * Note that deleting a local commit can be risky if the commit has already been pushed to a remote repository and other developers are working on the same branch. It is recommended to communicate with other developers and consider the potential impact of deleting a commit before doing so.
+
+### [git revert](https://git-scm.com/docs/git-revert)
+
+* git-revert - Revert some existing commits
+* SYNOPSIS
+    * `git revert [--[no-]edit] [-n] [-m <parent-number>] [-s] [-S[<keyid>]] <commit>…​`
+    * `git revert (--continue | --skip | --abort | --quit)`
+* OPTIONS
+    * -m parent-number --mainline parent-number
+        * Usually you cannot revert a merge because you do not know which side of the merge should be considered the mainline. This option specifies the parent number (starting from 1) of the mainline and allows revert to reverse the change relative to the specified parent.
+        * Reverting a merge commit declares that you will never want the tree changes brought in by the merge. As a result, later merges will only bring in tree changes introduced by commits that are not ancestors of the previously reverted merge. This may or may not be what you want.
+        * See the [revert-a-faulty-merge How-To](https://git-scm.com/docs/howto/revert-a-faulty-merge) for more details.
+    * -n --no-commit
+        * Usually the command automatically creates some commits with commit log messages stating which commits were reverted. This flag applies the changes necessary to revert the named commits to your working tree and the index, but does not make the commits. In addition, when this option is used, your index does not have to match the HEAD commit. The revert is done against the beginning state of your index.
+        * This is useful when reverting more than one commits' effect to your index in a row.
+```sh
+$ git revert HEAD~3
+# Revert the changes specified by the fourth last commit in HEAD and create a new commit with the reverted changes.
+
+$ git revert -n master~5..master~2
+# Revert the changes done by commits from the fifth last commit in master (included) to the third last commit in master (included), but do not create any commit with the reverted changes. The revert only modifies the working tree and the index.
+
+# Revert the changes but don't create a commit yet
+$ git revert -n abc123
+
+# Commit the changes with a new message
+$ git commit -m "Your new commit message here"
+```
+* How to fix `error: commit xxx is a merge but no -m option was given.`?
+    * When you try to revert a merge commit, Git needs to know which parent of the merge you want to consider the mainline. This is what the -m option is for.
+    * If you get the error that -m was not given, it's because you're trying to revert a merge commit. You can use -m 1 or -m 2 to specify which parent is the mainline. Here's how to do it:
+        * `git revert -n -m 1 <commit-hash>`
+        * or
+        * `git revert -n -m 2 <commit-hash>`
+    * The parent number is determined by the order they were committed. For example, if your commit history looks like this:
+A - B - C - D - E (master)
+     \         /
+      1 - 2 - 3 (feature)
+    * If E is the merge commit and you want to consider D as the mainline (i.e., keep the changes from D and remove the changes introduced by 3), you should use -m 1 because D was committed before 3. Conversely, if you want to consider 3 as the mainline, you should use -m 2.
+    * After running the `git revert -n -m` command, you can commit the changes with a new message using `git commit -m "Your new commit message here"`.
 
 ### [git rm](https://git-scm.com/docs/git-rm)
 
