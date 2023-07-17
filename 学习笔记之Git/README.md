@@ -614,9 +614,11 @@ $ git commit -m "Your new commit message here"
         * or
         * `git revert -n -m 2 <commit-hash>`
     * The parent number is determined by the order they were committed. For example, if your commit history looks like this:
-A - B - C - D - E (master)
-     \         /
-      1 - 2 - 3 (feature)
+    ```sh
+    A - B - C - D - E (master)
+         \         /
+          1 - 2 - 3 (feature)
+    ```
     * If E is the merge commit and you want to consider D as the mainline (i.e., keep the changes from D and remove the changes introduced by 3), you should use -m 1 because D was committed before 3. Conversely, if you want to consider 3 as the mainline, you should use -m 2.
     * After running the `git revert -n -m` command, you can commit the changes with a new message using `git commit -m "Your new commit message here"`.
 
