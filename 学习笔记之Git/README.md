@@ -274,6 +274,7 @@ $ git commit -am "commit message"
 ```sh
 $ git config --global user.name "name"
 $ git config --global user.email "name@test.com"
+$ git config --global --list
 $ git config --list
 
 # Disable SSL validation
