@@ -1,7 +1,5 @@
 # 学习笔记之Macbook
 
-## FAQ
-
 * [写给Mac新手的入门指南 - 威锋网](https://mp.weixin.qq.com/s/pqmqGZhNwevx57KeLnzZmg)
     * https://bbs.feng.com/read-htm-tid-11683407.html
     * 篇一：Mac小白基础知识
@@ -9,8 +7,11 @@
     * 篇三：这些小技巧让你的mac用起来更顺手
     * 篇四：如何让你的mac更安全
     * 篇五：在Mac上如何访问IE Only的网站
-    * [Mac 提升开发效率的小工具](https://mp.weixin.qq.com/s/TZHjpWcPeGvuQUgP6cmCpw)
-        * https://juejin.im/post/5b0e99436fb9a009e405dbb6
+* [Mac 提升开发效率的小工具](https://mp.weixin.qq.com/s/TZHjpWcPeGvuQUgP6cmCpw)
+   * https://juejin.im/post/5b0e99436fb9a009e405dbb6
+
+## FAQ
+
 * Numbers
     * 单元格内输入=可以快速新建公式，如果不行的话，选中单元格，然后选择格式->单元格->数据格式->数字。
     * 如何统一Numbers里表格的宽度？ - Mac综合讨论区 - 威锋论坛 - 威锋网（http://bbs.feng.com/read-htm-tid-8325154.html）
@@ -53,3 +54,14 @@
     * [How To Use SSHFS to Mount Remote File Systems Over SSH | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-sshfs-to-mount-remote-file-systems-over-ssh)
         * https://www.digitalocean.com/community/tutorials/how-to-use-sshfs-to-mount-remote-file-systems-over-ssh
     * [Home - FUSE for macOS](https://osxfuse.github.io/)https://osxfuse.github.io/
+* How to fix Address already in use on mac ?
+    * Identify the process that is using the port: You can use the lsof command in your terminal to check which process is using a specific port. If you know the port number that's causing the issue, say 8000, you can use the following command:
+        * `sudo lsof -i :8000`
+        * This command should list all processes using the port 8000. Look for the PID (Process ID) in the output.
+    * Terminate the process: Once you have the PID, you can terminate the process with the kill command. If the PID was 1234, for instance, you'd use:
+        * `kill -9 1234`
+        * The -9 option ensures that the process is forcibly killed.
+        * If the process doesn't terminate, it's usually because it's being run by a root user or system process. In such cases, try using sudo:
+            * `sudo kill -9 1234`
+            * Please replace 1234 with the actual PID you've found in step 1.
+            * Once the process has been killed, you should be able to start your application again without the "Address already in use" error.
