@@ -1,12 +1,19 @@
 # 学习笔记之Macbook
 
 * [写给Mac新手的入门指南 - 威锋网](https://mp.weixin.qq.com/s/pqmqGZhNwevx57KeLnzZmg)
-    * https://bbs.feng.com/read-htm-tid-11683407.html
     * 篇一：Mac小白基础知识
     * 篇二：Mac小白装机必备
     * 篇三：这些小技巧让你的mac用起来更顺手
     * 篇四：如何让你的mac更安全
     * 篇五：在Mac上如何访问IE Only的网站
+* [Mac 键盘快捷键 - 官方 Apple 支持 (中国)](https://support.apple.com/zh-cn/HT201236)
+    * 文稿快捷键
+        * Command-上箭头：将插入点移至文稿开头。
+        * Command-下箭头：将插入点移至文稿末尾。
+        * Command-左箭头：将插入点移至当前行的行首。
+        * Command-右箭头：将插入点移至当前行的行尾。
+        * Option-左箭头：将插入点移至上一字词的词首。
+        * Option-右箭头：将插入点移至下一字词的词尾。
 * [Mac 提升开发效率的小工具](https://mp.weixin.qq.com/s/TZHjpWcPeGvuQUgP6cmCpw)
    * https://juejin.im/post/5b0e99436fb9a009e405dbb6
 
