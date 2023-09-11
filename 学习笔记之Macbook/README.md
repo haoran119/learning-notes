@@ -8,6 +8,10 @@
     * 篇五：在Mac上如何访问IE Only的网站
 * [Mac 键盘快捷键 - 官方 Apple 支持 (中国)](https://support.apple.com/zh-cn/HT201236)
     * 文稿快捷键
+        * Fn-上箭头：Page Up：向上滚动一页。
+        * Fn-下箭头：Page Down：向下滚动一页。
+        * Fn-左箭头：Home：滚动到文稿开头。
+        * Fn-右箭头：End：滚动到文稿末尾。
         * Command-上箭头：将插入点移至文稿开头。
         * Command-下箭头：将插入点移至文稿末尾。
         * Command-左箭头：将插入点移至当前行的行首。
