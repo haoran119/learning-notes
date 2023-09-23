@@ -95,6 +95,26 @@
   * AWS Lambda was designed for use cases such as image or object uploads to Amazon S3, updates to DynamoDB tables, responding to website clicks, or reacting to sensor readings from an IoT connected device. AWS Lambda can also be used to automatically provision back-end services triggered by custom HTTP requests, and "spin down" such services when not in use, to save resources. These custom HTTP requests are configured in AWS API Gateway, which can also handle authentication and authorization in conjunction with AWS Cognito.
   * Unlike Amazon EC2, which is priced by the hour but metered by the second, AWS Lambda is metered by rounding up to the nearest millisecond with no minimum execution time.
   * In 2019, at AWS' annual cloud computing conference (AWS re:Invent), the AWS Lambda team announced "Provisioned Concurrency", a feature that "keeps functions initialized and hyper-ready to respond in double-digit milliseconds."[7] The Lambda team described Provisioned Concurrency as "ideal for implementing interactive services, such as web and mobile backends, latency-sensitive microservices, or synchronous APIs."[8]
+ 
+#### MISC
+
+* [我是如何在AWS Lambda中用几分钟处理50万个事务的？](https://mp.weixin.qq.com/s/hwGCQdC_4oUIt6KzyC3eZw)
+    * https://blog.devgenius.io/how-did-i-processed-half-a-million-transactions-in-aws-lambda-within-minutes-120c69d37ce5
+    * 数据处理是一项密集型任务，尤其是对于计算单元，因为读写操作需要大量的资源。如果你有合适的工具，你可以很容易地实现这项任务。比如，我通过 AWS Lambda，在几分钟内就处理了 50 万个事务。通过本文，我将向你们分享我是如何做到这一点的以及我的经验。这个过程非常简单，同时也非常复杂。
+    * 解决方案图
+        * ![image](https://github.com/haoran119/learning-notes/assets/34557994/2726a2c6-d6e4-48da-9b0b-9754cf6b1c08)
+    * 启动流程
+    * 数据清洗
+    * 将清洗后的数据添加到队列中
+    * DynamoDB
+    * Stream 记录到 SQS
+    * 处理数据
+    * 更新已处理的记录
+    * 挑战
+        * Lambda Lambda Lambda
+        * 关注 CloudWatch
+        * DynamoDB 按需服务是关键词
+        * SQS 可能很棘手
 
 ### [Amazon S3](https://aws.amazon.com/s3/?nc2=h_ql_prod_fs_s3)
 
