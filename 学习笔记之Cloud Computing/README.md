@@ -108,3 +108,32 @@
   * [A Sneak Peek Into Amazon Web Services Cloud (AWS) - DZone Cloud](https://dzone.com/articles/a-sneak-peek-into-amazon-web-services-cloud-aws)
 * [AWS Cheat Sheet - Amazon Web Services Quick Guide [2022]](https://intellipaat.com/blog/tutorial/amazon-web-services-aws-tutorial/aws-cheat-sheet/)
 * [Exploring the Basics of AWS: AWS Cheat Sheet - Whizlabs Blog](https://www.whizlabs.com/blog/aws-cheat-sheet/#:~:text=%20AWS%20Cheat%20Sheet%20%201%20Definition%20of,is%20the%20AWS%20regions.%20These%20entries...%20More%20)
+* [创业者应该了解的五大无服务器AWS服务](https://mp.weixin.qq.com/s/IrsPObs3-TkAOLbPIssF8Q)
+    * https://medium.com/@sandro_volpicella/top-5-serverless-aws-services-founders-indie-hackers-should-know-7ef62707f766
+    * 我希望通过本文介绍一下每个科技创业者或技术狂人都应该知道的五大无服务器AWS服务。我不打算深入探讨这些服务，但会简单介绍一下这些服务，并说明它们为什么值得学习和使用。你可以利用这些服务构建所有你能想到的Web和移动应用程序，而且它们几乎可以和所有的高级编程语言一起使用，例如 Python、TypeScript、JavaScript 和 Java等。下面，我们开始。
+    * Amplify CLI
+        * 首先，介绍一款最常用的服务：Amplify。请注意，AWS有两款（或者说三款）名叫Amplify的服务，我们必须区分二者：
+            * Amplify CLI：启动后端；
+            * Amplify库（比如JS库）：用于访问 AWS 资源的前端库；
+            * Amplify Console：前端和后端的 CI/CD 流水线。
+    * AppSync
+        * AppSync是完全由AWS托管的GraphQL API。开发人员可以通过GraphQL API，准确地获取所需的数据，同时又不必担心获取的数据太多或太少。AppSync提供了三个主要功能：查询、修改和订阅。
+    * Lambda
+        * 下面，我们来介绍最基本的Lambda服务。Lambda是最著名的无服务器服务。当人们谈论无服务器时，大多数指的都是lambda。lambda服务背后的思想是，无需考虑运行代码所需的基础设施时。AWS只是保证你的代码会被执行。Lambda支持多种运行时，例如 Python、JavaScript、Java、C#、Rust、Go 等等。其最新的功能之一是可以将自定义的docker容器作为运行时使用，而且计费单位是毫秒（而不是100毫秒）。lambda的最长运行时间为15分钟，在构建应用程序时要考虑到这一点。唯一的基础设施设置是内存设置。
+        * 价格：Lambda很便宜。每月的前一百万个请求是免费的。超过一百万个以后，按照lambda运行的时间进行计算。
+    * Cognito
+        * 下面，我们来看一看身份认证。Cognito是AWS的身份验证和授权服务。你可以使用Cognito实现用户注册和登录、用户组控制，甚至是联合登录，例如 Facebook、Google 和苹果账号登录。如果你是一名Saas业务创业者，而且希望为用户提供无缝的身份验证体验并提供社交登录，那么可以通过Cognito轻松实现。Cognito分为用户池和身份池。
+            * 用户池：为用户提供注册、登录和联合登录功能。
+            * 身份池：为用户创建唯一的身份，并授予他们访问其他AWS服务的权限。例如，为匿名用户生成临时凭证。
+    * DynamoDB
+        * 我想介绍的最后一项服务是DynamoDB。DynamoDB是一个完全托管的NoSQL数据库，具有高度的可扩展性和高可用性。我所有的项目都使用了DynamoDB，我是它的忠实粉丝。
+        * DynamoDB的结构与其他数据库非常相似：
+            * 表：有一个或多个数据项；
+            * 数据项：不同属性的集合；
+            * 键：分为主键和排序键；
+            * 流：你可以通过流，在表每次更新的时候触发某些功能（例如lambda函数）。
+    * 总结
+        * 在构建应用程序时，你可以考虑一下本文介绍的这些服务。这些服务都拥有云原生方式开发的巨大的优势，包括：
+            * 没有风险。如果没有人使用你的应用，则无需花一分钱。这可以极大地降低你的风险。
+            * 可扩展。如果你获得了大量用户，则AWS可以随着用户数量一起扩展。
+            * 安全。由AWS工程师为你保驾护航，而你则可以专注于业务逻辑。
