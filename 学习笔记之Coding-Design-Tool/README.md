@@ -431,6 +431,11 @@ Thank you.
 * [edonosotti/ci-cd-tutorial-sample-app: A sample Python app that implements a REST API, with database migrations and CI/CD support.](https://github.com/edonosotti/ci-cd-tutorial-sample-app)
 * [Git Large File Storage | Git Large File Storage (LFS) replaces large files such as audio samples, videos, datasets, and graphics with text pointers inside Git, while storing the file contents on a remote server like GitHub.com or GitHub Enterprise.](https://git-lfs.com/)
 
+##### GitHub Copilot
+
+* [GitHub Copilot Series - YouTube](https://www.youtube.com/playlist?list=PLj6YeMhvp2S5_hvBl2SE-7YCHYlLQ0bPt)
+    * Watch this series to see how GitHub Copilot can assist you and speed up your productivity across a variety of programming languages and projects.
+
 #### [GitLab](https://about.gitlab.com/)
 
 * The One DevOps Platform
