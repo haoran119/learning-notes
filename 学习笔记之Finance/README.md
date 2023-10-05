@@ -130,7 +130,7 @@
 
 ## MISC
 
-* cash flows?
+* cash flows ?
     * "Cash flows" refers to the movement of money in and out of a business, project, or financial product. It's a crucial metric for evaluating the health and profitability of a business. Understanding and managing cash flows is vital for ensuring a business has enough liquidity to cover its short-term obligations.
     * Types of Cash Flows:
         * Operating Cash Flows: These are the cash flows that come from the primary operations of a business. This includes the cash receipts (from sales) and cash paid out for business activities.
@@ -147,5 +147,36 @@
         * Investment Decisions: Investors and stakeholders review a company's cash flow to assess its health and make decisions about investment, credit, and other financial engagements.
         * Budgeting and Forecasting: Monitoring cash flows assists businesses in budgeting and forecasting future financial needs.
     * Understanding the nuances of cash flows allows businesses and investors to make informed decisions about operations, investments, and financing activities.
+* par ?
+    * In finance and investing, the term "par" refers to the face value or nominal value of a financial instrument. It is particularly common in the context of bonds, but the concept can apply to other types of securities as well. Here's a more detailed explanation:
+        * Bonds: For bonds, "par value" is the amount that the issuer agrees to repay at the bond's maturity. Typically, this is set at $1,000 for corporate bonds and may differ for other types of bonds. When a bond is trading at its par value, it's said to be trading "at par." If the bond's price is above par, it's "trading at a premium," and if below par, it's "trading at a discount."
+            * Interest Payments: The par value also determines the bond's interest payments. For instance, a bond with a par value of $1,000 and a coupon rate of 5% would pay $50 a year in interest.
+        * Stocks: In the context of stocks, "par value" is a nominal value assigned to shares in the company's articles of incorporation or charter. It has little economic significance in the context of common stocks, as market price is determined by supply and demand dynamics. However, par value can be more significant for preferred stock, as it may determine dividend payments.
+        * Derivatives: For some derivative contracts, "par" might refer to a standard or default amount or value for the underlying asset in the contract.
+    * In general, "par" serves as a standard or reference point. In everyday language, saying something is "on par" with something else means it's roughly equal or of the same standard.
+* Pnl Explain ?
+    * PnL (Profit and Loss) Explain, often simply referred to as "PnL Explain" or "PnL Attribution," is a process within finance used to explain the daily fluctuations in a portfolio's value. This is particularly important for traders, portfolio managers, and risk managers to understand the sources of gains and losses in a trading book or an investment portfolio.
+    * The primary goal of a PnL Explain is to break down the daily profit and loss into its constituent components, helping to identify which factors (e.g., market movements, specific positions, or other elements) were responsible for the observed change.
+    * PnL Explain can be broken down into several components, including:
+        * Market PnL: This refers to the PnL generated due to market movements. It can further be divided into:
+            * Delta PnL: PnL due to the first-order change in underlying market factors.
+            * Gamma PnL: PnL due to second-order changes in market factors.
+            * Vega PnL: PnL due to changes in the volatility of underlying market factors.
+        * Residual PnL: The part of the PnL that cannot be attributed to market movements. This may be due to model errors, system errors, or other unaccounted-for factors.
+        * Carry PnL: This reflects the PnL generated from holding a position over time, such as interest earned on bonds or dividends from stocks.
+        * Fees and Costs: PnL impact due to transaction costs, borrowing costs, or any fees associated with the trades.
+        * New and Exited Trades PnL: The PnL from positions that have been initiated or closed during the period.
+    * Importance of PnL Explain:
+        * Accountability: Helps traders and portfolio managers to understand and explain their performance.
+        * Risk Management: Helps risk managers understand where risks are arising in the portfolio and whether they are being adequately compensated for those risks.
+        * Model Validation: Helps in identifying if the pricing models being used are still valid or if there's any discrepancy.
+        * Decision Making: Helps in making informed decisions about reallocating resources, changing trading strategies, or hedging specific risks.
+    * Example:
+        * Let's consider a simple portfolio consisting of a stock and an option on that stock:
+            * If the stock price goes up and the portfolio value increases, the delta PnL would capture the PnL from the change in the stock price.
+            * If the volatility of the stock increases, leading to an increase in the option's value, the vega PnL would capture this effect.
+            * If the portfolio value also changes because of a dividend payment from the stock, this would be reflected in the carry PnL.
+    * By summing up all these effects (and any others that are relevant), one would get the total PnL for the day. Any discrepancies between the calculated PnL and the actual PnL might go into the residual PnL, which would require further investigation.
+
 
 # END
