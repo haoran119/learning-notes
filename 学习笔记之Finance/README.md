@@ -128,4 +128,24 @@
   * European Style Options: can be exercised only at expiration.
   * American Style Options: can be exercised at any time prior to expiration.
 
+## MISC
+
+* cash flows?
+    * "Cash flows" refers to the movement of money in and out of a business, project, or financial product. It's a crucial metric for evaluating the health and profitability of a business. Understanding and managing cash flows is vital for ensuring a business has enough liquidity to cover its short-term obligations.
+    * Types of Cash Flows:
+        * Operating Cash Flows: These are the cash flows that come from the primary operations of a business. This includes the cash receipts (from sales) and cash paid out for business activities.
+        * Investing Cash Flows: These represent cash flows from buying and selling assets, like machinery or properties.
+        * Financing Cash Flows: These pertain to how a business raises capital and pays it back to its investors, either as debt repayment or dividends.
+    * Methods of Evaluating Cash Flows:
+        * Statement of Cash Flows: This is one of the main financial statements, alongside the balance sheet and income statement. It provides a detailed look at the different sources of cash inflow and outflow from a company. This statement is usually broken down into the three categories mentioned above: operating, investing, and financing.
+        * Discounted Cash Flow (DCF): This is a valuation method used to estimate the value of an investment based on its future cash flows. The future cash flows are "discounted" to give them a present value, which can then be used to assess the potential for investment.
+        * Net Present Value (NPV): This is the difference between the present value of cash inflows and the present value of cash outflows over a period of time. It's used in capital budgeting to analyze the profitability of an investment or project.
+        * Internal Rate of Return (IRR): This is the discount rate that makes the NPV of all cash flows from a particular project equal to zero. It provides a method to rank different projects of varying sizes and lengths.
+    * Importance of Cash Flows:
+        * Liquidity: Ensuring positive cash flow is crucial for a business's liquidity, allowing it to cover its obligations.
+        * Profitability vs. Liquidity: While profitability is an essential metric, it doesn't necessarily equate to liquidity. A business might be profitable on paper, but if it has negative cash flow, it may not sustain its operations in the long run.
+        * Investment Decisions: Investors and stakeholders review a company's cash flow to assess its health and make decisions about investment, credit, and other financial engagements.
+        * Budgeting and Forecasting: Monitoring cash flows assists businesses in budgeting and forecasting future financial needs.
+    * Understanding the nuances of cash flows allows businesses and investors to make informed decisions about operations, investments, and financing activities.
+
 # END
