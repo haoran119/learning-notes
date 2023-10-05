@@ -90,6 +90,30 @@
 
 * [What is a medium to low frequency trading strategy and why is it less hyped? - Quantitative Finance Stack Exchange](https://quant.stackexchange.com/questions/2218/what-is-a-medium-to-low-frequency-trading-strategy-and-why-is-it-less-hyped)
 
+## Bond
+
+* implied repo rate ?
+    * The term "implied repo rate" in finance is related to the bond and bond futures markets. It represents the theoretical repo rate that would make an investor indifferent between holding a bond and selling the bond future.
+    * Context:
+        * A repurchase agreement (repo) is essentially a short-term loan where the bond acts as the collateral. When an investor owns a bond, they have the option to enter into a repo transaction to lend the bond and earn some interest (the repo rate).
+    * Calculating Implied Repo Rate:
+        * The implied repo rate can be calculated from the prices of the bond and its corresponding future. Here’s a simplified formula to understand the concept:
+        * Implied Repo Rate = ((Future Price + Interest on Future − Bond Price − Accrued Interest) / (Bond Price + Accrued Interest)) × (360 / Days to Maturity)
+    * Meaning:
+        * If the Implied Repo Rate is Positive: It suggests that selling the bond future and owning the bond (financed via repo) could be profitable.
+        * If the Implied Repo Rate is Negative: It implies that buying the bond future and short selling the bond could be more profitable.
+    * Example:
+        * Let’s assume:
+        * Bond Price: $1000
+        * Future Price: $980
+        * Interest on Future: $10
+        * Accrued Interest: $5
+        * Days to Maturity: 90
+        * Implied Repo Rate = (($980+$10−$1000−$5) / ($1000+$5)) × (360 / 90)
+        * Implied Repo Rate = (−$15 / $1005) × 4 ≈ −0.0149 or −1.49%
+    * Significance:
+        * The implied repo rate is essential for market participants like traders and arbitrageurs to assess the relative value and the arbitrage opportunities between the bond and the bond futures market. It helps in identifying whether to prefer the bond or its corresponding futures contract for achieving better returns.
+
 ## [Option](https://en.wikipedia.org/wiki/Option_(finance))
 
 * [Strike price - Wikipedia](https://en.wikipedia.org/wiki/Strike_price)
