@@ -132,6 +132,18 @@
     * Significance:
         * The implied repo rate is essential for market participants like traders and arbitrageurs to assess the relative value and the arbitrage opportunities between the bond and the bond futures market. It helps in identifying whether to prefer the bond or its corresponding futures contract for achieving better returns.
 
+## Interest Rate
+
+* [What Is an Interest Rate Future? Definition and How to Calculate](https://www.investopedia.com/terms/i/interestratefuture.asp)
+    * What Is an Interest Rate Future?
+        * An interest rate future is a futures contract with an underlying instrument that pays interest. The contract is an agreement between the buyer and seller for the future delivery of any interest-bearing asset.
+        * The interest rate futures contract allows the buyer and seller to lock in the price of the interest-bearing asset for a future date.
+        * KEY TAKEAWAYS
+            * An interest rate future is a financial derivative that allows exposure to changes in interest rates.
+            * Interest rate futures price moves inversely to interest rates.
+            * Investors can speculate on the direction of interest rates with interest rate futures, or else use the contracts to hedge against changes in rates.
+            * Most interest rate futures that trade on American exchanges use U.S. Treasury securities as the underlying asset.
+
 ## [Option](https://en.wikipedia.org/wiki/Option_(finance))
 
 * [Strike price - Wikipedia](https://en.wikipedia.org/wiki/Strike_price)
