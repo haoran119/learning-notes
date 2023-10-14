@@ -92,6 +92,24 @@
 
 ## Bond
 
+* Gross basis ?
+    * In finance, the term "gross basis" is often used in the context of bond futures trading and it refers to the total cost or value associated with buying a bond and selling a bond future.
+    * Calculation:
+        * Gross Basis = Cash Price − Futures Price × Conversion Factor
+        * Cash Price: The price of the bond in the cash market.
+        * Futures Price: The price of the bond futures contract.
+        * Conversion Factor: A factor used to equate the cash bond’s features (coupon, time to maturity, etc.) to the notional features of the futures contract.
+    * Importance of Gross Basis:
+        * The gross basis is crucial in assessing the relative value between the spot (cash) market for a bond and the futures market. When an investor or trader is considering buying a bond and selling a bond future (or vice versa), they will often examine the gross basis to gauge the profitability of such trades.
+    * Net Basis:
+        * It’s also worthwhile to mention the net basis, which adjusts the gross basis for the cost of carry (interest costs minus income from the bond), giving a more accurate representation of the profitability of the basis trade.
+    * Example:
+        * If the cash price of a bond is $950, the futures price is $900, and the conversion factor is 0.95, the gross basis would be calculated as follows:
+        * Gross Basis=$950−($900×0.95)
+        * Gross Basis=$950−$855
+        * Gross Basis=$95
+    * In Conclusion:
+        * The gross basis is a critical component in bond trading, especially for those utilizing both the cash and futures markets to take advantage of relative value discrepancies between the two markets.
 * implied repo rate ?
     * The term "implied repo rate" in finance is related to the bond and bond futures markets. It represents the theoretical repo rate that would make an investor indifferent between holding a bond and selling the bond future.
     * Context:
