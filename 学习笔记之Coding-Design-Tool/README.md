@@ -363,6 +363,13 @@ Thank you.
     * A low-overhead instrumenting profiler with realtime statistics display for native applications.
     * https://marketplace.visualstudio.com/items?itemName=ArtemGevorkyan.MicroProfilerx64x86
 
+### AI
+
+#### [ChatGPT](https://chat.openai.com/)
+
+* ChatGPT is a free-to-use AI system. Use it for engaging conversations, gain insights, automate tasks, and witness the future of AI, all in one place.
+* [ChatGPT Cheat Sheet for Beginners | Superhuman](https://www.superhuman.ai/c/cheat-sheet-beginners?utm_source=www.joinsuperhuman.ai&utm_medium=newsletter)
+
 ### CI / CD / DevOps
 
 * Continuous integration（CI）
