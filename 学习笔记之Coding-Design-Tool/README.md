@@ -583,6 +583,11 @@ Thank you.
 
 ### MISC
 
+#### [Accessibility Insights](https://accessibilityinsights.io/)
+
+* Solve accessibility issues before they reach your customers.
+* Accessibility Insights is a suite of tools that helps developers ensure their web and Windows applications are accessible to people with disabilities. It provides automated and manual testing tools to identify and fix common accessibility issues, adhering to web content accessibility guidelines (WCAG). The tools include features for assessing web applications directly in the browser and standalone applications for Windows, making it easier for developers to integrate accessibility checks into their development process.
+
 #### [Beyond Compare](https://www.scootersoftware.com/)
 
 * Compare files and folders using simple, powerful commands that focus on the differences you're interested in and ignore those you're not.  Merge changes, synchronize files, and generate reports.
