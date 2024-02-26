@@ -852,6 +852,12 @@ $ tmux attach -t mysession
 Note : Ctrl-d b to exit session
 ```
 
+#### [VLAN](https://en.wikipedia.org/wiki/VLAN)
+
+* A VLAN, or Virtual Local Area Network, is a technology that segments a physical network into multiple, separate virtual networks. This enables groups of devices across different locations to be connected as if they were on the same physical network, enhancing security, reducing traffic congestion, and improving network management efficiency. VLANs allow for better control over network resources, making them essential in large and complex network environments.
+* [What Is VLAN (Virtual LAN)? - IT Glossary | SolarWinds](https://www.solarwinds.com/resources/it-glossary/vlan)
+   * A virtual local area network (VLAN) is a virtualized connection that connects multiple devices and network nodes from different LANs into one logical network.
+
 #### [WinDirStat](https://windirstat.net/)
 
 * `Windows Directory Statistics`
