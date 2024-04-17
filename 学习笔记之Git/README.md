@@ -653,6 +653,10 @@ $ git rm -f git-*.sh
     # Viewing stash diffs
     $ git stash show
     $ git stash show -p
+
+    # Cleaning up your stash
+    $ git stash drop stash@{1}
+    $ git stash clear
     ```
 
 ## BEST PRACTICE
