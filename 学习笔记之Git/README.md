@@ -643,13 +643,17 @@ $ git rm -f git-*.sh
 
 * git-stash - Stash the changes in a dirty working directory away
 * [git stash - Saving Changes | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)
-  * git stash temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on. Stashing is handy if you need to quickly switch context and work on something else, but you're mid-way through a code change and aren't quite ready to commit.
-  ```sh
-  $ git stash save "for debug use only" 
-  $ git stash list
-  $ git pull
-  $ git stash pop
-  ```
+    * git stash temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on. Stashing is handy if you need to quickly switch context and work on something else, but you're mid-way through a code change and aren't quite ready to commit.
+    ```sh
+    $ git stash save "for debug use only" 
+    $ git stash list
+    $ git pull
+    $ git stash pop
+    
+    # Viewing stash diffs
+    $ git stash show
+    $ git stash show -p
+    ```
 
 ## BEST PRACTICE
 
