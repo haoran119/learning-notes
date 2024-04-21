@@ -469,6 +469,64 @@ Thank you.
 * [TeamCity - Wikipedia](https://en.wikipedia.org/wiki/TeamCity)
     * TeamCity is a build management and continuous integration server from JetBrains. It was first released on October 2, 2006[2] and is commercial software and licensed under a proprietary license: a freemium license for up to 100 build configurations and three free Build Agent licenses are available. Open Source projects may request a free license.
 
+### [CMAKE](https://cmake.org/)
+
+* CMake: A Powerful Software Build System
+* CMake is the de-facto standard for building C++ code, with over 2 million downloads a month. It’s a powerful, comprehensive solution for managing the software build process. Get everything you need to successfully leverage CMake by visiting our resources section.
+* [Getting Started with CMake](https://cmake.org/getting-started/)
+* [CMake Documentation and Community](https://cmake.org/documentation/)
+* CMake ?
+    * CMake is a powerful cross-platform build system used to manage the build process in a compiler-independent manner. It generates native makefiles and workspaces that can be used in the compiler environment of your choice. The primary goal of CMake is to allow developers to build their applications across different platforms without needing to change the build process setup for each platform.
+    * Key Features of CMake
+        * Cross-platform: CMake can generate build systems for various platforms, including Linux, Windows, macOS, and more.
+        * Out-of-source builds: CMake supports building outside the source directory to keep source directories clean and support multiple builds from a single source tree.
+        * Configurable: CMake allows conditional builds, where parts of the software can be included or excluded based on configuration parameters.
+        * Find packages: CMake can automatically find libraries and packages required for your project, handling include paths and linking settings.
+        * Language support: While primarily used for C and C++, CMake supports languages like Fortran, Java, and others, making it versatile for multi-language projects.
+    * Basic Components
+        * CMakeLists.txt: This is the main file where you define the build process using CMake commands. It specifies project name, version, required libraries, source files, and other metadata.
+        * cmake_minimum_required: Specifies the minimum version of CMake required.
+        * project(): Sets the name and version of the project.
+        * add_executable() or add_library(): Commands to specify which targets (executables or libraries) CMake should generate.
+        * target_link_libraries(): Defines which libraries to link against when building your executables or libraries.
+        * include_directories(): Specifies directories where the compiler should look for header files.
+    * Example CMakeLists.txt
+        * Here’s a simple example of a CMakeLists.txt for a project that creates an executable from two source files:
+        ```cmake
+        cmake_minimum_required(VERSION 3.10)
+        
+        # Set the project name and version
+        project(MyProject VERSION 1.0)
+        
+        # Add an executable with the above sources
+        add_executable(myapp main.cpp utility.cpp)
+        
+        # Specify C++ standard
+        set_target_properties(myapp PROPERTIES
+          CXX_STANDARD 11
+          CXX_STANDARD_REQUIRED YES
+          CXX_EXTENSIONS NO
+        )
+        
+        # Add directory containing Header Files
+        include_directories(include)
+        ```
+    * How to Use CMake
+        * Writing CMakeLists.txt: Define your project and its dependencies in CMakeLists.txt.
+        * Configuring the Project:
+            * Create a build directory (mkdir build && cd build).
+            * Run CMake configuration (cmake .. or cmake -G "Your Generator" ..) to generate makefiles or other build system files specific to your platform.
+        * Building the Project:
+            * Build the project using CMake-generated files (cmake --build . or use your build system directly like make, ninja, etc.).
+        * Running the Executable:
+            * Run your built executable directly from the build directory.
+    * Advanced Features
+        * CPack for Packaging: CMake includes CPack, which can be used to generate installers for your software.
+        * CTest for Testing: Integrated testing support with CTest, which allows you to add tests and perform automated testing as part of your build process.
+        * Compiler and Linker Options: Customize compiler and linker flags based on the needs and optimizations specific to your project.
+    * Conclusion
+        * CMake is an essential tool for modern software development, particularly for projects that need to support multiple platforms. It simplifies the build process by managing the differences in environments internally, allowing developers to focus more on development rather than the build system.
+
 ### CONTAINER 容器
 
 * [What is containerization?](https://www.redhat.com/en/topics/cloud-native-apps/what-is-containerization#:~:text=Containerization%20is%20the%20packaging%20together,in%20their%20own%20%22container.%22)
