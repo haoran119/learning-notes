@@ -541,9 +541,9 @@ Thank you.
             * `<target>`: The target (executable or library) that the link directories apply to.
             * `[BEFORE|AFTER]`: Optional. Specifies whether the directories should be added before or after the existing directories in the linker search path.
             * `[PUBLIC|PRIVATE|INTERFACE]`: Specifies the scope of the directories.
-            * `PUBLIC`: The directories are added to the link directories for the target and will also be used in the link step of any targets that link to this target.
-            * `PRIVATE`: The directories are used only in the link step for this target.
-            * `INTERFACE`: The directories are not used for this target but are used for targets linking to this target.
+               * `PUBLIC`: The directories are added to the link directories for the target and will also be used in the link step of any targets that link to this target.
+               * `PRIVATE`: The directories are used only in the link step for this target.
+               * `INTERFACE`: The directories are not used for this target but are used for targets linking to this target.
             * `<directories>`: One or more directories to add to the linker search path.
         * Example
             ```cmake
