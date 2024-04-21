@@ -526,6 +526,58 @@ Thank you.
         * Compiler and Linker Options: Customize compiler and linker flags based on the needs and optimizations specific to your project.
     * Conclusion
         * CMake is an essential tool for modern software development, particularly for projects that need to support multiple platforms. It simplifies the build process by managing the differences in environments internally, allowing developers to focus more on development rather than the build system.
+* target_link_directories / target_link_libraries in CMakeLists.txt ?
+    * In CMake, target_link_directories and target_link_libraries are commands used to specify where to find libraries and which libraries to link against when building a target (like an executable or library). Understanding how to use these commands correctly is crucial for properly configuring the build process of your CMake projects.
+    * target_link_directories
+        * Introduced in CMake 3.13, the target_link_directories command specifies the directories where the linker should look for libraries to link against a target. This command is used to add link directories to a target.
+        * Syntax
+            ```cmake
+            target_link_directories(<target>
+                [BEFORE|AFTER]
+                [PUBLIC|PRIVATE|INTERFACE]
+                <directories>...
+            )
+            ```
+            * `<target>`: The target (executable or library) that the link directories apply to.
+            * `[BEFORE|AFTER]`: Optional. Specifies whether the directories should be added before or after the existing directories in the linker search path.
+            * `[PUBLIC|PRIVATE|INTERFACE]`: Specifies the scope of the directories.
+            * `PUBLIC`: The directories are added to the link directories for the target and will also be used in the link step of any targets that link to this target.
+            * `PRIVATE`: The directories are used only in the link step for this target.
+            * `INTERFACE`: The directories are not used for this target but are used for targets linking to this target.
+            * `<directories>`: One or more directories to add to the linker search path.
+        * Example
+            ```cmake
+            add_executable(MyApp main.cpp)
+            target_link_directories(MyApp PRIVATE ${CMAKE_SOURCE_DIR}/libs)
+            ```
+    * target_link_libraries
+        * The target_link_libraries command is used to specify which libraries a target should be linked against. This is one of the most commonly used commands in CMake for managing library dependencies.
+        * Syntax
+            ```cmake
+            target_link_libraries(<target>
+                <item>...
+                [<PRIVATE|PUBLIC|INTERFACE> <item>...]...
+            )
+            ```
+            * `<target>`: The target that needs to link against the specified libraries.
+            * `<item>`: Specifies a library to link against. This can be a target name or a library file.
+            * `[PRIVATE|PUBLIC|INTERFACE]`: Specifies the scope similar to target_link_directories.
+                * `PRIVATE`: Libraries are linked only to the specified target.
+                * `PUBLIC`: Libraries are linked to the specified target and also to targets that link this target.
+                * `INTERFACE`: Libraries are linked not to the specified target but to targets that link this target.
+        * Example
+            ```cmake
+            add_library(MyLibrary STATIC IMPORTED)
+            set_property(TARGET MyLibrary PROPERTY IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/libs/mylibrary.lib)
+            
+            add_executable(MyApp main.cpp)
+            target_link_libraries(MyApp PRIVATE MyLibrary)
+            ```
+    * Best Practices
+        * Prefer target-specific commands: Using target_link_directories and target_link_libraries allows for more precise and maintainable handling of library dependencies compared to using directory-based commands like link_directories, which apply globally.
+        * Scope specification: Always specify the scope (PRIVATE, PUBLIC, INTERFACE) explicitly to make your CMake files clearer and to ensure proper encapsulation of dependencies.
+        * Use absolute paths: When possible, specify absolute paths to libraries and link directories to avoid relative path issues, especially when the build directory structure may vary.
+    * Using these commands correctly helps ensure that your project's build configuration is robust, portable, and easy to maintain. This makes it easier to manage complex projects with multiple dependencies across different platforms and build environments.
 
 ### CONTAINER 容器
 
