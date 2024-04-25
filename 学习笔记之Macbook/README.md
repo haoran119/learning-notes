@@ -28,6 +28,11 @@
     * 如何统一Numbers里表格的宽度？ - Mac综合讨论区 - 威锋论坛 - 威锋网（http://bbs.feng.com/read-htm-tid-8325154.html）
 * Mac分屏怎么用？Mac Split View屏幕分割的两种教程_苹果MAC_操作系统_脚本之家 （http://www.jb51.net/os/MAC/385430.html）
 * Mac显示桌面快捷键，Mac显示桌面手势_百度经验（http://jingyan.baidu.com/article/915fc414f232e651394b202c.html）
+* Shortcut for "cut" ?
+    * The shortcut for "cut" in macOS 12.7, like in other versions of macOS, is not available by default because macOS typically uses a different approach called "Copy and Move." Here’s how you can effectively perform a cut operation:
+        * Copy the item: Press `Command (⌘) + C` to copy the item or text you want to move.
+        * Move the item: Navigate to where you want to move the item, then press `Option (⌥) + Command (⌘) + V`. This command combination moves the copied item to the new location, essentially performing a cut and paste operation.
+    * This sequence works because macOS allows you to "move" the copied item instead of just pasting a duplicate. It's a slight variation from the typical "cut" command found in other operating systems like Windows.
 * Mac键盘失灵
     * 重启电脑后输入密码界面键盘按键都没反应。。。怀疑是打开了鼠标键，查了一下连按5下option键，还是没反应。。。突然发现连按5下command键解决问题。。。吓一身冷汗
 * Cisco AnyConnect VPN reinstall报错已经存在？
