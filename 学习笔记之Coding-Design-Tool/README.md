@@ -580,6 +580,13 @@ Thank you.
         * [tyoma/micro-profiler: Cross-platform low-footprint realtime C/C++ Profiler](https://github.com/tyoma/micro-profiler)
 * [Remote debugging - Visual Studio (Windows) | Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/debugger/remote-debugging?view=vs-2022)
     * [Remote Debug a C++ Project - Visual Studio (Windows) | Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/debugger/remote-debugging-cpp?view=vs-2022)
+* MSVS remote file explorer ?
+    * As of my last update in April 2023, Microsoft Visual Studio (MSVS) provides capabilities for remote development, including working with files on remote machines, containers, or the Windows Subsystem for Linux (WSL). These features are part of the Visual Studio 2019 and Visual Studio 2022 editions, particularly useful for scenarios involving cross-platform development, containerized applications, and services development.
+    * To use a Remote File Explorer or similar functionality in Visual Studio, you typically work within the context of a specific remote development setup, such as using Visual Studio's remote development with SSH, or targeting WSL or Docker containers. Here’s how you might approach accessing remote files in different scenarios:
+    * Remote Development with SSH
+        * Visual Studio 2019 and 2022 support remote development over SSH. This allows you to edit, build, and debug applications running on remote Linux systems, WSL, or containers.
+            * SSH Configuration: Set up an SSH connection in Visual Studio to your remote environment. This involves specifying the SSH target in your project settings.
+            * Remote File Access: Once connected via SSH, Visual Studio provides a seamless experience for editing files as if they were local. However, a dedicated "Remote File Explorer" pane like in some other IDEs (e.g., Visual Studio Code) may not be explicitly labeled as such in Visual Studio. Instead, the Solution Explorer itself adapts to show remote files and projects.
 
 ### MISC
 
