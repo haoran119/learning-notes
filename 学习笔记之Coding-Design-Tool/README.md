@@ -596,6 +596,12 @@ Thank you.
 * [我花了10个小时，写出了这篇K8S架构解析](https://mp.weixin.qq.com/s/ieIALsPmy7I3vk3jiCI0YA)
 * [Docker不香吗，为啥还要K8s？](https://mp.weixin.qq.com/s/i_s-gUF53MGIEaLx_EWY3A)
 
+#### [Podman](https://podman.io/)
+
+* The best free & open source container tools
+* Manage containers, pods, and images with Podman. Seamlessly work with containers and Kubernetes from your local environment.
+* Podman is an open-source tool for managing containers, pods, and images, compatible with Kubernetes. It allows you to work with containers directly from your local environment. The latest stable version is Podman 5.0.2, and Podman Desktop is at version 1.10.2. Podman supports a variety of platforms and integrates with tools like Visual Studio Code and GitHub Actions.
+
 ### Git
 
 * [learning-notes/学习笔记之Git at main · haoran119/learning-notes](https://github.com/haoran119/learning-notes/tree/main/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8BGit)
