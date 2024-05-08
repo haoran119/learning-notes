@@ -141,6 +141,43 @@ Thank you.
 * [XSLT Tryit Editor v1.2](https://www.w3schools.com/xml/tryxslt.asp?xmlfile=cdcatalog&xsltfile=cdcatalog)
 * [Online XSLT Test Tool](https://xslttest.appspot.com/)
 * [XSL Transformations (XSLT)](https://www.w3.org/TR/1999/REC-xslt-19991116)
+* How to debug XSLT with XML ?
+    * Debugging XSLT in IntelliJ IDEA, a popular Integrated Development Environment (IDE) from JetBrains, can be very effective due to its comprehensive support for various programming languages and XML technologies, including XSLT. IntelliJ IDEA offers features like breakpoints, variable inspection, and step-by-step execution to help debug XSLT scripts. Here's how you can set up and use these debugging features:
+    * Step-by-Step Guide to Debug XSLT in IntelliJ IDEA
+        * 1. Prerequisites
+            * Make sure you have IntelliJ IDEA installed. It's advisable to use the Ultimate edition because the Community edition does not support XML and XSLT.
+        * 2. Set Up Your Project
+            * Open or Create a Project: Start IntelliJ IDEA and either open an existing project or create a new one that will contain your XSLT files.
+            * Add Your XML and XSLT Files: Make sure your project includes at least one XML file and the associated XSLT file you want to debug.
+        * 3. Configure an XSLT Run/Debug Configuration
+            * Navigate to Run Configurations: Go to the "Run" menu and select "Edit Configurations..."
+            * Add a New Configuration: Click the + (Add) button and choose "XSLT" from the list of available configurations.
+            * Configure the XSLT Processor:
+                * XSLT File: Select the XSLT file you intend to debug.
+                * XML Input File: Select the XML file to be transformed.
+                * Output File: Specify the file where you want the output of the transformation to be saved.
+            * Optional Settings:
+                * Parameters: Set any necessary parameters for your XSLT script.
+                * VM Options: If you need to adjust Java Virtual Machine settings for the processor, such as increasing memory.
+            * Apply and Close: Click "Apply" to save the configuration, then "OK" to close the configurations window.
+        * 4. Set Breakpoints
+            * Open Your XSLT File: In the editor, open your XSLT file.
+            * Add Breakpoints: Click on the left margin next to the line numbers where you want to halt execution. A red dot will appear, indicating a breakpoint.
+        * 5. Start Debugging
+            * Run the Debug Configuration: Go to the "Run" menu, choose "Debug...", and select your configured XSLT transformation. Alternatively, you can use the debug icon in the top-right corner of the IDE.
+            * Step Through the Transformation: Use the step over, step into, and continue buttons in the debugger toolbar to navigate through your XSLT script.
+            * Inspect Variables: As you step through the breakpoints, you can watch variable values and evaluate expressions in the "Variables" and "Expressions" tabs in the debugger pane.
+        * 6. Debug Output and Logs
+            * View Output: Check the specified output file or the "Run" tab in IntelliJ IDEA to see the results of the transformation.
+            * Log Analysis: Some errors or log information might be printed to the console or log window, providing insights into any issues.
+    * Tips for Effective Debugging
+        * Use Verbose Logging: If your XSLT processor supports it, enable verbose logging to get detailed information about the transformation process.
+        * Modularize Your XSLT: Break down complex transformations into smaller, manageable templates or modules. This can make it easier to isolate and debug specific parts of the transformation.
+        * Utilize XPath Evaluator: IntelliJ's XPath evaluator can be used to test and refine individual XPath expressions outside of the debugging context.
+    * By following these steps, you can effectively leverage IntelliJ IDEA's debugging tools to troubleshoot and refine your XSLT scripts, ensuring they perform as expected and produce the correct output.
+    * [XSLT Debugger Plugin for JetBrains IDEs | JetBrains Marketplace](https://plugins.jetbrains.com/plugin/1818-xslt-debugger)
+        * Compatible with IntelliJ IDEA (Ultimate, Community)
+        * Allows interactive debugging of XSLT stylesheets.
 * [xml - How to insert html text in XSLT? - Stack Overflow](https://stackoverflow.com/questions/39161929/how-to-insert-html-text-in-xslt)
     * use `&lt;` to replace `<`, `&gt;` to replace `>`
 * How to split string by comma ?
