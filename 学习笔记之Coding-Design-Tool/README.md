@@ -638,6 +638,11 @@ Thank you.
 * [Beyond Compare - Wikipedia](https://en.wikipedia.org/wiki/Beyond_Compare)
     * Beyond Compare is a proprietary data comparison utility. Aside from comparing files, the program is capable of doing side-by-side comparison of directories, FTP and SFTP directories, Dropbox directories, Amazon S3 directories, and archives.[1] It is available for Windows, Mac OS, and Linux operating systems. A strength of Beyond Compare is that it can be configured as difftool and mergetool of version control systems, such as git.[2]
 
+#### [Debug Diagnostic Tool](https://www.microsoft.com/en-us/download/details.aspx?id=58210)
+
+* The Debug Diagnostic Tool (DebugDiag) is designed to assist in troubleshooting issues such as hangs, slow performance, memory leaks or memory fragmentation, and crashes in any user-mode process. The tool includes built-in analysis rules focused on Internet Information Services (IIS) applications, web data access components, COM+, SharePoint and related Microsoft technologies.
+* Debugdiag 2.0 introduces a new analysis engine host with built-in reporting framework that can be accessed from .NET. This new analysis engine simplifies analysis rule development in .NET. Starting with Debugdiag 2.0, the analysis engine relies on Microsoft.Diagnostics.Runtime for .NET analysis.
+
 #### [Dependencies](https://github.com/lucasg/Dependencies)
 
 * lucasg/Dependencies: A rewrite of the old legacy software "depends.exe" in C# for Windows devs to troubleshoot dll load dependencies issues.
