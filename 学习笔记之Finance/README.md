@@ -330,6 +330,90 @@
         * Transaction Costs: Spreads represent a cost to traders and investors, as they affect the profitability of buying and selling securities.
         * Market Liquidity: Narrow spreads indicate high liquidity and efficient markets, while wide spreads suggest lower liquidity and potentially higher volatility.
         * Risk Measurement: Yield and credit spreads are used to gauge the risk premium demanded by investors for taking on additional risk.
+    * Here are detailed examples of different types of spreads in finance:
+        * 1. `Bid-Ask Spread` Example
+            * Stock XYZ
+                * Bid Price: $100
+                * Ask Price: $100.50
+                * Bid-Ask Spread: $100.50 - $100 = $0.50
+            * If you want to buy Stock XYZ, you will pay the ask price of $100.50. If you want to sell Stock XYZ, you will receive the bid price of $100. The $0.50 difference is the bid-ask spread.
+        * 2. `Yield Spread` Example
+            * 10-Year Treasury Bond Yield: 2%
+            * 10-Year Corporate Bond Yield: 4%
+            * Credit Spread: 4% - 2% = 2%
+            * The 2% spread indicates the additional yield investors require to compensate for the higher risk associated with the corporate bond compared to the risk-free Treasury bond.
+        * 3. `Option Spread` Example
+            * Bull Call Spread on Stock ABC
+                * Buy Call Option: Strike Price $50, Premium $5
+                * Sell Call Option: Strike Price $55, Premium $2
+            * The cost of the spread is the premium paid for the lower strike call minus the premium received for the higher strike call:
+                * Net Premium Paid: $5 - $2 = $3
+            * If the stock price at expiration is $60, both options are in-the-money. The payoff for each option is:
+                * Bought Call: $60 - $50 = $10
+                * Sold Call: $60 - $55 = $5
+            * The net payoff is the difference between the two payoffs minus the net premium paid:
+                * Net Payoff: ($10 - $5) - $3 = $2
+        * 4. `Interest Rate Spread` Example
+            * Savings Account Interest Rate: 1%
+            * Mortgage Interest Rate: 4%
+            * Interest Rate Spread: 4% - 1% = 3%
+            * The 3% spread represents the profit margin for the bank, derived from the difference between what it pays on deposits and what it earns on loans.
+        * 5. `Credit Spread` Example in Credit Default Swaps (CDS)
+            * Corporate Bond Yield: 6%
+            * Comparable Risk-Free Bond Yield: 3%
+            * Credit Spread: 6% - 3% = 3%
+            * This 3% spread represents the additional yield investors demand for taking on the credit risk of the corporate bond.
+        * 6. `Forex Spread` Example
+            * EUR/USD Bid Price: 1.2000
+            * EUR/USD Ask Price: 1.2003
+            * Forex Spread: 1.2003 - 1.2000 = 0.0003 (or 3 pips)
+            * When trading the EUR/USD currency pair, the cost of the trade includes this 3-pip spread.
+    * Detailed Scenario for Each Spread
+        * `Bid-Ask Spread` Scenario
+            * You decide to buy 100 shares of Stock XYZ:
+                * Total Cost: 100 shares * $100.50 (ask price) = $10,050
+                * Immediately, you realize you need to sell:
+                * Total Received: 100 shares * $100 (bid price) = $10,000
+                * Loss Due to Spread: $10,050 - $10,000 = $50
+        * `Yield Spread` Scenario
+            * You are considering investing in either a 10-year Treasury bond or a 10-year corporate bond:
+                * Treasury Bond Investment: $10,000 at 2% yield = $200 annual interest
+                * Corporate Bond Investment: $10,000 at 4% yield = $400 annual interest
+                * Additional Yield for Risk: $400 - $200 = $200
+        * `Option Spread` Scenario (Bull Call Spread)
+            * Stock ABC is currently at $50. You believe it will rise to $60:
+            * Buy Call Option: Strike Price $50, Premium $5
+            * Sell Call Option: Strike Price $55, Premium $2
+            * Net Cost: $5 - $2 = $3 per share
+            * If Stock ABC rises to $60:
+                * Profit on Bought Call: $10 - $5 (premium) = $5
+                * Loss on Sold Call: $60 - $55 = $5
+                * Net Profit: ($10 - $5) - $3 (net cost) = $2
+        * `Interest Rate Spread` Scenario
+            * You deposit $10,000 in a savings account:
+                * Annual Interest Received: $10,000 * 1% = $100
+                * You take out a $10,000 mortgage:
+                * Annual Interest Paid: $10,000 * 4% = $400
+                * Net Cost of Funds: $400 - $100 = $300
+        * `Credit Spread` Scenario
+            * You are evaluating a corporate bond and a Treasury bond:
+                * Treasury Bond Yield: 3%
+                * Corporate Bond Yield: 6%
+                * Additional Yield for Risk: 3%
+                * If you invest $10,000 in the corporate bond:
+                    * Annual Interest: $10,000 * 6% = $600
+                * If you invest $10,000 in the Treasury bond:
+                    * Annual Interest: $10,000 * 3% = $300
+                * Additional Compensation for Risk: $600 - $300 = $300
+        * `Forex Spread` Scenario
+            * You are trading EUR/USD:
+                * Buying Euros (Ask Price): $1.2003
+                * Selling Euros (Bid Price): $1.2000
+                * Spread Cost: $0.0003 per Euro
+                * If you trade 10,000 Euros:
+                    * Total Cost: 10,000 * 1.2003 = $12,003
+                    * Total Received: 10,000 * 1.2000 = $12,000
+                    * Cost Due to Spread: $12,003 - $12,000 = $3
 * strike
     * In finance, "strike" usually pertains to options trading. Here are the key points:
         * `Strike Price`: `The fixed price` at which the holder of an option can buy (in the case of a call option) or sell (in the case of a put option) the underlying asset. It’s predetermined when the option contract is created.
