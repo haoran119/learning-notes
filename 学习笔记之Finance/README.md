@@ -297,6 +297,39 @@
         * `Spot Price`: `The current market price` at which an asset can be bought or sold for immediate delivery. This is in contrast to futures prices, which are set for delivery at a later date.
         * `Spot Market`: A public financial market in which financial instruments or commodities are traded for immediate delivery. Transactions are settled "on the spot," hence the name.
         * `Spot Rate`: Often used in the context of currency exchange, it refers to the current exchange rate at which a currency pair can be bought or sold for immediate delivery.
+* spread
+    * In finance, the term `spread` can refer to various concepts, depending on the context. Here are some of the most common types of spreads and their meanings:
+        * 1. `Bid-Ask Spread`
+            * Definition: The difference between the bid price (the highest price a buyer is willing to pay) and the ask price (the lowest price a seller is willing to accept) of a security.
+            * Significance: It represents the transaction cost for trading the security and is an indicator of market liquidity. A narrow spread indicates high liquidity, while a wide spread indicates low liquidity.
+            * Example: If the bid price for a stock is $50 and the ask price is $50.10, the bid-ask spread is $0.10.
+        * 2. `Yield Spread`
+            * Definition: The difference in yields between two different debt instruments, typically of varying credit quality, maturity, or issuer.
+            * Types:
+                * `Credit Spread`: The difference in yield between a corporate bond and a government bond of the same maturity, reflecting the credit risk of the corporate bond.
+                * `Maturity Spread`: The difference in yields between bonds of different maturities, often observed in the yield curve.
+            * Example: If a 10-year Treasury bond yields 2% and a 10-year corporate bond yields 3%, the credit spread is 1%.
+        * 3. `Option Spread`
+            * Definition: A strategy involving the purchase and sale of two or more options of the same class (calls or puts) on the same underlying asset but with different strike prices or expiration dates.
+            * Types:
+                * `Vertical Spread`: Involves options with different strike prices but the same expiration date (e.g., bull call spread, bear put spread).
+                * `Horizontal Spread`: Involves options with the same strike price but different expiration dates (e.g., calendar spread).
+                * `Diagonal Spread`: Involves options with different strike prices and different expiration dates.
+            * Example: A bull call spread involves buying a call option with a lower strike price and selling a call option with a higher strike price, both with the same expiration date.
+        * 4. `Interest Rate Spread`
+            * Definition: The difference between two interest rates. It is often used to compare the borrowing and lending rates of financial institutions or the rates on different types of loans.
+            * Example: If the interest rate on a savings account is 1% and the interest rate on a mortgage is 4%, the interest rate spread is 3%.
+        * 5. `Credit Spread` (in credit default swaps)
+            * Definition: The difference in yield between a defaultable bond and a risk-free bond, reflecting the credit risk of the issuer.
+            * Example: If a corporate bond yields 5% and a comparable risk-free government bond yields 2%, the credit spread is 3%.
+        * 6. `Forex Spread`
+            * Definition: The difference between the bid and ask prices in the foreign exchange market.
+            * Significance: It reflects the cost of trading currency pairs and is influenced by factors such as market volatility, liquidity, and trading volume.
+            * Example: If the EUR/USD pair has a bid price of 1.2000 and an ask price of 1.2003, the forex spread is 0.0003 (or 3 pips).
+    * Why Spreads Matter
+        * Transaction Costs: Spreads represent a cost to traders and investors, as they affect the profitability of buying and selling securities.
+        * Market Liquidity: Narrow spreads indicate high liquidity and efficient markets, while wide spreads suggest lower liquidity and potentially higher volatility.
+        * Risk Measurement: Yield and credit spreads are used to gauge the risk premium demanded by investors for taking on additional risk.
 * strike
     * In finance, "strike" usually pertains to options trading. Here are the key points:
         * `Strike Price`: `The fixed price` at which the holder of an option can buy (in the case of a call option) or sell (in the case of a put option) the underlying asset. It’s predetermined when the option contract is created.
