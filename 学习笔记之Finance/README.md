@@ -132,7 +132,21 @@
     * Significance:
         * The implied repo rate is essential for market participants like traders and arbitrageurs to assess the relative value and the arbitrage opportunities between the bond and the bond futures market. It helps in identifying whether to prefer the bond or its corresponding futures contract for achieving better returns.
 
-## Interest Rate
+## Foreign Exchange (FX)
+
+* target forward
+    * A `target forward` is a type of financial derivative used in currency risk management. It is essentially a forward contract that includes a specific target rate. Here's a detailed explanation:
+        * Definition: A target forward is a type of foreign exchange forward contract where the exchange rate is set at a predetermined level, known as the "target rate". The contract is structured to terminate once the target rate is reached or exceeded.
+        * Mechanism: In a target forward, a company or investor agrees to exchange a specified amount of one currency for another at the target rate on a future date. The contract may include provisions that allow for early termination if the target rate is achieved before the contract's maturity date.
+        * Usage: Target forwards are often used by companies to hedge against adverse movements in exchange rates. By setting a target rate, they can ensure that they achieve a favorable exchange rate for their transactions. This can be particularly useful for companies with predictable future cash flows in foreign currencies.
+        * Advantages:
+            * Predictability: Provides certainty regarding the exchange rate that will be used for future transactions.
+            * Flexibility: Can be tailored to meet the specific needs of the company, including the ability to terminate early if the target rate is achieved.
+        * Risks:
+            * Market Risk: If the market exchange rate moves significantly in favor of the company beyond the target rate, they might miss out on more favorable rates.
+            * Complexity: These contracts can be complex and may involve higher costs compared to standard forward contracts.
+
+## Interest Rate (IR)
 
 * [What Is an Interest Rate Future? Definition and How to Calculate](https://www.investopedia.com/terms/i/interestratefuture.asp)
     * What Is an Interest Rate Future?
@@ -181,6 +195,31 @@
 * [Understanding the Difference: European vs. American Style Options - CME Group](https://www.cmegroup.com/education/courses/introduction-to-options/understanding-the-difference-european-vs-american-style-options.html)
   * European Style Options: can be exercised only at expiration.
   * American Style Options: can be exercised at any time prior to expiration.
+* ITM fixing
+    * `ITM fixing` in the context of finance and derivatives refers to "In-The-Money" fixing. It is typically used in relation to options and other financial instruments. Here's an explanation:
+        * `In-The-Money (ITM)`: An option is considered "in-the-money" if it has intrinsic value. For a call option, this means the current price of the underlying asset is above the strike price. For a put option, it means the current price of the underlying asset is below the strike price.
+        * `Fixing`: In the context of financial markets, fixing refers to the process of determining the official settlement price of a financial instrument at a particular point in time. This can be used for setting benchmarks or for the settlement of contracts.
+    * When we combine these concepts, "ITM fixing" refers to determining the settlement price of an in-the-money option or derivative. This is important for various financial activities, including:
+        * Settlement of Options: At the expiration of an option, if it is in-the-money, it will be settled based on its intrinsic value. The fixing process determines the exact amount to be settled.
+        * Marking to Market: Financial institutions and traders may need to regularly determine the market value of their in-the-money options for accounting and risk management purposes.
+    * Example Scenario
+        * Equity Options: Suppose you have a call option on a stock with a strike price of $50. If the stock is trading at $55 on the expiration date, the option is in-the-money. The ITM fixing process will determine the settlement price, which in this case would typically be $5 (the difference between the current stock price and the strike price).
+        * Currency Options: If you have a currency call option with a strike price of 1.10 USD/EUR and the current exchange rate is 1.15 USD/EUR, the option is in-the-money. The ITM fixing process would establish the settlement value based on the 0.05 USD difference.
+* OTM fixing
+    * `OTM fixing` in finance refers to `Out-Of-The-Money` fixing. It is related to options and other financial derivatives. Here's a detailed explanation:
+        * 1. `Out-Of-The-Money (OTM)`: An option is considered out-of-the-money if it has no intrinsic value. For a call option, this means the current price of the underlying asset is below the strike price. For a put option, it means the current price of the underlying asset is above the strike price.
+        * 2. `Fixing`: The process of determining the official settlement price of a financial instrument at a specific point in time. This is used for setting benchmarks or for settling contracts.
+    * OTM Fixing in Practice
+        * When discussing "OTM fixing," the context usually involves determining the settlement or value of out-of-the-money options, typically at expiration. This can be important for:
+        * - **Option Expiration**: At expiration, if an option is out-of-the-money, it expires worthless. However, the fixing process still determines and confirms that the option has no intrinsic value.
+        * - **Valuation for Reporting**: Financial institutions might need to determine the market value of out-of-the-money options for reporting and risk management purposes.
+    * Example Scenarios
+        * - **Equity Options**: Consider a call option on a stock with a strike price of $100. If the stock is trading at $95 on the expiration date, the option is out-of-the-money. The OTM fixing process will confirm that the option expires worthless.
+        * - **Currency Options**: Suppose you have a put option with a strike price of 1.20 USD/EUR, and the current exchange rate is 1.25 USD/EUR. The option is out-of-the-money. The OTM fixing process would determine that the option has no intrinsic value at expiration.
+    * Importance of OTM Fixing
+        * 1. **Clarity and Transparency**: Ensures all market participants have a clear and transparent understanding of the value (or lack thereof) of out-of-the-money options at expiration.
+        * 2. **Settlement**: Even though OTM options expire worthless, fixing provides an official record for clearinghouses and counterparties.
+        * 3. **Risk Management**: Financial institutions and traders use the fixing process to accurately reflect the status of their options positions in risk management systems.
 
 ## MISC
 
@@ -210,6 +249,14 @@
         * Regional Variations: The exact time designated as COB can vary. For instance, COB in a financial center like New York might be different from COB in Tokyo due to time zone differences and local market customs.
         * Specific Contexts: In some specific financial contexts, COB might have a more specialized meaning. For instance, in certain risk management contexts, COB data might refer to the data snapshot taken at the end of the business day to evaluate the day's trading activities and associated risks.
     * It's always important to clarify the exact meaning and time of COB in any given context, especially when dealing with time-sensitive financial transactions or tasks.
+* forward
+    * In finance, "forward" generally refers to a forward contract. Here’s an explanation:
+        * `Forward Contract`: A customized contract between two parties to buy or sell an asset at a specified future date for a price that is agreed upon today. Unlike standard futures contracts, forwards are not traded on exchanges but are `over-the-counter (OTC)` instruments.
+        * `Forward Price`: `The agreed-upon price` in a forward contract at which the asset will be bought or sold on the specified future date.
+        * `Forward Market`: A market for forward contracts where such agreements are made. This market is primarily used by businesses and investors to hedge against future price fluctuations of assets.
+        * `Currency Forwards`: A specific type of forward contract that involves the exchange of a set amount of currencies at a future date at a predetermined rate. It’s often used by companies to hedge against currency risk.
+* FOS ?
+    * Field of Study (FOS): Finance as an academic discipline or specialization within a broader educational curriculum.
 * par ?
     * In finance and investing, the term "par" refers to the face value or nominal value of a financial instrument. It is particularly common in the context of bonds, but the concept can apply to other types of securities as well. Here's a more detailed explanation:
         * Bonds: For bonds, "par value" is the amount that the issuer agrees to repay at the bond's maturity. Typically, this is set at $1,000 for corporate bonds and may differ for other types of bonds. When a bond is trading at its par value, it's said to be trading "at par." If the bond's price is above par, it's "trading at a premium," and if below par, it's "trading at a discount."
@@ -217,6 +264,11 @@
         * Stocks: In the context of stocks, "par value" is a nominal value assigned to shares in the company's articles of incorporation or charter. It has little economic significance in the context of common stocks, as market price is determined by supply and demand dynamics. However, par value can be more significant for preferred stock, as it may determine dividend payments.
         * Derivatives: For some derivative contracts, "par" might refer to a standard or default amount or value for the underlying asset in the contract.
     * In general, "par" serves as a standard or reference point. In everyday language, saying something is "on par" with something else means it's roughly equal or of the same standard.
+* pivot
+    * In finance, "pivot" can have a few different meanings depending on the context:
+        * `Pivot Table`: In data analysis, especially within financial modeling, a pivot table is a tool used to summarize and analyze data in spreadsheets. It allows users to extract significant information from a large, detailed data set.
+        * `Pivot Point`: In technical analysis of financial markets, a pivot point is a price level that is used as an indicator of market direction. It’s calculated as an average of significant prices (high, low, close) from the performance of a market in the prior trading period. Traders use pivot points and their associated support and resistance levels to identify potential turning points in the market.
+        * `Strategic Pivot`: In a business or financial context, a pivot refers to a significant change in strategy. For instance, a company might pivot its business model, product focus, or market approach in response to new information or market conditions.
 * Pnl Explain ?
     * PnL (Profit and Loss) Explain, often simply referred to as "PnL Explain" or "PnL Attribution," is a process within finance used to explain the daily fluctuations in a portfolio's value. This is particularly important for traders, portfolio managers, and risk managers to understand the sources of gains and losses in a trading book or an investment portfolio.
     * The primary goal of a PnL Explain is to break down the daily profit and loss into its constituent components, helping to identify which factors (e.g., market movements, specific positions, or other elements) were responsible for the observed change.
@@ -240,6 +292,15 @@
             * If the volatility of the stock increases, leading to an increase in the option's value, the vega PnL would capture this effect.
             * If the portfolio value also changes because of a dividend payment from the stock, this would be reflected in the carry PnL.
     * By summing up all these effects (and any others that are relevant), one would get the total PnL for the day. Any discrepancies between the calculated PnL and the actual PnL might go into the residual PnL, which would require further investigation.
+* spot
+    * In finance, "spot" typically refers to the spot price. Here’s a detailed explanation:
+        * `Spot Price`: `The current market price` at which an asset can be bought or sold for immediate delivery. This is in contrast to futures prices, which are set for delivery at a later date.
+        * `Spot Market`: A public financial market in which financial instruments or commodities are traded for immediate delivery. Transactions are settled "on the spot," hence the name.
+        * `Spot Rate`: Often used in the context of currency exchange, it refers to the current exchange rate at which a currency pair can be bought or sold for immediate delivery.
+* strike
+    * In finance, "strike" usually pertains to options trading. Here are the key points:
+        * `Strike Price`: `The fixed price` at which the holder of an option can buy (in the case of a call option) or sell (in the case of a put option) the underlying asset. It’s predetermined when the option contract is created.
+        * Options: Financial derivatives that give the holder the right, but not the obligation, to buy or sell an asset at a set price (the `strike price`) before or at a certain date.
 
 
 # END
