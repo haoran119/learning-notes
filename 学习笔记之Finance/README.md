@@ -306,7 +306,48 @@
         * `Forward Market`: A market for forward contracts where such agreements are made. This market is primarily used by businesses and investors to hedge against future price fluctuations of assets.
         * `Currency Forwards`: A specific type of forward contract that involves the exchange of a set amount of currencies at a future date at a predetermined rate. It’s often used by companies to hedge against currency risk.
 * FOS ?
-    * Field of Study (FOS): Finance as an academic discipline or specialization within a broader educational curriculum.
+    * `Field of Study (FOS)`: Finance as an academic discipline or specialization within a broader educational curriculum.
+* haircut
+    * In finance, the term "haircut" has specific meanings related to the valuation of assets, risk management, and lending practices. Here are the primary contexts in which a "haircut" is used:
+        * 1. Collateral Haircut
+            * Definition: A haircut in this context refers to the percentage reduction applied to the market value of an asset that is being used as collateral. This reduction is applied to account for the risk of the asset's value decreasing.
+            * Purpose: Haircuts protect lenders by ensuring that the collateral’s value is sufficient to cover the loan even if the asset's market value drops.
+            * Example
+                * Scenario: A borrower needs to secure a $100,000 loan using securities as collateral. The lender applies a 20% haircut to the collateral.
+                * Calculation:
+                    * Market Value of Collateral Needed: $100,000 / (1 - 0.20) = $125,000
+                * Explanation: To secure the $100,000 loan, the borrower needs to provide securities worth $125,000. The 20% haircut accounts for the potential drop in the collateral's value.
+        * 2. Bond Haircut
+            * Definition: In the context of bond markets, a haircut can refer to a reduction in the amount that bondholders receive when a bond issuer is restructuring its debt.
+            * Purpose: Haircuts are often part of debt restructuring agreements to help financially distressed issuers manage their debt obligations more sustainably.
+            * Example
+                * Scenario: A company is unable to meet its bond payments and negotiates a restructuring deal with bondholders, agreeing to a 30% haircut.
+                * Calculation:
+                    * Original Bond Value: $1,000
+                    * Haircut: 30% of $1,000 = $300
+                    * New Bond Value: $1,000 - $300 = $700
+                * Explanation: Bondholders agree to receive $700 for each $1,000 bond, accepting a 30% reduction in value.
+        * 3. Securities Lending Haircut
+            * Definition: In securities lending, a haircut refers to the excess collateral required by the lender over the value of the securities lent. This excess serves as a buffer against market fluctuations and counterparty risk.
+            * Purpose: To protect the lender from potential losses if the borrower defaults or if the value of the securities fluctuates.
+            * Example
+                * Scenario: An investor borrows $1,000,000 worth of securities and the lender requires a 10% haircut.
+                * Calculation:
+                    * Collateral Required: $1,000,000 * 1.10 = $1,100,000
+                * Explanation: The borrower must provide $1,100,000 in collateral to cover the borrowed securities.
+        * 4. Repo Transactions Haircut
+            * Definition: In repurchase agreements (repos), a haircut is the difference between the market value of the security being sold and the amount of cash received.
+            * Purpose: The haircut serves as a margin of safety to the lender, protecting against declines in the security's value.
+            * Example
+                * Scenario: A dealer sells a Treasury bond worth $1,000,000 in a repo agreement and receives $950,000 in cash, with a 5% haircut.
+                * Calculation:
+                    * Haircut Amount: $1,000,000 - $950,000 = $50,000
+                    * Percentage Haircut: $50,000 / $1,000,000 = 5%
+                * Explanation: The dealer receives $950,000, which is $50,000 less than the bond’s market value, providing a buffer for the lender.
+        * Importance of Haircuts
+            * Risk Management: Haircuts are crucial for mitigating credit and market risk. They ensure that lenders and counterparties are protected against declines in the value of collateral or assets.
+            * Financial Stability: By requiring haircuts, financial institutions maintain stability and reduce the likelihood of systemic risk in the event of market fluctuations.
+            * Credit Terms: Haircuts influence the terms of credit, affecting borrowing costs and availability of funds for borrowers.
 * par ?
     * In finance and investing, the term "par" refers to the face value or nominal value of a financial instrument. It is particularly common in the context of bonds, but the concept can apply to other types of securities as well. Here's a more detailed explanation:
         * Bonds: For bonds, "par value" is the amount that the issuer agrees to repay at the bond's maturity. Typically, this is set at $1,000 for corporate bonds and may differ for other types of bonds. When a bond is trading at its par value, it's said to be trading "at par." If the bond's price is above par, it's "trading at a premium," and if below par, it's "trading at a discount."
