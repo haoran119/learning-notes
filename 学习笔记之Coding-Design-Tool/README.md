@@ -241,6 +241,19 @@ Thank you.
 * [天呐，你竟然还在用 try–catch-finally (qq.com)](https://mp.weixin.qq.com/s/ov86Y04l02P4MOasq36Drg)
 * [try-catch-finally中的4个巨坑，老程序员也搞不定！ (qq.com)](https://mp.weixin.qq.com/s/8tJ8g1JKW_z6ZugQI4gb8Q)
 
+### FAQ
+
+* How to print page which is blank in print preview?
+   * Open Chrome Developer Tools:
+      * You can open it by right-clicking on a webpage and selecting "Inspect" or by pressing `Ctrl+Shift+I` (Windows/Linux) or `Cmd+Option+I` (Mac).
+   * Navigate to the "Rendering" Tab:
+      * Click on the `>>` icon in the Developer Tools toolbar to find the "Rendering" tab if it's not visible.
+   * Emulate CSS Media Type:
+      * In the "Rendering" tab, look for the section labeled "Emulate CSS media type."
+      * You can select from different media types such as "screen," "print," etc., from the dropdown menu. This forces the browser to render the page as if it were being displayed on a screen or printed.
+   * Using this feature can help you test how your webpage will look when printed or viewed on different devices without needing to switch devices or print the page.
+   * ![image](https://github.com/haoran119/learning-notes/assets/34557994/ff7059fb-e564-4a67-95b4-11b9a294924c)
+
 ## DESIGN
 
 * [interview/面试总结之MISC(操作系统, 网络, 软件开发, 测试, 工具, 系统设计, MISC) at main · haoran119/interview](https://github.com/haoran119/interview/tree/main/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93%E4%B9%8BMISC(%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%2C%20%E7%BD%91%E7%BB%9C%2C%20%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%2C%20%E6%B5%8B%E8%AF%95%2C%20%E5%B7%A5%E5%85%B7%2C%20%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%2C%20MISC))
