@@ -458,6 +458,45 @@ Thank you.
     * id_rsa.pub is public key file.
     * [Configure SSH and two-step verification | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/configure-ssh-and-two-step-verification/)
         * [Set up an SSH key | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/)
+* `SSH Key Pair`
+    * An SSH key pair consists of a private key and a public key used to authenticate secure connections, typically to a remote server. Here’s a step-by-step guide to generating and using an SSH key pair:
+    * Generating an SSH Key Pair
+        * Open Terminal:
+            * On Linux and macOS, you can use the built-in terminal.
+            * On Windows, you can use Git Bash or PowerShell.
+        * Generate the Key Pair:
+            * Use the `ssh-keygen` command to generate a new SSH key pair.
+            * Run the following command in the terminal:
+                * `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+                * `-t rsa`: Specifies the type of key to create, in this case, an RSA key.
+                * `-b 4096`: Specifies the number of bits in the key. 4096 bits is a strong level of encryption.
+                * `-C "your_email@example.com"`: Adds a label to the key, typically your email address.
+            * Save the Key Pair:
+                * You will be prompted to specify a file to save the key. Press Enter to accept the default location (~/.ssh/id_rsa).
+                * You can also specify a different path if you prefer.
+            * Set a Passphrase:
+                * You will be prompted to enter a passphrase. This is optional but recommended for added security. Enter a passphrase, or press Enter to skip.
+    * Adding Your SSH Key to the SSH-Agent
+        * Start the SSH-Agent:
+            * Ensure the SSH agent is running. Run the following command to start the agent:
+                * `eval "$(ssh-agent -s)"`
+        * Add the SSH Key:
+            * Add your SSH private key to the SSH agent:
+                * `ssh-add ~/.ssh/id_rsa`
+    * Adding Your SSH Key to a Remote Server
+        * Copy the Public Key:
+            * Copy the content of your public key to your clipboard. The public key is stored in a file with the .pub extension (e.g., ~/.ssh/id_rsa.pub).
+                * `cat ~/.ssh/id_rsa.pub`
+        * Add the Public Key to the Remote Server:
+            * Connect to your remote server.
+            * Open (or create) the ~/.ssh/authorized_keys file on the remote server.
+            * Paste your public key into this file and save it.
+    * Testing the SSH Connection
+        * Connect to the Remote Server:
+            * Use the ssh command to connect to the remote server:
+                * `ssh user@remote_host`
+            * Replace user with your username and remote_host with the server's address.
+    * If everything is set up correctly, you should be able to connect to the remote server without being prompted for a password.
 
 #### [GitHub](https://github.com/)
 
