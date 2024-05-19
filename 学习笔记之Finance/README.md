@@ -562,5 +562,103 @@
     * In finance, "strike" usually pertains to options trading. Here are the key points:
         * `Strike Price`: `The fixed price` at which the holder of an option can buy (in the case of a call option) or sell (in the case of a put option) the underlying asset. It’s predetermined when the option contract is created.
         * Options: Financial derivatives that give the holder the right, but not the obligation, to buy or sell an asset at a set price (the `strike price`) before or at a certain date.
+* `STRIPS`
+    * In finance, "STRIPS" stands for Separate Trading of Registered Interest and Principal of Securities. It refers to a type of zero-coupon bond that is created by separating the interest payments and the principal repayment of a traditional bond into individual securities. Here’s a detailed explanation:
+    * What are STRIPS?
+        * Definition:
+            * STRIPS are created by "stripping" the interest payments (coupons) and the principal repayment of a Treasury security and trading them as separate securities.
+            * Each interest payment and the principal payment become zero-coupon bonds, meaning they do not make periodic interest payments but are sold at a discount and mature at face value.
+        * Origin:
+            * Introduced in the United States in 1985 by the U.S. Department of the Treasury.
+            * STRIPS can be created from Treasury notes and bonds by financial institutions, which then sell them to investors.
+    * Features of STRIPS
+        * Zero-Coupon Bonds:
+            * STRIPS do not pay periodic interest. Instead, they are issued at a discount to their face value and mature at par value.
+            * The difference between the purchase price and the face value represents the investor’s return.
+        * Separate Trading:
+            * The interest payments (coupons) and the principal repayment are separated and traded as individual securities.
+            * For example, a 10-year Treasury bond with semi-annual interest payments can be stripped into 20 separate interest payments and one principal payment, resulting in 21 separate STRIPS.
+        * Risk-Free:
+            * Since they are derived from U.S. Treasury securities, STRIPS are considered free of default risk.
+            * They are backed by the full faith and credit of the U.S. government.
+        * Fixed Maturity:
+            * Each STRIP has a fixed maturity date corresponding to the original bond’s coupon payment dates or principal repayment date.
+    * Benefits of STRIPS
+        * Predictable Returns:
+            * STRIPS provide a known return if held to maturity since they are zero-coupon bonds sold at a discount.
+        * No Reinvestment Risk:
+            * Unlike traditional bonds, STRIPS eliminate the risk of reinvesting periodic coupon payments at uncertain future interest rates.
+        * Customizable Cash Flows:
+            * Investors can purchase STRIPS that match specific future cash flow needs, making them useful for certain investment strategies, such as matching liabilities.
+        * Tax Advantages:
+            * Although investors must pay taxes on the imputed interest annually, STRIPS can be advantageous for tax-deferred accounts like IRAs and pension funds.
+    * Example of STRIPS
+        * Original Treasury Bond
+            * Treasury Bond: 10-year maturity, $1,000 face value, 5% annual coupon, paid semi-annually.
+            * Coupon Payments: $25 every six months (10 years = 20 payments).
+Creation of STRIPS
+Principal STRIP: One bond with a face value of $1,000, maturing in 10 years.
+Interest STRIPS: 20 separate bonds, each with a face value of $25, maturing every six months for 10 years.
+Purchase and Yield
+Investor A buys a principal STRIP with a 10-year maturity:
+
+Purchase Price: $613 (for example, reflecting a yield of 5% compounded semi-annually).
+Maturity Value: $1,000
+Yield to Maturity: 
+(
+1000
+613
+)
+1
+/
+20
+−
+1
+=
+5
+%
+( 
+613
+1000
+​
+ ) 
+1/20
+ −1=5%
+Investor B buys an interest STRIP maturing in 5 years:
+
+Purchase Price: $19.61 (for example, reflecting a yield of 5% compounded semi-annually).
+Maturity Value: $25
+Yield to Maturity: 
+(
+25
+19.61
+)
+1
+/
+10
+−
+1
+=
+5
+%
+( 
+19.61
+25
+​
+ ) 
+1/10
+ −1=5%
+Uses of STRIPS
+Retirement Planning:
+
+STRIPS are often used in retirement accounts to provide a known future payout without reinvestment risk.
+Education Funding:
+
+Investors may use STRIPS to match future tuition payments for children, ensuring the exact amount needed at a specific time.
+Institutional Investing:
+
+Pension funds and insurance companies use STRIPS to match long-term liabilities with known future cash flows.
+Conclusion
+STRIPS provide a unique investment opportunity by offering predictable, risk-free returns that can be precisely tailored to future financial needs. Their creation from U.S. Treasury securities ensures safety, while their zero-coupon nature eliminates reinvestment risk, making them a valuable tool for both individual and institutional investors.
 
 # END
