@@ -348,6 +348,60 @@
             * Risk Management: Haircuts are crucial for mitigating credit and market risk. They ensure that lenders and counterparties are protected against declines in the value of collateral or assets.
             * Financial Stability: By requiring haircuts, financial institutions maintain stability and reduce the likelihood of systemic risk in the event of market fluctuations.
             * Credit Terms: Haircuts influence the terms of credit, affecting borrowing costs and availability of funds for borrowers.
+* `OTC`
+    * `Over-the-counter (OTC)` refers to financial transactions that take place directly between two parties, without the oversight of an exchange. Here’s a detailed explanation:
+    * What is Over-the-Counter (OTC)?
+        * Definition:
+            * OTC refers to trading that is done directly between two parties, usually through a dealer network, rather than on a centralized exchange.
+            * These trades are typically less regulated than those conducted on formal exchanges.
+        * Instruments:
+            * OTC trading includes a wide range of financial instruments, such as stocks, bonds, derivatives (like swaps and forward contracts), currencies, and commodities.
+            * Common OTC products include:
+                * OTC Derivatives: Options, forwards, swaps.
+                * OTC Stocks: Shares of smaller or private companies not listed on major exchanges.
+                * Forex: Currency trading is primarily conducted OTC.
+    * Characteristics of OTC Markets
+        * Decentralization:
+            * OTC markets are decentralized, meaning there is no single location or exchange where trading occurs.
+            * Transactions are conducted electronically or via phone.
+        * Customization:
+            * OTC contracts can be customized to meet the specific needs of the parties involved, including terms, quantities, and prices.
+        * Less Regulation:
+            * OTC markets are generally less regulated than exchange-traded markets, which can lead to increased flexibility but also higher risk.
+        * Credit Risk:
+            * Since trades are not guaranteed by a clearinghouse, there is a higher counterparty risk in OTC markets. The risk that one party might default on their obligations is a significant consideration.
+        * Liquidity:
+            * Some OTC markets can be less liquid than exchange-traded markets, making it harder to buy or sell large quantities without affecting the price.
+    * Examples of OTC Transactions
+        * OTC Derivatives:
+            * Interest Rate Swap: Two parties agree to exchange future interest rate payments. For example, one party might pay a fixed rate, while the other pays a floating rate.
+            * Forward Contract: An agreement to buy or sell an asset at a future date for a price agreed upon today. For instance, a company might enter into a forward contract to purchase foreign currency in six months at a specified rate to hedge against currency risk.
+        * OTC Stocks:
+            * Smaller companies or those that do not meet the listing requirements of formal exchanges trade OTC. These stocks are often traded via dealer networks like the OTC Bulletin Board (OTCBB) or Pink Sheets in the U.S.
+        * Forex Trading:
+            * The foreign exchange market is primarily OTC, with currency trading conducted directly between banks, financial institutions, and individual traders.
+    * Advantages and Disadvantages of OTC Markets
+        * Advantages
+            * Customization:
+                * OTC contracts can be tailored to meet the specific needs of the parties involved, offering flexibility that exchange-traded instruments may lack.
+            * Accessibility:
+                * OTC markets can provide access to securities and instruments that are not available on formal exchanges, such as stocks of smaller companies.
+            * Innovation:
+                * OTC markets can facilitate financial innovation by allowing for the creation and trading of new types of financial instruments.
+        * Disadvantages
+            * Higher Risk:
+                * The lack of regulation and central clearing in OTC markets can lead to higher counterparty risk and less transparency.
+            * Liquidity Concerns:
+                * Some OTC markets can be less liquid than exchange-traded markets, which can make it difficult to execute large trades quickly and at favorable prices.
+            * Price Transparency:
+                * Prices in OTC markets are not always publicly available, leading to less price transparency compared to exchange-traded markets.
+    * Regulatory Environment
+        * Dodd-Frank Act:
+            * In the U.S., the Dodd-Frank Wall Street Reform and Consumer Protection Act introduced significant changes to the OTC derivatives market, including requirements for clearing certain types of OTC derivatives through central clearinghouses and reporting trades to trade repositories.
+            * European Market Infrastructure Regulation (EMIR):
+                * In Europe, EMIR mandates the central clearing of OTC derivatives, reporting obligations, and risk mitigation requirements for non-centrally cleared OTC derivatives.
+    * Conclusion
+        * OTC markets play a crucial role in the global financial system by providing flexibility and innovation opportunities. However, they also pose higher risks due to less regulation and transparency. Participants in OTC markets must carefully manage counterparty risk and ensure they have sufficient information to make informed trading decisions.
 * `par` ?
     * In finance and investing, the term "par" refers to the face value or nominal value of a financial instrument. It is particularly common in the context of bonds, but the concept can apply to other types of securities as well. Here's a more detailed explanation:
         * Bonds: For bonds, "par value" is the amount that the issuer agrees to repay at the bond's maturity. Typically, this is set at $1,000 for corporate bonds and may differ for other types of bonds. When a bond is trading at its par value, it's said to be trading "at par." If the bond's price is above par, it's "trading at a premium," and if below par, it's "trading at a discount."
