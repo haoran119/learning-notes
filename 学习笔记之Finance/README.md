@@ -712,34 +712,30 @@
                 * Spot rate on maturity: 1.178 USD/EUR
                 * Forward rate: 1.180 USD/EUR
                 * Since the spot rate is lower than the forward rate, the company uses the forward rate.
-Receivable in USD: 1,000,000 * 1.180 = $1,180,000
-May:
-
-Spot rate on maturity: 1.176 USD/EUR
-Forward rate: 1.175 USD/EUR
-Participation rate: 50%
-Benefit: (1.176 - 1.175) * 50% = 0.0005 USD/EUR
-Effective rate: 1.175 + 0.0005 = 1.1755 USD/EUR
-Receivable in USD: 1,000,000 * 1.1755 = $1,175,500
-June:
-
-Spot rate on maturity: 1.165 USD/EUR
-Forward rate: 1.170 USD/EUR
-Since the spot rate is lower than the forward rate, the company uses the forward rate.
-Receivable in USD: 1,000,000 * 1.170 = $1,170,000
-Benefits and Considerations
-Benefits:
-
-Risk Management: Provides a structured and disciplined approach to managing currency risk over multiple periods.
-Flexibility: Allows participation in favorable market movements to some extent, balancing risk management with potential gains.
-Predictability: Offers predictable cash flows and budget certainty, as the worst-case scenario is the forward rate.
-Considerations:
-
-Cost: There may be a premium or cost associated with the participation feature.
-Complexity: Managing multiple forward contracts and tracking participation rates can be more complex than a single forward contract.
-Market Conditions: Effectiveness depends on market conditions and the volatility of the currency pair.
-Conclusion
-A strip of forwards, or participating forwards, is a sophisticated hedging strategy that provides companies with a balanced approach to managing foreign exchange risk. By combining the security of forward contracts with the potential for participation in favorable currency movements, this instrument helps companies achieve their risk management goals while potentially benefiting from market fluctuations.
+                * Receivable in USD: 1,000,000 * 1.180 = $1,180,000
+            * May:
+                * Spot rate on maturity: 1.176 USD/EUR
+                * Forward rate: 1.175 USD/EUR
+                * Participation rate: 50%
+                * Benefit: (1.176 - 1.175) * 50% = 0.0005 USD/EUR
+                * Effective rate: 1.175 + 0.0005 = 1.1755 USD/EUR
+                * Receivable in USD: 1,000,000 * 1.1755 = $1,175,500
+            * June:
+                * Spot rate on maturity: 1.165 USD/EUR
+                * Forward rate: 1.170 USD/EUR
+                * Since the spot rate is lower than the forward rate, the company uses the forward rate.
+                * Receivable in USD: 1,000,000 * 1.170 = $1,170,000
+    * Benefits and Considerations
+        * Benefits:
+            * Risk Management: Provides a structured and disciplined approach to managing currency risk over multiple periods.
+            * Flexibility: Allows participation in favorable market movements to some extent, balancing risk management with potential gains.
+            * Predictability: Offers predictable cash flows and budget certainty, as the worst-case scenario is the forward rate.
+        * Considerations:
+            * Cost: There may be a premium or cost associated with the participation feature.
+            * Complexity: Managing multiple forward contracts and tracking participation rates can be more complex than a single forward contract.
+            * Market Conditions: Effectiveness depends on market conditions and the volatility of the currency pair.
+    * Conclusion
+        * A strip of forwards, or participating forwards, is a sophisticated hedging strategy that provides companies with a balanced approach to managing foreign exchange risk. By combining the security of forward contracts with the potential for participation in favorable currency movements, this instrument helps companies achieve their risk management goals while potentially benefiting from market fluctuations.
 * `STRIPS`
     * In finance, "STRIPS" stands for Separate Trading of Registered Interest and Principal of Securities. It refers to a type of zero-coupon bond that is created by separating the interest payments and the principal repayment of a traditional bond into individual securities. Here’s a detailed explanation:
     * What are STRIPS?
