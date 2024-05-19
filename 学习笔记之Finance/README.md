@@ -195,6 +195,38 @@
         * Risks:
             * Market Risk: If the market exchange rate moves significantly in favor of the company beyond the target rate, they might miss out on more favorable rates.
             * Complexity: These contracts can be complex and may involve higher costs compared to standard forward contracts.
+    * Practical Applications
+        * Hedging Future Payments:
+            * Example: A U.S. company expects to receive EUR 1,000,000 from a European customer in six months. The company is concerned that the EUR/USD exchange rate might depreciate, reducing the dollar value of the payment. They enter into a target forward contract with a target rate of 1.15 USD/EUR. If the spot rate reaches or exceeds 1.15 before the six months, the contract settles at that rate, securing the company’s revenue in USD.
+        * Locking in Budget Rates:
+            * Example: An importer in Japan needs to pay USD 500,000 to a supplier in three months. The current exchange rate is 110 JPY/USD, but the importer fears the yen might weaken. They enter into a target forward with a target rate of 112 JPY/USD. If the exchange rate hits 112 or worse within the next three months, the contract will settle at 112, ensuring the importer does not pay more than anticipated.
+        * Managing Currency Risk for Exporters:
+            * Example: A European exporter selling products to the U.S. wants to ensure they receive at least EUR 500,000 from a future sale currently worth USD 600,000 at the rate of 1.20 USD/EUR. They set a target forward with a target rate of 1.18 USD/EUR. If the spot rate reaches or exceeds 1.18 before the settlement date, the contract locks in the 1.18 rate, protecting the exporter from unfavorable currency movements.
+    * Pricing and Structuring
+        * Pricing Target Forwards
+            * Spot Rate: The current exchange rate between the two currencies.
+            * Forward Rate: Determined based on the spot rate and the interest rate differential between the two currencies.
+            * Target Rate: The specific exchange rate at which the forward contract will settle if reached or exceeded.
+        * The pricing of a target forward involves considering the likelihood of the spot rate reaching the target rate and the cost of providing this guarantee. The premium or cost will depend on:
+            * Volatility: Higher volatility increases the likelihood of reaching the target rate, leading to a higher premium.
+            * Time to Maturity: The longer the contract, the greater the uncertainty, which can increase the cost.
+            * Interest Rate Differential: The difference between the interest rates of the two currencies affects the forward rate.
+        * Example of Pricing
+            * Spot Rate: 1.20 USD/EUR
+            * Forward Rate (6 months): 1.21 USD/EUR (assuming interest rate differential)
+            * Target Rate: 1.15 USD/EUR
+            * Premium: The cost or premium for the target forward might be calculated based on the implied volatility of the EUR/USD pair, the interest rate differential, and the probability of the spot rate hitting 1.15 within six months.
+        * The bank or financial institution providing the target forward will use these factors to calculate the premium, which the client pays to secure the contract.
+    * Structuring Target Forwards
+        * Determine Exposure: Assess the amount and timing of the foreign currency exposure.
+        * Set Target Rate: Choose a target rate that aligns with the company's risk management strategy and budget.
+        * Contract Duration: Specify the duration of the forward contract.
+        * Settlement Terms: Define the terms of settlement, including whether the contract will be settled in cash or physical delivery of currency.
+        * Premium Payment: Agree on the premium payment structure, whether it’s an upfront fee or embedded in the contract.
+    * Example of Structuring
+        * A company with a six-month exposure to EUR 1,000,000 decides to set a target forward with a target rate of 1.15 USD/EUR. The current spot rate is 1.20 USD/EUR, and the six-month forward rate is 1.21 USD/EUR. The financial institution evaluates the implied volatility and interest rate differential, determining a premium of 0.5% of the notional amount. The company agrees to this premium and enters into the target forward contract. If the EUR/USD rate hits 1.15 anytime in the next six months, the contract settles at 1.15, ensuring the company receives the anticipated USD amount.
+    * Conclusion
+        * Target forwards are a valuable tool for managing foreign exchange risk, providing companies with a way to lock in favorable exchange rates for future transactions. By understanding the pricing mechanisms and structuring these contracts appropriately, companies can effectively hedge against currency volatility and protect their financial interests.
 
 ## Interest Rate (IR)
 
