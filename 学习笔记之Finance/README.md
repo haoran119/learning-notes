@@ -596,69 +596,26 @@
         * Original Treasury Bond
             * Treasury Bond: 10-year maturity, $1,000 face value, 5% annual coupon, paid semi-annually.
             * Coupon Payments: $25 every six months (10 years = 20 payments).
-Creation of STRIPS
-Principal STRIP: One bond with a face value of $1,000, maturing in 10 years.
-Interest STRIPS: 20 separate bonds, each with a face value of $25, maturing every six months for 10 years.
-Purchase and Yield
-Investor A buys a principal STRIP with a 10-year maturity:
-
-Purchase Price: $613 (for example, reflecting a yield of 5% compounded semi-annually).
-Maturity Value: $1,000
-Yield to Maturity: 
-(
-1000
-613
-)
-1
-/
-20
-−
-1
-=
-5
-%
-( 
-613
-1000
-​
- ) 
-1/20
- −1=5%
-Investor B buys an interest STRIP maturing in 5 years:
-
-Purchase Price: $19.61 (for example, reflecting a yield of 5% compounded semi-annually).
-Maturity Value: $25
-Yield to Maturity: 
-(
-25
-19.61
-)
-1
-/
-10
-−
-1
-=
-5
-%
-( 
-19.61
-25
-​
- ) 
-1/10
- −1=5%
-Uses of STRIPS
-Retirement Planning:
-
-STRIPS are often used in retirement accounts to provide a known future payout without reinvestment risk.
-Education Funding:
-
-Investors may use STRIPS to match future tuition payments for children, ensuring the exact amount needed at a specific time.
-Institutional Investing:
-
-Pension funds and insurance companies use STRIPS to match long-term liabilities with known future cash flows.
-Conclusion
-STRIPS provide a unique investment opportunity by offering predictable, risk-free returns that can be precisely tailored to future financial needs. Their creation from U.S. Treasury securities ensures safety, while their zero-coupon nature eliminates reinvestment risk, making them a valuable tool for both individual and institutional investors.
+        * Creation of STRIPS
+            * Principal STRIP: One bond with a face value of $1,000, maturing in 10 years.
+            * Interest STRIPS: 20 separate bonds, each with a face value of $25, maturing every six months for 10 years.
+        * Purchase and Yield
+            * Investor A buys a principal STRIP with a 10-year maturity:
+                * Purchase Price: $613 (for example, reflecting a yield of 5% compounded semi-annually).
+                * Maturity Value: $1,000
+                * Yield to Maturity: (1000/613)e(1/20) − 1 = 5%
+            * Investor B buys an interest STRIP maturing in 5 years:
+                * Purchase Price: $19.61 (for example, reflecting a yield of 5% compounded semi-annually).
+                * Maturity Value: $25
+                * Yield to Maturity: (25 / 19.61)e(1/10) − 1 = 5%
+    * Uses of STRIPS
+        * Retirement Planning:
+            * STRIPS are often used in retirement accounts to provide a known future payout without reinvestment risk.
+        * Education Funding:
+            * Investors may use STRIPS to match future tuition payments for children, ensuring the exact amount needed at a specific time.
+        * Institutional Investing:
+            * Pension funds and insurance companies use STRIPS to match long-term liabilities with known future cash flows.
+    * Conclusion
+        * STRIPS provide a unique investment opportunity by offering predictable, risk-free returns that can be precisely tailored to future financial needs. Their creation from U.S. Treasury securities ensures safety, while their zero-coupon nature eliminates reinvestment risk, making them a valuable tool for both individual and institutional investors.
 
 # END
