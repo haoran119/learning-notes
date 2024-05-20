@@ -427,6 +427,61 @@
             * Risk Management: Haircuts are crucial for mitigating credit and market risk. They ensure that lenders and counterparties are protected against declines in the value of collateral or assets.
             * Financial Stability: By requiring haircuts, financial institutions maintain stability and reduce the likelihood of systemic risk in the event of market fluctuations.
             * Credit Terms: Haircuts influence the terms of credit, affecting borrowing costs and availability of funds for borrowers.
+* `Nominals`
+    * In finance, "nominals" refer to the `face value` or `par value` of financial instruments such as bonds, loans, or derivatives. The nominal value is the amount that is stated on the financial instrument and is used to calculate interest payments and the repayment of principal. Here’s a detailed explanation of nominals in various contexts:
+    * Key Concepts of Nominals
+        * Definition:
+            * The nominal value, or face value, is the stated value of a financial instrument. For bonds, it is the amount the issuer agrees to repay the bondholder at maturity. For derivatives, it can be the notional amount upon which payments are based.
+        * Importance:
+            * Nominal values are critical for calculating interest payments, coupon payments, and principal repayments. They are also used as the basis for calculating exposure in derivatives.
+        * Nominal vs. Market Value:
+            * The nominal value is different from the market value. The market value is the current price at which the instrument can be bought or sold in the market, which can fluctuate based on supply and demand.
+    * Examples in Different Financial Instruments
+        * Bonds:
+            * Nominal Value: The face value of a bond, which is the amount the issuer agrees to repay at maturity.
+            * Coupon Payments: Calculated based on the nominal value. For example, a bond with a nominal value of $1,000 and a coupon rate of 5% pays $50 annually.
+            * Example:
+                * A government bond with a nominal value of $1,000, a coupon rate of 5%, and a maturity of 10 years will pay $50 annually and $1,000 at maturity.
+        * Loans:
+            * Principal Amount: The nominal value of a loan, which is the amount borrowed and on which interest is calculated.
+            * Interest Payments: Calculated based on the nominal value. For example, a loan with a nominal value of $10,000 and an interest rate of 4% requires annual interest payments of $400.
+            * Example:
+                * A mortgage loan with a nominal value of $200,000 at an interest rate of 3.5% requires annual interest payments of $7,000.
+        * Derivatives:
+            * Notional Amount: The nominal value in derivatives contracts, which is the amount used to calculate payments. It is not exchanged but serves as a reference for determining the size of payments.
+            * Example:
+                * An interest rate swap with a notional amount of $1,000,000 where one party pays a fixed rate of 2% and the other pays a floating rate based on LIBOR. Payments are calculated on the notional amount.
+    * Nominal GDP vs. Real GDP
+        * Nominal GDP: Measures a country's economic output using current prices, without adjusting for inflation.
+        * Real GDP: Adjusts nominal GDP for inflation, providing a more accurate measure of economic growth by reflecting the true value of goods and services.
+    * Nominal Interest Rate vs. Real Interest Rate
+        * Nominal Interest Rate: The stated interest rate on a financial instrument, not adjusted for inflation.
+        * Real Interest Rate: Adjusted for inflation, reflecting the true cost of borrowing and the real yield to the lender.
+    * Importance of Nominals in Financial Analysis
+        * Debt Management:
+            * Understanding the nominal value of bonds and loans is crucial for managing debt obligations and calculating interest payments.
+        * Investment Valuation:
+            * Nominal values are used to evaluate the yield and return on investment for bonds and fixed-income securities.
+        * Risk Management:
+            * In derivatives, the notional amount (nominal value) is critical for assessing exposure and calculating the potential impact of market movements.
+    * Detailed Example: Bond with Nominal Value
+        * Scenario
+            * Bond: Corporate bond issued by XYZ Corp.
+            * Nominal Value: $1,000
+            * Coupon Rate: 6%
+            * Maturity: 5 years
+        * Calculations
+            * Annual Coupon Payment:
+                * Annual Coupon Payment = Nominal Value × Coupon Rate
+                * = $1,000 \times 0.06 = $60
+            * Total Coupon Payments Over Life of Bond:
+                * Total Coupon Payments = Annual Coupon Payment × Number of Years
+                * = $60 \times 5 = $300
+            * Total Repayment at Maturity:
+                * Total Repayment = Nominal Value + Total Coupon Payments
+                * = $1,000 + $300 = $1,300
+    * Conclusion
+        * The nominal value is a fundamental concept in finance, serving as the basis for calculating interest, coupon payments, and principal repayments in various financial instruments. Understanding nominal values helps investors and financial professionals manage investments, assess risk, and make informed financial decisions.
 * `OTC`
     * `Over-the-counter (OTC)` refers to financial transactions that take place directly between two parties, without the oversight of an exchange. Here’s a detailed explanation:
     * What is Over-the-Counter (OTC)?
