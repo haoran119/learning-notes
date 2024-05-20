@@ -305,7 +305,54 @@
 
 ## MISC
 
-* `cash flows` ?
+* `AAD`
+    * In the context of finance, "AAD" commonly refers to "Average Absolute Deviation." This is a statistical measure used to quantify the average deviation of data points from the mean or median of a dataset. In finance, AAD can be used for risk management, portfolio analysis, and performance evaluation.
+    * Key Features of Average Absolute Deviation (AAD)
+        * Definition:
+            * Average Absolute Deviation measures the average of the absolute deviations of each data point from a central point, typically the mean or median of the dataset.
+        * Formula:
+            * When calculated from the mean:
+                * <img width="232" alt="截屏2024-05-20 下午6 57 02" src="https://github.com/haoran119/learning-notes/assets/34557994/c807d40a-626d-4050-a7f0-9026413d370f">
+                * Where:
+                    * N is the number of observations.
+                    * xi represents each data point in the dataset.
+                    * μ is the mean of the dataset.
+            * When calculated from the median:
+                * <img width="232" alt="截屏2024-05-20 下午7 00 16" src="https://github.com/haoran119/learning-notes/assets/34557994/60934184-c82f-4428-9370-83f5e08df43c">
+                * Where
+                    * M is the median of the dataset.
+        * Purpose:
+            * AAD provides a simple way to measure variability or dispersion in a dataset. It is less sensitive to outliers compared to other measures like variance or standard deviation.
+    * Practical Applications of AAD in Finance
+        * Risk Management:
+            * AAD can be used to measure the risk or volatility of an investment portfolio. By calculating the AAD of returns, investors can assess how much returns typically deviate from the average return.
+        * Performance Evaluation:
+            * In performance evaluation, AAD can be used to assess the consistency of returns over time. Lower AAD values indicate more consistent performance, while higher values indicate greater variability.
+        * Portfolio Analysis:
+            * AAD can help in comparing the risk profiles of different portfolios. Portfolios with lower AAD are considered less volatile and potentially less risky.
+    * Detailed Example
+        * Scenario
+            * Suppose an investor is analyzing the monthly returns of a stock over a 12-month period:
+                * Monthly Returns (%): 2, -1, 3, 4, -2, 5, 1, -3, 4, 2, -1, 3
+        * Steps to Calculate AAD
+            * Calculate the Mean:
+                * μ = 1/12 * ∑(i=1,12) * xi = (2+(−1)+3+4+(−2)+5+1+(−3)+4+2+(−1)+3) / 12 = 17 / 12 ≈ 1.42
+            * Calculate the Absolute Deviations from the Mean:
+                * <img width="232" alt="截屏2024-05-20 下午7 07 08" src="https://github.com/haoran119/learning-notes/assets/34557994/640efe50-8928-4cd2-9800-d8d183eae61d">
+            * Calculate the AAD:
+                * AAD = 1/12 * (0.58+2.42+1.58+2.58+3.42+3.58+0.42+4.42+2.58+0.58+2.42+1.58) = 26.16 / 12 ≈ 2.18
+        * Interpretation
+            * The AAD of approximately 2.18% indicates that, on average, the monthly returns deviate from the mean by about 2.18%. This provides an insight into the variability of the stock's returns over the analyzed period.
+    * Advantages of Using AAD
+        * Simplicity: AAD is straightforward to calculate and interpret.
+        * Robustness: Less sensitive to outliers compared to variance and standard deviation, providing a more robust measure of central tendency.
+        * Comparability: Facilitates easy comparison of the variability of different datasets or financial instruments.
+    * Limitations of AAD
+        * Information Loss: While it measures average deviation, it does not provide as much information about the distribution of deviations as variance or standard deviation.
+        * Lack of Sensitivity: In some cases, the lack of sensitivity to outliers might be a disadvantage if outliers carry significant information.
+    * Conclusion
+        * Average Absolute Deviation (AAD) is a useful statistical tool in finance for assessing the variability of returns, managing risk, and evaluating the performance consistency of investments. By providing a simple yet robust measure of dispersion, AAD helps investors and analysts make informed decisions.
+* `Cash flows` ?
     * "Cash flows" refers to the movement of money in and out of a business, project, or financial product. It's a crucial metric for evaluating the health and profitability of a business. Understanding and managing cash flows is vital for ensuring a business has enough liquidity to cover its short-term obligations.
     * Types of Cash Flows:
         * Operating Cash Flows: These are the cash flows that come from the primary operations of a business. This includes the cash receipts (from sales) and cash paid out for business activities.
