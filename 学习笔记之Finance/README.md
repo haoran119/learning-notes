@@ -380,7 +380,7 @@
                 * For a knock-in call option (up-and-in):
                 * <img width="311" alt="截屏2024-05-20 下午9 27 31" src="https://github.com/haoran119/learning-notes/assets/34557994/015b95b9-e4fa-4d35-92b6-6f78b7969fdf">
                 * For a knock-out put option (down-and-out):
-                * <img width="311" alt="截屏2024-05-20 下午9 27 31" src="https://github.com/haoran119/learning-notes/assets/34557994/69e19c13-3d97-493f-962e-a9061da4a8c0">
+                * <img width="359" alt="截屏2024-05-20 下午9 28 22" src="https://github.com/haoran119/learning-notes/assets/34557994/eee84b4a-9e33-419b-8aa4-59ac2570205b">
                 * Where:
                     * P(hitting the barrier) can be calculated using more complex models like the `Cox-Ross-Rubinstein binomial tree` or `Monte Carlo simulations`, which simulate numerous paths for the stock price to determine the probability of hitting the barrier.
         * Practical Considerations
