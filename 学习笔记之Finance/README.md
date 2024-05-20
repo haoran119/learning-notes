@@ -477,6 +477,11 @@
         * Payoff Calculation
             * Cost of the Strategy:
                 * Net Premium Paid: $5 (buy call) - $2 (sell call) = $3 per share
+                * Net Premium Paid = Premium Paid for Buying Call − Premium Received for Selling Call
+                * Premium Paid: The cost of buying the call option (with a lower strike price).
+                * Premium Received: The income from selling the call option (with a higher strike price).
+                * Premium for Bought Call Option (Lower Strike): This is an outflow of cash, so you pay $5.
+                * Premium for Sold Call Option (Higher Strike): This is an inflow of cash, so you receive $2.
             * Potential Outcomes:
                 * Stock Price Below $50: Both options expire worthless. Loss is the net premium paid: $3 per share.
                 * Stock Price Between $50 and $60: The bought call option gains value, but the sold call option limits the upside. Maximum gain occurs when the stock price is at $60.
