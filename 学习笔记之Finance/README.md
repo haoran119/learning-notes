@@ -386,7 +386,7 @@
         * `Currency Forwards`: A specific type of forward contract that involves the exchange of a set amount of currencies at a future date at a predetermined rate. It’s often used by companies to hedge against currency risk.
 * `FOS` ?
     * `Field of Study (FOS)`: Finance as an academic discipline or specialization within a broader educational curriculum.
-* `haircut`
+* `Haircut`
     * In finance, the term "haircut" has specific meanings related to the valuation of assets, risk management, and lending practices. Here are the primary contexts in which a "haircut" is used:
         * 1. Collateral Haircut
             * Definition: A haircut in this context refers to the percentage reduction applied to the market value of an asset that is being used as collateral. This reduction is applied to account for the risk of the asset's value decreasing.
@@ -427,6 +427,73 @@
             * Risk Management: Haircuts are crucial for mitigating credit and market risk. They ensure that lenders and counterparties are protected against declines in the value of collateral or assets.
             * Financial Stability: By requiring haircuts, financial institutions maintain stability and reduce the likelihood of systemic risk in the event of market fluctuations.
             * Credit Terms: Haircuts influence the terms of credit, affecting borrowing costs and availability of funds for borrowers.
+* `Legs`
+    * In finance, the term "legs" refers to individual components or parts of a larger financial transaction, particularly in the context of derivatives, structured products, and multi-leg trading strategies. Each leg represents a distinct position within the overall strategy. Here’s a detailed explanation of legs in various financial contexts:
+    * Key Concepts of Legs
+        * Definition:
+            * A "leg" is one part of a complex financial transaction or trading strategy involving multiple positions.
+            * Each leg can have different characteristics, such as different maturities, strike prices, or notional amounts.
+        * Purpose:
+            * Using multiple legs allows traders to construct strategies that can hedge risk, speculate on market movements, or achieve specific financial goals.
+            * By combining different legs, traders can create more sophisticated positions that align with their market outlook or risk tolerance.
+    * Examples in Different Financial Instruments
+        * Options Strategies:
+            * Definition: Options strategies often involve multiple legs, combining calls and puts with different strike prices and expiration dates.
+            * Common Strategies:
+                * Straddle: Involves buying a call and a put with the same strike price and expiration date. It has two legs.
+                * Strangle: Involves buying a call and a put with different strike prices but the same expiration date.
+                * Butterfly Spread: Involves buying one call (or put) at a lower strike price, selling two calls (or puts) at a middle strike price, and buying one call (or put) at a higher strike price. It has four legs.
+            * Example:
+                * Bull Call Spread: Buying a call option with a lower strike price and selling a call option with a higher strike price. Each position is a leg of the overall strategy.
+        * Swaps:
+            * Definition: Swaps are derivative contracts where two parties exchange cash flows or other financial instruments.
+            * Common Types:
+                * Interest Rate Swap: Involves exchanging fixed interest rate payments for floating rate payments. Each side of the swap is a leg.
+                * Currency Swap: Involves exchanging principal and interest payments in different currencies. Each currency exchange represents a leg.
+            * Example:
+                * Interest Rate Swap: One leg pays a fixed interest rate (fixed leg), and the other leg pays a floating interest rate (floating leg).
+        * Multi-Legged Securities:
+            * Definition: Some structured products and complex securities have multiple legs, each representing different components of the security.
+            * Example:
+                * Collateralized Mortgage Obligations (CMOs): These securities have multiple tranches or legs, each with different cash flow characteristics and risk profiles.
+        * Forex Trading:
+            * Definition: Forex trading strategies can involve multiple currency pairs, with each pair representing a leg of the overall trade.
+            * Example:
+                * Currency Basket: Involves holding multiple currency positions, each representing a leg of the basket.
+    * Detailed Example: Bull Call Spread
+        * Scenario
+            * An investor expects the price of stock XYZ to rise and wants to use a bull call spread to limit risk while participating in the upside.
+        * Legs of the Bull Call Spread
+            * First Leg:
+                * Buy Call Option:
+                    * Strike Price: $50
+                    * Premium: $5
+                    * Expiration: 3 months
+            * Second Leg:
+                * Sell Call Option:
+                    * Strike Price: $60
+                    * Premium: $2
+                    * Expiration: 3 months
+        * Payoff Calculation
+            * Cost of the Strategy:
+                * Net Premium Paid: $5 (buy call) - $2 (sell call) = $3 per share
+            * Potential Outcomes:
+                * Stock Price Below $50: Both options expire worthless. Loss is the net premium paid: $3 per share.
+                * Stock Price Between $50 and $60: The bought call option gains value, but the sold call option limits the upside. Maximum gain occurs when the stock price is at $60.
+                * Stock Price at $60 or Above: Maximum profit is achieved. The bought call is worth $10, and the sold call is worth $0 at expiration. Net profit is $10 (gain from bought call) - $3 (net premium) = $7 per share.
+        * Payoff Diagram
+            * <img width="488" alt="截屏2024-05-20 下午7 29 31" src="https://github.com/haoran119/learning-notes/assets/34557994/8f6f17d4-c769-411b-9711-80d73c1fb24a">
+    * Importance of Understanding Legs
+        * Risk Management:
+            * By understanding the components (legs) of a complex strategy, traders can better manage and mitigate risks.
+            * Each leg can be adjusted or closed independently to respond to changing market conditions.
+        * Strategic Flexibility:
+            * Multi-legged strategies provide flexibility in constructing positions that align with specific market views or investment goals.
+            * Traders can combine different legs to create custom payoff profiles.
+        * Performance Analysis:
+            * Analyzing the performance of each leg separately helps in understanding the overall strategy's performance and identifying the sources of gains or losses.
+    * Conclusion
+        * Understanding the concept of legs in financial transactions is crucial for constructing, analyzing, and managing complex trading strategies. Whether in options, swaps, multi-legged securities, or forex trading, each leg represents a critical component that contributes to the overall risk and return profile of the strategy.
 * `Nominals`
     * In finance, "nominals" refer to the `face value` or `par value` of financial instruments such as bonds, loans, or derivatives. The nominal value is the amount that is stated on the financial instrument and is used to calculate interest payments and the repayment of principal. Here’s a detailed explanation of nominals in various contexts:
     * Key Concepts of Nominals
