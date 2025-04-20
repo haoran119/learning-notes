@@ -5,7 +5,8 @@
 * [Quants: What They Do and How They've Evolved](https://www.investopedia.com/articles/active-trading/111214/quants-what-they-do-and-how-theyve-evolved.asp#:~:text=Key%20Takeaways-,Quantitative%20trading%20(also%20called%20quant%20trading)%20involves%20the%20use%20of,aim%20to%20identify%20profit%20opportunities.)
 * [Beginner's Guide to Quantitative Trading | QuantStart](https://www.quantstart.com/articles/Beginners-Guide-to-Quantitative-Trading/)
 * [Self-Study Plan for Becoming a Quantitative Developer | QuantStart](https://www.quantstart.com/articles/Self-Study-Plan-for-Becoming-a-Quantitative-Developer/)
-* [A Simple Guide to Become a Quantitative Developer](https://blog.quantinsti.com/quantitative-developer/) 
+* [A Simple Guide to Become a Quantitative Developer](https://blog.quantinsti.com/quantitative-developer/)
+* [Quant Question - Interview Preparation Platform](https://www.quantquestion.com/zh)
 * [Stock market simulator - Wikipedia](https://en.wikipedia.org/wiki/Stock_market_simulator)
   * A stock market simulator is computer software that reproduces behavior and features of a stock market, so that a user may practice trading stocks without financial risk. `Paper trading`, sometimes also called "virtual stock trading", is a simulated trading process in which would-be investors can practice investing without committing money.[1]
 * [Paper Trade Definition](https://www.investopedia.com/terms/p/papertrade.asp)
