@@ -106,7 +106,7 @@ $ telnet smtp.domain.ext 25
 354 Enter mail, end with "." on a line by itself
 > SUBJECT: Test message
 Hello,
-this is a TEST message, 
+this is a TEST message,
 please don't reply.
 Thank you.
 > .
@@ -122,7 +122,7 @@ Thank you.
 * How to send email to multiple email address ?
     * multiple "RCPT TO"
     * [c# - How to add multiple e-mail recipients in a mail , but send the mail to only a selected few addresses? - Stack Overflow](https://stackoverflow.com/questions/44108487/how-to-add-multiple-e-mail-recipients-in-a-mail-but-send-the-mail-to-only-a-se)
-    * [Simple Mail Transfer Protocol - Wikipedia](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol#SMTP_vs_mail_retrieval) 
+    * [Simple Mail Transfer Protocol - Wikipedia](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol#SMTP_vs_mail_retrieval)
 
 ### XML
 
@@ -348,6 +348,103 @@ Thank you.
 * [REST API Tutorial](http://www.restapitutorial.com/)
 * [Azure REST API Reference | Microsoft Docs](https://docs.microsoft.com/en-us/rest/api/)
 
+#### REST API
+
+🌐 What is a REST API?
+
+**REST API** (short for **Representational State Transfer Application Programming Interface**) is a standardized way for software applications to communicate over the **HTTP** protocol — just like how a web browser talks to websites.
+
+---
+
+✅ Key Concepts
+
+| Concept       | Description                                                               |
+| ------------- | ------------------------------------------------------------------------- |
+| **Client**    | The requester (e.g., browser, mobile app, script)                         |
+| **Server**    | The provider of the API (e.g., a web service like `api.example.com`)      |
+| **Resource**  | A piece of data (e.g., user, product, order) exposed via the API          |
+| **Endpoint**  | A specific URL that represents a resource (e.g., `/users/123`)            |
+| **Method**    | HTTP verbs (`GET`, `POST`, `PUT`, `DELETE`) to act on resources           |
+| **Stateless** | Every request contains all necessary info; the server doesn't track state |
+| **JSON**      | Most REST APIs use JSON to send/receive structured data                   |
+
+---
+
+📘 Common HTTP Methods
+
+| Method   | Description                 | Example                                     |
+| -------- | --------------------------- | ------------------------------------------- |
+| `GET`    | Retrieve a resource         | `GET /users/1` → Get user with ID = 1       |
+| `POST`   | Create a new resource       | `POST /users` → Create new user             |
+| `PUT`    | Update/replace a resource   | `PUT /users/1` → Update user with ID = 1    |
+| `PATCH`  | Partially update a resource | `PATCH /users/1` → Update some fields       |
+| `DELETE` | Delete a resource           | `DELETE /users/1` → Delete user with ID = 1 |
+
+---
+
+🧠 Example: REST API in Action
+
+Say you have a user database:
+
+**Base URL**: `https://api.example.com`
+
+| Action        | Request            | Description                    |
+| ------------- | ------------------ | ------------------------------ |
+| Get user info | `GET /users/42`    | Returns user with ID 42        |
+| Create user   | `POST /users`      | Creates a new user             |
+| Update user   | `PUT /users/42`    | Replaces user 42 with new data |
+| Delete user   | `DELETE /users/42` | Deletes user 42                |
+
+---
+
+🔐 Authentication
+
+Most REST APIs use one of these methods to authenticate clients:
+
+* **API key** in header
+* **Bearer token** (e.g., JWT)
+* **OAuth 2.0** tokens
+* **Basic Auth** (username/password)
+
+Example:
+
+```http
+Authorization: Bearer eyJhbGciOiJIUzI1...
+```
+
+---
+
+🔄 Response Format
+
+Most APIs return JSON:
+
+```json
+{
+  "id": 42,
+  "name": "Alice",
+  "email": "alice@example.com"
+}
+```
+
+With HTTP status codes like:
+
+| Code | Meaning      |
+| ---- | ------------ |
+| 200  | OK           |
+| 201  | Created      |
+| 400  | Bad request  |
+| 401  | Unauthorized |
+| 404  | Not found    |
+| 500  | Server error |
+
+---
+
+✅ Summary
+
+* REST is a lightweight, stateless architecture over HTTP.
+* It's widely used for **web APIs** and **microservices**.
+* REST APIs are easy to test with tools like `curl`, Postman, or browser.
+
 ### 无服务 SERVERLESS
 
 * [当我们在聊 Serverless 时你应该知道这些 ｜ CSDN博文精选](https://mp.weixin.qq.com/s/x19NOOOBWN6ZNfCSW07lsg)
@@ -452,7 +549,7 @@ Thank you.
 
 * Bitbucket | Git solution for teams using Jira
 * Code & CI/CD, optimized for teams using Jira
-* With best-in-class Jira integration, and built-in CI/CD, Bitbucket Cloud is the native Git tool in Atlassian’s Open DevOps solution. Join millions of developers who choose to build on Bitbucket. 
+* With best-in-class Jira integration, and built-in CI/CD, Bitbucket Cloud is the native Git tool in Atlassian’s Open DevOps solution. Join millions of developers who choose to build on Bitbucket.
 * [Bitbucket Cloud support | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/)
     * [Build, test, and deploy with Pipelines | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/build-test-and-deploy-with-pipelines/)
         * [Get started with Bitbucket Pipelines | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/get-started-with-bitbucket-pipelines/)
@@ -545,7 +642,7 @@ Thank you.
 * [DevOps with GitLab CI Course - Build Pipelines and Deploy to AWS - YouTube](https://www.youtube.com/watch?v=PGyhBwLyK2U)
 
 #### [Jenkins](https://www.jenkins.io/)
-  
+
 * Jenkins是开源CI&CD软件领导者， 提供超过1000个插件来支持构建、部署、自动化， 满足任何项目的需要。
 * [Jenkins (software) - Wikipedia](https://en.wikipedia.org/wiki/Jenkins_(software))
     * Jenkins is a free and open source automation server. It helps automate the parts of software development related to building, testing, and deploying, facilitating continuous integration and continuous delivery. It is a server-based system that runs in servlet containers such as Apache Tomcat. It supports version control tools, including AccuRev, CVS, Subversion, Git, Mercurial, Perforce, ClearCase and RTC, and can execute Apache Ant, Apache Maven and sbt based projects as well as arbitrary shell scripts and Windows batch commands.
@@ -798,7 +895,7 @@ jq '.[0] | {message: .commit.message, name: .commit.committer.name}'
 curl 'http://...' | jq '.[] | "curl " + .url + "| jq .message > test.json"'
 cat test.json | jq . > new.json
 ```
-* https://stedolan.github.io/jq/manual/ 
+* https://stedolan.github.io/jq/manual/
 * [学习笔记之jq - 浩然119 - 博客园](https://www.cnblogs.com/pegasus923/p/13845186.html)
 
 #### [mRemoteNG](https://mremoteng.org/)
@@ -818,7 +915,7 @@ $ ssh-copy-id my_id@server.org
 ...
 Are you sure you want to continue connecting (yes/no)? yes
 ...
-$ ssh my_id@server.org 
+$ ssh my_id@server.org
 # MobaXterm - Edit Session - Specify username - my_id
 ```
 * How to set up a tunnel on windows to ssh to linux server if your local application can't access the remote server ?
@@ -951,7 +1048,7 @@ $ sinfo
 
 PARTITION AVAIL  TIMELIMIT� NODES  STATE NODELIST
 generic*     up  infinite     12< style='mso-spacerun:yes'>  alloc cc[4-5,7,10-18]
- 
+
 $ squeue
   JOBID PARTITION     NAME   USER  ST       TIME� NODES NODELIST(REASON)
  889218   generic depconso   kaymes span style='mso-spacerun:yes'>Â  PDÂ  Â Â� 0:00      1 (Depend )
@@ -986,7 +1083,7 @@ $ squeue
     * command+shift+p to bring up the Command Palette
     * Type in “Package Control” and select Package Control: Install Package.
     * Type in "codemap"
-    * https://packagecontrol.io/packages/CodeMap 
+    * https://packagecontrol.io/packages/CodeMap
 * [sublimetext3 - How to wrap each line in quotes in SublimeText? - Stack Overflow](https://stackoverflow.com/questions/32127604/how-to-wrap-each-line-in-quotes-in-sublimetext#:~:text=After%20Ctrl%2BShift%2BL%20just,sides%20of%20the%20selected%20text.)
     * After Ctrl+Shift+L just press "
 
