@@ -380,6 +380,8 @@ Thank you.
 | `PATCH`  | Partially update a resource | `PATCH /users/1` → Update some fields       |
 | `DELETE` | Delete a resource           | `DELETE /users/1` → Delete user with ID = 1 |
 
+* [HTTP request methods - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods)
+
 ---
 
 🧠 Example: REST API in Action
