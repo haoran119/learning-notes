@@ -447,6 +447,80 @@ With HTTP status codes like:
 * It's widely used for **web APIs** and **microservices**.
 * REST APIs are easy to test with tools like `curl`, Postman, or browser.
 
+#### OpenAPI
+
+OpenAPI 是一种**标准化的 REST API 规范格式**，用来**描述、定义和文档化 API 接口**，常用于构建、测试、共享 Web API。
+
+---
+
+🧾 什么是 OpenAPI？
+
+OpenAPI（原名 Swagger）是一种基于 YAML 或 JSON 的格式，用来定义一个 REST API 的：
+
+* 路径（Endpoints）
+* 请求方法（GET, POST 等）
+* 参数（Query, Body, Header）
+* 响应格式（返回结构、状态码）
+* 身份验证机制（如 JWT Token）
+
+---
+
+📘 举个例子（简化版）
+
+```yaml
+paths:
+  /kyc/status:
+    get:
+      summary: Get KYC status
+      parameters:
+        - name: kyc_id
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+```
+
+这个接口描述的是：
+
+* GET 请求路径：`/kyc/status`
+* 参数：`kyc_id` 是 query 参数，必须提供
+* 返回值是一个 JSON，其中包含 `status`
+
+---
+
+🧰 OpenAPI 的优势
+
+| 用途                    | 说明                                    |
+| --------------------- | ------------------------------------- |
+| 🧪 **自动生成文档**         | 可用于生成 Swagger UI、Redoc 文档网站           |
+| 🧬 **自动生成代码 SDK**     | 可生成前端 JS/TS SDK，或 Python、Go、Java 客户端  |
+| 🧭 **接口模拟 / Mock 服务** | 可用工具如 Stoplight / Postman 快速 Mock API |
+| 🔍 **API 校验**         | 避免接口遗漏、保持前后端契约一致                      |
+| 🚀 **开发协同**           | 后端定义好 OpenAPI，前端可以边开发边测试              |
+
+---
+
+📚 推荐工具
+
+| 工具                                                                     | 功能                           |
+| ---------------------------------------------------------------------- | ---------------------------- |
+| [Swagger UI](https://swagger.io/tools/swagger-ui/)                     | 在线文档生成器                      |
+| [Redoc](https://redocly.com/)                                          | 美观的静态文档                      |
+| [Postman](https://www.postman.com/)                                    | 可导入 OpenAPI 生成测试接口           |
+| [openapi-generator](https://github.com/OpenAPITools/openapi-generator) | 生成代码 SDK（支持 React, Python 等） |
+
+---
+
 ### 无服务 SERVERLESS
 
 * [当我们在聊 Serverless 时你应该知道这些 ｜ CSDN博文精选](https://mp.weixin.qq.com/s/x19NOOOBWN6ZNfCSW07lsg)
