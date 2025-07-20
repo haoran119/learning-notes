@@ -57,6 +57,100 @@
 
 * [学习笔记之JSON - 浩然119 - 博客园](https://www.cnblogs.com/pegasus923/p/8650168.html)
 
+### ORM
+
+🧰 What is an **ORM**?
+
+**ORM** stands for **Object-Relational Mapping**.
+
+It is a **programming technique** that allows you to **interact with a relational database (like MySQL, PostgreSQL, or SQLite) using objects in your programming language**, instead of writing raw SQL queries.
+
+---
+
+🧠 In Simple Terms:
+
+ORM lets you:
+
+* Use **Python classes** instead of SQL `TABLE`s
+* Use **Python objects** instead of SQL `ROW`s
+* Use **Python methods** instead of SQL `INSERT`, `SELECT`, `UPDATE`, `DELETE`
+
+---
+
+📦 Examples of ORMs in Python:
+
+| ORM                | Description                                           |
+| ------------------ | ----------------------------------------------------- |
+| **SQLAlchemy ORM** | Powerful, flexible ORM with optional SQL-level access |
+| **Django ORM**     | Built into Django framework, beginner-friendly        |
+| **SQLModel**       | Based on SQLAlchemy + Pydantic; FastAPI-friendly      |
+| **Peewee**         | Lightweight ORM with simpler syntax                   |
+
+---
+
+🔧 ORM Example (SQLAlchemy)
+
+Python class (ORM model):
+
+```python
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.orm import declarative_base
+
+Base = declarative_base()
+
+class User(Base):
+    __tablename__ = 'users'
+    id = Column(Integer, primary_key=True)
+    name = Column(String)
+    email = Column(String)
+```
+
+ORM operations:
+
+```python
+# Create a user
+user = User(name="Alice", email="alice@example.com")
+session.add(user)
+session.commit()
+
+# Read users
+users = session.query(User).filter_by(name="Alice").all()
+
+# Update a user
+user.email = "new@domain.com"
+session.commit()
+
+# Delete a user
+session.delete(user)
+session.commit()
+```
+
+---
+
+✅ Benefits of ORM
+
+| Feature              | Benefit                                    |
+| -------------------- | ------------------------------------------ |
+| 🚫 No raw SQL needed | Write less boilerplate SQL code            |
+| ✅ Type safety        | Use language-native types and validation   |
+| 🧩 Integrated logic  | Easy to connect database to business logic |
+| 🔄 Easier migrations | Tools like Alembic or Django migrations    |
+
+---
+
+⚠️ Downsides
+
+* Can hide complex SQL performance issues
+* Less flexible for advanced queries
+* Learning curve for understanding ORM behavior
+
+---
+
+📌 Summary
+
+**ORM** = bridge between Python and SQL
+It allows you to manage database tables using familiar Python code (classes and objects), simplifying development for data-driven applications.
+
 ### SOAP
 
 * [SOAP Specifications](https://www.w3.org/TR/soap/)
