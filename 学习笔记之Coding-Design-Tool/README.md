@@ -45,6 +45,87 @@
 * [三种处理异常的套路](https://mp.weixin.qq.com/s/FeRF6KtJo2LmvA6p1H2ikA)
     * https://dzone.com/articles/good-exception-handling
 
+### CRUD
+
+🧰 What is **CRUD**?
+
+**CRUD** stands for the **four basic operations** you can perform on persistent data in a database:
+
+| Operation  | Description            | SQL Equivalent | HTTP Method (for REST APIs) |
+| ---------- | ---------------------- | -------------- | --------------------------- |
+| **C**reate | Add new data           | `INSERT`       | `POST`                      |
+| **R**ead   | Retrieve existing data | `SELECT`       | `GET`                       |
+| **U**pdate | Modify existing data   | `UPDATE`       | `PUT` / `PATCH`             |
+| **D**elete | Remove existing data   | `DELETE`       | `DELETE`                    |
+
+---
+
+🔍 CRUD Example with SQL
+
+Suppose you have a table `users(name, email)`:
+
+* **Create**:
+
+  ```sql
+  INSERT INTO users (name, email) VALUES ('Alice', 'alice@example.com');
+  ```
+
+* **Read**:
+
+  ```sql
+  SELECT * FROM users WHERE name = 'Alice';
+  ```
+
+* **Update**:
+
+  ```sql
+  UPDATE users SET email = 'new@example.com' WHERE name = 'Alice';
+  ```
+
+* **Delete**:
+
+  ```sql
+  DELETE FROM users WHERE name = 'Alice';
+  ```
+
+---
+
+🧪 CRUD in Python with SQLAlchemy
+
+```python
+# Create
+user = User(name="Alice", email="alice@example.com")
+session.add(user)
+session.commit()
+
+# Read
+user = session.query(User).filter_by(name="Alice").first()
+
+# Update
+user.email = "alice@newdomain.com"
+session.commit()
+
+# Delete
+session.delete(user)
+session.commit()
+```
+
+---
+
+🖥 Used In:
+
+* Databases (SQL)
+* RESTful APIs
+* Web apps and admin panels
+* ORMs like SQLAlchemy, Django ORM, SQLModel, etc.
+
+---
+
+✅ Summary
+
+**CRUD** is the foundation of any data-driven application.
+Whether you're working in SQL, Python, Java, or APIs, you’ll use CRUD to manage data.
+
 ### HTML
 
 * [学习笔记之HTML - 浩然119 - 博客园](https://www.cnblogs.com/pegasus923/p/9887187.html)
