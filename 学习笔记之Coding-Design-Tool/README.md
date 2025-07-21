@@ -232,6 +232,87 @@ session.commit()
 **ORM** = bridge between Python and SQL
 It allows you to manage database tables using familiar Python code (classes and objects), simplifying development for data-driven applications.
 
+### [React](https://react.dev/)
+
+The library for web and native user interfaces
+
+---
+
+⚛️ What is React?
+
+**React** is a **JavaScript library** for building **user interfaces (UIs)**, especially for **web applications**.
+
+It was developed by **Meta (Facebook)** and is now open source, widely used, and actively maintained.
+
+---
+
+🚀 Key Features
+
+| Feature                      | Description                                                                |
+| ---------------------------- | -------------------------------------------------------------------------- |
+| **Component-Based**          | Build UIs using reusable, encapsulated components                          |
+| **Declarative**              | Describe what the UI should look like, and React handles rendering changes |
+| **Virtual DOM**              | Efficient diffing and updating of the browser DOM for better performance   |
+| **Hooks API**                | Manage state, side effects, and lifecycle logic in functional components   |
+| **Unidirectional Data Flow** | Makes data logic predictable and easier to debug                           |
+
+---
+
+🧱 Basic Example
+
+```jsx
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+export default function App() {
+  return <Welcome name="React Developer" />;
+}
+```
+
+This creates a simple component that greets the user.
+
+---
+
+⚙️ How React Works
+
+React builds a **virtual DOM tree** in memory. When your data changes, React:
+
+1. Computes a **diff**
+2. Efficiently updates only what changed in the **real DOM**
+
+---
+
+🔧 React Tooling Ecosystem
+
+| Tool / Library             | Purpose                                                 |
+| -------------------------- | ------------------------------------------------------- |
+| **React DOM**              | Rendering to web browsers                               |
+| **React Native**           | Build mobile apps using React                           |
+| **Next.js**                | React framework for server-side rendering, routing, SEO |
+| **Vite / CRA**             | Tools to bootstrap React projects                       |
+| **Redux / Zustand**        | State management (optional)                             |
+| **Jest / Testing Library** | Testing React components                                |
+
+---
+
+📚 Learning Resources
+
+* 🔗 [Official Docs](https://react.dev/learn): Beginner-friendly and interactive
+* 📦 [React API Reference](https://react.dev/reference/react)
+* 🛠️ [Playgrounds](https://react.dev/learn/start-a-new-react-project)
+
+---
+
+🧠 When to Use React?
+
+* Building **interactive web UIs**
+* Applications with **frequent data changes**
+* **Component-based design systems**
+* Apps that need to scale in **complexity** (e.g. dashboards, forms, SPAs)
+
+---
+
 ### SOAP
 
 * [SOAP Specifications](https://www.w3.org/TR/soap/)
