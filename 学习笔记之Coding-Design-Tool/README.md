@@ -768,6 +768,102 @@ paths:
 * ChatGPT is a free-to-use AI system. Use it for engaging conversations, gain insights, automate tasks, and witness the future of AI, all in one place.
 * [ChatGPT Cheat Sheet for Beginners | Superhuman](https://www.superhuman.ai/c/cheat-sheet-beginners?utm_source=www.joinsuperhuman.ai&utm_medium=newsletter)
 
+#### MCP
+
+Let’s take a deeper look at **MCP (Model Context Protocol)** as a **standard interface layer** between **LLMs (Large Language Models)** and **external tools/services**.
+
+---
+
+🧠 What is MCP (Model–Context–Protocol)?
+
+> **MCP is an emerging architectural standard** that defines how LLMs interact with the outside world in a structured, reliable, and extensible way.
+
+Think of it as the **"middleware" or bridge layer** that:
+
+* Connects **models** to external **APIs, databases, tools, and user interfaces**
+* Uses **context** to maintain memory and working state
+* Implements a **protocol** to control how actions are structured and executed
+
+---
+
+🔍 Core Concepts
+
+| Element         | Description                                                                           |
+| --------------- | ------------------------------------------------------------------------------------- |
+| 🧠 **Model**    | The LLM or agent (e.g. GPT-4, Claude, Mistral)                                        |
+| 🧾 **Context**  | Memory and shared state (conversation history, documents, user profile)               |
+| 🔁 **Protocol** | The orchestration logic – defines **how** tools are called, **when**, and by **whom** |
+
+This separation of concerns allows **interoperability**, **modularity**, and **fine-grained control** over LLM-based systems.
+
+---
+
+🏗️ Why MCP Matters
+
+Traditional LLMs (e.g. GPT-3.5) are **stateless** and **non-interactive** with tools unless you hard-code logic (like tool-calling in OpenAI functions or plugins).
+
+MCP creates a **structured standard** to:
+
+1. **Define agent roles** (e.g. planner, retriever, coder)
+2. **Track state** across steps and services
+3. **Invoke tools** with schemas and safety checks
+4. **Reuse the same orchestration flow** across providers or environments
+
+---
+
+🔧 Example Use Case
+
+📦 Problem:
+
+You want a chatbot to:
+
+* Look up weather
+* Fetch documents from SharePoint
+* Call internal APIs
+* Write a report using the LLM
+
+🧠 With MCP:
+
+You define:
+
+* **Model**: GPT-4 or Claude handles reasoning and text generation
+* **Context**: Stores current conversation, extracted user intent, intermediate tool results
+* **Protocol**: Says:
+
+  * Step 1: Extract intent
+  * Step 2: Call `weather_api` if intent = "get weather"
+  * Step 3: Summarize result
+  * Step 4: Present response
+
+Everything flows **declaratively**, using **structured plans and tools**, not freeform LLM prompts alone.
+
+---
+
+⚙️ Tools & Frameworks Implementing MCP-like Standards
+
+| Framework               | How it Relates to MCP                                    |
+| ----------------------- | -------------------------------------------------------- |
+| **LangChain**           | Implements model/tool/context orchestration              |
+| **LangGraph**           | Graph-based agent state machine – protocol focused       |
+| **CrewAI**              | Multi-agent coordination with context + roles            |
+| **OpenAI Functions**    | Similar, but limited to OpenAI’s stack                   |
+| **Autogen (Microsoft)** | Orchestrates model/tool use with protocol-style planning |
+
+---
+
+📜 Summary
+
+**MCP (Model–Context–Protocol)** is a formalized **architecture standard** that:
+
+| Key Benefit         | Description                                                               |
+| ------------------- | ------------------------------------------------------------------------- |
+| 🔌 Extensibility    | Swap in new models or tools without changing logic                        |
+| 🧠 Statefulness     | Maintains working memory and action history                               |
+| ⚙️ Tool Interop     | Calls APIs, DBs, and other services in a structured, schema-validated way |
+| 🔒 Safety & Control | Allows validation and constraint of LLM behavior via the protocol layer   |
+
+---
+
 ### CI / CD / DevOps
 
 * Continuous integration（CI）
