@@ -945,6 +945,220 @@ Everything flows **declaratively**, using **structured plans and tools**, not fr
 
 ---
 
+##### [Figma](https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Dev-Mode-MCP-Server)
+
+Here's a clear introduction to **Figma** and the **Dev Mode MCP Server**, based on the guide at:
+👉 [https://help.figma.com/hc/en-us/articles/32132100833559](https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Dev-Mode-MCP-Server)
+
+---
+
+🧠 What is **Figma**?
+
+**Figma** is a **web-based collaborative design tool** used for:
+
+* 🧑‍🎨 **UI/UX Design**
+* 🧪 **Prototyping**
+* 📐 **Wireframing**
+* 🤝 **Design-to-development handoff**
+
+It’s widely used by product teams for **real-time design collaboration** — similar to how Google Docs works for text.
+
+---
+
+🚀 What is the **Figma Dev Mode MCP Server**?
+
+Figma’s **Dev Mode MCP Server** is an experimental API layer that allows **external developer tools and AI copilots** to programmatically **interact with Figma files** using a structured, **multi-client protocol (MCP)**.
+
+In short:
+
+> It lets **code tools**, **AI agents**, or **custom integrations** read Figma design context, element metadata, and properties to help developers **consume and translate designs into code**.
+
+---
+
+🔧 Key Capabilities
+
+| Feature                       | Description                                          |
+| ----------------------------- | ---------------------------------------------------- |
+| 🧱 **MCP Protocol**           | JSON-RPC over WebSocket to interact with Figma       |
+| 🧠 **Dev Mode Access**        | Exposes only what a developer sees (not design edit) |
+| 🔍 **Design Context Reading** | Clients can read layout, spacing, tokens, etc.       |
+| 🤖 **Copilot Integration**    | Enables AI assistants to interpret design intent     |
+| 🛠 **Plugin-like Extension**  | Acts like a backend interface for dev tools          |
+
+---
+
+📦 Use Cases
+
+* 🧑‍💻 IDE integrations: Show design specs directly in VS Code or WebStorm
+* 🤖 AI copilots: Explain or convert Figma elements to React/Vue/Tailwind code
+* 🔄 Sync tools: Automatically generate components from designs
+* 🧭 Inspect mode: Overlay specs in custom browser-based tooling
+
+---
+
+🏗️ Architecture Overview
+
+```
+┌────────────┐        JSON-RPC over WebSocket        ┌────────────┐
+│  Dev Tool  ├──────────────────────────────────────▶│  MCP Server│
+└────────────┘                                        └────┬───────┘
+                                                          │
+                                    Reads from            ▼
+                                                  ┌──────────────┐
+                                                  │  Figma File  │
+                                                  └──────────────┘
+```
+
+---
+
+🚀 How to Use It (Simplified)
+
+1. **Enable Dev Mode** in your Figma workspace.
+2. Connect to the MCP server using your tool or script.
+3. Use JSON-RPC messages to:
+
+   * Get node info (e.g., button spacing, text styles)
+   * Traverse the Figma document tree
+   * Retrieve tokens, colors, breakpoints
+
+---
+
+🧪 Example: Copilot Tool Reads a Button
+
+A dev assistant can connect to Figma’s MCP server and ask:
+
+> “What’s the padding, border radius, and token name for this button?”
+
+The MCP server replies with structured metadata:
+
+```json
+{
+  "type": "button",
+  "padding": "16px",
+  "radius": "8px",
+  "token": "primary/filled"
+}
+```
+
+Then the copilot can generate:
+
+```tsx
+<Button className="px-4 py-2 rounded-md bg-primary text-white">Buy Now</Button>
+```
+
+---
+
+📌 Summary
+
+| Aspect        | Details                                          |
+| ------------- | ------------------------------------------------ |
+| **Product**   | Figma – UI design and prototyping tool           |
+| **Feature**   | Dev Mode MCP Server (experimental API)           |
+| **Purpose**   | Allow dev tools and AI to query design metadata  |
+| **Protocol**  | JSON-RPC over WebSocket                          |
+| **Use Cases** | AI copilots, IDE plugins, design-to-code bridges |
+
+---
+
+##### [Playwright MCP server](https://github.com/microsoft/playwright-mcp)
+
+The [**Playwright MCP server**](https://github.com/microsoft/playwright-mcp) is a project by Microsoft that extends **[Playwright](https://playwright.dev)** — a powerful end-to-end testing framework — by introducing a **multi-client protocol (MCP) server** layer.
+
+---
+
+🧠 What Is Playwright MCP Server?
+
+The **Playwright MCP server** is a **backend service** that allows **multiple clients** to connect and interact with the **same Playwright browser session**, enabling:
+
+* Shared browser sessions
+* Remote debugging or automation
+* Tooling integration with Playwright agents
+
+It's designed as an **interoperable, standard protocol** for **multi-agent or multi-client orchestration** — hence the **MCP** name: **Model–Context–Protocol**.
+
+---
+
+🔧 Key Features
+
+| Feature                          | Description                                                   |
+| -------------------------------- | ------------------------------------------------------------- |
+| 🧑‍🤝‍🧑 **Multi-client access** | Multiple tools or agents can attach to a shared browser       |
+| 🧠 **Agent-based architecture**  | Integrates LLM agents, debuggers, testers, etc.               |
+| 🌐 **WebSocket-based protocol**  | Uses structured messages over WebSocket (via JSON-RPC)        |
+| 🔁 **State management**          | Keeps track of session state across tools                     |
+| 🧩 **Tool integration**          | Designed to integrate with AI copilots, developer tools, etc. |
+
+---
+
+📦 Use Cases
+
+* 🧪 **Collaborative test automation**
+* 🤖 **AI agent control of browser actions** (e.g. autonomous test agents)
+* 🧠 **LLM-based test generation or debugging** tools
+* 🧰 **Live inspection tools** (e.g. DevTools with AI assistants)
+* 🧬 **Multi-modal orchestration**: Combine Playwright automation with external contexts (e.g. LangChain, Copilot)
+
+---
+
+🏗️ Architecture Overview
+
+```
+          ┌─────────────┐
+          │   Client A  │
+          └────▲───┬────┘
+               │   │  JSON-RPC
+          ┌────┴───▼────┐
+          │ MCP Server  │  ◀── Controls lifecycle, routes commands
+          └────▲───┬────┘
+               │   │
+        ┌──────┘   └──────┐
+  ┌─────▼────┐     ┌─────▼────┐
+  │ Browser  │     │ Contexts │  ← Managed by Playwright
+  └──────────┘     └──────────┘
+```
+
+* Each **client** communicates with the **MCP server**
+* The server routes messages to **Playwright browser contexts**
+* Clients can observe, control, or coordinate tests and actions
+
+---
+
+🚀 Getting Started (from GitHub)
+
+```bash
+git clone https://github.com/microsoft/playwright-mcp
+cd playwright-mcp
+npm install
+npm run dev
+```
+
+Then connect your client to the MCP server via WebSocket.
+
+---
+
+🧠 Example: Using MCP with a DevTool or LLM Agent
+
+A Copilot-like AI can:
+
+* Inspect page structure
+* Ask for DOM elements
+* Click or type actions via MCP
+* Coordinate with other clients
+
+---
+
+📌 Summary
+
+| Aspect        | Description                                                   |
+| ------------- | ------------------------------------------------------------- |
+| **Project**   | [playwright-mcp](https://github.com/microsoft/playwright-mcp) |
+| **Purpose**   | Enable multiple clients/tools to interact with Playwright     |
+| **Protocol**  | JSON-RPC over WebSocket                                       |
+| **Use Cases** | AI test agents, shared browser sessions, automation tooling   |
+| **Status**    | Early-stage, experimental but promising                       |
+
+---
+
 ### CI / CD / DevOps
 
 * Continuous integration（CI）
@@ -1209,6 +1423,106 @@ Everything flows **declaratively**, using **structured plans and tools**, not fr
         * Visual Studio 2019 and 2022 support remote development over SSH. This allows you to edit, build, and debug applications running on remote Linux systems, WSL, or containers.
             * SSH Configuration: Set up an SSH connection in Visual Studio to your remote environment. This involves specifying the SSH target in your project settings.
             * Remote File Access: Once connected via SSH, Visual Studio provides a seamless experience for editing files as if they were local. However, a dedicated "Remote File Explorer" pane like in some other IDEs (e.g., Visual Studio Code) may not be explicitly labeled as such in Visual Studio. Instead, the Solution Explorer itself adapts to show remote files and projects.
+
+### Testing
+
+#### [Playwright](https://playwright.dev/)
+
+* Playwright enables reliable end-to-end testing for modern web apps.
+
+---
+
+🎭 What Is **Playwright**?
+
+**Playwright** is an **open-source end-to-end testing framework** created by Microsoft for testing **web apps across all modern browsers**.
+
+> It's fast, reliable, cross-browser, and supports modern web features out of the box.
+
+---
+
+🚀 Key Features
+
+| Feature                       | Description                                         |
+| ----------------------------- | --------------------------------------------------- |
+| ✅ **Cross-browser**           | Tests run on Chromium, Firefox, and WebKit (Safari) |
+| 📱 **Cross-platform**         | Works on Windows, macOS, Linux, and CI environments |
+| 🎯 **Headless & UI modes**    | Run tests in full browser or headless mode          |
+| 🧪 **Built-in auto-waiting**  | Automatically waits for elements to be ready        |
+| 🔐 **Network control**        | Intercept, mock, or block requests/responses        |
+| 📸 **Visual testing support** | Take screenshots, videos, and trace recordings      |
+| 🔄 **Multiple contexts**      | Isolated browser sessions per test case             |
+| 💬 **Multiple languages**     | JavaScript, TypeScript, Python, Java, .NET          |
+
+---
+
+🧱 Basic Example (JavaScript)
+
+```js
+const { test, expect } = require('@playwright/test');
+
+test('homepage has title', async ({ page }) => {
+  await page.goto('https://playwright.dev');
+  await expect(page).toHaveTitle(/Playwright/);
+});
+```
+
+This test:
+
+* Opens the Playwright website
+* Checks that the page title contains “Playwright”
+
+---
+
+🛠 Tooling & Ecosystem
+
+| Tool                     | Purpose                                                  |
+| ------------------------ | -------------------------------------------------------- |
+| `@playwright/test`       | Test runner with fixtures, parallelization, retries      |
+| **Codegen**              | Auto-generates test scripts by recording browser actions |
+| **Trace Viewer**         | Debugging tool with screenshots, network logs, etc.      |
+| **Playwright Inspector** | GUI to debug tests visually                              |
+| **VS Code Plugin**       | Run and debug tests within the editor                    |
+
+---
+
+🧬 Use Cases
+
+* ✅ UI regression testing
+* 🧪 Cross-browser compatibility checks
+* 🔍 Visual regression (screenshots, videos)
+* 🧱 Component-level testing
+* ⚙️ CI/CD pipeline integration (GitHub Actions, Azure Pipelines, etc.)
+
+---
+
+📦 Getting Started (Node.js)
+
+```bash
+npm init playwright@latest
+# or install manually
+npm install -D @playwright/test
+npx playwright install
+```
+
+Then run:
+
+```bash
+npx playwright test
+```
+
+---
+
+📌 Summary
+
+| Aspect         | Value                                              |
+| -------------- | -------------------------------------------------- |
+| **Project**    | [https://playwright.dev](https://playwright.dev)   |
+| **Created by** | Microsoft                                          |
+| **Browsers**   | Chromium, Firefox, WebKit                          |
+| **Languages**  | JS, TS, Python, Java, C#                           |
+| **Strengths**  | Fast, reliable, cross-browser, powerful automation |
+
+---
 
 ### MISC
 
