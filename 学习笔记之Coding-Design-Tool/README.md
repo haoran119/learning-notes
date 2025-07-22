@@ -849,6 +849,100 @@ paths:
 * ChatGPT is a free-to-use AI system. Use it for engaging conversations, gain insights, automate tasks, and witness the future of AI, all in one place.
 * [ChatGPT Cheat Sheet for Beginners | Superhuman](https://www.superhuman.ai/c/cheat-sheet-beginners?utm_source=www.joinsuperhuman.ai&utm_medium=newsletter)
 
+#### [GitHub Copilot](https://github.com/features/copilot)
+
+* [GitHub Copilot Series - YouTube](https://www.youtube.com/playlist?list=PLj6YeMhvp2S5_hvBl2SE-7YCHYlLQ0bPt)
+    * Watch this series to see how GitHub Copilot can assist you and speed up your productivity across a variety of programming languages and projects.
+
+#### [KIRO](https://kiro.dev/)
+
+* Kiro: The AI IDE for prototype to production
+* Kiro helps you do your best work by bringing structure to AI coding with spec-driven development.
+
+Here's an introduction to **[Kiro](https://kiro.dev/)** — a developer tool designed to enhance the coding experience through **context-aware AI assistance**.
+
+---
+
+🧠 What is Kiro?
+
+**Kiro** is an **AI-powered developer copilot** that connects to your local development environment and tools, giving you context-aware coding assistance. It's built to **work with your actual stack** — from code editors to terminals, logs, and databases.
+
+> Think of Kiro as a **smart AI teammate** that can see your code, run commands, analyze logs, and help you debug or build — all from your terminal or IDE.
+
+---
+
+🔧 Key Features
+
+| Feature                            | Description                                                                       |
+| ---------------------------------- | --------------------------------------------------------------------------------- |
+| 💡 **Context-Aware AI**            | Understands your local codebase, project setup, and command output                |
+| 🖥️ **Shell & Terminal Assistant** | Kiro watches your terminal and helps with shell commands, errors, and workflows   |
+| 🪵 **Log Intelligence**            | Parses and reasons about server logs to help you debug issues                     |
+| 🔗 **Tool & File Awareness**       | Reads your source files, configs (like `Dockerfile`, `env`, `package.json`), etc. |
+| 💬 **Conversational Interface**    | Ask natural-language questions about your code or system                          |
+| 🧪 **LLM Orchestration**           | Connects with multiple AI models behind the scenes (local or cloud)               |
+
+---
+
+🏗️ How Kiro Works
+
+1. Install Kiro locally
+2. Kiro watches your terminal and dev environment
+3. You ask it things like:
+
+   * “Why is my service not starting?”
+   * “What does this log line mean?”
+   * “Can you fix this Dockerfile?”
+4. Kiro gives suggestions, explanations, and even command/code snippets
+
+---
+
+🚀 Use Cases
+
+| Scenario                     | How Kiro Helps                                              |
+| ---------------------------- | ----------------------------------------------------------- |
+| 🐛 Debugging Errors          | Parses stack traces and logs to suggest fixes               |
+| ⚙️ Working with CLI Tools    | Understands tool usage and helps correct flags or syntax    |
+| 📂 Navigating Large Projects | Explains parts of your codebase and dependencies            |
+| 🔍 Searching Logs/Traces     | Analyzes large logs to pinpoint root causes                 |
+| 📦 Working Across Services   | Keeps context when jumping between microservices or configs |
+
+---
+
+🛠️ Developer Stack Integration
+
+Kiro integrates with:
+
+* **Shells** (e.g., bash, zsh)
+* **Local files** (via secure access)
+* **Docker**, **npm**, **yarn**, etc.
+* **Git**, logs, env vars
+* **Multiple LLMs** (OpenAI, Anthropic, local models)
+
+> It’s designed to work **on your machine** without requiring cloud uploads of your code.
+
+---
+
+🔐 Privacy & Security
+
+* Kiro runs **locally** and does **not upload your codebase or secrets** to the cloud without your permission
+* Supports **enterprise self-hosting** and **custom model integration**
+
+---
+
+📌 Summary
+
+| Attribute   | Details                                   |
+| ----------- | ----------------------------------------- |
+| **Name**    | Kiro                                      |
+| **Type**    | AI-powered developer assistant            |
+| **Focus**   | Shell, logs, code, system troubleshooting |
+| **Access**  | Local agent with terminal/IDE integration |
+| **Privacy** | Local-first, secure, dev-friendly         |
+| **Website** | [https://kiro.dev](https://kiro.dev)      |
+
+---
+
 #### MCP
 
 Let’s take a deeper look at **MCP (Model Context Protocol)** as a **standard interface layer** between **LLMs (Large Language Models)** and **external tools/services**.
@@ -1265,11 +1359,6 @@ A Copilot-like AI can:
 * [Continuous Integration and Continuous Delivery (CI/CD) Fundamentals | GitHub Resources](https://resources.github.com/ci-cd/)
 * [edonosotti/ci-cd-tutorial-sample-app: A sample Python app that implements a REST API, with database migrations and CI/CD support.](https://github.com/edonosotti/ci-cd-tutorial-sample-app)
 * [Git Large File Storage | Git Large File Storage (LFS) replaces large files such as audio samples, videos, datasets, and graphics with text pointers inside Git, while storing the file contents on a remote server like GitHub.com or GitHub Enterprise.](https://git-lfs.com/)
-
-##### GitHub Copilot
-
-* [GitHub Copilot Series - YouTube](https://www.youtube.com/playlist?list=PLj6YeMhvp2S5_hvBl2SE-7YCHYlLQ0bPt)
-    * Watch this series to see how GitHub Copilot can assist you and speed up your productivity across a variety of programming languages and projects.
 
 #### [GitLab](https://about.gitlab.com/)
 
