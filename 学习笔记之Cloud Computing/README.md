@@ -60,7 +60,7 @@
     * Plan, schedule, and execute batch computing workloads across the full range of AWS services, including Amazon Elastic Compute Cloud (EC2), Fargate, and Amazon EC2 Spot Instances.
   * Scale web applications
     * Automatically scale and run web applications in multiple Availability Zones with the performance, scale, reliability, and availability of AWS.
-* [Gentle Introduction to How AWS ECS Works with Example Tutorial | by Tung Nguyen | BoltOps | Medium](https://medium.com/boltops/gentle-introduction-to-how-aws-ecs-works-with-example-tutorial-cea3d27ce63d) 
+* [Gentle Introduction to How AWS ECS Works with Example Tutorial | by Tung Nguyen | BoltOps | Medium](https://medium.com/boltops/gentle-introduction-to-how-aws-ecs-works-with-example-tutorial-cea3d27ce63d)
   * Tutorial Example
     * In this tutorial example I will create a small Sinatra web service that prints the meaning of life: 42.
       * Create ECS Cluster with 1 Container Instance
@@ -96,7 +96,7 @@
   * AWS Lambda was designed for use cases such as image or object uploads to Amazon S3, updates to DynamoDB tables, responding to website clicks, or reacting to sensor readings from an IoT connected device. AWS Lambda can also be used to automatically provision back-end services triggered by custom HTTP requests, and "spin down" such services when not in use, to save resources. These custom HTTP requests are configured in AWS API Gateway, which can also handle authentication and authorization in conjunction with AWS Cognito.
   * Unlike Amazon EC2, which is priced by the hour but metered by the second, AWS Lambda is metered by rounding up to the nearest millisecond with no minimum execution time.
   * In 2019, at AWS' annual cloud computing conference (AWS re:Invent), the AWS Lambda team announced "Provisioned Concurrency", a feature that "keeps functions initialized and hyper-ready to respond in double-digit milliseconds."[7] The Lambda team described Provisioned Concurrency as "ideal for implementing interactive services, such as web and mobile backends, latency-sensitive microservices, or synchronous APIs."[8]
- 
+
 #### MISC
 
 * [我是如何在AWS Lambda中用几分钟处理50万个事务的？](https://mp.weixin.qq.com/s/hwGCQdC_4oUIt6KzyC3eZw)
@@ -122,6 +122,92 @@
 * Cloud Object Storage – Amazon S3 – Amazon Web Services
 * Object storage built to retrieve any amount of data from anywhere
 * Amazon Simple Storage Service (Amazon S3) is an object storage service offering industry-leading scalability, data availability, security, and performance. Customers of all sizes and industries can store and protect any amount of data for virtually any use case, such as data lakes, cloud-native applications, and mobile apps. With cost-effective storage classes and easy-to-use management features, you can optimize costs, organize data, and configure fine-tuned access controls to meet specific business, organizational, and compliance requirements.
+
+### [Front-end Web & Mobile on AWS - Amazon Web Services](https://aws.amazon.com/products/frontend-web-mobile/)
+
+* The fastest way to build web and mobile applications
+
+#### [Serverless GraphQL and Pub/Sub APIs – AWS AppSync](https://aws.amazon.com/appsync/)
+
+* Connect applications to events, data, and AI models
+
+---
+
+🌐 **What is AWS AppSync?**
+
+**AWS AppSync** is a **fully managed service** by Amazon Web Services that makes it easy to develop **GraphQL APIs** by handling the heavy lifting of securely connecting to data sources like **Amazon DynamoDB**, **Lambda**, **RDS**, **OpenSearch**, or any HTTP endpoint. It also supports **real-time data**, **offline access**, and **fine-grained security** out of the box.
+
+---
+
+🔧 **Key Features**
+
+| Feature                       | Description                                                                                |
+| ----------------------------- | ------------------------------------------------------------------------------------------ |
+| **GraphQL API**               | Unified API interface to request only the data needed from multiple sources.               |
+| **Real-time Subscriptions**   | Push updates to clients over WebSockets – great for chat, live feeds, dashboards.          |
+| **Offline Access**            | Built-in support (via Amplify) for caching, offline access, and automatic sync.            |
+| **Multi-source Integration**  | Connect to DynamoDB, Lambda, RDS, OpenSearch, HTTP APIs, etc.                              |
+| **Scalability & Performance** | Serverless backend that scales automatically with usage.                                   |
+| **Security**                  | Supports API Key, IAM, Amazon Cognito, and Lambda authorizers for auth and access control. |
+| **Built-in Caching**          | Optional caching to improve performance and reduce backend load.                           |
+
+---
+
+📊 **Typical Use Cases**
+
+* Mobile & Web apps needing a flexible and unified API
+* Real-time collaborative apps (e.g., chat, project boards)
+* Offline-first apps (e.g., field tools, retail)
+* APIs that aggregate data from multiple sources
+
+---
+
+🧱 **Architecture Overview**
+
+```
+Client (Web / Mobile)
+        ↓ GraphQL
+     AWS AppSync
+        ↓
++---------------------------+
+| Data Sources:             |
+| - DynamoDB                |
+| - AWS Lambda              |
+| - Amazon RDS              |
+| - OpenSearch              |
+| - HTTP API                |
++---------------------------+
+```
+
+---
+
+🛡️ **Authentication & Authorization Options**
+
+| Method                | Use Case                                            |
+| --------------------- | --------------------------------------------------- |
+| **API Key**           | Quick testing or development                        |
+| **AWS IAM**           | Internal AWS services or trusted users              |
+| **Amazon Cognito**    | User-based authentication (sign-up/login)           |
+| **Lambda Authorizer** | Custom auth logic (e.g., multi-tenant or JWT-based) |
+
+---
+
+💰 **Pricing Summary**
+
+* **Query and Mutation Requests** – pay per million calls
+* **Real-time Subscriptions** – pay per million minutes connected
+* **Caching** – pay per GB-hour
+
+👉 Full pricing page: [https://aws.amazon.com/appsync/pricing/](https://aws.amazon.com/appsync/pricing/)
+
+---
+
+📚 Learn More
+
+* [Developer Guide](https://docs.aws.amazon.com/appsync/latest/devguide/what-is-appsync.html)
+* [Sample Apps & Tutorials](https://github.com/aws-samples?utf8=✓&q=appsync)
+
+---
 
 ### Resources
 
