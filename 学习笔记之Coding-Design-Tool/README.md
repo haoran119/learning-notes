@@ -1654,6 +1654,62 @@ npx playwright test
 * [Everything (software) - Wikipedia](https://en.wikipedia.org/wiki/Everything_(software))
 * Everything is a freeware desktop search utility for Windows that can rapidly find files and folders by name. While the binaries are licensed under a permissive license, it is not open-source.
 
+#### [Excalidraw](https://excalidraw.com/)
+
+[**Excalidraw**](https://excalidraw.com/) is a **free**, open-source, web-based **whiteboard tool** designed for **sketching diagrams with a hand-drawn look**. It's great for quickly creating UI wireframes, system architecture diagrams, flowcharts, and conceptual drawings — all directly in your browser.
+
+---
+
+✏️ What Makes Excalidraw Special?
+
+| Feature                       | Description                                                                              |
+| ----------------------------- | ---------------------------------------------------------------------------------------- |
+| ✍️ **Hand-drawn style**       | Gives your diagrams a casual, expressive look — ideal for brainstorming or presentations |
+| 🧠 **Super intuitive UI**     | Drag, drop, resize — no learning curve                                                   |
+| 🔄 **Realtime collaboration** | Invite others to draw together (like Google Docs)                                        |
+| 💾 **Local-first**            | Saves in your browser by default, but also supports export/import                        |
+| 🧩 **Custom libraries**       | Save reusable components (e.g. icons, flow blocks)                                       |
+| 📦 **Export options**         | PNG, SVG, clipboard, or `.excalidraw` JSON file                                          |
+| 🔒 **Privacy-friendly**       | No account needed, no data sent to a server (unless you choose to)                       |
+
+---
+
+🎯 Use Cases
+
+* System architecture sketches (e.g., for FastAPI + Supabase)
+* UI wireframes or app layout drafts
+* Class diagrams or ER diagrams
+* Team brainstorming on a shared canvas
+* Teaching or explaining technical concepts visually
+
+---
+
+🛠 Export and Embed
+
+You can:
+
+* Export diagrams as **PNG**, **SVG**, or `.excalidraw` files
+* Copy elements as **React code** (if using Excalidraw+)
+* Use in blog posts, wikis, docs, or even as collaborative whiteboards
+
+---
+
+🌍 How to Use
+
+1. Visit [https://excalidraw.com/](https://excalidraw.com/)
+2. Start sketching immediately — no sign-up required
+3. Use keyboard shortcuts for fast editing
+4. Use the **Share** menu for real-time collaboration
+
+---
+
+💡 Bonus Tip
+
+* Install the **desktop app** or **VSCode plugin** for offline use
+* Try **[Excalidraw Plus](https://plus.excalidraw.com/)** for team features, library syncing, version history, and private hosting
+
+---
+
 #### [FreeMind](http://freemind.sourceforge.net/wiki/index.php/Main_Page)
 
 * FreeMind - free mind mapping software
