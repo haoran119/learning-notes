@@ -1906,6 +1906,129 @@ $ squeue
 * [SpaceSniffer - Wikipedia](https://en.wikipedia.org/wiki/SpaceSniffer)
     * SpaceSniffer is a freeware computer disk space analyser from Uderzo Software for Microsoft Windows platforms. It uses a treemap to visualise disk usage.
 
+#### [Streamlit](https://streamlit.io/)
+
+* A faster way to build and share data apps
+* Turn your data scripts into shareable web apps in minutes.
+* All in pure Python. No front‑end experience required.
+
+---
+
+🚀 **Streamlit** — *A faster way to build and share data apps*
+
+**Streamlit** is an **open-source Python framework** that makes it easy to build and deploy **data applications and ML dashboards** — **without writing any frontend code**.
+
+It’s designed for **data scientists, ML engineers, and analysts** who want to turn Python scripts into **interactive web apps** in minutes.
+
+---
+
+🎯 Why Use Streamlit?
+
+| Feature                | Benefit                                                                                                    |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------- |
+| 🧑‍💻 **Python-Only**  | Build UIs using just Python — no HTML, CSS, or JS required.                                                |
+| ⚡ **Fast Prototyping** | Go from idea to interactive app in minutes.                                                                |
+| 📊 **Data Friendly**   | Native support for Pandas, NumPy, Matplotlib, Plotly, Altair, PyTorch, etc.                                |
+| 🔁 **Live Reload**     | Edits to code instantly reflect in the UI (like hot-reloading).                                            |
+| ☁️ **Easy Sharing**    | Deploy to [Streamlit Community Cloud](https://streamlit.io/cloud) or your own server with `streamlit run`. |
+
+---
+
+🧪 Hello World Example
+
+```python
+import streamlit as st
+
+st.title("📊 Hello Streamlit!")
+name = st.text_input("What’s your name?")
+st.write(f"Hello, {name} 👋")
+```
+
+Run it with:
+
+```bash
+streamlit run app.py
+```
+
+Opens at `http://localhost:8501`
+
+---
+
+🧩 Built-in Components
+
+| Component     | Code                             |
+| ------------- | -------------------------------- |
+| Text Input    | `st.text_input("Label")`         |
+| Slider        | `st.slider("Select", 0, 100)`    |
+| Checkbox      | `st.checkbox("Show details")`    |
+| Button        | `st.button("Run")`               |
+| File Uploader | `st.file_uploader("Upload CSV")` |
+| Chart         | `st.line_chart(df)`              |
+
+Streamlit also supports **custom components** for advanced needs.
+
+---
+
+🔐 Typical Use Cases
+
+| Use Case             | Example                                                     |
+| -------------------- | ----------------------------------------------------------- |
+| **ML Demo App**      | Upload data, train model, display metrics interactively     |
+| **Data Dashboard**   | Live charts, filters, KPIs                                  |
+| **Exploratory Tool** | Let analysts slice & filter datasets                        |
+| **Internal Tool**    | Build admin or monitoring panels                            |
+| **Reporting**        | Replace static Jupyter reports with interactive web reports |
+
+---
+
+📦 Installation
+
+```bash
+pip install streamlit
+```
+
+---
+
+🌍 Deployment Options
+
+| Platform              | Notes                                       |
+| --------------------- | ------------------------------------------- |
+| ✅ **Streamlit Cloud** | Free, easy to use, GitHub-integrated        |
+| ✅ **Docker**          | Production-ready containerization           |
+| ✅ **On-Premise / VM** | Use `streamlit run` behind NGINX or FastAPI |
+| ✅ **Other clouds**    | Deploy on AWS, Azure, GCP easily            |
+
+---
+
+🔄 Streamlit vs Alternatives
+
+| Feature                 | Streamlit | Dash              | Gradio | Flask      |
+| ----------------------- | --------- | ----------------- | ------ | ---------- |
+| Frontend-free           | ✅         | ❌ (some HTML/CSS) | ✅      | ❌          |
+| Designed for ML/data    | ✅         | ✅                 | ✅      | ❌          |
+| Learning curve          | Low       | Medium            | Low    | Medium     |
+| Real-time interactivity | ✅         | ✅                 | ✅      | ❌ (manual) |
+
+---
+
+💡 Summary
+
+> **Streamlit is the fastest way to build interactive data-driven tools — with nothing but Python.**
+
+It’s ideal for:
+
+* Prototyping ML apps
+* Making dashboards
+* Creating tools to share insights with non-technical stakeholders
+
+---
+
+📎 Official site: [https://streamlit.io](https://streamlit.io)
+📚 Docs: [https://docs.streamlit.io](https://docs.streamlit.io)
+☁️ Deploy: [https://streamlit.io/cloud](https://streamlit.io/cloud)
+
+---
+
 #### [Sublime Text](https://www.sublimetext.com/)
 
 * Sublime Text - Text Editing, Done Right
@@ -1917,6 +2040,282 @@ $ squeue
     * https://packagecontrol.io/packages/CodeMap
 * [sublimetext3 - How to wrap each line in quotes in SublimeText? - Stack Overflow](https://stackoverflow.com/questions/32127604/how-to-wrap-each-line-in-quotes-in-sublimetext#:~:text=After%20Ctrl%2BShift%2BL%20just,sides%20of%20the%20selected%20text.)
     * After Ctrl+Shift+L just press "
+
+#### [Supabase](https://supabase.com/)
+
+* Build in a weekend
+* Scale to millions
+* Supabase is the Postgres development platform.
+* Start your project with a Postgres database, Authentication, instant APIs, Edge Functions, Realtime subscriptions, Storage, and Vector embeddings.
+
+---
+
+🚀 **Supabase** — *The Postgres Development Platform*
+
+**Supabase** is an **open-source Firebase alternative** that provides a **backend-as-a-service** powered by **PostgreSQL**.
+
+It gives you everything you need to **build, scale, and deploy full-stack applications**, with realtime capabilities, authentication, file storage, and more — all using SQL and open standards.
+
+---
+
+🔧 Core Features
+
+| Feature                                   | Description                                                              |
+| ----------------------------------------- | ------------------------------------------------------------------------ |
+| 🗃️ **PostgreSQL Database**               | Fully managed Postgres with powerful extensions (like PostGIS, pgvector) |
+| 🔐 **Auth**                               | User sign-up, login, OAuth (Google, GitHub, etc.), Magic Links           |
+| 📡 **Realtime**                           | Subscriptions via WebSocket on table changes (INSERT, UPDATE, DELETE)    |
+| ☁️ **Storage**                            | Upload and serve files securely (images, documents, etc.)                |
+| 📦 **Edge Functions**                     | Serverless functions written in TypeScript/JavaScript                    |
+| 📊 **Auto-generated REST & GraphQL APIs** | Every table = ready-to-use RESTful and GraphQL endpoint                  |
+| 🛠️ **Dashboard**                         | Beautiful GUI for managing your data, users, policies, and logs          |
+
+---
+
+⚡ Why Developers Love Supabase
+
+| Advantage            | Details                                                            |
+| -------------------- | ------------------------------------------------------------------ |
+| ✅ **Instant API**    | Add a table → Supabase instantly provides REST & GraphQL endpoints |
+| ✅ **Open Source**    | Self-hostable or use Supabase Cloud                                |
+| ✅ **Realtime**       | Built-in pub/sub on data changes                                   |
+| ✅ **SQL Native**     | Works like raw Postgres — no proprietary query language            |
+| ✅ **Great DX**       | SDKs for JavaScript, Python, Dart, and more                        |
+| ✅ **Storage + Auth** | Firebase-style all-in-one platform, but with SQL and open tools    |
+
+---
+
+🧱 Typical Architecture
+
+```
+Frontend (React / Vue / Flutter)
+        ↓
+Supabase JS / SDK
+        ↓
+┌────────────────────────────┐
+│     Supabase Backend       │
+│ ┌─────────┐ ┌────────────┐ │
+│ │ Postgres│ │ Auth       │ │
+│ │         │ │            │ │
+│ └─────────┘ └────────────┘ │
+│ ┌─────────┐ ┌────────────┐ │
+│ │ Storage │ │ Edge Funcs │ │
+│ └─────────┘ └────────────┘ │
+└────────────────────────────┘
+```
+
+---
+
+✨ Example: Realtime Todo App
+
+```js
+// Listen to changes in real-time
+supabase
+  .from('todos')
+  .on('INSERT', payload => {
+    console.log('New todo added!', payload);
+  })
+  .subscribe();
+```
+
+---
+
+📦 Use Cases
+
+* SaaS and startup backends
+* Realtime dashboards
+* Internal admin tools
+* Mobile backends (Flutter, React Native)
+* AI + vector search apps (with `pgvector`)
+
+---
+
+📚 Docs & Tools
+
+| Resource      | Link                                                                                   |
+| ------------- | -------------------------------------------------------------------------------------- |
+| 🧑‍🏫 Docs    | [https://supabase.com/docs](https://supabase.com/docs)                                 |
+| 🧰 GitHub     | [https://github.com/supabase/supabase](https://github.com/supabase/supabase)           |
+| 🖥️ Dashboard | [app.supabase.com](https://app.supabase.com)                                           |
+| 🧪 Playground | [https://supabase.com/docs/guides/examples](https://supabase.com/docs/guides/examples) |
+
+---
+
+🔄 Firebase vs Supabase
+
+| Feature        | Firebase                | Supabase   |
+| -------------- | ----------------------- | ---------- |
+| Database       | Firestore / Realtime DB | PostgreSQL |
+| Query Language | NoSQL                   | SQL        |
+| Open Source    | ❌                       | ✅          |
+| Self-host      | ❌                       | ✅          |
+| Realtime       | ✅                       | ✅          |
+| File Storage   | ✅                       | ✅          |
+| Edge Functions | ✅                       | ✅          |
+| GraphQL API    | ❌                       | ✅          |
+
+---
+
+✅ Summary
+
+> **Supabase = Firebase experience + PostgreSQL power + full open source**
+
+It's a developer-friendly, scalable platform that’s great for building full-stack apps with modern frontends like React, Vue, or mobile apps with Flutter and React Native.
+
+---
+
+Great — let’s go over **how to integrate Supabase with FastAPI**, step by step. This setup allows you to use Supabase as your **PostgreSQL database, authentication provider, and storage system**, while keeping **FastAPI as your backend framework** (for custom logic, APIs, or microservices).
+
+---
+
+🧱 Architecture Overview
+
+```
+Client (React / Streamlit / etc.)
+         ↓
+   Supabase JS / HTTP
+         ↓
+   ┌──────────────┐
+   │  FastAPI App │
+   │   (Python)   │
+   └──────────────┘
+         ↓
+  Supabase (Postgres, Auth, Storage)
+```
+
+You will use **Supabase as the backend infrastructure**, and **FastAPI as your API layer / business logic engine**.
+
+---
+
+✅ What You Can Do
+
+| Task                       | How                                         |
+| -------------------------- | ------------------------------------------- |
+| Query Supabase Postgres    | Use `asyncpg` or Supabase REST API          |
+| Authenticate users         | Verify Supabase JWT in FastAPI              |
+| Upload/download files      | Use Supabase Storage via HTTP or Python     |
+| Trigger webhooks/functions | Supabase ➜ FastAPI endpoint (via HTTP POST) |
+
+---
+
+🧰 Step-by-Step Integration
+
+1. 📦 Install Required Libraries
+
+```bash
+pip install fastapi uvicorn httpx python-jose
+```
+
+You’ll use:
+
+* `httpx`: to call Supabase’s REST endpoints
+* `python-jose`: to decode and verify Supabase JWT tokens
+
+---
+
+2. 🔐 Validate Supabase Auth JWT
+
+Supabase issues a **JWT access token** upon login. You can validate it in FastAPI to secure your endpoints.
+
+```python
+from fastapi import Depends, HTTPException, Header
+from jose import jwt
+import requests
+
+SUPABASE_JWT_SECRET = "your-supabase-jwt-secret"  # Found in Supabase project settings
+
+def verify_token(authorization: str = Header(...)):
+    if not authorization.startswith("Bearer "):
+        raise HTTPException(status_code=401, detail="Invalid token format")
+
+    token = authorization.split(" ")[1]
+    try:
+        payload = jwt.decode(token, SUPABASE_JWT_SECRET, algorithms=["HS256"])
+        return payload  # This contains user_id, role, etc.
+    except Exception as e:
+        raise HTTPException(status_code=403, detail="Token invalid")
+
+# Usage:
+@app.get("/secure-endpoint")
+def protected_route(user=Depends(verify_token)):
+    return {"message": "Welcome!", "user": user}
+```
+
+---
+
+3. 🔁 Query Supabase Data (via REST)
+
+You can use Supabase’s auto-generated REST API:
+
+```python
+import httpx
+
+SUPABASE_URL = "https://your-project.supabase.co"
+SUPABASE_API_KEY = "your-service-role-key"
+
+async def fetch_table():
+    headers = {
+        "apikey": SUPABASE_API_KEY,
+        "Authorization": f"Bearer {SUPABASE_API_KEY}"
+    }
+    async with httpx.AsyncClient() as client:
+        res = await client.get(f"{SUPABASE_URL}/rest/v1/my_table", headers=headers)
+        return res.json()
+```
+
+You can also use `asyncpg` to connect directly to the Postgres DB if needed.
+
+---
+
+4. 📦 Use Supabase Storage from FastAPI
+
+To upload a file:
+
+```python
+import httpx
+
+async def upload_file_to_storage(file_bytes: bytes, filename: str):
+    headers = {
+        "apikey": SUPABASE_API_KEY,
+        "Authorization": f"Bearer {SUPABASE_API_KEY}",
+        "Content-Type": "application/octet-stream"
+    }
+    async with httpx.AsyncClient() as client:
+        res = await client.post(
+            f"{SUPABASE_URL}/storage/v1/object/my-bucket/{filename}",
+            headers=headers,
+            content=file_bytes
+        )
+        return res.status_code
+```
+
+---
+
+🧪 Optional: Use Supabase Python Client (Community)
+
+There’s a community Python SDK for Supabase:
+
+```bash
+pip install supabase
+```
+
+Docs: [https://supabase-python-client.readthedocs.io/](https://supabase-python-client.readthedocs.io/)
+
+⚠️ Note: still maturing, not officially maintained by Supabase yet.
+
+---
+
+✅ When to Use This Architecture
+
+| You want to...                         | Use Supabase + FastAPI |
+| -------------------------------------- | ---------------------- |
+| Keep Python logic in FastAPI           | ✅                      |
+| Use Supabase Auth / Realtime / Storage | ✅                      |
+| Want async RESTful API backend         | ✅                      |
+| Need full control over business logic  | ✅                      |
+| Replace Firebase + Flask               | ✅                      |
+
+---
 
 #### [TeamViewer](https://www.teamviewer.com/en-us/)
 
