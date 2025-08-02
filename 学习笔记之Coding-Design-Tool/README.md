@@ -844,6 +844,73 @@ paths:
 
 ### AI
 
+#### [Crawl AI](https://www.crawlai.org/)
+
+* AI Development Platform - Build Custom AI Easily | Crawl AI
+* **Crawl AI** (sometimes called **Crawl4AI**) — a web‑based **AI development platform** that streamlines the creation of custom AI assistants. Here's a clear overview:
+
+---
+
+What Is Crawl AI?
+
+**Crawl AI** is a **no‑code, web platform** that combines **web crawling** and **AI assistant development** into a single interface. With just a prompt, the system automatically gathers relevant information across the web, structures it, and builds a functioning AI assistant tailored to your needs. It also allows you to upload your own files or link services like Google Drive for custom knowledge grounding.([Crawl AI][1])
+
+---
+
+🚀 Key Features
+
+| Feature                      | Description                                                                                                                                            |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **No-code creation**         | Build an AI assistant using only a text prompt — no technical skills required.([维基百科][2])                                                              |
+| **Automated web crawling**   | Fetches and scrapes relevant information automatically for constructing the assistant’s knowledge base.([Crawl AI][1], [精英AI工具][3])                    |
+| **Custom data input**        | Upload or connect personal documents (e.g. Google Drive) to personalize the assistant’s knowledge.([精英AI工具][3], [Curated New AI Tools Directory][4])   |
+| **Vector store integration** | Collected data is processed and embedded into a vector database for semantic lookup by the AI.([Crawl AI][1], [AIChief][5])                            |
+| **Behavior tuning**          | Adjust parameters like creativity, accuracy, temperature, and instructions to tailor AI responses.([Crawl AI][1], [Curated New AI Tools Directory][4]) |
+| **Secure AWS backend**       | User data is encrypted and stored securely on Amazon Web Services infrastructure.([Curated New AI Tools Directory][4], [精英AI工具][3])                    |
+| **Free during early access** | Alpha/Beta versions are free; tiered pricing is expected later.([Crawl AI][1], [AIChief][5])                                                           |
+
+---
+
+🧪 How It Works: Step-by-Step
+
+1. **Sign up** and log in to the Crawl AI platform.([Crawl AI][6])
+2. **Enter your prompt** — e.g., "Create an assistant to help with Y Combinator applications."([Crawl AI][6])
+3. **Crawl AI scrapes the web**, processes results into structured summaries stored in vector format.([Crawl AI][1])
+4. Optionally, **connect files or external sources** for richer context.([精英AI工具][3])
+5. **Customize** the assistant by tweaking behavior settings.([Crawl AI][7])
+6. **Test and deploy** your assistant — it’s ready to answer questions, generate content, or assist workflows.([Crawl AI][7], [AIChief][5])
+
+---
+
+✅ Use Cases
+
+* **Customer support**: Automate FAQs and provide intelligent bot responses.([Crawl AI][7], [expify.ai][8])
+* **Research assistants**: Build assistants around specific topics (e.g., scientific domains, exam prep).([Crawl AI][7], [精英AI工具][3])
+* **Content ideation**: Scrape info online, then ask the assistant to generate blog posts, summaries, or idea prompts.([Crawl AI][7], [Similarlabs][9])
+
+---
+
+📊 How Does It Differ from Crawl4AI Open‑Source?
+
+**Crawl4AI** (open‑source) vs. **Crawl AI** (web service):
+
+| Aspect                  | Crawl AI (Platform)                          | Crawl4AI (Open Source)                                                                                                        |
+| ----------------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| **Target user**         | Non-technical, business & education users    | Developers, engineers, researchers                                                                                            |
+| **Function**            | Web-based assistant builder, managed service | Python library and CLI for custom crawling workflows                                                                          |
+| **Customization level** | Limited to prompt interface and settings     | Full control: CSS/XPath scraping, LLM‑based extraction, scheduling                                                            |
+| **Hosting**             | AWS-backed, managed, secure                  | Self-hosted (Docker/Kubernetes), requires infrastructure setup([CSDN博客][10], [GeekDaxue][11], [Crawl AI][1], [GeekDaxue][12]) |
+| **Pricing**             | Free in early access; future tiers           | Free under Apache 2.0 license([GeekDaxue][12], [CSDN博客][13])                                                                  |
+
+---
+
+🧠 Summary
+
+* **Use Crawl AI** if you want an easy way—**without coding**—to build custom AI assistants rooted in up-to-date web data and personal documents.
+* **Use Crawl4AI** if you need more granular control and are comfortable working with code to customize scraping and extraction workflows.
+
+---
+
 #### [ChatGPT](https://chat.openai.com/)
 
 * ChatGPT is a free-to-use AI system. Use it for engaging conversations, gain insights, automate tasks, and witness the future of AI, all in one place.
