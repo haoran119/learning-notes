@@ -1968,6 +1968,132 @@ You can:
 * FreeMind is a premier free mind-mapping software written in Java. The recent development has hopefully turned it into high productivity tool. We are proud that the operation and navigation of FreeMind is faster than that of MindManager because of one-click "fold / unfold" and "follow link" operations.
 * So you want to write a completely new metaphysics? Why don't you use FreeMind? You have a tool at hand that remarkably resembles the tray slips of Robert Pirsig, described in his sequel to Zen and the Art of Motorcycle Maintenance called Lila. Do you want to refactor your essays in a similar way you would refactor software? Or do you want to keep personal knowledge base, which is easy to manage? Why don't you try FreeMind? Do you want to prioritize, know where you are, where you've been and where you are heading, as Stephen Covey would advise you? Have you tried FreeMind to keep track of all the things that are needed for that?
 
+#### [Graphviz](https://graphviz.org/)
+
+* Graphviz is open source graph visualization software. Graph visualization is a way of representing structural information as diagrams of abstract graphs and networks. It has important applications in networking, bioinformatics, software engineering, database and web design, machine learning, and in visual interfaces for other technical domains.
+* Here's a clear introduction to **[Graphviz](https://graphviz.org/)** — one of the most popular tools for graph and diagram rendering.
+
+---
+
+🧠 What is **Graphviz**?
+
+**Graphviz** (Graph Visualization Software) is an **open-source tool** for **drawing graphs (nodes and edges)** using a simple text-based language called **DOT**.
+
+It turns structured descriptions of graphs into **visual diagrams**, such as:
+
+* Flowcharts
+* State machines
+* Dependency trees
+* UML class diagrams
+* Neural network architecture
+* Organizational charts
+
+---
+
+🗂️ Key Features
+
+| Feature                               | Description                                                                 |
+| ------------------------------------- | --------------------------------------------------------------------------- |
+| 📝 **Text-based (DOT language)**      | Define graphs using plain text                                              |
+| 🎨 **Multiple layouts**               | `dot`, `neato`, `fdp`, `twopi`, `circo` for different graph styles          |
+| 📦 **Output formats**                 | PNG, SVG, PDF, PostScript, and more                                         |
+| 🔗 **Directed and Undirected Graphs** | Support both types of relationships                                         |
+| 🧩 **Integrations**                   | Used with Python (`graphviz`, `pygraphviz`), Jupyter, LaTeX, PlantUML, etc. |
+
+---
+
+✍️ Example: DOT Language
+
+```dot
+digraph G {
+  A -> B;
+  B -> C;
+  A -> C;
+}
+```
+
+This produces a **directed graph**: A → B → C, and A → C
+
+---
+
+🔄 Layout Engines
+
+| Engine  | Best for                                            |
+| ------- | --------------------------------------------------- |
+| `dot`   | Hierarchical layout (top-down, best for flowcharts) |
+| `neato` | Spring model layout (undirected graphs)             |
+| `fdp`   | Force-directed layout (e.g., cluster graphs)        |
+| `twopi` | Radial layout                                       |
+| `circo` | Circular layout                                     |
+
+---
+
+🔧 Install Graphviz
+
+✅ CLI tool:
+
+```bash
+# macOS
+brew install graphviz
+
+# Ubuntu/Debian
+sudo apt-get install graphviz
+
+# Windows
+Download from https://graphviz.org/download/
+```
+
+✅ Python bindings:
+
+```bash
+pip install graphviz
+```
+
+Then use it like:
+
+```python
+from graphviz import Digraph
+
+dot = Digraph()
+dot.node('A')
+dot.node('B')
+dot.edge('A', 'B')
+dot.render('graph', format='png')
+```
+
+---
+
+📊 Example Use Cases
+
+| Use Case                  | How Graphviz Helps            |
+| ------------------------- | ----------------------------- |
+| **Visualize data flow**   | ETL pipelines, DAGs           |
+| **Class diagrams**        | Software architecture and UML |
+| **Org charts**            | Show management hierarchy     |
+| **Compiler/Parser trees** | AST visualization             |
+| **AI/ML model structure** | Layers and connections        |
+
+---
+
+🌐 Try Online
+
+* ✅ Official Playground: [https://dreampuf.github.io/GraphvizOnline/](https://dreampuf.github.io/GraphvizOnline/)
+* Paste DOT code and see instant rendering
+
+---
+
+🧠 Summary
+
+> **Graphviz = Powerful, scriptable diagramming using simple text (DOT) + layout engines**
+
+Use it when:
+
+* You want **full control** over how your graphs render
+* You like scripting instead of drag-and-drop tools
+* You need to **generate graphs from code**
+
+---
+
 #### [Homebrew](https://brew.sh/)
 
 * The Missing Package Manager for macOS (or Linux)
