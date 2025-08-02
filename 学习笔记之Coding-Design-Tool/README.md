@@ -2192,6 +2192,94 @@ ChatGPT (with tools enabled) can process multi-doc files, compare sections, and 
     * [Generate SSH Keys on Linux](https://linuxhint.com/generate-ssh-keys-on-linux/)
     * [How to convert ssh private key id_rsa to Putty .ppk - Daniel Han's Technical Notes](https://sites.google.com/site/xiangyangsite/home/technical-tips/linux-unix/common-tips/how-to-convert-ssh-id_rsa-keys-to-putty-ppk)
 
+#### [Railway](https://railway.com/)
+
+* Shipping great products is hard. Scaling infrastructure is easy.
+* Railway simplifies your infrastructure stack from servers to observability with a single, scalable, easy-to-use platform.
+* Here’s a clear and concise introduction to **[Railway](https://railway.app)** — a modern platform for deploying web applications and APIs without DevOps complexity.
+
+---
+
+🚂 What is Railway?
+
+**Railway** is a **cloud platform** that makes it extremely easy to **deploy and manage web applications, APIs, databases, and background workers** — with minimal configuration and no DevOps experience required.
+
+It’s often described as:
+
+> “The Heroku for the modern stack.”
+
+---
+
+🎯 Who is Railway For?
+
+* **Solo developers & indie hackers**
+* **Startup teams** needing fast backends
+* **Hackathon & MVP builders**
+* **Frameworks like FastAPI, Next.js, Express, Flask, Node.js, PostgreSQL, Redis**
+
+---
+
+🚀 Key Features
+
+| Feature                          | Description                                                                 |
+| -------------------------------- | --------------------------------------------------------------------------- |
+| **GitHub Integration**           | One-click deploy from your repo; auto-deploy on `git push`                  |
+| **Auto Start Command Detection** | Detects frameworks like FastAPI, Node, etc. and sets commands automatically |
+| **Environment Variables**        | Secure, UI-based configuration for secrets and `.env` keys                  |
+| **Built-in Hosting**             | Public HTTPS URL automatically provided for every service                   |
+| **Database Support**             | Built-in PostgreSQL, Redis, MySQL with instant provisioning                 |
+| **Service Logs**                 | Live logs + deployments tracking in a beautiful dashboard                   |
+| **Serverless + Persistent VMs**  | Your app sleeps and restarts on demand (for free tier) or stays up on paid  |
+| **Plugin Ecosystem**             | One-click addition of databases, storage, cron jobs                         |
+| **CLI & API**                    | `railway` CLI lets you deploy from terminal or CI/CD pipelines              |
+
+---
+
+🛠 Common Use Cases
+
+| Use Case            | Example                                      |
+| ------------------- | -------------------------------------------- |
+| FastAPI backend     | Deploy a Python API with Clerk or Supabase   |
+| Node/Express server | Real-time APIs, webhooks                     |
+| PostgreSQL + Prisma | Instant Postgres database with migrations    |
+| Static sites        | Deploy Next.js or Astro frontend             |
+| Cron jobs           | Run scheduled background tasks (via Plugins) |
+
+---
+
+💸 Pricing
+
+| Plan                   | Key Limits                                           |
+| ---------------------- | ---------------------------------------------------- |
+| **Free**               | 500 hours/month, sleeps after inactivity, shared CPU |
+| **Developer** (\$5/mo) | Persistent runtime, custom domain, private projects  |
+| **Team & Enterprise**  | Role-based access, usage-based billing, SLA support  |
+
+[See full pricing →](https://railway.app/pricing)
+
+---
+
+✅ Why People Love Railway
+
+* 🧠 **Zero config**: Detects languages and frameworks
+* ⚡ **Speed**: You can deploy a FastAPI/React app in under 5 minutes
+* 📦 **One-click Postgres**: Built-in databases with no setup
+* 🌍 **Public URL out of the box**: Shareable, auto-generated `.railway.app` domain
+* 🛡 **Safe & simple**: Great for both staging and production deployments
+
+---
+
+📍 Getting Started
+
+1. Go to [https://railway.app](https://railway.app)
+2. Sign in with GitHub
+3. Click “New Project” → "Deploy from GitHub"
+4. Select your repo (e.g. FastAPI backend)
+5. Add any environment variables (`.env`)
+6. Done — Railway builds and hosts your app
+
+---
+
 #### [Slurm](https://slurm.schedmd.com/overview.html)
 
 * `Slurm Workload Manager`
