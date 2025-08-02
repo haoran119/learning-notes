@@ -2941,6 +2941,211 @@ $ tmux attach -t mysession
 Note : Ctrl-d b to exit session
 ```
 
+#### [uv](https://github.com/astral-sh/uv)
+
+* astral-sh/uv: An extremely fast Python package and project manager, written in Rust.
+* **[`uv`](https://github.com/astral-sh/uv)**, the **ultrafast Python package manager** from Astral. It’s a **modern alternative** to `pip`, `virtualenv`, `pip-tools`, and even `pipx`.
+
+Here’s everything you need to know:
+
+---
+
+🚀 What is `uv`?
+
+**`uv`** is a new Python packaging and environment management tool written in **Rust** by [Astral](https://astral.sh/).
+
+> It aims to be a **drop-in replacement for pip**, but **much faster** and more ergonomic.
+
+---
+
+⚡ Why Use `uv`?
+
+| Feature                                  | Benefit                                                                |
+| ---------------------------------------- | ---------------------------------------------------------------------- |
+| 🔥 **Blazing fast**                      | Written in Rust; 10x faster than pip                                   |
+| 📦 **Single binary**                     | No dependencies, works without Python installed (like `brew` or `npm`) |
+| 🧪 **Virtualenv included**               | Automatically creates and manages virtual environments                 |
+| 🧹 **Deterministic**                     | Uses lockfiles (like `poetry.lock`) for reproducible installs          |
+| 💡 **Drop-in pip/pip-tools replacement** | Works with `requirements.txt`, `pyproject.toml`, or `uv.lock`          |
+| 📜 **PEP 582 support**                   | Optional "local packages" without needing virtualenv                   |
+
+---
+
+🛠 Install `uv`
+
+Just download the binary:
+
+```bash
+curl -Ls https://astral.sh/uv/install.sh | bash
+```
+
+Or via [Homebrew](https://formulae.brew.sh/formula/uv):
+
+```bash
+brew install uv
+```
+
+---
+
+✅ Basic Commands
+
+```bash
+uv venv                 # Create virtual environment (auto-detects Python)
+uv pip install fastapi  # Just like pip install, but faster
+uv pip list             # Show installed packages
+uv pip freeze           # Generate requirements.txt
+uv pip sync             # Sync from requirements.txt (like pip-tools)
+uv run app.py           # Run inside the venv
+uv venv --remove        # Remove the environment
+```
+
+---
+
+📦 With `pyproject.toml`
+
+You can use `uv` as a Poetry-like project manager:
+
+```bash
+uv init                 # Create pyproject.toml
+uv add fastapi          # Add a dependency
+uv lock                 # Create uv.lock
+uv sync                 # Install from lock
+```
+
+---
+
+📂 Project Isolation
+
+Like `pipx`, you can also run tools without globally installing them:
+
+```bash
+uv pipx run black .
+uv pipx install ruff
+```
+
+---
+
+🧪 Comparison Table
+
+| Tool      | Replaces                | Notes                      |
+| --------- | ----------------------- | -------------------------- |
+| `uv pip`  | `pip`                   | Faster installs            |
+| `uv sync` | `pip-sync`, `pip-tools` | Deterministic sync         |
+| `uv venv` | `virtualenv`, `venv`    | Included, auto-detects     |
+| `uv pipx` | `pipx`                  | For isolated tools         |
+| `uv run`  | `python` + venv         | Auto-uses local Python env |
+
+---
+
+🧠 Summary
+
+| ✅ Use `uv` if you want:           |                                                |
+| --------------------------------- | ---------------------------------------------- |
+| ⚡ Lightning-fast installs         | thanks to Rust backend                         |
+| 🧱 Clean project isolation        | via built-in `venv`                            |
+| 🔐 Lockfile-based reproducibility | like `poetry` but leaner                       |
+| 🧰 One tool for all packaging     | instead of juggling `pip`, `venv`, `pip-tools` |
+
+---
+
+Here’s a **comprehensive comparison** of `uv` with other popular Python package management tools: **pip**, **pip-tools**, **poetry**, **pipenv**, and **conda**.
+
+---
+
+🧪 TL;DR Comparison Table
+
+| Feature / Tool               | `uv`                          | `pip`              | `pip-tools`          | `poetry`         | `pipenv`         | `conda`             |
+| ---------------------------- | ----------------------------- | ------------------ | -------------------- | ---------------- | ---------------- | ------------------- |
+| 🔥 **Speed**                 | 🚀 **Very fast** (Rust-based) | 🐢 Slow            | 🐢 Slow              | ⚡ Medium         | 🐢 Slow          | ⚡ Medium            |
+| 🛠 **Written in**            | Rust                          | Python             | Python               | Python           | Python           | C / C++             |
+| 📦 **Lockfile**              | ✅ `uv.lock`                   | ❌                  | ✅ `requirements.txt` | ✅ `poetry.lock`  | ✅ `Pipfile.lock` | ✅ `environment.yml` |
+| 📜 **File format**           | `pyproject.toml`, `uv.lock`   | `requirements.txt` | Same                 | `pyproject.toml` | `Pipfile`        | `environment.yml`   |
+| 📂 **Virtualenv**            | ✅ Built-in                    | ❌ (manual)         | ❌ (manual)           | ✅ Built-in       | ✅ Built-in       | ✅ Built-in          |
+| 📁 **Per-project isolation** | ✅                             | ❌                  | ❌                    | ✅                | ✅                | ✅                   |
+| 🧩 **Dependency resolution** | ✅ Fast & exact                | ❌ Minimal          | ✅ Accurate           | ✅ Accurate       | ✅ Accurate       | ✅ Solver-based      |
+| 🔁 **Reproducibility**       | ✅ Deterministic               | ❌                  | ✅                    | ✅                | ✅                | ✅                   |
+| 🛡 **Security checks**       | ❌ Planned                     | ❌                  | ❌                    | ✅                | ✅                | ✅                   |
+| 🔗 **PEP 582 support**       | ✅ Optional                    | ❌                  | ❌                    | ❌                | ❌                | ❌                   |
+| ⚙️ **Platform mgmt**         | ❌ (Python only)               | ❌                  | ❌                    | ❌                | ❌                | ✅ (Python + C libs) |
+| 📊 **Good for data science** | ✅ With pip extras             | ❌                  | ❌                    | ⚠️ Not ideal     | ⚠️ Slower        | ✅ Native            |
+
+---
+
+🔍 Feature Breakdown
+
+✅ `uv`
+
+* **All-in-one tool**: replaces `pip`, `venv`, `pip-tools`, `pipx`
+* **Rust backend** → very fast
+* Works with `requirements.txt`, `pyproject.toml`, or its own `uv.lock`
+* CLI: `uv pip install`, `uv sync`, `uv add`, `uv run`
+* Supports PEP 582 (no virtualenv) if enabled
+* Perfect for **FastAPI**, **CLI tools**, and **modern web dev**
+
+🐍 `pip`
+
+* Default package manager
+* No lockfile or dependency resolution
+* No environment isolation
+* Bare-bones, but reliable for basic installs
+
+🧩 `pip-tools`
+
+* Adds `pip-compile` and `pip-sync`
+* Better control of `requirements.txt`
+* Still slow and lacks virtualenv support
+* Common in legacy Python workflows
+
+🎭 `poetry`
+
+* Full project management (build + deps + publish)
+* Great for Python libraries and publishing to PyPI
+* Includes a lockfile and good resolution
+* Slower and heavier than `uv`
+* Sometimes breaks on complex C dependencies (e.g., TensorFlow)
+
+📦 `pipenv`
+
+* Combines `pip` + `virtualenv` + `Pipfile`
+* Simpler for beginners but **has performance and compatibility issues**
+* Slower resolution, frequent bugs
+* Largely replaced by `poetry` or `uv` in modern projects
+
+🧪 `conda`
+
+* Manages **Python + native binaries**
+* Ideal for **data science**, **scientific computing**
+* Heavier, slower, not PEP-compliant
+* Maintains its own ecosystem (separate from PyPI)
+* Great for ML, but **overkill for web apps**
+
+---
+
+🏁 When to Use What?
+
+| Use Case                               | Best Tool             |
+| -------------------------------------- | --------------------- |
+| 🧑‍💻 Web apps / APIs (FastAPI, Flask) | ✅ `uv` or `poetry`    |
+| ⚡ Speed + simplicity                   | ✅ `uv`                |
+| 🧪 Data science + C libs               | ✅ `conda`             |
+| 📦 PyPI library development            | ✅ `poetry`            |
+| 🐍 Legacy requirements.txt setup       | ✅ `pip-tools`         |
+| 🎓 Beginners learning pip              | ✅ `pip` (with `venv`) |
+
+---
+
+🔚 Final Thoughts
+
+| Tool     | Recommended?                         | Why?                         |
+| -------- | ------------------------------------ | ---------------------------- |
+| `uv`     | ✅ Yes, best all-in-one modern tool   | Fast, portable, and flexible |
+| `poetry` | ✅ Great for packaging and publishing | More feature-rich            |
+| `pip`    | ⚠️ Minimal use for simple installs   | Use with caution             |
+| `pipenv` | ❌ Generally avoid in 2025            | Too slow and buggy           |
+| `conda`  | ✅ For ML/data science only           | Excellent for native libs    |
+
+---
+
 #### [VLAN](https://en.wikipedia.org/wiki/VLAN)
 
 * A VLAN, or Virtual Local Area Network, is a technology that segments a physical network into multiple, separate virtual networks. This enables groups of devices across different locations to be connected as if they were on the same physical network, enhancing security, reducing traffic congestion, and improving network management efficiency. VLANs allow for better control over network resources, making them essential in large and complex network environments.
