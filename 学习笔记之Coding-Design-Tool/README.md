@@ -588,6 +588,526 @@ Thank you.
 * [最近我学到的ABTest知识](https://mp.weixin.qq.com/s/gSxhO9eDtoGLWjwJazp4DA)
 * [小团队中微服务的可怕之处](https://mp.weixin.qq.com/s/Df21LGRj60m98fN0PJLGVA)
 
+### Network communication
+
+#### HTTP/2
+
+* Let's explain **HTTP/2** in a clear, concise, and practical way — especially in contrast to **HTTP/1.1**, which it's designed to improve.
+
+---
+
+🌐 What is **HTTP/2**?
+
+**HTTP/2** is the second major version of the **HTTP protocol**, standardized in 2015 by the IETF. It’s fully **backward compatible** with HTTP/1.1 but introduces major improvements in **performance**, **efficiency**, and **network usage**.
+
+---
+
+🔧 Key Features of HTTP/2
+
+| Feature                           | Description                                                                        |
+| --------------------------------- | ---------------------------------------------------------------------------------- |
+| 🔄 **Multiplexing**               | Multiple requests/responses over a **single connection** — no blocking or queueing |
+| 🪄 **Header Compression (HPACK)** | Reduces size of request/response headers                                           |
+| 🧵 **Stream Prioritization**      | Server can prioritize which responses to send first                                |
+| 🚀 **Server Push**                | Server can preemptively send resources (like CSS/JS) before the client asks        |
+| 📡 **Binary Protocol**            | Messages are binary, not textual, making them more efficient to parse and transfer |
+
+---
+
+🆚 HTTP/1.1 vs HTTP/2
+
+| Feature                | **HTTP/1.1**                   | **HTTP/2**                     |
+| ---------------------- | ------------------------------ | ------------------------------ |
+| Request per connection | 1 at a time (unless pipelined) | Many in parallel (multiplexed) |
+| Header size            | Verbose                        | Compressed                     |
+| Server push            | ❌                              | ✅                              |
+| Format                 | Text                           | Binary                         |
+| Connection reuse       | Poor                           | Excellent                      |
+| Latency                | Higher                         | Lower                          |
+
+---
+
+🎯 Real-World Benefits
+
+| Scenario                        | How HTTP/2 Helps                                        |
+| ------------------------------- | ------------------------------------------------------- |
+| Web apps with many small files  | Loads CSS, JS, images in parallel on one connection     |
+| Mobile devices on slow networks | Reduces round trips and improves perceived speed        |
+| Reduces need for hacks          | You don’t need domain sharding or sprite sheets anymore |
+| APIs (REST/GraphQL)             | Faster response and better multiplexed pipelines        |
+
+---
+
+🛠 Browser and Server Support
+
+✅ All modern browsers support HTTP/2 (Chrome, Firefox, Safari, Edge, etc.)
+
+✅ Most major servers support it:
+
+* NGINX (`http2` directive)
+* Apache (`mod_http2`)
+* Cloudflare / CDNs
+* FastAPI via Uvicorn → needs to be served behind an HTTP/2 reverse proxy (e.g. NGINX)
+
+---
+
+📉 Limitations / Considerations
+
+| Limitation                                            | Notes                                             |
+| ----------------------------------------------------- | ------------------------------------------------- |
+| ❌ No native support in Python's standard HTTP servers | You need a proxy (NGINX or Traefik) for HTTP/2    |
+| ❌ Server Push is underutilized                        | Complex and being phased out in some browsers     |
+| ⚠️ Doesn’t guarantee faster apps                      | Still need good caching, image optimization, etc. |
+
+---
+
+🔐 Bonus: TLS
+
+* HTTP/2 **does not require TLS**, but **almost all browsers only enable it over HTTPS**
+* So, in practice: **HTTP/2 = HTTP/2 + HTTPS**
+
+---
+
+✅ Summary
+
+| HTTP/2 is...                                      | ✅ |
+| ------------------------------------------------- | - |
+| Faster than HTTP/1.1                              | ✅ |
+| Backward-compatible                               | ✅ |
+| Efficient for APIs and modern web apps            | ✅ |
+| Needs reverse proxy or special server for FastAPI | ✅ |
+
+---
+
+#### Publish-Subscribe Pattern
+
+* **pub-sub (publish-subscribe) pattern** is a **messaging architecture** that enables **decoupled communication** between different parts of a system — often used in real-time applications, microservices, and distributed systems.
+
+---
+
+🧠 What is the Pub-Sub Pattern?
+
+> In the **pub-sub** model, **publishers** send messages to a **channel/topic**, and **subscribers** receive messages from that topic — **without knowing about each other**.
+
+It’s like a mailing list:
+
+* 📨 You (publisher) send emails to a list (topic)
+* 📬 Everyone subscribed to that list (subscribers) receives it
+
+---
+
+🔁 Basic Flow
+
+```
+Publisher → Topic (Message Broker) → Subscribers
+```
+
+---
+
+🧱 Components
+
+| Component           | Role                                                                     |
+| ------------------- | ------------------------------------------------------------------------ |
+| **Publisher**       | Sends (publishes) messages to a topic                                    |
+| **Subscriber**      | Listens for messages on a topic                                          |
+| **Message Broker**  | Routes messages from publishers to subscribers (e.g. Redis, Kafka, NATS) |
+| **Topic / Channel** | A named subject that subscribers listen to                               |
+
+---
+
+🧪 Example Use Case: Chat System
+
+* User A sends a message → published to topic `chat/room1`
+* All clients subscribed to `chat/room1` get the message in real time
+
+---
+
+✅ Pros
+
+| Advantage                  | Description                                      |
+| -------------------------- | ------------------------------------------------ |
+| ✅ **Decoupled components** | Publishers and subscribers don’t know each other |
+| ✅ **Scalable**             | Works well in distributed systems                |
+| ✅ **Real-time**            | Messages are pushed instantly to subscribers     |
+| ✅ **Supports fan-out**     | One message → many receivers                     |
+
+---
+
+❌ Cons
+
+| Limitation                                   | Notes                                                      |
+| -------------------------------------------- | ---------------------------------------------------------- |
+| ❌ No message persistence (in simple brokers) | If a subscriber is offline, it may miss messages           |
+| ❌ Difficult error tracking                   | Publisher doesn’t know if subscribers received the message |
+| ❌ Needs message broker setup                 | Adds infrastructure complexity                             |
+
+---
+
+🧰 Common Pub-Sub Tools
+
+| Tool               | Type          | Notes                            |
+| ------------------ | ------------- | -------------------------------- |
+| **Redis Pub/Sub**  | In-memory     | Simple, no persistence           |
+| **Kafka**          | Log-based     | High throughput, persistent      |
+| **NATS**           | Lightweight   | Super fast, simple               |
+| **Google Pub/Sub** | Cloud-managed | Durable, scalable                |
+| **MQTT**           | IoT-focused   | Lightweight, topic-based pub-sub |
+
+---
+
+🛠️ Code Example: Redis Pub/Sub (Python)
+
+```python
+# Publisher
+import redis
+r = redis.Redis()
+r.publish('news', 'Breaking news!')
+
+# Subscriber
+import redis
+r = redis.Redis()
+pubsub = r.pubsub()
+pubsub.subscribe('news')
+
+for message in pubsub.listen():
+    print(message['data'])  # Will print: Breaking news!
+```
+
+---
+
+🧠 Pub-Sub vs Other Patterns
+
+| Pattern              | Description                                 |
+| -------------------- | ------------------------------------------- |
+| **Request-Response** | Client requests, server replies (e.g. HTTP) |
+| **Polling**          | Client repeatedly asks for updates          |
+| **Pub-Sub**          | Server pushes updates to subscribers        |
+
+---
+
+✅ Summary
+
+| Pub-Sub = Publish once → Notify many                                |
+| ------------------------------------------------------------------- |
+| Great for real-time apps, decoupling, and event-driven architecture |
+| Needs broker (Redis, Kafka, etc.)                                   |
+| Powerful, but be mindful of delivery guarantees and persistence     |
+
+---
+
+#### Request-Polling Pattern
+
+* The **request-polling pattern** is a common technique used in client-server systems (like web apps) to **repeatedly check for updates** from a server over time.
+
+---
+
+🔁 What Is the Request-Polling Pattern?
+
+> The **request-polling pattern** is when a **client repeatedly sends requests** (typically HTTP GET) to a server **at regular intervals** to check if new data is available.
+
+---
+
+📦 How It Works
+
+1. The client sends a request to the server (e.g. every 5 seconds).
+2. The server responds with the **current state** or any **new data**.
+3. The client checks if anything has changed.
+4. If not, it waits and sends another request later.
+
+---
+
+⏱️ Example: Polling Every 5 Seconds
+
+```javascript
+setInterval(async () => {
+  const response = await fetch('/api/status');
+  const data = await response.json();
+  console.log('Latest status:', data);
+}, 5000); // Every 5 seconds
+```
+
+---
+
+📊 Real-World Use Cases
+
+| Use Case               | What’s Being Polled       |
+| ---------------------- | ------------------------- |
+| Chat apps              | New messages              |
+| Job/task queue         | Job completion status     |
+| File conversion/upload | Processing progress       |
+| Real-time dashboards   | Updated metrics or prices |
+| Payment systems        | Transaction confirmation  |
+
+---
+
+✅ Pros
+
+| Benefit                   | Description                     |
+| ------------------------- | ------------------------------- |
+| ✅ Simple to implement     | Works with standard HTTP        |
+| ✅ Works with any backend  | No need for WebSockets          |
+| ✅ No server push required | Client drives the communication |
+
+---
+
+❌ Cons
+
+| Drawback              | Description                                                  |
+| --------------------- | ------------------------------------------------------------ |
+| ❌ High load           | Repeated requests = increased server traffic                 |
+| ❌ Latency             | May take time before change is noticed (depends on interval) |
+| ❌ Wasteful            | Even when nothing changes, requests still go out             |
+| ❌ Not truly real-time | There's always some delay between change and detection       |
+
+---
+
+🆚 Compared to Alternatives
+
+| Pattern                      | Description                                                                | Best For                                        |
+| ---------------------------- | -------------------------------------------------------------------------- | ----------------------------------------------- |
+| **Polling**                  | Client checks repeatedly                                                   | Simple apps, low frequency                      |
+| **Long Polling**             | Client sends a request and server **holds** it until new data is available | More efficient than polling, pseudo real-time   |
+| **WebSockets**               | Full duplex, persistent connection                                         | True real-time chat, gaming, collaborative apps |
+| **Server-Sent Events (SSE)** | One-way real-time updates (server → client)                                | Notifications, logs, live feeds                 |
+
+---
+
+🧠 Best Practices for Polling
+
+* Use **backoff strategies** (e.g. exponential backoff) to reduce load
+* Consider **conditional requests** (like ETags or timestamps) to avoid full payloads
+* Use **short polling** only when **data updates infrequently**
+* For high-frequency updates or multiple clients → use **WebSocket/SSE** instead
+
+---
+
+✅ Summary
+
+| Term                | Description                                              |
+| ------------------- | -------------------------------------------------------- |
+| **Request Polling** | Client regularly asks the server “Has anything changed?” |
+| **Good for**        | Simplicity, universal support                            |
+| **Bad for**         | High-frequency or real-time needs                        |
+| **Alternatives**    | WebSockets, long polling, SSE                            |
+
+---
+
+#### Server-Sent Events (SSE)
+
+* let’s go deeper into **Server-Sent Events (SSE)** and explain how they work, how they compare to other real-time communication methods like WebSockets, and when to use them.
+
+---
+
+📡 What Are **Server-Sent Events (SSE)**?
+
+**SSE** is a **unidirectional** communication protocol where the **server pushes updates to the client** over a single HTTP connection — specifically using the `text/event-stream` content type.
+
+* **Client initiates** a request (usually via `EventSource`)
+* **Server keeps the connection open**
+* **Server sends updates** as new events occur
+
+> Think of SSE as a **"live newsfeed"** from the server.
+
+---
+
+📜 Example: How SSE Works
+
+🖥 Client (JavaScript)
+
+```javascript
+const evtSource = new EventSource('/events');
+
+evtSource.onmessage = (event) => {
+  console.log('New message:', event.data);
+};
+```
+
+🖥 Server (Python FastAPI Example)
+
+```python
+from fastapi import FastAPI
+from fastapi.responses import StreamingResponse
+import time
+
+app = FastAPI()
+
+@app.get("/events")
+def sse_endpoint():
+    def event_stream():
+        while True:
+            time.sleep(2)
+            yield f"data: Server time is {time.time()}\n\n"
+    return StreamingResponse(event_stream(), media_type="text/event-stream")
+```
+
+---
+
+🔄 SSE vs WebSocket vs Polling
+
+| Feature         | **SSE**                      | **WebSocket**                            | **Polling**                   |
+| --------------- | ---------------------------- | ---------------------------------------- | ----------------------------- |
+| Direction       | Server → Client              | Bi-directional                           | Client → Server               |
+| Complexity      | Simple                       | More complex                             | Very simple                   |
+| Protocol        | HTTP (streamed)              | Custom protocol over TCP                 | HTTP                          |
+| Browser Support | Great (except IE)            | Great (needs polyfill in older browsers) | Universal                     |
+| Auto-reconnect  | ✅ Built-in                   | ❌ Manual                                 | ❌ N/A                         |
+| Use Cases       | Notifications, logs, updates | Chat, games, collaborative tools         | Status checks, simple updates |
+
+---
+
+✅ Benefits of SSE
+
+* 📦 **Lightweight** — uses standard HTTP, no WebSocket overhead
+* 🔁 **Built-in reconnect & retry** (in `EventSource`)
+* 🔐 **Works with HTTP/2 & proxies** better than WebSockets
+* 🔒 Easier to secure with standard HTTP authentication and TLS
+* 📚 **Stream structured events** (with IDs, retry delay, custom event types)
+
+---
+
+❌ Limitations of SSE
+
+* ⛔ **One-way only**: server → client
+* ⛔ **No binary support** (only text)
+* ⛔ **Not supported in IE11** (but widely supported otherwise)
+* ⛔ **Limited to HTTP/1.1+** (not native to WebSockets protocol)
+
+---
+
+🧠 When to Use SSE
+
+| Use Case                       | Use SSE?                       |
+| ------------------------------ | ------------------------------ |
+| Live logs or dashboards        | ✅ Perfect fit                  |
+| Notifications or alerts        | ✅ Efficient                    |
+| Real-time chat                 | ❌ Use WebSockets (needs 2-way) |
+| Heavy updates with binary data | ❌ WebSockets or gRPC           |
+| Need fallback to HTTP          | ✅ SSE is HTTP-compatible       |
+
+---
+
+✅ Summary
+
+| Concept       | Description                                             |
+| ------------- | ------------------------------------------------------- |
+| **SSE**       | Server pushes real-time updates to the client over HTTP |
+| **Pros**      | Simple, HTTP-native, text streaming, reconnects         |
+| **Cons**      | Server → client only, no binary                         |
+| **Ideal for** | Logs, metrics, dashboards, alerts, notifications        |
+
+---
+
+#### WebSocket
+
+* let’s explain **WebSockets**, especially in comparison to other real-time communication methods like HTTP polling and Server-Sent Events.
+
+---
+
+🌐 What is a **WebSocket**?
+
+**WebSocket** is a **full-duplex**, **persistent** communication protocol over a **single TCP connection** that allows **two-way (bi-directional)** communication between the client (usually a browser) and a server.
+
+It enables **real-time, low-latency** updates, making it ideal for interactive or live applications.
+
+---
+
+🔁 WebSocket Flow
+
+1. The client sends a WebSocket handshake request (via HTTP/1.1).
+2. The server responds and upgrades the connection to WebSocket.
+3. The connection stays **open** — both sides can now send/receive at any time.
+4. The connection can stay alive as long as needed.
+
+---
+
+📦 Example: JavaScript WebSocket
+
+Client:
+
+```javascript
+const socket = new WebSocket("ws://localhost:8000/ws");
+
+socket.onmessage = (event) => {
+  console.log("Received:", event.data);
+};
+
+socket.send("Hello from client!");
+```
+
+FastAPI Server:
+
+```python
+from fastapi import FastAPI, WebSocket
+
+app = FastAPI()
+
+@app.websocket("/ws")
+async def websocket_endpoint(websocket: WebSocket):
+    await websocket.accept()
+    while True:
+        data = await websocket.receive_text()
+        await websocket.send_text(f"Echo: {data}")
+```
+
+---
+
+🧠 Key Features
+
+| Feature                             | Description                                  |
+| ----------------------------------- | -------------------------------------------- |
+| 🔄 **Two-way communication**        | Both client and server can initiate messages |
+| 🌐 **Single persistent connection** | No repeated HTTP requests                    |
+| ⚡ **Low latency**                   | Ideal for real-time use                      |
+| 🧠 **Event-driven**                 | Send/receive events anytime                  |
+| 📊 **Efficient**                    | Less overhead than HTTP polling              |
+
+---
+
+🧪 Ideal Use Cases
+
+* 🧑‍💬 Real-time chat apps
+* 📈 Live stock dashboards
+* 🎮 Multiplayer games
+* 🧭 Collaborative tools (like Google Docs)
+* ⚙️ IoT device updates
+* 👀 Live notifications or alerting systems
+
+---
+
+🆚 Comparison with Other Techniques
+
+| Feature               | **WebSocket**  | **HTTP Polling**             | **SSE**          |
+| --------------------- | -------------- | ---------------------------- | ---------------- |
+| Direction             | Bi-directional | Client → Server              | Server → Client  |
+| Latency               | ✅ Low          | ❌ High (depends on interval) | ✅ Low            |
+| Persistent connection | ✅ Yes          | ❌ No                         | ✅ Yes            |
+| Browser support       | ✅ Excellent    | ✅ Universal                  | ✅ Most (❌ no IE) |
+| Complexity            | 🟡 Medium      | 🟢 Easy                      | 🟢 Easy          |
+| Binary support        | ✅ Yes          | ✅ Yes                        | ❌ No             |
+| Built-in reconnection | ❌ Manual       | N/A                          | ✅ Yes            |
+
+---
+
+🔒 Security Considerations
+
+* Use **`wss://`** (WebSocket Secure) for encrypted communication.
+* Authenticate users before or during the handshake.
+* Set up proper **rate limiting** and **timeout handling**.
+
+---
+
+✅ Summary
+
+| Concept       | Value                                  |
+| ------------- | -------------------------------------- |
+| Protocol      | Full-duplex over TCP                   |
+| Key Advantage | Real-time, low-latency, 2-way          |
+| Ideal For     | Chat, dashboards, games, notifications |
+| In FastAPI    | Use `@app.websocket()` route           |
+| Secure it     | Use `wss://`, JWT, or header auth      |
+
+---
+
 ### REST/RESTful
 
 * [REST（Representational state transfer） - Wikipedia](https://en.wikipedia.org/wiki/Representational_state_transfer)
