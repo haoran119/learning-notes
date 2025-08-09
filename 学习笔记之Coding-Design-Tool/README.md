@@ -313,73 +313,6 @@ React builds a **virtual DOM tree** in memory. When your data changes, React:
 
 ---
 
-### SOAP
-
-* [SOAP Specifications](https://www.w3.org/TR/soap/)
-    * W3C SOAP page
-* [SOAP - Wikipedia](https://en.wikipedia.org/wiki/SOAP)
-    * SOAP (formerly an acronym for `Simple Object Access Protocol`) is a messaging protocol specification for exchanging structured information in the implementation of web services in computer networks. It uses XML Information Set for its message format, and relies on application layer protocols, most often Hypertext Transfer Protocol (HTTP), although some legacy systems communicate over Simple Mail Transfer Protocol (SMTP), for message negotiation and transmission.
-    * SOAP allows developers to invoke processes running on disparate operating systems (such as Windows, macOS, and Linux) to authenticate, authorize, and communicate using Extensible Markup Language (XML). Since Web protocols like HTTP are installed and running on all operating systems, SOAP allows clients to invoke web services and receive responses independent of language and platforms.
-
-### SMTP
-
-* [Simple Mail Transfer Protocol - Wikipedia](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol)
-    * The Simple Mail Transfer Protocol (SMTP) is an internet standard communication protocol for electronic mail transmission. Mail servers and other message transfer agents use SMTP to send and receive mail messages. User-level email clients typically use SMTP only for sending messages to a mail server for relaying, and typically submit outgoing email to the mail server on port 587 or 465 per RFC 8314. For retrieving messages, IMAP (which replaced the older POP3) is standard, but proprietary servers also often implement proprietary protocols, e.g., Exchange ActiveSync.
-    * SMTP's origins began in 1980, building on concepts implemented on the ARPANET since 1971. It has been updated, modified and extended multiple times. The protocol version in common use today has extensible structure with various extensions for authentication, encryption, binary data transfer, and internationalized email addresses. SMTP servers commonly use the Transmission Control Protocol on port number 25 (for plaintext) and 587 (for encrypted communications).
-* [Sending HTML mail via SMTP part 1 - Article - CodeStore](http://www.codestore.net/store.nsf/unid/EPSD-587VVX?OpenDocument)
-```sh
-HELO JakesDominoApp
-MAIL FROM: jake@jakehowlett.com
-RCPT To: jhowlett@EITS
-DATA
-From: My Self <me@you.com>
-To: A secret list <you@me.com>
-Subject: A simple test
-Mime-Version: 1.0;
-Content-Type: text/html; charset="ISO-8859-1";
-Content-Transfer-Encoding: 7bit;
-
-<html>
-<body>
-<h2>An important link to look at!</h2>
-Here's an <a href="http://www.codestore.net">important link</a>
-</body>
-</html>
-.
-QUIT
-```
-* [HowTo: Send Email from an SMTP Server using the Command Line - ShellHacks](https://www.shellhacks.com/send-email-smtp-server-command-line/)
-```sh
-$ telnet smtp.domain.ext 25
-220 smtp.domain.ext ESMTP Sendmail ?version-number?; ?date+time+gmtoffset?
-> HELO local.domain.name
-250 smtp.domain.ext Hello local.domain.name [xxx.xxx.xxx.xxx], pleased to meet you
-> MAIL FROM: sender@adress.ext
-250 2.1.0 sender@adress.ext... Sender ok
-> RCPT TO: recipient@adress.ext
-250 2.1.5 recipient@adress.ext... Recipient ok
-> DATA
-354 Enter mail, end with "." on a line by itself
-> SUBJECT: Test message
-Hello,
-this is a TEST message,
-please don't reply.
-Thank you.
-> .
-250 2.0.0 ???????? Message accepted for delivery
-> QUIT
-221 2.0.0 server.com closing connection
-```
-* How to fix messy code in HTML email ?
-    * remove `<Content-Transfer-Encoding>7bit</Content-Transfer-Encoding>`
-    * [Setting the HTTP charset parameter](https://www.w3.org/International/articles/http-charset/index)
-    * [Content-Type: text | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/office/developer/exchange-server-2010/aa563067(v=exchg.140))
-    * [Content-Transfer-Encoding | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/office/developer/exchange-server-2010/aa563317(v=exchg.140))
-* How to send email to multiple email address ?
-    * multiple "RCPT TO"
-    * [c# - How to add multiple e-mail recipients in a mail , but send the mail to only a selected few addresses? - Stack Overflow](https://stackoverflow.com/questions/44108487/how-to-add-multiple-e-mail-recipients-in-a-mail-but-send-the-mail-to-only-a-se)
-    * [Simple Mail Transfer Protocol - Wikipedia](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol#SMTP_vs_mail_retrieval)
-
 ### XML
 
 * [学习笔记之XML - 浩然119 - 博客园](https://www.cnblogs.com/pegasus923/p/1998574.html)
@@ -1103,6 +1036,179 @@ def sse_endpoint():
 | **Ideal for** | Logs, metrics, dashboards, alerts, notifications        |
 
 ---
+
+#### SOAP
+
+* [SOAP Specifications](https://www.w3.org/TR/soap/)
+    * W3C SOAP page
+* [SOAP - Wikipedia](https://en.wikipedia.org/wiki/SOAP)
+    * SOAP (formerly an acronym for `Simple Object Access Protocol`) is a messaging protocol specification for exchanging structured information in the implementation of web services in computer networks. It uses XML Information Set for its message format, and relies on application layer protocols, most often Hypertext Transfer Protocol (HTTP), although some legacy systems communicate over Simple Mail Transfer Protocol (SMTP), for message negotiation and transmission.
+    * SOAP allows developers to invoke processes running on disparate operating systems (such as Windows, macOS, and Linux) to authenticate, authorize, and communicate using Extensible Markup Language (XML). Since Web protocols like HTTP are installed and running on all operating systems, SOAP allows clients to invoke web services and receive responses independent of language and platforms.
+* Here’s a clear, modern explanation of **SOAP** — what it is, how it works, and where it’s used.
+
+---
+
+🌐 What is SOAP?
+
+**SOAP** (**S**imple **O**bject **A**ccess **P**rotocol) is a **messaging protocol** that allows applications to exchange structured information over a network.
+It is **XML-based**, **platform-independent**, and **language-neutral**, and it’s often used for communication between distributed systems.
+
+> In short: SOAP is a formal way for applications to talk to each other using XML messages, usually over HTTP or HTTPS.
+
+---
+
+🧠 Key Characteristics
+
+| Feature            | Description                                                                        |
+| ------------------ | ---------------------------------------------------------------------------------- |
+| **Protocol**       | Not tied to HTTP — can use SMTP, TCP, JMS, etc., but HTTP/HTTPS is most common     |
+| **Data format**    | Always XML (with strict structure)                                                 |
+| **Standardized**   | Governed by W3C standards                                                          |
+| **Extensible**     | Supports security, transactions, reliability via additional specifications (WS-\*) |
+| **Strongly typed** | Uses XML Schema (XSD) for strict data validation                                   |
+
+---
+
+📦 SOAP Message Structure
+
+A SOAP message is an **XML document** with a fixed format:
+
+```xml
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <!-- Optional metadata (security tokens, routing info, etc.) -->
+  </soap:Header>
+  <soap:Body>
+    <m:GetWeather xmlns:m="http://example.com/weather">
+      <m:City>London</m:City>
+    </m:GetWeather>
+  </soap:Body>
+</soap:Envelope>
+```
+
+Components
+
+1. **Envelope** – Root element that defines the XML as a SOAP message.
+2. **Header** – Optional metadata (authentication, transaction IDs, etc.).
+3. **Body** – The actual data (request or response).
+4. **Fault** – Error information (inside the body if an error occurs).
+
+---
+
+📜 Service Description: WSDL
+
+SOAP services often publish a **WSDL** (Web Services Description Language) file:
+
+* An XML document describing:
+
+  * Available operations (methods)
+  * Data types
+  * Message formats
+  * Endpoints
+* Clients can use WSDL to auto-generate code to call the service.
+
+---
+
+🆚 SOAP vs REST
+
+| Feature         | SOAP                           | REST                   |
+| --------------- | ------------------------------ | ---------------------- |
+| Transport       | Any (HTTP, SMTP, TCP…)         | Usually HTTP           |
+| Format          | XML only                       | JSON, XML, etc.        |
+| Standardization | Strict (W3C standards)         | Flexible               |
+| Security        | WS-Security (enterprise-grade) | HTTPS + custom methods |
+| Statefulness    | Supports stateful operations   | Usually stateless      |
+| Ease of use     | More complex                   | Simpler                |
+
+---
+
+✅ Advantages
+
+* Strongly defined contract via WSDL
+* Works across many transport protocols
+* Built-in standards for security (WS-Security), transactions, and reliability
+* Language/platform independent
+* Good for enterprise and legacy systems
+
+---
+
+⚠️ Disadvantages
+
+* Verbose XML messages (larger payloads)
+* Higher overhead than REST/JSON
+* Steeper learning curve
+* Less common for modern public APIs
+
+---
+
+📌 Common Use Cases
+
+* **Banking and financial systems**
+* **Enterprise applications** (ERP, CRM)
+* **Telecommunications APIs**
+* **Government data exchange**
+* **Legacy system integrations** (SOAP is still heavily used in older infrastructures)
+
+---
+
+#### SMTP
+
+* [Simple Mail Transfer Protocol - Wikipedia](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol)
+    * The Simple Mail Transfer Protocol (SMTP) is an internet standard communication protocol for electronic mail transmission. Mail servers and other message transfer agents use SMTP to send and receive mail messages. User-level email clients typically use SMTP only for sending messages to a mail server for relaying, and typically submit outgoing email to the mail server on port 587 or 465 per RFC 8314. For retrieving messages, IMAP (which replaced the older POP3) is standard, but proprietary servers also often implement proprietary protocols, e.g., Exchange ActiveSync.
+    * SMTP's origins began in 1980, building on concepts implemented on the ARPANET since 1971. It has been updated, modified and extended multiple times. The protocol version in common use today has extensible structure with various extensions for authentication, encryption, binary data transfer, and internationalized email addresses. SMTP servers commonly use the Transmission Control Protocol on port number 25 (for plaintext) and 587 (for encrypted communications).
+* [Sending HTML mail via SMTP part 1 - Article - CodeStore](http://www.codestore.net/store.nsf/unid/EPSD-587VVX?OpenDocument)
+```sh
+HELO JakesDominoApp
+MAIL FROM: jake@jakehowlett.com
+RCPT To: jhowlett@EITS
+DATA
+From: My Self <me@you.com>
+To: A secret list <you@me.com>
+Subject: A simple test
+Mime-Version: 1.0;
+Content-Type: text/html; charset="ISO-8859-1";
+Content-Transfer-Encoding: 7bit;
+
+<html>
+<body>
+<h2>An important link to look at!</h2>
+Here's an <a href="http://www.codestore.net">important link</a>
+</body>
+</html>
+.
+QUIT
+```
+* [HowTo: Send Email from an SMTP Server using the Command Line - ShellHacks](https://www.shellhacks.com/send-email-smtp-server-command-line/)
+```sh
+$ telnet smtp.domain.ext 25
+220 smtp.domain.ext ESMTP Sendmail ?version-number?; ?date+time+gmtoffset?
+> HELO local.domain.name
+250 smtp.domain.ext Hello local.domain.name [xxx.xxx.xxx.xxx], pleased to meet you
+> MAIL FROM: sender@adress.ext
+250 2.1.0 sender@adress.ext... Sender ok
+> RCPT TO: recipient@adress.ext
+250 2.1.5 recipient@adress.ext... Recipient ok
+> DATA
+354 Enter mail, end with "." on a line by itself
+> SUBJECT: Test message
+Hello,
+this is a TEST message,
+please don't reply.
+Thank you.
+> .
+250 2.0.0 ???????? Message accepted for delivery
+> QUIT
+221 2.0.0 server.com closing connection
+```
+* How to fix messy code in HTML email ?
+    * remove `<Content-Transfer-Encoding>7bit</Content-Transfer-Encoding>`
+    * [Setting the HTTP charset parameter](https://www.w3.org/International/articles/http-charset/index)
+    * [Content-Type: text | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/office/developer/exchange-server-2010/aa563067(v=exchg.140))
+    * [Content-Transfer-Encoding | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/office/developer/exchange-server-2010/aa563317(v=exchg.140))
+* How to send email to multiple email address ?
+    * multiple "RCPT TO"
+    * [c# - How to add multiple e-mail recipients in a mail , but send the mail to only a selected few addresses? - Stack Overflow](https://stackoverflow.com/questions/44108487/how-to-add-multiple-e-mail-recipients-in-a-mail-but-send-the-mail-to-only-a-se)
+    * [Simple Mail Transfer Protocol - Wikipedia](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol#SMTP_vs_mail_retrieval)
 
 #### WebSocket
 
