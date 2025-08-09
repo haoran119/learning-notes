@@ -565,17 +565,13 @@ Thank you.
 * [Hive 千亿级数据倾斜解决方案（好文收藏） (qq.com)](https://mp.weixin.qq.com/s/9IiUa4W3hw_OdXtDcKN6Hg)
 * [《我想进大厂》之分布式事务篇 (qq.com)](https://mp.weixin.qq.com/s/2bSXsY1vBHofv_Xo64Jqdg)
 
-### 负载均衡
+### 负载均衡 LOAD BALANCE
 
 * [详解几种常用负载均衡 (qq.com)](https://mp.weixin.qq.com/s/EhwNPGAvy6WZyqBjhOE-5A)
     * [负载均衡在分布式架构中是怎么玩起来的？ - kingreatwill - 博客园 (cnblogs.com)](https://www.cnblogs.com/kingreatwill/p/7991151.html#/cnblog/works/article/7991151)
-
-### 限流
-
 * [10张图带你彻底搞懂限流、熔断、服务降级 (qq.com)](https://mp.weixin.qq.com/s/YLBXAdNkWntDwe0KU6K0zQ)
-* [阿里云二面：你对限流了解多少？ (qq.com)](https://mp.weixin.qq.com/s/j2iOuH0axVwrQtWFTAnDHQ)
 
-### 微服务 MICROSERVICES
+### 微服务 MICRO SERVICES
 * [一文详解微服务架构 (qq.com)](https://mp.weixin.qq.com/s?__biz=MzU0NDEyODkzMQ==&mid=2247497833&idx=1&sn=523c2d7ba980b5dc875d63a05aca249d&chksm=fb0252a5cc75dbb33a44d0a35b800f63d77cd825824448d2520324fbaa93766a4955932b5ed3&mpshare=1&scene=24&srcid=&sharer_sharetime=1567984356468&sharer_shareid=5ed4a849fa42d9599a974fa8eb45e8fa&key=6d90834972a32f5aea9b3789999c6c33beac57bcbb3a0016d2cabeb03680d5fb0d86ad38c36734ab549cd66318418419f53ce7060d682a9dd79ea9a9eda91c0d565550906820f20bf7e44c0a6cf18c97&ascene=14&uin=MTMzMzc3MjY4MQ%3D%3D&devicetype=Windows+10&version=62060833&lang=en&pass_ticket=tT3maEfznKd3xtVT4L8%2Bl%2B2KKdhrJZ3ERaWEoIpqIMB2I2ssKo%2BTfx0v80L7rMTL)
 * [一份通俗易懂的微服务架构方案！](https://mp.weixin.qq.com/s/R3TzPtII_USNk_tMAhkpdw)
     * https://www.cnblogs.com/skabyy/p/11396571.html
