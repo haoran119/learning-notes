@@ -590,6 +590,113 @@ Thank you.
 
 ### Network communication
 
+#### gRPC
+
+* Here’s a clear introduction to **gRPC** — what it is, why it’s used, and where it shines.
+
+---
+
+🌐 What is **gRPC**?
+
+**gRPC** (**g**oogle **R**emote **P**rocedure **C**alls) is an **open-source, high-performance** framework for **Remote Procedure Calls**.
+It allows you to define services and methods in a `.proto` file (using **Protocol Buffers**) and automatically generate strongly-typed client and server code in many languages.
+
+> In short: it lets two programs talk to each other like calling functions locally, but across a network.
+
+---
+
+🧠 Key Features
+
+| Feature                    | Description                                                       |
+| -------------------------- | ----------------------------------------------------------------- |
+| **Protocol Buffers**       | Compact, binary serialization format for speed and efficiency     |
+| **HTTP/2 Transport**       | Multiplexing, header compression, flow control                    |
+| **Strong Typing**          | Compile-time type checking between client & server                |
+| **Multi-language Support** | Python, Go, Java, C#, C++, Node.js, Ruby, PHP, and more           |
+| **Streaming Support**      | Supports 4 interaction patterns (see below)                       |
+| **Bi-directional**         | Server and client can both send messages over a single connection |
+
+---
+
+🔄 Communication Patterns
+
+1. **Unary RPC** — one request, one response (like a normal function call)
+2. **Server Streaming** — client sends one request, server streams multiple responses
+3. **Client Streaming** — client streams multiple requests, server responds once
+4. **Bi-directional Streaming** — both sides send and receive messages in real time
+
+---
+
+📜 Example `.proto` Definition
+
+```proto
+syntax = "proto3";
+
+service Greeter {
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+}
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloReply {
+  string message = 1;
+}
+```
+
+---
+
+🚀 Workflow
+
+1. **Define** service and messages in `.proto`
+2. **Generate** server & client code with `protoc`
+3. **Implement** server logic
+4. **Call** the server methods from clients like local functions
+
+---
+
+🆚 gRPC vs REST
+
+| Feature          | gRPC                      | REST                  |
+| ---------------- | ------------------------- | --------------------- |
+| Transport        | HTTP/2                    | HTTP/1.1 (usually)    |
+| Data format      | Binary (Protocol Buffers) | Text (JSON, XML)      |
+| Performance      | Faster                    | Slower for large data |
+| Typing           | Strongly typed            | Weakly typed (JSON)   |
+| Streaming        | ✅ Built-in                | ❌ Not native          |
+| Browser friendly | Needs gRPC-Web proxy      | Directly supported    |
+
+---
+
+📦 Common Use Cases
+
+* **Microservice communication** (low latency, high throughput)
+* **Real-time apps** (chat, gaming, live dashboards)
+* **IoT device control**
+* **Streaming APIs** (logs, telemetry)
+* **Polyglot systems** where services are written in different languages
+
+---
+
+✅ Benefits
+
+* High performance and efficiency
+* Strongly typed contracts
+* Easy cross-language communication
+* Supports streaming and advanced interaction patterns
+* Built-in authentication, TLS encryption
+
+---
+
+⚠️ Considerations
+
+* Not ideal for direct browser clients without **gRPC-Web** or HTTP/JSON proxy
+* Requires `.proto` file management and regeneration when APIs change
+* Debugging binary data is less human-friendly than JSON
+
+---
+
 #### HTTP/2
 
 * Let's explain **HTTP/2** in a clear, concise, and practical way — especially in contrast to **HTTP/1.1**, which it's designed to improve.
