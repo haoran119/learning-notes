@@ -521,7 +521,7 @@ React builds a **virtual DOM tree** in memory. When your data changes, React:
 * [最近我学到的ABTest知识](https://mp.weixin.qq.com/s/gSxhO9eDtoGLWjwJazp4DA)
 * [小团队中微服务的可怕之处](https://mp.weixin.qq.com/s/Df21LGRj60m98fN0PJLGVA)
 
-### Network communication
+### NETWORK COMMUNICATION
 
 #### gRPC
 
