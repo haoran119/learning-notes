@@ -2441,6 +2441,91 @@ A Copilot-like AI can:
             * Replace user with your username and remote_host with the server's address.
     * If everything is set up correctly, you should be able to connect to the remote server without being prompted for a password.
 
+#### Canary releases
+
+* **Canary releases** are a **progressive deployment strategy** used in software engineering to reduce the risk of introducing new versions of software to production. Instead of deploying a new version to all users at once, a **canary release rolls it out gradually** to a small subset of users first.
+
+---
+
+🐤 Why it's called "Canary"?
+
+It’s inspired by the **“canary in a coal mine”** — miners used canaries to detect toxic gases. If the canary died, they knew the environment was unsafe. Similarly, if a software bug affects only a small group of users, it can be fixed before a full rollout.
+
+---
+
+✅ How Canary Releases Work:
+
+1. **Deploy new version** to a small group of users (e.g., 1%).
+2. **Monitor** system metrics (errors, latency, usage).
+3. If everything looks good:
+
+   * Gradually increase traffic to the new version (e.g., 5%, 10%, 25%, 100%).
+4. If issues are detected:
+
+   * Roll back the canary version and route traffic back to the stable one.
+
+---
+
+🧰 Tools That Support Canary Releases
+
+🔹 **Kubernetes + Istio / Linkerd / Argo Rollouts**
+
+* Use service mesh or controllers to route traffic percentage-wise.
+* Example: 5% of traffic goes to v2, 95% to v1.
+
+🔹 **AWS App Mesh / ECS / Lambda**
+
+* Native support for canary deployments with automatic rollback.
+
+🔹 **Feature Flag Platforms**
+
+* e.g., LaunchDarkly, Unleash, or homegrown toggles.
+* Let you enable features for a segment of users without redeploying.
+
+🔹 **CI/CD Pipelines**
+
+* GitLab, GitHub Actions, Spinnaker, ArgoCD, etc., often support canary stages.
+
+---
+
+🧪 Example in Kubernetes (using Istio):
+
+```yaml
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+spec:
+  hosts:
+  - my-app.example.com
+  http:
+  - route:
+    - destination:
+        host: my-app
+        subset: v1
+      weight: 90
+    - destination:
+        host: my-app
+        subset: v2
+      weight: 10
+```
+
+---
+
+🟢 Benefits
+
+* Reduces blast radius of failures.
+* Enables real-world testing under production traffic.
+* Easier rollback if something breaks.
+
+---
+
+🔴 Risks & Challenges
+
+* Monitoring and alerting must be strong.
+* Canary users may experience instability.
+* Complex traffic routing logic or infrastructure might be required.
+
+---
+
 #### [GitHub](https://github.com/)
 
 * [在Github上，怎么写出教科书级别的readme](https://mp.weixin.qq.com/s/xF2hznI0nPHTvwh5_bzRAQ)
