@@ -1707,6 +1707,245 @@ Yes! Many people use **both together**:
 * ChatGPT is a free-to-use AI system. Use it for engaging conversations, gain insights, automate tasks, and witness the future of AI, all in one place.
 * [ChatGPT Cheat Sheet for Beginners | Superhuman](https://www.superhuman.ai/c/cheat-sheet-beginners?utm_source=www.joinsuperhuman.ai&utm_medium=newsletter)
 
+#### [Cursor](https://cursor.com/en)
+
+* The AI Code Editor
+* Built to make you extraordinarily productive, Cursor is the best way to code with AI.
+* Here’s an introduction to **Cursor**—the AI-powered code editor—detailing what makes it stand out and why developers are flocking to it:
+
+---
+
+What Is Cursor?
+
+**Cursor** is an AI-first integrated development environment (IDE) built on top of Visual Studio Code by **Anysphere Inc** ([维基百科][1]). Designed to make developers “extraordinarily productive,” Cursor embeds advanced AI capabilities deeply into the coding workflow ([thefrontendarchitect.com][2]).
+
+---
+
+Core Features & Highlights
+
+1. **AI-Powered Coding — “Tab, Tab, Tab”**
+
+Cursor offers predictive multi-line edits—just press **Tab** to let the editor complete blocks of code by understanding the context ([Cursor][3]).
+
+2. **Deep Codebase Awareness**
+
+It comprehends and navigates your entire project. You can ask questions about your codebase, reference files, and even insert model-generated snippets with a click ([Cursor][3], [Bind AI IDE][4]).
+
+3. **Natural Language Editing**
+
+Cursor allows you to manipulate code using natural language. You can update whole classes or functions just by typing plain instructions—no manual syntax needed ([Cursor][3]).
+
+4. **Familiar & Customizable Interface**
+
+As a fork of VS Code, Cursor supports all your existing extensions, themes, and keybindings—making it easy to switch ([Cursor][3]).
+
+5. **Privacy-First Design**
+
+Cursor is **SOC 2 certified** and offers a **Privacy Mode**—so your code isn’t stored remotely unless you explicitly allow it ([Cursor][3]).
+
+6. **Agent-Driven Workflow**
+
+With **Agent Mode**, Cursor goes beyond suggestions:
+
+* Analyzes project structure
+* Executes terminal commands
+* Manages files
+* Chains up to 25 tool calls automatically—all from within the editor ([知乎专栏][5], [CSDN博客][6]).
+
+7. **Command-Line Extensions**
+
+Cursor also offers a CLI tool you can use in terminals or CI/CD workflows to automate docs, code reviews, or even custom coding workflows ([Cursor][7]).
+
+8. **Bugbot for AI-Empowered Debugging**
+
+Recently, Cursor introduced **Bugbot**, a GitHub-integrated debugging assistant that flags potential logic and security bugs in AI-generated code ([wired.com][8]).
+
+---
+
+Adoption & Industry Recognition
+
+* As of 2025, **Cursor’s parent company, Anysphere**, reached nearly **\$500M ARR** and boasts a **\$9B valuation** ([维基百科][9]).
+* Cursor is widely used across tech major companies like **Stripe, OpenAI, Shopify, Spotify**, and others—earning the AI coding trend label "vibe coding" ([ft.com][10]).
+* Notably, **Amazon** is evaluating internal deployment of Cursor—despite having its own in-house AI tools—highlighting Cursor’s performance and team productivity edge ([Business Insider][11]).
+
+---
+
+Summary Table
+
+| Feature                | Description                                                               |
+| ---------------------- | ------------------------------------------------------------------------- |
+| **Base Platform**      | Fork of VS Code; compatible with extensions                               |
+| **Key Strengths**      | Predictive autocomplete, natural-language coding, deep code understanding |
+| **Agent Mode**         | Executes multi-step tasks (commands, file edits, etc.)                    |
+| **Privacy & Security** | SOC 2 certified; Privacy Mode prevents unintentional code upload          |
+| **CLI Support**        | Enables automation of tasks like docs generation or code auditing         |
+| **New Addition**       | Bugbot for validating AI-generated code                                   |
+| **Adoption**           | High uptake in startups and enterprise; \$9B valuation                    |
+
+---
+
+Cursor is redefining developer workflows by blending the best of traditional IDEs with advanced AI assistance—letting you code faster, smarter, and more securely.
+
+* [ft.com](https://www.ft.com/content/a7b34d53-a844-4e69-a55c-b9dee9a97dd2?utm_source=chatgpt.com)
+* [wired.com](https://www.wired.com/story/cursor-releases-new-ai-tool-for-debugging-code?utm_source=chatgpt.com)
+
+[1]: https://en.wikipedia.org/wiki/Cursor_%28code_editor%29?utm_source=chatgpt.com "Cursor (code editor) - Wikipedia"
+[2]: https://thefrontendarchitect.com/guide-to-cursor-ai-code-editor/?utm_source=chatgpt.com "Guide to Cursor (AI Code Editor) - The Frontend Architect"
+[3]: https://cursor.com/?utm_source=chatgpt.com "Cursor - The AI Code Editor"
+[4]: https://blog.getbind.co/2024/08/28/what-is-cursor-ai-code-editor-who-is-best-for/?utm_source=chatgpt.com "What Is Cursor AI Code Editor? Who is it best for? – Bind AI IDE"
+[5]: https://zhuanlan.zhihu.com/p/1933179101969089751?utm_source=chatgpt.com "AI Coding IDE 介绍：Cursor 的入门指南 - 知乎"
+[6]: https://blog.csdn.net/ST_LUOTY/article/details/149985421?utm_source=chatgpt.com "【AI智能编程】Cursor IDE工具学习 - CSDN博客"
+[7]: https://cursor.com/cli?utm_source=chatgpt.com "Cursor CLI | Cursor - The AI Code Editor"
+[8]: https://www.wired.com/story/cursor-releases-new-ai-tool-for-debugging-code?utm_source=chatgpt.com "Cursor's New Bugbot Is Designed to Save Vibe Coders From Themselves"
+[9]: https://en.wikipedia.org/wiki/Anysphere_%28company%29?utm_source=chatgpt.com "Anysphere (company)"
+[10]: https://www.ft.com/content/a7b34d53-a844-4e69-a55c-b9dee9a97dd2?utm_source=chatgpt.com "Maker of AI 'vibe coding' app Cursor hits $9bn valuation"
+[11]: https://www.businessinsider.com/amazon-deploy-cursor-employee-interest-spikes-ai-coding-2025-6?utm_source=chatgpt.com "Amazon is in talks to roll out AI coding assistant Cursor internally as employee interest spikes"
+
+---
+
+* Here's a clear comparison between **Cursor** and **GitHub Copilot Agent Mode** (a.k.a. Copilot Workspace or Copilot Chat):
+
+---
+
+⚔️ Cursor vs Copilot Agent Mode (for FastAPI/KYC Backend)
+
+| Feature                      | **Cursor**                                                               | **GitHub Copilot (Agent Mode)**                              |
+| ---------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------ |
+| 🧠 **AI Model**              | GPT-4 (OpenAI) or Claude 3                                               | GPT-4 (fine-tuned by GitHub)                                 |
+| 🧵 **Context awareness**     | ✅ Full-project context, file-aware                                       | ✅ Partial, good with single file or PR context               |
+| 🤖 **Agent Workflow**        | ✅ Built-in autonomous agent (auto-creates files, routes, test scaffolds) | ✅ “Copilot Workspace” lets it plan, edit, explain in steps   |
+| 🪄 **Inline Coding**         | ✅ Yes, smart autocomplete + refactors                                    | ✅ Yes, strong completion + refactors                         |
+| 🗂️ **Multi-file Reasoning** | ✅ Excellent (especially for FastAPI + SQLModel-style projects)           | ⚠️ Limited unless using Copilot Workspace manually           |
+| ⚙️ **FastAPI Templates**     | ✅ Can create full API scaffolds with routes, schemas, deps               | ✅ Autocompletes well, but less agentic across multiple files |
+| 🔄 **Code Search & Edit**    | ✅ GPT-powered “Ask Anything” in full repo                                | ❌ Not full repo-wide without manual prompt                   |
+| ⚡ **Speed**                  | ⚡ Fast (local + cloud mode)                                              | 🐢 Workspace mode can be slower on large repos               |
+| 🧪 **Unit test generation**  | ✅ Yes (even full test modules)                                           | ✅ Yes, via inline prompt                                     |
+| 📄 **Prompt flexibility**    | Full natural-language editor + assistant chat                            | Editor chat or side-panel Copilot Chat                       |
+| 💻 **Local Dev Integration** | Custom editor (VSCode fork)                                              | Native VSCode / JetBrains plugin                             |
+| 🔐 **Privacy**               | Local code is processed by OpenAI/Anthropic                              | Data goes to GitHub/Microsoft (encrypted)                    |
+| 💰 **Pricing**               | Free + Paid (proprietary editor)                                         | Paid (via GitHub Copilot plan)                               |
+
+---
+
+👇 Recommended for You: **Cursor**
+
+As a **backend developer using FastAPI for KYC**, you’ll benefit from:
+
+✅ Full-project understanding
+✅ Multi-file FastAPI scaffolding
+✅ Schema/CRUD/model generation from plain text
+✅ Agent-style workflows like “build a KYC API with ID upload and verification endpoints”
+
+For example, in Cursor you can type:
+
+> “Create a FastAPI route for uploading a PDF and extracting ID data. Use Pydantic for validation and return structured JSON.”
+
+It will generate:
+
+* The route
+* The schema
+* The controller logic
+* Even `test_kyc_upload.py` if you ask
+
+---
+
+🚀 Suggested Stack for You
+
+* ✅ **Editor**: [Cursor](https://cursor.sh) for AI-native coding
+* ✅ **Backend**: FastAPI + SQLModel or SQLAlchemy
+* ✅ **Frontend**: React + Clerk (you're already using it)
+* ✅ **Auth**: Clerk JWT + FastAPI auth deps
+* ✅ **AI** (optional): Use `uv` or `poetry` to manage dependencies cleanly
+
+---
+
+🔚 TL;DR
+
+| Use Case                    | Use Cursor If...                   | Use Copilot If...                                           |
+| --------------------------- | ---------------------------------- | ----------------------------------------------------------- |
+| Full backend scaffolding    | ✅ Yes — Cursor is faster + smarter | ❌ Copilot isn’t agentic yet                                 |
+| Inline coding help          | ✅ Both are good                    | ✅ Copilot is solid for this                                 |
+| Multi-file refactor         | ✅ Cursor wins here                 | ⚠️ Copilot requires workarounds                             |
+| Privacy-sensitive corp code | ⚠️ Check OpenAI terms              | ✅ GitHub Copilot can be restricted with enterprise settings |
+
+---
+
+* Here’s a detailed comparison between **Cursor** and **Kiro**—two leading AI-powered IDEs—to help you decide which may be the better fit for your development workflow:
+
+---
+
+Overview
+
+**Cursor**
+
+* An AI-native IDE (a fork of VS Code) developed by **Anysphere** ([Wikipedia][1]).
+* Designed for real-time, context-aware code completion, smart refactoring, inline AI chat, and full project understanding ([DEV Community][2]).
+* Offers strong development productivity, used widely among startups and solo developers ([Financial Times][3]).
+
+**Kiro**
+
+* An AI IDE developed by **AWS/Amazon**, focused on **spec-driven development** and structured workflows ([Kiro][4]).
+* Emphasizes planning, architecture, task breakdown, and agentic workflows—not just code generation ([Kiro][4]).
+
+---
+
+Feature-by-Feature Comparison
+
+| Feature                         | **Cursor**                                                                                                  | **Kiro**                                                                                                                               |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **Core Approach**               | Chat-first “vibe coding”: AI assists interactively, context-aware                                           | Spec-driven: transforms prompts into requirements, design, and task breakdowns                                                         |
+| **Code Autocomplete**           | Excellent—smooth, multi-line predictions like GitHub Copilot ([aicodingtools.blog][5])                      | Basic—slower and needs improvement ([aicodingtools.blog][5], [DEV Community][6])                                                       |
+| **Project-Wide Reasoning**      | Strong—full codebase indexing and AI-assisted chat for queries/refactoring ([Wikipedia][1], [The Verge][7]) | Robust—structured design via specs and hooks, but less smooth on inline coding                                                         |
+| **Automation / Agent Hooks**    | Manual—developers prompt for actions like tests or docs                                                     | Built-in agent hooks auto-generate docs, run tests, and enforce workflows ([Kiro][4], [DEV Community][2])                              |
+| **Target Audience**             | Indie developers, startups, AI hackers ([DEV Community][8], [Financial Times][3])                           | Enterprise teams, complex systems, regulated environments ([DEV Community][6], [typs.dev][9])                                          |
+| **Speed & Productivity**        | Extremely fast and smooth for daily coding tasks ([aicodingtools.blog][5], [Financial Times][3])            | Efficient for long-term planning and structure; less seamless for rapid coding                                                         |
+| **Cloud / Context Integration** | Platform-agnostic; can use models like GPT‑4, Claude, Gemini ([DEV Community][2], [The Verge][7])           | Deep AWS integration likely, with future support for diagrams and multi-modal input ([Business Insider][10], [The Times of India][11]) |
+
+---
+
+When to Use Which?
+
+* **Use Cursor if you want:**
+
+  * Fast, flexible coding with AI autocomplete.
+  * Real-time assistance for bug fixes, refactoring, and chat queries.
+  * An intuitive, lightweight editor tailored to rapid iteration and product building.
+
+* **Use Kiro if you want:**
+
+  * Structured, spec-first project development with architecture planning.
+  * Automated documentation, testing, and workflow enforcement via AI agents.
+  * Enterprise-ready workflows with auditability, standards, and long-term maintainability.
+
+---
+
+Insights & Industry Context
+
+* Cursor has exploded in popularity—valued around **\$9 billion**, with massive usage across companies like OpenAI, Spotify, and Stripe ([Financial Times][3], [DEV Community][2], [DEV Community][8], [DEV Community][6], [aicodingtools.blog][5], [Kiro][4]).
+* Kiro, in preview as of mid‑2025, is positioned for enterprise adoption—promising structured AI development with spec-driven workflows ([Vuink.com][12]).
+
+---
+
+Bottom Line
+
+* **Cursor** = supreme for **speed, flexibility, and vibe coding**.
+* **Kiro** = ideal for **structured engineering workflows, enterprise collaboration, and maintainable codebases**.
+
+[1]: https://en.wikipedia.org/wiki/Cursor_%28code_editor%29?utm_source=chatgpt.com "Cursor (code editor)"
+[2]: https://dev.to/aws-builders/kiro-vs-cursor-how-amazons-ai-ide-is-redefining-developer-productivity-3eg8?utm_source=chatgpt.com "Kiro vs Cursor: How Amazon’s AI IDE Is Redefining Developer ..."
+[3]: https://www.ft.com/content/a7b34d53-a844-4e69-a55c-b9dee9a97dd2?utm_source=chatgpt.com "Maker of AI 'vibe coding' app Cursor hits $9bn valuation"
+[4]: https://kiro.dev/?utm_source=chatgpt.com "Kiro: The AI IDE for prototype to production"
+[5]: https://aicodingtools.blog/en/kiro/kiro-vs-cursor?utm_source=chatgpt.com "Kiro vs Cursor: The Ultimate AI IDE Comparison Guide"
+[6]: https://dev.to/czmilo/kiro-vs-cursor-the-ultimate-ai-ide-comparison-guide-4ilh?utm_source=chatgpt.com "Kiro vs Cursor: The Ultimate AI IDE Comparison Guide"
+[7]: https://www.theverge.com/decoder-podcast-with-nilay-patel/715267/anysphere-ceo-michael-truell-cursor-ai-automate-programming-interview?utm_source=chatgpt.com "Why tech is racing to adopt AI coding"
+[8]: https://dev.to/alifar/cursor-vs-kiro-the-ai-ide-battle-thats-just-getting-started-2i55?utm_source=chatgpt.com "Cursor vs Kiro: The AI IDE Battle That’s Just Getting Started"
+[9]: https://typs.dev/blog/amazon-kiro-vs-cursor?utm_source=chatgpt.com "Amazon’s Kiro: The Enterprise‑Ready Cursor Killer? | Ali Shan"
+[10]: https://www.businessinsider.com/amazon-kiro-project-ai-agents-software-coding-2025-5?utm_source=chatgpt.com "Amazon is working on a secret project called 'Kiro,' a new tool that uses AI agents to streamline software coding"
+[11]: https://timesofindia.indiatimes.com/technology/tech-news/why-amazon-may-ditch-its-own-ai-coding-assistant-for-cursor-that-ceo-andy-jassy-says-is-behind-explosion-of-coding-agents/articleshow/121618375.cms?utm_source=chatgpt.com "Why Amazon may ditch its own AI coding assistant for Cursor that CEO Andy Jassy says is behind explosion of coding agents"
+[12]: https://vuink.com/post/nvpbqvatgbbyf-d-doybt/en/kiro/kiro-vs-cursor?utm_source=chatgpt.com "Kiro vs Cursor: The Ultimate AI IDE Comparison Guide"
+
+---
+
 #### [GitHub Copilot](https://github.com/features/copilot)
 
 * [GitHub Copilot Series - YouTube](https://www.youtube.com/playlist?list=PLj6YeMhvp2S5_hvBl2SE-7YCHYlLQ0bPt)
