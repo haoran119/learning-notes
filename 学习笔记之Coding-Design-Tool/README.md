@@ -3114,6 +3114,7 @@ curl -i https://api.com      # Include response headers
 ```bash
 curl -x http://proxy.com:8080 https://api.com
 curl -x http://user:pass@proxy.com:8080 https://api.com
+curl --proxy http://proxy.example.com:8080 --proxy-user test@test.com:test https://www.google.com
 ```
 
 ---
