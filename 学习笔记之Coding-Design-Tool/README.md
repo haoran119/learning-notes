@@ -2350,6 +2350,85 @@ A Copilot-like AI can:
 
 ---
 
+#### [NotebookLM](https://notebooklm.google.com/)
+
+**NotebookLM** is a note-taking and research tool by **Google**, built on top of its **Gemini** (formerly Bard) large language model. It’s designed to help users deeply understand and interact with their own content — like research notes, documents, or PDFs — using AI.
+
+---
+
+🧠 What is NotebookLM?
+
+**NotebookLM = Notebook + AI-powered Research Assistant**
+
+It allows you to:
+
+* Upload your **own documents** (Google Docs, PDFs, copied text, etc.)
+* Ask questions **based on those documents**
+* Automatically generate **summaries**, **explanations**, **key points**, **bibliographies**, etc.
+* Keep the context focused on **your source materials**
+
+---
+
+🔧 Key Features
+
+| Feature                                                                             | Description                                                                                     |
+| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| **Custom knowledge grounding**                                                      | The AI answers based *only* on your uploaded sources (no hallucinations from the open internet) |
+| **Document uploads**                                                                | Accepts Google Docs, PDFs, text                                                                 |
+| **Notebook system**                                                                 | Organize multiple documents into themed notebooks                                               |
+| **Summarize & explain**                                                             | Auto-generates summaries, FAQs, glossaries                                                      |
+| **Citation-based answers**                                                          | Every answer shows **sources and citations**                                                    |
+| **Ask me anything**                                                                 | You can query your notes like:                                                                  |
+| “What were the main themes in Chapter 3?” or “Compare the tone of these two papers” |                                                                                                 |
+
+---
+
+🌐 How to Access NotebookLM
+
+* 🔗 **Website**: [https://notebooklm.google.com](https://notebooklm.google.com)
+* 🧪 **Currently in experimental / early access** (as of 2025)
+* 🌍 Available in select countries (including the U.S.)
+* 📧 You may need to **join the waitlist or get invited** (especially for some features)
+
+---
+
+🧑‍💻 Use Cases
+
+| Use Case                     | How NotebookLM Helps                                    |
+| ---------------------------- | ------------------------------------------------------- |
+| **Academic research**        | Summarize papers, extract key ideas, compare authors    |
+| **Writing books or reports** | Organize research materials, auto-generate content      |
+| **Studying**                 | Turn readings into flashcards or Q\&A                   |
+| **Meeting notes**            | Upload transcripts, ask for action items or decisions   |
+| **Legal / business docs**    | Extract clauses, find discrepancies, generate summaries |
+
+---
+
+🆚 Comparison to Other Tools
+
+| Tool                                       | Strengths                                          | Weaknesses                                     |
+| ------------------------------------------ | -------------------------------------------------- | ---------------------------------------------- |
+| **ChatGPT + file search**                  | More flexible, multi-modal, code & tool support    | Requires manual prompting for summarization    |
+| **NotebookLM**                             | Deep document-specific insights, citation-friendly | No web browsing, fewer external tools          |
+| **Microsoft Copilot**                      | Integrated with Office docs                        | Less focused on research-style exploration     |
+| **PDF AI tools (e.g., Humata, Claude.ai)** | Simple Q\&A on PDFs                                | Often lack multi-doc organization or citations |
+
+---
+
+🚀 Bonus: You Could Use ChatGPT Similarly
+
+Even without NotebookLM, you can upload your documents to ChatGPT and ask:
+
+> “Summarize this research paper and explain the methodology.”
+
+Or:
+
+> “What does this clause mean in plain English?”
+
+ChatGPT (with tools enabled) can process multi-doc files, compare sections, and generate high-level insights, similar to NotebookLM — and with broader flexibility (code, web, image, etc.).
+
+---
+
 ### CI / CD / DevOps
 
 * Continuous integration（CI）
@@ -3582,85 +3661,6 @@ $ ssh my_id@server.org
         ```
     * If you use an SSH key for logging in, you can add a key after you have saved the tunnel.
     * Now, you could access server.org:1234 on your local laptop at localhost:1234
-
-#### [NotebookLM](https://notebooklm.google.com/)
-
-**NotebookLM** is a note-taking and research tool by **Google**, built on top of its **Gemini** (formerly Bard) large language model. It’s designed to help users deeply understand and interact with their own content — like research notes, documents, or PDFs — using AI.
-
----
-
-🧠 What is NotebookLM?
-
-**NotebookLM = Notebook + AI-powered Research Assistant**
-
-It allows you to:
-
-* Upload your **own documents** (Google Docs, PDFs, copied text, etc.)
-* Ask questions **based on those documents**
-* Automatically generate **summaries**, **explanations**, **key points**, **bibliographies**, etc.
-* Keep the context focused on **your source materials**
-
----
-
-🔧 Key Features
-
-| Feature                                                                             | Description                                                                                     |
-| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| **Custom knowledge grounding**                                                      | The AI answers based *only* on your uploaded sources (no hallucinations from the open internet) |
-| **Document uploads**                                                                | Accepts Google Docs, PDFs, text                                                                 |
-| **Notebook system**                                                                 | Organize multiple documents into themed notebooks                                               |
-| **Summarize & explain**                                                             | Auto-generates summaries, FAQs, glossaries                                                      |
-| **Citation-based answers**                                                          | Every answer shows **sources and citations**                                                    |
-| **Ask me anything**                                                                 | You can query your notes like:                                                                  |
-| “What were the main themes in Chapter 3?” or “Compare the tone of these two papers” |                                                                                                 |
-
----
-
-🌐 How to Access NotebookLM
-
-* 🔗 **Website**: [https://notebooklm.google.com](https://notebooklm.google.com)
-* 🧪 **Currently in experimental / early access** (as of 2025)
-* 🌍 Available in select countries (including the U.S.)
-* 📧 You may need to **join the waitlist or get invited** (especially for some features)
-
----
-
-🧑‍💻 Use Cases
-
-| Use Case                     | How NotebookLM Helps                                    |
-| ---------------------------- | ------------------------------------------------------- |
-| **Academic research**        | Summarize papers, extract key ideas, compare authors    |
-| **Writing books or reports** | Organize research materials, auto-generate content      |
-| **Studying**                 | Turn readings into flashcards or Q\&A                   |
-| **Meeting notes**            | Upload transcripts, ask for action items or decisions   |
-| **Legal / business docs**    | Extract clauses, find discrepancies, generate summaries |
-
----
-
-🆚 Comparison to Other Tools
-
-| Tool                                       | Strengths                                          | Weaknesses                                     |
-| ------------------------------------------ | -------------------------------------------------- | ---------------------------------------------- |
-| **ChatGPT + file search**                  | More flexible, multi-modal, code & tool support    | Requires manual prompting for summarization    |
-| **NotebookLM**                             | Deep document-specific insights, citation-friendly | No web browsing, fewer external tools          |
-| **Microsoft Copilot**                      | Integrated with Office docs                        | Less focused on research-style exploration     |
-| **PDF AI tools (e.g., Humata, Claude.ai)** | Simple Q\&A on PDFs                                | Often lack multi-doc organization or citations |
-
----
-
-🚀 Bonus: You Could Use ChatGPT Similarly
-
-Even without NotebookLM, you can upload your documents to ChatGPT and ask:
-
-> “Summarize this research paper and explain the methodology.”
-
-Or:
-
-> “What does this clause mean in plain English?”
-
-ChatGPT (with tools enabled) can process multi-doc files, compare sections, and generate high-level insights, similar to NotebookLM — and with broader flexibility (code, web, image, etc.).
-
----
 
 #### [PuTTY](https://www.putty.org/)
 
