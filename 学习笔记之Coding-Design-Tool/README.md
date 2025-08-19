@@ -2931,6 +2931,202 @@ Interested in seeing how Clerk compares to Auth0, Firebase Auth, or building you
 [15]: https://clerk.com/docs/account-portal/overview?utm_source=chatgpt.com "Account Portal overview - Clerk"
 [16]: https://clerk.com/expo-authentication?utm_source=chatgpt.com "Expo Authentication - clerk.com"
 
+#### [curl](https://curl.se/)
+
+* command line tool and library for transferring data with URLs (since 1998)
+* [curl - Download](https://curl.se/download.html)
+* [curl/curl: A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS. libcurl offers a myriad of powerful features](https://github.com/curl/curl)
+* 🌀 What is `curl`?
+
+`curl` (short for **Client URL**) is a **command-line tool** used to **transfer data** to or from a server using various protocols — most commonly **HTTP** and **HTTPS**.
+
+---
+
+✅ Key Features:
+
+* Supports many protocols: `HTTP`, `HTTPS`, `FTP`, `SFTP`, `SCP`, `SMTP`, `IMAP`, etc.
+* Allows sending **GET**, **POST**, **PUT**, **DELETE**, etc.
+* Can send and receive **headers**, **cookies**, **form data**, and **JSON payloads**.
+* Works in most operating systems (Linux, macOS, Windows).
+
+---
+
+📦 Common Usage Examples:
+
+1. **GET request**
+
+```bash
+curl https://api.example.com/data
+```
+
+2. **POST with JSON**
+
+```bash
+curl -X POST https://api.example.com/create \
+  -H "Content-Type: application/json" \
+  -d '{"name": "Alice", "email": "alice@example.com"}'
+```
+
+3. **Authorization header (JWT token)**
+
+```bash
+curl -H "Authorization: Bearer <your_token>" https://api.example.com/secure
+```
+
+4. **Download a file**
+
+```bash
+curl -O https://example.com/file.zip
+```
+
+5. **Follow redirects**
+
+```bash
+curl -L https://short.url/redirect
+```
+
+---
+
+⚙️ Common Options:
+
+| Option | Description                                   |
+| ------ | --------------------------------------------- |
+| `-X`   | Specify request method (GET, POST, PUT, etc.) |
+| `-H`   | Add request header                            |
+| `-d`   | Send request body data                        |
+| `-L`   | Follow redirects                              |
+| `-o`   | Save output to file                           |
+| `-O`   | Save with original filename                   |
+| `-u`   | Use basic auth (`-u user:password`)           |
+
+---
+
+🧪 Example: Test API with token and payload
+
+```bash
+curl -X POST https://api.example.com/posts \
+  -H "Authorization: Bearer abc123" \
+  -H "Content-Type: application/json" \
+  -d '{"title": "Hello", "content": "World"}'
+```
+
+---
+
+* 🧾 **`curl` Cheatsheet**
+
+🔹 Basic Usage
+
+```bash
+curl https://example.com           # Simple GET request
+curl -L https://bit.ly/abc        # Follow redirects
+```
+
+---
+
+🔹 HTTP Methods
+
+```bash
+curl -X GET https://api.com/resource
+curl -X POST https://api.com/resource
+curl -X PUT https://api.com/resource/123
+curl -X DELETE https://api.com/resource/123
+```
+
+> **Note**: `curl -d` automatically sets `-X POST`, so `-X` is often optional.
+
+---
+
+🔹 Send JSON Data
+
+```bash
+curl -X POST https://api.com/users \
+  -H "Content-Type: application/json" \
+  -d '{"name": "Alice", "email": "alice@example.com"}'
+```
+
+---
+
+🔹 Add Headers
+
+```bash
+curl -H "Authorization: Bearer <token>" \
+     -H "Accept: application/json" \
+     https://api.com/secure
+```
+
+---
+
+🔹 Form Data (like HTML forms)
+
+```bash
+curl -X POST https://api.com/login \
+  -d "username=alice&password=secret"
+```
+
+---
+
+🔹 File Upload
+
+```bash
+curl -X POST https://api.com/upload \
+  -F "file=@path/to/file.jpg"
+```
+
+---
+
+🔹 Download File
+
+```bash
+curl -O https://example.com/file.zip     # Save as file.zip
+curl -o my.zip https://example.com/z    # Save as my.zip
+```
+
+---
+
+🔹 Basic Auth
+
+```bash
+curl -u username:password https://api.com
+```
+
+---
+
+🔹 Save and Use Cookies
+
+```bash
+curl -c cookies.txt https://example.com       # Save cookies
+curl -b cookies.txt https://example.com       # Send cookies
+```
+
+---
+
+🔹 Verbose / Debug
+
+```bash
+curl -v https://api.com      # Verbose output
+curl -i https://api.com      # Include response headers
+```
+
+---
+
+🔹 Proxy
+
+```bash
+curl -x http://proxy.com:8080 https://api.com
+curl -x http://user:pass@proxy.com:8080 https://api.com
+```
+
+---
+
+✅ Bonus: Test an API with JWT
+
+```bash
+curl -X GET https://api.example.com/me \
+  -H "Authorization: Bearer eyJhbGciOi..."
+```
+
+---
+
 #### [Debug Diagnostic Tool](https://www.microsoft.com/en-us/download/details.aspx?id=58210)
 
 * The Debug Diagnostic Tool (DebugDiag) is designed to assist in troubleshooting issues such as hangs, slow performance, memory leaks or memory fragmentation, and crashes in any user-mode process. The tool includes built-in analysis rules focused on Internet Information Services (IIS) applications, web data access components, COM+, SharePoint and related Microsoft technologies.
