@@ -3855,9 +3855,9 @@ Quick start
 Put Mermaid code in a fenced block:
 
 ```mermaid
-flowchart TD
+graph TD
   A[User]
-  B[Frontend (React + Clerk)]
+  B[Frontend]
   C[FastAPI API]
   D[(Postgres)]
   E[(Redis)]
@@ -3880,7 +3880,7 @@ flowchart LR
   step1 -->|yes| ok[Success]
   step1 -->|no| retry{Retry?}
   retry -->|yes| step1
-  retry -->|no| end((End))
+  retry -->|no| end_node((End))
 ```
 
 **Sequence diagram**
