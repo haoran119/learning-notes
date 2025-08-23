@@ -3844,6 +3844,141 @@ print(response.json())
 
 ---
 
+#### [Mermaid](https://mermaid.js.org/)
+
+* Diagramming and charting tool
+* JavaScript based diagramming and charting tool that renders Markdown-inspired text definitions to create and modify diagrams dynamically.
+* Mermaid is a **text‑to‑diagram** syntax you can write inside Markdown code fences to generate diagrams (flowcharts, sequence, class, ER, Gantt, mindmaps, etc.). It’s great for docs, READMEs, and wikis.
+
+Quick start
+
+Put Mermaid code in a fenced block:
+
+```mermaid
+flowchart TD
+  A[User] -->|logs in| B[Frontend (React + Clerk)]
+  B --> C[FastAPI API]
+  C --> D[(Postgres)]
+  C --> E[(Redis)]
+```
+
+Most modern tools (GitHub, GitLab, Obsidian, Notion, VS Code extensions) can render Mermaid. For local preview, install a Mermaid preview extension in VS Code or use the web editor (Mermaid Live).
+
+Common diagram types (mini‑cheatsheet)
+
+**Flowchart**
+
+```mermaid
+flowchart LR
+  start((Start)) --> step1[Do thing]
+  step1 -->|yes| ok[Success]
+  step1 -->|no| retry{Retry?}
+  retry -->|yes| step1
+  retry -->|no| end((End))
+```
+
+**Sequence diagram**
+
+```mermaid
+sequenceDiagram
+  participant U as User
+  participant F as Frontend
+  participant A as API
+  U->>F: Click "Login"
+  F->>A: POST /auth (JWT)
+  A-->>F: 200 OK (session)
+  F-->>U: Logged in
+```
+
+**Class diagram**
+
+```mermaid
+classDiagram
+  class User {
+    +id: UUID
+    +email: string
+    +created_at: datetime
+  }
+  class KycCase {
+    +id: UUID
+    +status: enum
+    +created_at: datetime
+  }
+  User "1" --> "many" KycCase
+```
+
+**State diagram**
+
+```mermaid
+stateDiagram-v2
+  [*] --> Pending
+  Pending --> Reviewing
+  Reviewing --> Approved
+  Reviewing --> Rejected
+  Approved --> [*]
+  Rejected --> [*]
+```
+
+**ER diagram**
+
+```mermaid
+erDiagram
+  USERS ||--o{ KYC_CASES : contains
+  KYC_CASES ||--o{ DOCUMENTS : has
+  USERS {
+    uuid id PK
+    string email
+  }
+  KYC_CASES {
+    uuid id PK
+    uuid user_id FK
+    string status
+  }
+  DOCUMENTS {
+    uuid id PK
+    uuid kyc_case_id FK
+    string type
+  }
+```
+
+**Gantt chart**
+
+```mermaid
+gantt
+  dateFormat  YYYY-MM-DD
+  title  KYC MVP Timeline
+  section Backend
+  API & DB       :a1, 2025-08-23, 7d
+  Auth & RBAC    :a2, after a1, 5d
+  section Frontend
+  UI & Clerk     :b1, 2025-09-05, 8d
+```
+
+**Mindmap**
+
+```mermaid
+mindmap
+  root((KYC System))
+    Backend
+      FastAPI
+      Postgres
+      Redis
+    Frontend
+      React
+      Clerk
+    Ops
+      Docker
+      Railway
+```
+
+Tips
+
+* **Direction**: `TD`, `LR`, `BT`, `RL` control layout direction.
+* **Edges**: `-->` (solid), `-.->` (dotted), `==>` (thick), labels via `|text|`.
+* **Nodes**: `[]` rectangle, `()` rounded, `(())` circle, `{}` diamond, `(( ))` for terminals.
+* **Comments**: `%% comment`.
+* **Theming**: `%%{init: {'theme': 'dark'}}%%` at top of block to set theme.
+
 #### [mRemoteNG](https://mremoteng.org/)
 
 * mRemoteNG is a fork of mRemote: an open source, tabbed, multi-protocol, remote connections manager for Windows. mRemoteNG adds bug fixes and new features to mRemote and allows you to view all of your remote connections in a simple yet powerful tabbed interface.
