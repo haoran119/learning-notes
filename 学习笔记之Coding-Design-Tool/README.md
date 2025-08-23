@@ -45,6 +45,128 @@
 * [三种处理异常的套路](https://mp.weixin.qq.com/s/FeRF6KtJo2LmvA6p1H2ikA)
     * https://dzone.com/articles/good-exception-handling
 
+### Audit Trail
+
+* Here’s a clear introduction to **Audit Trails**, both conceptually and how they apply to software systems:
+
+---
+
+🔎 What is an Audit Trail?
+
+An **audit trail** is a **chronological record of events or actions** taken in a system.
+It captures **who did what, when, and how**, often with before/after details.
+
+Think of it as the **black box flight recorder** for your application or data.
+
+---
+
+🧩 Key Elements
+
+A good audit trail usually records:
+
+* **Who** → the actor (user ID, API key, service)
+* **What** → the action performed (e.g., “updated KYC case #123”)
+* **When** → timestamp (UTC, precise)
+* **Where** → source (IP address, device, microservice)
+* **How** → method or interface used (API, UI, automated job)
+* **Before/After State** → optional but valuable (old vs new values)
+
+---
+
+🛠️ Why Audit Trails Matter
+
+* **Compliance** → Required for regulations (AML/KYC, GDPR, HIPAA, SOX).
+* **Forensics** → Investigate incidents, fraud, or system misuse.
+* **Accountability** → Users and admins know actions are tracked.
+* **Debugging** → Helps developers trace unexpected changes.
+
+---
+
+📊 Example (KYC/AML Context)
+
+When a compliance officer approves a KYC case:
+
+**Audit Entry:**
+
+```json
+{
+  "event_id": "uuid-1234",
+  "timestamp": "2025-08-23T10:15:30Z",
+  "actor": {
+    "user_id": "officer_42",
+    "role": "ComplianceOfficer"
+  },
+  "action": "KYC_APPROVED",
+  "resource": {
+    "type": "KYC_CASE",
+    "id": "case_1009"
+  },
+  "metadata": {
+    "ip": "203.0.113.10",
+    "method": "web-ui"
+  },
+  "changes": {
+    "status": { "old": "REVIEWING", "new": "APPROVED" }
+  }
+}
+```
+
+---
+
+⚙️ How to Implement (FastAPI Example)
+
+1. **Middleware** → capture request metadata (user, IP, route).
+2. **DB Table `audit_logs`**:
+
+   ```sql
+   CREATE TABLE audit_logs (
+     id UUID PRIMARY KEY,
+     timestamp TIMESTAMPTZ NOT NULL,
+     user_id TEXT,
+     action TEXT NOT NULL,
+     resource_type TEXT,
+     resource_id TEXT,
+     details JSONB
+   );
+   ```
+3. **Write Logs** after key events:
+
+   ```python
+   from datetime import datetime
+   import uuid
+
+   async def log_audit(db, user_id, action, resource, changes):
+       await db.execute(
+           """
+           INSERT INTO audit_logs (id, timestamp, user_id, action, resource_type, resource_id, details)
+           VALUES (:id, :ts, :user_id, :action, :rtype, :rid, :details)
+           """,
+           {
+             "id": str(uuid.uuid4()),
+             "ts": datetime.utcnow(),
+             "user_id": user_id,
+             "action": action,
+             "rtype": resource["type"],
+             "rid": resource["id"],
+             "details": changes
+           }
+       )
+   ```
+4. **Immutable Storage** → Consider append-only table or external logging service (e.g., Elasticsearch, Loki, Splunk).
+
+---
+
+✅ Best Practices
+
+* Store timestamps in **UTC**
+* Make logs **append-only** (no silent edits)
+* Ensure **queryability** (index on timestamp, action, resource\_id)
+* Secure logs (encrypt at rest, restrict access)
+* Retention policy (e.g., 7 years for financial compliance)
+* Regular reviews + alerting on suspicious patterns
+
+---
+
 ### CRUD
 
 🧰 What is **CRUD**?
