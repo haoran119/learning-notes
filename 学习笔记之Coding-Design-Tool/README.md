@@ -1210,6 +1210,143 @@ Thank you.
     * [c# - How to add multiple e-mail recipients in a mail , but send the mail to only a selected few addresses? - Stack Overflow](https://stackoverflow.com/questions/44108487/how-to-add-multiple-e-mail-recipients-in-a-mail-but-send-the-mail-to-only-a-se)
     * [Simple Mail Transfer Protocol - Wikipedia](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol#SMTP_vs_mail_retrieval)
 
+#### TLS
+
+* Here’s a clean introduction to **TLS**.
+
+---
+
+🌐 What is TLS?
+
+**TLS** (**Transport Layer Security**) is a **cryptographic protocol** that secures communication over a computer network.
+It provides **confidentiality, integrity, and authentication** for data sent between two parties (e.g., browser ↔ web server).
+
+> It’s the successor to **SSL (Secure Sockets Layer)**. Today, when people say “SSL,” they almost always mean TLS.
+
+---
+
+🔑 What TLS Provides
+
+| Security Goal       | How TLS Achieves It                                                             |
+| ------------------- | ------------------------------------------------------------------------------- |
+| **Encryption**      | Keeps data private (AES, ChaCha20, etc.)                                        |
+| **Authentication**  | Uses digital certificates (X.509) to prove server/client identity               |
+| **Integrity**       | Message Authentication Codes (HMAC) ensure data isn’t tampered with             |
+| **Forward Secrecy** | Ephemeral key exchange (ECDHE) prevents old sessions from being decrypted later |
+
+---
+
+🔁 TLS Handshake (Simplified)
+
+1. **Client Hello** → Browser sends supported algorithms and a random value.
+2. **Server Hello** → Server chooses algorithms and sends its **digital certificate**.
+3. **Certificate Verification** → Client verifies server’s certificate (via CA).
+4. **Key Exchange** → Client & server agree on session keys (e.g., Diffie-Hellman).
+5. **Session Established** → Both sides use the shared key to encrypt/decrypt traffic.
+
+---
+
+📦 TLS in Practice
+
+* **HTTPS = HTTP over TLS**
+  (`https://example.com` means HTTP traffic is encrypted with TLS)
+* Email protocols (IMAP, SMTP, POP3) often use TLS
+* VPNs and secure APIs rely on TLS
+
+---
+
+🆚 TLS vs SSL
+
+| SSL                                         | TLS                         |
+| ------------------------------------------- | --------------------------- |
+| Older (SSL 2.0, 3.0)                        | Modern protocol             |
+| Deprecated & insecure                       | Secure, actively used       |
+| Still colloquially used (“SSL certificate”) | Actual implementation today |
+
+---
+
+✅ Benefits
+
+* Protects against **eavesdropping** (no plaintext traffic)
+* Prevents **man-in-the-middle (MITM) attacks**
+* Builds **user trust** (padlock 🔒 in browser)
+* Mandatory for compliance (PCI DSS, GDPR, HIPAA, etc.)
+
+---
+
+⚠️ Considerations
+
+* Certificates must be issued by a **trusted CA** (e.g., Let’s Encrypt, DigiCert).
+* Expired/misconfigured certificates cause browser errors.
+* Weak ciphers or old TLS versions (e.g., TLS 1.0/1.1) are insecure.
+
+---
+
+📊 TLS Versions
+
+| Version       | Status                                       |
+| ------------- | -------------------------------------------- |
+| TLS 1.0 / 1.1 | Deprecated                                   |
+| TLS 1.2       | Widely used, secure                          |
+| TLS 1.3       | Latest (faster handshake, stronger security) |
+
+---
+
+✅ Summary
+
+* **TLS secures network communication** (used in HTTPS, email, APIs).
+* Provides **encryption, authentication, integrity**.
+* Modern standard: **TLS 1.2+**, ideally **TLS 1.3**.
+* When you see **SSL certificate**, it’s really a **TLS certificate**.
+
+---
+
+* Here’s a simple **TLS handshake diagram** showing the client–server interaction step by step:
+
+---
+
+🔒 TLS 1.2 / 1.3 Handshake (Simplified)
+
+```text
+Client                                Server
+  |                                      |
+  | ---- ClientHello ------------------->|  (supported TLS version, ciphers, random)
+  |                                      |
+  | <--- ServerHello --------------------|  (chosen TLS version, cipher, random)
+  | <--- Certificate --------------------|  (server’s digital certificate, public key)
+  | <--- [ServerKeyExchange]* -----------|  (*if needed: e.g., Diffie-Hellman params)
+  | <--- ServerHelloDone ----------------|
+  |                                      |
+  | ---- [ClientKeyExchange] ----------->|  (client sends key info / public key share)
+  | ---- [ChangeCipherSpec] ------------>|  (client says: switch to encrypted mode)
+  | ---- Finished ---------------------->|  (client proves handshake is complete)
+  |                                      |
+  | <--- [ChangeCipherSpec] -------------|  (server switches to encrypted mode)
+  | <--- Finished -----------------------|  (server proves handshake is complete)
+  |                                      |
+  |     *** Secure TLS Session Established ***
+  |<============ Encrypted Traffic ==================>|
+```
+
+---
+
+🧠 Key Points
+
+* **ClientHello / ServerHello**: Negotiate TLS version and cipher suite.
+* **Certificate**: Server proves its identity with an X.509 certificate.
+* **Key Exchange**: Client & server derive a **shared secret session key**.
+* **ChangeCipherSpec + Finished**: Both confirm they are ready to start encryption.
+* **After handshake**: All data is encrypted with the negotiated session key (AES, ChaCha20, etc.).
+
+---
+
+✅ In **TLS 1.3**, the handshake is shorter (fewer round trips), making it faster and more secure:
+
+* ServerHello often includes the key share immediately.
+* Forward secrecy is mandatory (ephemeral Diffie-Hellman).
+
+---
+
 #### WebSocket
 
 * let’s explain **WebSockets**, especially in comparison to other real-time communication methods like HTTP polling and Server-Sent Events.
