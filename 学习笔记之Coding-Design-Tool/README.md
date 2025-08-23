@@ -3740,6 +3740,110 @@ cat test.json | jq . > new.json
 * https://stedolan.github.io/jq/manual/
 * [学习笔记之jq - 浩然119 - 博客园](https://www.cnblogs.com/pegasus923/p/13845186.html)
 
+#### [Mailchimp](https://mailchimp.com)
+
+📧 What is Mailchimp?
+
+**Mailchimp** is an all-in-one **email marketing** and **marketing automation platform**.
+It helps businesses of all sizes create, send, and analyze **email campaigns**, manage **mailing lists**, and run **automated customer journeys**.
+
+Founded in **2001** (acquired by Intuit in 2021), Mailchimp is one of the most widely used email marketing tools worldwide.
+
+Official site: [https://mailchimp.com](https://mailchimp.com)
+
+---
+
+🚀 Key Features
+
+1. **Email Marketing**
+
+* Drag-and-drop editor for building professional emails
+* Templates for newsletters, promotions, and onboarding
+* A/B testing for subject lines and content
+
+2. **Audience Management**
+
+* Store and segment customer lists
+* Tags, groups, and custom fields for personalization
+* Sign-up forms and integrations with websites/CRMs
+
+3. **Automation**
+
+* Welcome emails for new subscribers
+* Abandoned cart reminders for e-commerce
+* Customer journeys (multi-step automation flows)
+
+4. **Analytics & Insights**
+
+* Open and click-through tracking
+* Campaign reports with dashboards
+* Google Analytics + e-commerce integration
+
+5. **Multi-Channel Marketing**
+
+* Email campaigns
+* SMS marketing
+* Social media ad integration (Facebook, Instagram)
+* Landing page builder
+
+---
+
+💰 Pricing (2025)
+
+* **Free plan** (basic features, limited contacts)
+* **Essentials** (\~\$13/mo) – email templates, A/B testing
+* **Standard** (\~\$20/mo) – automation, customer journeys
+* **Premium** (\~\$350/mo) – advanced segmentation, unlimited audiences
+
+*(Exact pricing depends on contacts and emails sent)*
+
+---
+
+🧑‍💻 For Developers
+
+Mailchimp offers a robust **REST API** that lets you:
+
+* Manage contacts/lists
+* Trigger campaigns
+* Automate customer workflows
+* Integrate with apps (FastAPI, Django, Node.js, etc.)
+
+Example: Add a subscriber with `requests` in Python
+
+```python
+import requests
+import json
+
+API_KEY = "YOUR_API_KEY"
+SERVER_PREFIX = "us21"  # from your API key, e.g., "us21"
+LIST_ID = "YOUR_LIST_ID"
+
+url = f"https://{SERVER_PREFIX}.api.mailchimp.com/3.0/lists/{LIST_ID}/members"
+data = {
+    "email_address": "newuser@example.com",
+    "status": "subscribed"
+}
+
+response = requests.post(
+    url,
+    auth=("anystring", API_KEY),
+    data=json.dumps(data)
+)
+
+print(response.json())
+```
+
+---
+
+✅ Summary
+
+* **Best for**: Businesses that need easy-to-use **email + automation**
+* **Strengths**: Templates, automation, analytics, integrations
+* **Weaknesses**: Pricing increases with contact list size
+* **Alternatives**: SendGrid, HubSpot, ActiveCampaign, Brevo (ex-Sendinblue)
+
+---
+
 #### [mRemoteNG](https://mremoteng.org/)
 
 * mRemoteNG is a fork of mRemote: an open source, tabbed, multi-protocol, remote connections manager for Windows. mRemoteNG adds bug fixes and new features to mRemote and allows you to view all of your remote connections in a simple yet powerful tabbed interface.
