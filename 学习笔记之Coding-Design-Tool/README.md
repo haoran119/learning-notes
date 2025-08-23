@@ -3856,10 +3856,16 @@ Put Mermaid code in a fenced block:
 
 ```mermaid
 flowchart TD
-  A[User] -->|logs in| B[Frontend (React + Clerk)]
-  B --> C[FastAPI API]
-  C --> D[(Postgres)]
-  C --> E[(Redis)]
+  A[User]
+  B[Frontend (React + Clerk)]
+  C[FastAPI API]
+  D[(Postgres)]
+  E[(Redis)]
+
+  A -->|logs in| B
+  B --> C
+  C --> D
+  C --> E
 ```
 
 Most modern tools (GitHub, GitLab, Obsidian, Notion, VS Code extensions) can render Mermaid. For local preview, install a Mermaid preview extension in VS Code or use the web editor (Mermaid Live).
