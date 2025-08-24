@@ -44,7 +44,7 @@
     * https://www.evanjones.ca/ordered-vs-unordered-indexes.html
 * [三种处理异常的套路](https://mp.weixin.qq.com/s/FeRF6KtJo2LmvA6p1H2ikA)
     * https://dzone.com/articles/good-exception-handling
-
+#
 ### Audit Trail
 
 * Here’s a clear introduction to **Audit Trails**, both conceptually and how they apply to software systems:
@@ -3861,6 +3861,113 @@ cat test.json | jq . > new.json
 ```
 * https://stedolan.github.io/jq/manual/
 * [学习笔记之jq - 浩然119 - 博客园](https://www.cnblogs.com/pegasus923/p/13845186.html)
+
+---
+
+🔹 What is `jq`?
+
+* `jq` is a **lightweight command-line JSON processor**.
+* Think of it as **`sed` / `awk` / `grep` for JSON**.
+* It can **parse, filter, map, transform, and pretty-print JSON** directly from the terminal.
+
+---
+
+🔹 Why use it?
+
+* Linux commands often return JSON nowadays (e.g., `curl` from an API, `kubectl`, `aws cli`).
+* Raw JSON is messy. `jq` lets you extract exactly what you need:
+
+  * **Pretty print**: make JSON readable.
+  * **Filter keys**: pick out values by field name.
+  * **Transform**: convert JSON into a different shape.
+  * **Scriptable**: works inside pipes (`|`) with other commands.
+
+---
+
+🔹 Install `jq`
+
+On Ubuntu / WSL:
+
+```bash
+sudo apt update
+sudo apt install -y jq
+```
+
+Verify:
+
+```bash
+jq --version
+```
+
+---
+
+🔹 Basic usage
+
+1. Pretty-print JSON
+
+```bash
+curl -s https://api.github.com/repos/stedolan/jq | jq .
+```
+
+The `.` filter means “output the JSON unchanged, but formatted”.
+
+---
+
+2. Extract a field
+
+```bash
+curl -s https://api.github.com/repos/stedolan/jq | jq .stargazers_count
+```
+
+➡ prints just the star count.
+
+---
+
+3. Extract nested fields
+
+```bash
+jq '.owner.login' file.json
+```
+
+---
+
+4. Work with arrays
+
+```bash
+jq '.[0]' file.json              # first element
+jq '.[].name' file.json          # all `name` fields in the array
+jq '.[] | {id, name}' file.json  # pick multiple fields from each item
+```
+
+---
+
+5. Combine with other tools
+
+```bash
+curl -s https://api.github.com/repos/stedolan/jq \
+ | jq '{name, stars: .stargazers_count, forks}'
+```
+
+➡ outputs only repo name, stars, and forks.
+
+---
+
+🔹 Cheatsheet
+
+* `.` → whole JSON
+* `.key` → get a field
+* `.a.b` → nested field
+* `.[0]` → array element
+* `.[].field` → all elements’ field
+* `select(.field=="value")` → filter objects
+* `map(.field)` → extract array of fields
+
+---
+
+⚡ In short:
+`jq` turns **ugly JSON** into **useful structured output**, right from the shell. It’s indispensable when working with APIs, Docker, Kubernetes, AWS/GCP/Azure CLIs, or log files.
+
+---
 
 #### [Mailchimp](https://mailchimp.com)
 
