@@ -1970,6 +1970,8 @@ Yes! Many people use **both together**:
 
 * The AI Code Editor
 * Built to make you extraordinarily productive, Cursor is the best way to code with AI.
+* [Get Started](https://docs.cursor.com/en/welcome)
+* [Dashboard](https://cursor.com/dashboard?tab=usage)
 * Here’s an introduction to **Cursor**—the AI-powered code editor—detailing what makes it stand out and why developers are flocking to it:
 
 ---
