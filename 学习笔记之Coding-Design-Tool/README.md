@@ -2160,6 +2160,10 @@ Let me know if you’d like a deep dive into specific benchmarks, pricing scenar
 [8]: https://www.theverge.com/news/672705/anthropic-claude-4-ai-ous-sonnet-availability?utm_source=chatgpt.com "Anthropic's Claude 4 AI models are better at coding and reasoning"
 [9]: https://geeknewscentral.com/2025/08/17/anthropic-enables-claude-opus-4-and-4-1-to-end-conversations-in-cases-of-persistently-harmful-or-abusive-interactions/?utm_source=chatgpt.com "Anthropic Enables Claude Opus 4 and 4.1 To End Conversations In “Cases Of Persistently Harmful Or Abusive Interactions”"
 
+##### [Claude Code: A Highly Agentic Coding Assistant - DeepLearning.AI](https://www.deeplearning.ai/short-courses/claude-code-a-highly-agentic-coding-assistant/)
+
+* [Claude Code: Agentic Coding Assistant Best Practices - NotebookLM](https://notebooklm.google.com/notebook/ceadb9ee-e7f4-4297-8b05-89e0aee74a73)
+
 #### [Cursor](https://cursor.com/en)
 
 * The AI Code Editor
