@@ -1971,6 +1971,8 @@ Yes! Many people use **both together**:
 * Meet Claude, your thinking partner
 * Claude connects to your world and expands what you can do—individually or with your team.
 * [Getting started with Claude | Anthropic Help Center](https://support.anthropic.com/en/articles/8114491-getting-started-with-claude?utm_source=chatgpt.com)
+    * Web: Visit [claude.ai](https://claude.ai/) to chat with Claude in a web browser.
+    * Desktop: [Download Claude Desktop](https://claude.ai/download) for Mac or Windows.
 * [Claude Code overview - Anthropic](https://docs.anthropic.com/en/docs/claude-code/overview)
 * Here’s a clear introduction to **Claude** and **Claude Code**, based directly on Anthropic’s official materials:
 
