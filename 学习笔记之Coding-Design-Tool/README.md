@@ -2162,6 +2162,10 @@ Let me know if you’d like a deep dive into specific benchmarks, pricing scenar
 
 ##### [Claude Code: A Highly Agentic Coding Assistant - DeepLearning.AI](https://www.deeplearning.ai/short-courses/claude-code-a-highly-agentic-coding-assistant/)
 
+* What you'll learn
+    * Use Claude code to explore, develop, test, refactor, and debug codebases.
+    * Extend the capabilities of Claude Code with MCP servers such as Playwright and Figma MCP servers.
+    * Apply Claude Code best practices to three projects: exploring and developing the codebase of a RAG chatbot, refactoring a Jupyter notebook for e-commerce data and transforming it into a dashboard, and building a web app from a Figma mockup.
 * [Claude Code: Agentic Coding Assistant Best Practices - NotebookLM](https://notebooklm.google.com/notebook/ceadb9ee-e7f4-4297-8b05-89e0aee74a73)
 
 #### [Cursor](https://cursor.com/en)
