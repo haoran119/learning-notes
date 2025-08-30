@@ -1966,6 +1966,198 @@ Yes! Many people use **both together**:
 * ChatGPT is a free-to-use AI system. Use it for engaging conversations, gain insights, automate tasks, and witness the future of AI, all in one place.
 * [ChatGPT Cheat Sheet for Beginners | Superhuman](https://www.superhuman.ai/c/cheat-sheet-beginners?utm_source=www.joinsuperhuman.ai&utm_medium=newsletter)
 
+#### [Claude](https://www.anthropic.com/claude?utm_source=chatgpt.com)
+
+* Meet Claude, your thinking partner
+* Claude connects to your world and expands what you can do—individually or with your team.
+* [Getting started with Claude | Anthropic Help Center](https://support.anthropic.com/en/articles/8114491-getting-started-with-claude?utm_source=chatgpt.com)
+* [Claude Code overview - Anthropic](https://docs.anthropic.com/en/docs/claude-code/overview)
+* Here’s a clear introduction to **Claude** and **Claude Code**, based directly on Anthropic’s official materials:
+
+---
+
+🌟 What is Claude?
+
+Claude is **Anthropic’s AI assistant**, named after Claude Shannon, the father of information theory.
+It’s designed to be:
+
+* **Helpful**: Can summarize, brainstorm, answer questions, write, translate, or tutor.
+* **Honest**: Built with safety alignment in mind to reduce hallucinations and harmful outputs.
+* **Harmless**: Uses Constitutional AI principles for more ethical, user-friendly behavior.
+
+**Key features:**
+
+* Handles **very long context windows** (up to 200K tokens).
+* Accepts **text, code, and images** as input.
+* Produces **structured outputs** (tables, JSON, citations, diagrams).
+* Integrates with tools like Google Drive, Jira, Zapier, and more.
+* Available on **Web, Desktop, Mobile, and API**.
+
+👉 Learn more here: [Claude overview](https://www.anthropic.com/claude)
+
+---
+
+💻 What is Claude Code?
+
+**Claude Code** is a developer-focused interface and set of workflows for coding with Claude.
+It’s built to **supercharge software engineering tasks**, with capabilities like:
+
+* **Writing & Debugging Code**: Supports multiple languages (Python, JavaScript, C++, etc.).
+* **Explaining Complex Code**: Can read your snippet and explain what’s happening.
+* **Refactoring & Optimization**: Suggests improvements in style, performance, or readability.
+* **Multi-file Context**: Understands larger codebases instead of single snippets.
+* **Interactive Workflows**: Meant for IDE/terminal-like usage for iterative development.
+
+Developers use Claude Code in:
+
+* **Command line** (`claude-code` CLI tool).
+* **IDE plugins & extensions** (like GitHub Copilot preview).
+* **APIs** for automated testing, linting, or refactoring.
+
+👉 Explore here: [Claude Code](https://www.anthropic.com/claude-code)
+
+---
+
+🚀 Getting Started
+
+Anthropic has a simple starter guide:
+
+* Go to [Getting started with Claude](https://support.anthropic.com/en/articles/8114491-getting-started-with-claude).
+* Sign up for Claude Pro (or higher) to unlock full access.
+* Install **Claude Desktop** (Mac/Windows) or mobile app.
+* Try using Claude for everyday writing, analysis, and coding tasks.
+* For developers, set up **Claude Code** or call it via the **Anthropic API**.
+
+---
+
+✅ **In short**:
+
+* **Claude** = general-purpose AI assistant for writing, reasoning, creativity, analysis.
+* **Claude Code** = specialized developer environment where Claude helps you write, explain, and manage code efficiently.
+
+---
+
+* Here’s a refined comparison between **Claude Opus 4.1** and **Claude Sonnet 4**, based on the latest available data:
+
+---
+
+Release Timeline & Model Family
+
+* **Claude Sonnet 4** debuted on **May 22, 2025**, as part of the Claude 4 family.
+* **Claude Opus 4.1** followed on **August 5, 2025**, as an upgraded version of Claude Opus 4. ([Wikipedia][1])
+
+---
+
+Performance Benchmarks
+
+From **llm‑stats.com** (August 2025):
+
+| Benchmark          | Claude Opus 4.1 | Claude Sonnet 4 |
+| ------------------ | --------------- | --------------- |
+| AIME 2025          | 78.0%           | 70.5%           |
+| GPQA               | 80.9%           | 75.4%           |
+| MMMLU              | 89.5%           | 86.5%           |
+| SWE‑Bench Verified | 74.5%           | 72.7%           |
+| TAU‑bench Retail   | 82.4%           | 80.5%           |
+| Terminal-bench     | 43.3%           | 35.5%           |
+| TAU‑bench Airline  | 56.0%           | 60.0%           |
+
+Claude Opus 4.1 leads across most benchmarks except TAU‑bench Airline, where Sonnet is slightly better. ([LLM Stats][2])
+
+In other evaluations, Sonnet 4 often matches Opus in more common tasks (e.g. simple code generation), but Opus shines on complex or edge-case problems. ([16x Eval][3])
+
+---
+
+⚙ Context Windows & Output Capacity
+
+* Both models support an enormous **200,000‑token input context window**. ([LLM Stats][2])
+* **Output limits** differ:
+
+  * **Sonnet 4**: up to **128,000 tokens**.
+  * **Opus 4.1**: up to **32,000 tokens**. ([Galaxy.ai Blog][4], [LLM Stats][2])
+
+---
+
+Cost Efficiency
+
+Pricing per million tokens:
+
+* **Claude Opus 4.1**:
+
+  * Input: **\$15**
+  * Output: **\$75**
+* **Claude Sonnet 4**:
+
+  * Input: **\$3**
+  * Output: **\$15**
+
+Opus is approximately **5× more expensive** than Sonnet. ([LLM Stats][2], [ClaudeLog][5])
+
+---
+
+Use Cases & Strategy
+
+* **Claude Opus 4.1**:
+
+  * **Best for**: Deep reasoning, complex system or algorithm design, critical architecture decisions, multi-step logic, and advanced code reviews. ([ClaudeLog][5])
+  * Ideal when precision and deep cognitive ability matter most.
+
+* **Claude Sonnet 4**:
+
+  * **Best for**: Daily development tasks like code generation, debugging, documentation, summaries, customer support, and general content creation.
+  * Offers excellent performance at a much lower cost—suitable for high-volume use. ([16x Eval][3], [Tom's Guide][6], [Keywords AI][7])
+
+* **Best-of-Both Strategy**:
+  Use **Sonnet 4** for routine work and switch to **Opus 4.1** for deeper reasoning or complex tasks. Anthropic even offers an **“Opus Plan Mode”** that dynamically chooses Opus 4.1 for planning and Sonnet 4 for execution. ([ClaudeLog][5])
+
+---
+
+Feature & Safety Insights
+
+* Both models support **multimodal inputs** (text and images), thinker-tools integration (e.g., file memory, tool use), and reasoning features like "thinking summaries" and **extended thinking** (beta). ([The Verge][8])
+* Per Anthropic, these models are **65 % less prone to shortcuts or hallucinations** and better at maintaining long-term context when provided with file access. ([The Verge][8])
+* **Opus 4** (and by extension Opus 4.1) is classified as a higher‑risk “Level 3” model, which Anthropic applies enhanced safety scrutiny to. ([Wikipedia][1])
+* Opus 4.1 has an added ability: in **rare extreme cases**, it can autonomously end conversations to prevent harmful or abusive interactions. ([Geek News Central][9])
+
+---
+
+Summary Table
+
+| Feature              | Claude Sonnet 4                       | Claude Opus 4.1                         |
+| -------------------- | ------------------------------------- | --------------------------------------- |
+| Release Date         | May 22, 2025                          | August 5, 2025                          |
+| Input Context Window | 200,000 tokens                        | 200,000 tokens                          |
+| Output Limit         | 128,000 tokens                        | 32,000 tokens                           |
+| Benchmarks           | Strong general performance            | Superior on most benchmarks             |
+| Cost                 | \~\$3 / \$15 per M tokens             | \~\$15 / \$75 per M tokens              |
+| Best Use             | Routine development, content, tasks   | Complex reasoning, architecture, agents |
+| Safety Tools         | Thinking summaries, extended thinking | Same + conversation end safeguard       |
+
+---
+
+Recommendation
+
+* Use **Claude Sonnet 4** for most day-to-day tasks—it's fast, efficient, affordable, and highly capable.
+* Reserve **Claude Opus 4.1** for when you need top-tier reasoning, deep planning, or handling of exceptionally complex workflows.
+* Or go hybrid: leverage Opus’ power for planning phases and Sonnet’s efficiency for execution—especially helpful for long-term cost control.
+
+---
+
+Let me know if you’d like a deep dive into specific benchmarks, pricing scenarios, or integration tips for your particular workflows!
+
+* [The Verge](https://www.theverge.com/news/672705/anthropic-claude-4-ai-ous-sonnet-availability?utm_source=chatgpt.com)
+* [IT Pro](https://www.itpro.com/software/development/anthropic-claude-opus-4-software-development?utm_source=chatgpt.com)
+
+[1]: https://en.wikipedia.org/wiki/Claude_%28language_model%29?utm_source=chatgpt.com "Claude (language model)"
+[2]: https://llm-stats.com/models/compare/claude-opus-4-1-20250805-vs-claude-sonnet-4-20250514?utm_source=chatgpt.com "Claude Opus 4.1 vs Claude Sonnet 4 - llm-stats.com"
+[3]: https://eval.16x.engineer/blog/claude-4-opus-sonnet-evaluation-results?utm_source=chatgpt.com "Claude Opus 4 and Claude Sonnet 4 Evaluation Results"
+[4]: https://blog.galaxy.ai/compare/claude-opus-4-vs-claude-sonnet-4?utm_source=chatgpt.com "Claude Opus 4 vs Claude Sonnet 4 (Comparative Analysis)"
+[5]: https://claudelog.com/faqs/claude-4-sonnet-vs-opus/?utm_source=chatgpt.com "Claude 4 Sonnet vs Opus for Claude Code"
+[6]: https://www.tomsguide.com/ai/claude-4-vs-chatgpt-which-ai-assistant-is-right-for-you?utm_source=chatgpt.com "Claude vs ChatGPT explained: What each AI does best - and how to choose the right one"
+[7]: https://www.keywordsai.co/blog/claude-sonnet-4-vs-claude-opus-4-a-comprehensive-comparison?utm_source=chatgpt.com "Claude Sonnet 4 vs Claude Opus 4: A comprehensive comparison"
+[8]: https://www.theverge.com/news/672705/anthropic-claude-4-ai-ous-sonnet-availability?utm_source=chatgpt.com "Anthropic's Claude 4 AI models are better at coding and reasoning"
+[9]: https://geeknewscentral.com/2025/08/17/anthropic-enables-claude-opus-4-and-4-1-to-end-conversations-in-cases-of-persistently-harmful-or-abusive-interactions/?utm_source=chatgpt.com "Anthropic Enables Claude Opus 4 and 4.1 To End Conversations In “Cases Of Persistently Harmful Or Abusive Interactions”"
+
 #### [Cursor](https://cursor.com/en)
 
 * The AI Code Editor
