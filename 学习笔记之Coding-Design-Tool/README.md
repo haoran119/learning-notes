@@ -4469,6 +4469,113 @@ $ ssh my_id@server.org
     * If you use an SSH key for logging in, you can add a key after you have saved the tunnel.
     * Now, you could access server.org:1234 on your local laptop at localhost:1234
 
+#### [Node.js](https://nodejs.org/en)
+
+* Run JavaScript Everywhere
+* Node.js® is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts.
+* [Node.js — Download Node.js®](https://nodejs.org/en/download)
+* Here’s a clean introduction to **Node.js** with context from its official site [nodejs.org](https://nodejs.org/en/download):
+
+---
+
+⚡ What is Node.js?
+
+**Node.js** is a **JavaScript runtime** built on **Chrome’s V8 engine**.
+It allows developers to run JavaScript **outside the browser**—on servers, desktops, or embedded systems.
+
+Think of it as bringing the language of the web (JavaScript) into the backend world.
+
+---
+
+🔑 Key Features
+
+* **Event-driven & non-blocking I/O** → handles many requests at once, great for APIs and real-time apps.
+* **Single-threaded but highly scalable** → uses an event loop instead of multi-threading.
+* **NPM (Node Package Manager)** → world’s largest ecosystem of open-source libraries.
+* **Cross-platform** → works on Windows, macOS, and Linux.
+* **Full-stack JS** → same language for frontend and backend.
+
+---
+
+📦 Common Use Cases
+
+* Web servers & REST APIs (Express.js, Fastify, NestJS)
+* Real-time apps (chat, games, live collaboration)
+* Microservices & serverless functions
+* Command-line tools (npm, yarn, vite, etc.)
+* Build tools (webpack, ESLint, Babel)
+
+---
+
+🖥️ Install Node.js
+
+👉 [Download Page](https://nodejs.org/en/download)
+
+You’ll see two versions:
+
+* **LTS (Long-Term Support)** → Recommended for most users (stable, enterprise-ready).
+* **Current** → Latest features, may include breaking changes.
+
+Installation options:
+
+* **Windows / macOS** → Installer `.msi` or `.pkg` from the site
+* **Linux** → Package managers:
+
+  ```bash
+  # Ubuntu / Debian
+  sudo apt update
+  sudo apt install -y nodejs npm
+
+  # Or use Node Version Manager (nvm) for flexibility:
+  curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+  nvm install --lts
+  ```
+* **Docker** → Official images: `docker pull node:lts`
+
+---
+
+🚀 Verify Installation
+
+```bash
+node -v   # prints Node.js version
+npm -v    # prints npm version
+```
+
+---
+
+🧩 Example (simple web server)
+
+```js
+// server.js
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Hello from Node.js!\n');
+});
+
+server.listen(3000, () => {
+  console.log('Server running at http://localhost:3000/');
+});
+```
+
+Run with:
+
+```bash
+node server.js
+```
+
+---
+
+✅ Summary
+
+* **Node.js** = JavaScript runtime on the server
+* **Great for**: APIs, real-time systems, and scalable apps
+* **Comes with npm** = largest package ecosystem
+* **Download**: [nodejs.org/en/download](https://nodejs.org/en/download)
+
+---
+
 #### [PuTTY](https://www.putty.org/)
 
 * Download PuTTY - a free SSH and telnet client for Windows
