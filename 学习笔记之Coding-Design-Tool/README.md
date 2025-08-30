@@ -587,7 +587,7 @@ React builds a **virtual DOM tree** in memory. When your data changes, React:
 * [MQ 的那些事儿，你不好奇吗？ (qq.com)](https://mp.weixin.qq.com/s/g2yrE-40UdidUdmNQQtxYA)
 * [代码搜索引擎：基础篇 (qq.com)](https://mp.weixin.qq.com/s/glv55BpDNvHWTZBjyAT-gg)
 
-### 设计模式 DESIGN PATTERN
+### DESIGN PATTERN 设计模式
 
 * [learning-notes/学习笔记之设计模式(Design Patterns) at main · haoran119/learning-notes](https://github.com/haoran119/learning-notes/tree/main/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8B%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F(Design%20Patterns))
     * [经典永不过时！重温设计模式](https://mp.weixin.qq.com/s?__biz=Mzg4MjYzMjI1MA==&mid=2247517558&idx=1&sn=da321f7d75f0ed5ca9748f744af1f13f&source=41#wechat_redirect)
@@ -597,7 +597,7 @@ React builds a **virtual DOM tree** in memory. When your data changes, React:
 * [8 种架构设计模式优缺点大曝光 | 原力计划](https://mp.weixin.qq.com/s/95PwzyntH6HPbM1TlGkQYw)
     * https://blog.csdn.net/bjmsb/article/details/105951508
 
-### 分布式 DISTRIBUTED SYSTEM
+### DISTRIBUTED SYSTEM 分布式
 
 * [图解分布式架构](https://mp.weixin.qq.com/s/KuWzuZUU6i5DYt-4IdI7Hg)
 * [漫话：如何给女朋友解释什么是分布式和集群？](https://mp.weixin.qq.com/s?__biz=Mzg3MjA4MTExMw==&mid=2247484758&idx=1&sn=4195022c137e260089da526caf27aa0e&chksm=cef5f6e0f9827ff6fb0890dd90a21123aef73b0c48f34d69e64cc328cb681a382449f911381b&scene=21#wechat_redirect)
@@ -620,13 +620,13 @@ React builds a **virtual DOM tree** in memory. When your data changes, React:
 * [Hive 千亿级数据倾斜解决方案（好文收藏） (qq.com)](https://mp.weixin.qq.com/s/9IiUa4W3hw_OdXtDcKN6Hg)
 * [《我想进大厂》之分布式事务篇 (qq.com)](https://mp.weixin.qq.com/s/2bSXsY1vBHofv_Xo64Jqdg)
 
-### 负载均衡 LOAD BALANCE
+### LOAD BALANCE 负载均衡
 
 * [详解几种常用负载均衡 (qq.com)](https://mp.weixin.qq.com/s/EhwNPGAvy6WZyqBjhOE-5A)
     * [负载均衡在分布式架构中是怎么玩起来的？ - kingreatwill - 博客园 (cnblogs.com)](https://www.cnblogs.com/kingreatwill/p/7991151.html#/cnblog/works/article/7991151)
 * [10张图带你彻底搞懂限流、熔断、服务降级 (qq.com)](https://mp.weixin.qq.com/s/YLBXAdNkWntDwe0KU6K0zQ)
 
-### 微服务 MICRO SERVICES
+### MICRO SERVICES 微服务
 * [一文详解微服务架构 (qq.com)](https://mp.weixin.qq.com/s?__biz=MzU0NDEyODkzMQ==&mid=2247497833&idx=1&sn=523c2d7ba980b5dc875d63a05aca249d&chksm=fb0252a5cc75dbb33a44d0a35b800f63d77cd825824448d2520324fbaa93766a4955932b5ed3&mpshare=1&scene=24&srcid=&sharer_sharetime=1567984356468&sharer_shareid=5ed4a849fa42d9599a974fa8eb45e8fa&key=6d90834972a32f5aea9b3789999c6c33beac57bcbb3a0016d2cabeb03680d5fb0d86ad38c36734ab549cd66318418419f53ce7060d682a9dd79ea9a9eda91c0d565550906820f20bf7e44c0a6cf18c97&ascene=14&uin=MTMzMzc3MjY4MQ%3D%3D&devicetype=Windows+10&version=62060833&lang=en&pass_ticket=tT3maEfznKd3xtVT4L8%2Bl%2B2KKdhrJZ3ERaWEoIpqIMB2I2ssKo%2BTfx0v80L7rMTL)
 * [一份通俗易懂的微服务架构方案！](https://mp.weixin.qq.com/s/R3TzPtII_USNk_tMAhkpdw)
     * https://www.cnblogs.com/skabyy/p/11396571.html
@@ -1765,7 +1765,7 @@ paths:
 
 ---
 
-### 无服务 SERVERLESS
+### SERVERLESS 无服务
 
 * [当我们在聊 Serverless 时你应该知道这些 ｜ CSDN博文精选](https://mp.weixin.qq.com/s/x19NOOOBWN6ZNfCSW07lsg)
 * [Serverless 会终结 Kubernetes 吗？](https://mp.weixin.qq.com/s/KgUfDGUNc07RBfyCuRblJw)
