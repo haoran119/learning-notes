@@ -4760,6 +4760,218 @@ It’s often described as:
 
 ---
 
+#### [Redis](https://redis.io/)
+
+* The Real-time Data Platform
+* Redis is an **open-source, in-memory data structure store** that is widely used as a **database, cache, and message broker**. It was created by Salvatore Sanfilippo (antirez) in 2009 and is now maintained by Redis Ltd.
+* Here’s a structured introduction:
+
+---
+
+🔑 Key Features of Redis
+
+* **In-Memory Storage**: Data is stored in RAM, making it extremely fast (sub-millisecond latency).
+* **Persistence Options**: Though in-memory, Redis supports durability via **RDB snapshots** and **AOF (Append-Only File)** logs.
+* **Rich Data Structures**:
+
+  * Strings
+  * Lists
+  * Sets
+  * Sorted Sets (with ranking)
+  * Hashes
+  * Streams
+  * Bitmaps & HyperLogLogs (for counting and analytics)
+  * Geospatial indexes
+* **Pub/Sub Messaging**: Built-in publish/subscribe functionality for real-time messaging.
+* **Transactions & Lua Scripting**: Supports atomic operations and custom scripts.
+* **Replication & Clustering**: High availability with master-replica replication and horizontal scaling with cluster mode.
+* **Modules Ecosystem**: Extend Redis with modules (e.g., RedisJSON, RediSearch, RedisGraph).
+
+---
+
+🚀 Typical Use Cases
+
+* **Caching**: Store frequently accessed data to reduce database load.
+* **Session Store**: Keep user session data for web applications.
+* **Message Queue / Pub-Sub**: Lightweight alternative to Kafka or RabbitMQ for real-time messaging.
+* **Leaderboard / Ranking Systems**: Sorted sets are ideal for gaming leaderboards or scoring.
+* **Rate Limiting**: Count and restrict requests per user/IP using atomic operations.
+* **Analytics & Metrics**: HyperLogLogs and bitmaps for approximate counting and time-series data.
+
+---
+
+⚙️ Example Commands
+
+* Set and get a key:
+
+  ```bash
+  SET user:1 "Alice"
+  GET user:1
+  ```
+* Increment a counter:
+
+  ```bash
+  INCR page:views
+  ```
+* Working with lists:
+
+  ```bash
+  LPUSH tasks "task1"
+  RPUSH tasks "task2"
+  LPOP tasks
+  ```
+
+---
+
+📊 Performance
+
+* Handles **millions of requests per second** on commodity hardware.
+* Supports **atomic operations** on data structures without needing external locks.
+
+---
+
+🌐 Ecosystem
+
+* **Redis Enterprise**: A commercial offering with advanced features (Active-Active geo-distribution, enhanced security, etc.).
+* **Cloud Services**: Available via AWS (Amazon ElastiCache), Azure Cache for Redis, Google Cloud Memorystore, and Redis Cloud.
+
+---
+
+* 👉 How to install Redis locally and connect with Python or FastAPI, so you can integrate it directly into your projects?
+  * 👍 Let’s go step by step. I’ll cover:
+
+1. **Install Redis locally**
+2. **Test Redis with the CLI**
+3. **Connect to Redis with Python (`redis-py`)**
+4. **Integrate Redis into a FastAPI app**
+
+---
+
+1. 🔧 Install Redis Locally
+
+On Linux / WSL
+
+```bash
+sudo apt update
+sudo apt install redis-server -y
+```
+
+Enable Redis service:
+
+```bash
+sudo systemctl enable redis-server
+sudo systemctl start redis-server
+```
+
+On macOS (with Homebrew)
+
+```bash
+brew install redis
+brew services start redis
+```
+
+On Windows
+
+Redis doesn’t officially support Windows, but you can:
+
+* Use **WSL (Ubuntu on Windows)** and install as above, or
+* Use **Docker**:
+
+  ```bash
+  docker run --name redis -d -p 6379:6379 redis
+  ```
+
+---
+
+2. 🖥️ Test Redis with CLI
+
+Start the CLI:
+
+```bash
+redis-cli
+```
+
+Run a quick test:
+
+```bash
+SET mykey "hello redis"
+GET mykey
+```
+
+If it returns `"hello redis"`, your Redis server works ✅.
+
+---
+
+3. 🐍 Connect to Redis with Python
+
+Install the Redis client:
+
+```bash
+pip install redis
+```
+
+Example usage:
+
+```python
+import redis
+
+# Connect (default port 6379)
+r = redis.Redis(host="localhost", port=6379, db=0)
+
+# Set and get a value
+r.set("user:1", "Alice")
+print(r.get("user:1").decode())  # Output: Alice
+```
+
+---
+
+4. 🚀 FastAPI + Redis Example
+
+Install dependencies:
+
+```bash
+pip install fastapi uvicorn redis
+```
+
+Create `main.py`:
+
+```python
+from fastapi import FastAPI
+import redis
+
+app = FastAPI()
+
+# Connect to Redis
+r = redis.Redis(host="localhost", port=6379, db=0)
+
+@app.get("/set/{key}/{value}")
+def set_key(key: str, value: str):
+    r.set(key, value)
+    return {"message": f"Key '{key}' set with value '{value}'"}
+
+@app.get("/get/{key}")
+def get_key(key: str):
+    value = r.get(key)
+    if value:
+        return {"key": key, "value": value.decode()}
+    return {"error": "Key not found"}
+```
+
+Run the app:
+
+```bash
+uvicorn main:app --reload
+```
+
+Test in browser:
+
+* [http://127.0.0.1:8000/set/name/Hao](http://127.0.0.1:8000/set/name/Hao)
+* [http://127.0.0.1:8000/get/name](http://127.0.0.1:8000/get/name)
+
+---
+
+✅ You now have Redis running, connected to Python, and integrated with FastAPI.
+
 #### [Slurm](https://slurm.schedmd.com/overview.html)
 
 * `Slurm Workload Manager`
