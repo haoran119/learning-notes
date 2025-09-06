@@ -554,6 +554,54 @@ React builds a **virtual DOM tree** in memory. When your data changes, React:
 
 ### FAQ
 
+* How to bypass page with warning "Your connection is not private"?
+    * I can explain what the `"thisisunsafe"` trick is about:
+
+---
+
+🚨 Chrome’s “thisisunsafe” Security Bypass
+
+When you visit a website with an invalid or self-signed SSL certificate, **Google Chrome** blocks the page with a red warning screen like:
+
+> **"Your connection is not private"**
+
+Instead of clicking “Advanced” → “Proceed anyway,” there’s a **hidden shortcut**:
+
+✅ Bypass Shortcut:
+
+While the warning screen is active, **type** (literally) the phrase:
+
+```
+thisisunsafe
+```
+
+➡ No need to click or type into any visible field. Just **start typing** that on your keyboard.
+
+🪄 What Happens:
+
+* Chrome immediately bypasses the warning
+* It redirects you to the page despite the certificate error
+* No visible feedback while typing—just trust it and type
+
+🔒 When is this useful?
+
+* Testing internal development websites with self-signed certs
+* Accessing legacy systems over HTTPS
+* Lab/test environments behind a VPN
+
+---
+
+⚠️ Warning
+
+Bypassing Chrome security warnings should only be done if you:
+
+* **Trust the site/domain** fully (e.g. internal dev servers)
+* Understand the risk of **man-in-the-middle attacks**
+
+Don’t use it casually on the public internet.
+
+---
+
 * How to print page which is blank in print preview?
    * Open Chrome Developer Tools:
       * You can open it by right-clicking on a webpage and selecting "Inspect" or by pressing `Ctrl+Shift+I` (Windows/Linux) or `Cmd+Option+I` (Mac).
