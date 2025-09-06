@@ -3,7 +3,7 @@
 * [Git - Wikipedia](https://en.wikipedia.org/wiki/Git)
   * Git (/ɡɪt/) is a version control system for tracking changes in computer files and coordinating work on those files among multiple people. It is primarily used for source code management in software development, but it can be used to keep track of changes in any set of files. As a distributed revision control system it is aimed at speed, data integrity, and support for distributed, non-linear workflows.
 * [Gitflow Workflow | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
-  * [Gitflow Workflow is a Git workflow design that was first published and made popular by Vincent Driessen at nvie. The Gitflow Workflow defines a strict branching model designed around the project release. This provides a robust framework for managing larger projects. 
+  * [Gitflow Workflow is a Git workflow design that was first published and made popular by Vincent Driessen at nvie. The Gitflow Workflow defines a strict branching model designed around the project release. This provides a robust framework for managing larger projects.
   * [Git cheat sheet | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
 * [Introducing GitFlow](https://datasift.github.io/gitflow/IntroducingGitFlow.html)
   * GitFlow is a branching model for Git, created by Vincent Driessen. It has attracted a lot of attention because it is very well suited to collaboration and scaling the development team.
@@ -83,8 +83,8 @@
 ```sh
 git add <file>
 git add <directory>
-# Begin an interactive staging session that lets you choose portions of a file to add to the next commit. 
-# This will present you with a chunk of changes and prompt you for a command. Use y to stage the chunk, 
+# Begin an interactive staging session that lets you choose portions of a file to add to the next commit.
+# This will present you with a chunk of changes and prompt you for a command. Use y to stage the chunk,
 # n to ignore the chunk, s to split it into smaller chunks, e to manually edit the chunk, and q to exit.
 git add -p
 # create an initial commit of the current directory
@@ -151,7 +151,7 @@ $ git branch -D test                                    (2)
         $ git branch -d branch_name
         $ git branch -D branch_name
         ```
-    * Or delete remote branch on git web first, e.g. github, then run `git fetch --all --prune` locally to update local branch  
+    * Or delete remote branch on git web first, e.g. github, then run `git fetch --all --prune` locally to update local branch
 * [Rename a local and remote branch in git – Multiple States Knowledge Base](https://multiplestates.wordpress.com/2015/02/05/rename-a-local-and-remote-branch-in-git/)
   * Rename your local branch.
     * If you are on the branch you want to rename:
@@ -231,7 +231,7 @@ $ git checkout hello.c
   # This will detach your HEAD, that is, leave you with no branch checked out:
   git checkout 0d1d7fc32
   ```
-  
+
 ### [git cherry-pick](https://git-scm.com/docs/git-cherry-pick)
 
 * git-cherry-pick - Apply the changes introduced by some existing commits
@@ -333,12 +333,12 @@ $ git config --global core.autocrlf false
 ```sh
 # Update the remote-tracking branches:
 $ git fetch origin
-# The above command copies all branches from the remote refs/heads/ namespace and stores them to the local 
+# The above command copies all branches from the remote refs/heads/ namespace and stores them to the local
 # refs/remotes/origin/ namespace, unless the remote.<repository>.fetch option is used to specify a non-default refspec.
 ```
 
 ### [git gui](https://git-scm.com/docs/git-gui)
-  
+
 * git-gui - A portable graphical interface to Git
 
 ### [gitk](https://git-scm.com/docs/gitk)
@@ -370,7 +370,7 @@ git merge (--continue | --abort | --quit)
 # Merge branch maint into the current branch, but do not make a new commit automatically:
 git merge --no-commit maint
 # This can be used when you want to include further changes to the merge, or want to write your own merge commit message.
-# You should refrain from abusing this option to sneak substantial changes into a merge commit. 
+# You should refrain from abusing this option to sneak substantial changes into a merge commit.
 # Small fixups like bumping release/version name would be acceptable.
 ```
 * Merging vs Rebasing
@@ -380,7 +380,7 @@ git merge --no-commit maint
             ```sh
             git checkout feature
             git merge main
-            
+
             # Or, you can condense this to a one-liner:
             git merge feature main
             ```
@@ -478,8 +478,8 @@ git pull [<options>] [<repository> [<refspec>…]]
 git checkout local_branch
 git pull origin remote_branch
 
-# This leaves a copy of remote_branch temporarily in FETCH_HEAD, and updates the remote-tracking branch 
-# origin/remote_branch. 
+# This leaves a copy of remote_branch temporarily in FETCH_HEAD, and updates the remote-tracking branch
+# origin/remote_branch.
 # The same can be done by invoking fetch and merge:
 git fetch origin
 git merge origin/remote_branch
@@ -495,8 +495,8 @@ git pull --rebase origin master
 * git-push - Update remote refs along with associated objects
 * [Git Push | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/syncing/git-push)
 ```sh
-# Find a ref that matches master in the source repository (most likely, it would find refs/heads/master), 
-# and update the same ref (e.g. refs/heads/master) in origin repository with it. 
+# Find a ref that matches master in the source repository (most likely, it would find refs/heads/master),
+# and update the same ref (e.g. refs/heads/master) in origin repository with it.
 # If master did not exist remotely, it would be created.
 $ git push origin master
 
@@ -520,8 +520,8 @@ $ git push --progress "origin" local_branch1:branch1
   $ git fetch
   $ git checkout feature/xxx
   $ git rebase origin/master
-  
-  # If any issues, fix it and continue 
+
+  # If any issues, fix it and continue
   $ git mergetool
   $ git rebase --continue
 
@@ -530,7 +530,7 @@ $ git push --progress "origin" local_branch1:branch1
   * [git rebase | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
   * [An introduction to Git merge and rebase: what they are, and how to use them](https://www.freecodecamp.org/news/an-introduction-to-git-merge-and-rebase-what-they-are-and-how-to-use-them-131b863785f/#:~:text=Rebase%20is%20another%20way%20to,from%20one%20branch%20to%20another. )
 * How to squash commits into one commit ?
-  * Do git rebase -i to squash commits interactively. 
+  * Do git rebase -i to squash commits interactively.
   ```sh
   $ git fetch
   $ git checkout feature/xxx
@@ -553,7 +553,7 @@ $ git remote -v
 > origin  https://github.com/USER/REPO.git (fetch)
 > origin  https://github.com/USER/REPO.git (push)
 ```
-       
+
 ### [git reset](https://git-scm.com/docs/git-reset)
 
 * git-reset - Reset current HEAD to the specified state
@@ -562,15 +562,15 @@ $ git remote -v
 ```sh
 $ git reset HEAD test.py
 
-# reset your local branch to match the state of the origin/master branch in the remote repository 
+# reset your local branch to match the state of the origin/master branch in the remote repository
 # and discard any local changes that are not in the remote branch.
 $ git reset --hard origin/master
 
 # Undo commits permanently
 $ git commit ...
 $ git reset --hard HEAD~3   (1)
-# The last three commits (HEAD, HEAD^, and HEAD~2) were bad and you do not want to ever see them again. 
-# Do not do this if you have already given these commits to somebody else. 
+# The last three commits (HEAD, HEAD^, and HEAD~2) were bad and you do not want to ever see them again.
+# Do not do this if you have already given these commits to somebody else.
 # (See the "RECOVERING FROM UPSTREAM REBASE" section in git-rebase[1] for the implications of doing so.)
 ```
 * How to delete a local commit?
@@ -629,13 +629,13 @@ $ git commit -m "Your new commit message here"
 * git-rm - Remove files from the working tree and from the index
 ```sh
 $ git rm Documentation/\*.txt
-# Removes all *.txt files from the index that are under the Documentation directory and any of its 
+# Removes all *.txt files from the index that are under the Documentation directory and any of its
 # subdirectories.
-# Note that the asterisk * is quoted from the shell in this example; this lets Git, and not the shell, 
+# Note that the asterisk * is quoted from the shell in this example; this lets Git, and not the shell,
 # expand the pathnames of files and subdirectories under the Documentation/ directory.
 
 $ git rm -f git-*.sh
-# Because this example lets the shell expand the asterisk (i.e. you are listing the files explicitly), 
+# Because this example lets the shell expand the asterisk (i.e. you are listing the files explicitly),
 # it does not remove subdir/git-foo.sh.
 ```
 
@@ -645,11 +645,11 @@ $ git rm -f git-*.sh
 * [git stash - Saving Changes | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)
     * git stash temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on. Stashing is handy if you need to quickly switch context and work on something else, but you're mid-way through a code change and aren't quite ready to commit.
     ```sh
-    $ git stash save "for debug use only" 
+    $ git stash save "for debug use only"
     $ git stash list
     $ git pull
     $ git stash pop
-    
+
     # Viewing stash diffs
     $ git stash show
     $ git stash show -p
@@ -658,6 +658,197 @@ $ git rm -f git-*.sh
     $ git stash drop stash@{1}
     $ git stash clear
     ```
+
+### git tag
+
+* Here's a quick guide with examples for **Git tags** — both **lightweight** and **annotated**, including how to **create**, **list**, **push**, and **delete** them.
+
+---
+
+🏷️ What is a Git tag?
+
+A **tag** in Git is a reference to a specific commit — often used for marking **releases** (`v1.0`, `v2.1.3`, etc.).
+
+---
+
+✍️ Create a Tag
+
+✅ 1. **Lightweight tag** (like a branch pointer, no metadata)
+
+```bash
+git tag v1.0
+```
+
+This tags the **latest commit on current branch**.
+
+---
+
+✅ 2. **Annotated tag** (recommended for releases)
+
+Includes tagger name, date, message, and is stored as a full Git object.
+
+```bash
+git tag -a v1.0 -m "Release version 1.0"
+```
+
+---
+
+✅ 3. Tag a **specific commit**
+
+```bash
+git tag -a v1.0 abc1234 -m "Tagging specific commit"
+```
+
+---
+
+🔍 List Tags
+
+```bash
+git tag
+```
+
+Filter tags by name:
+
+```bash
+git tag -l "v1.*"
+```
+
+---
+
+🚀 Push Tag to Remote
+
+Push a **specific tag**:
+
+```bash
+git push origin v1.0
+```
+
+Push **all tags**:
+
+```bash
+git push origin --tags
+```
+
+---
+
+❌ Delete a Tag
+
+✅ 1. **Delete local tag**
+
+```bash
+git tag -d v1.0
+```
+
+✅ 2. **Delete remote tag**
+
+```bash
+git push origin --delete tag v1.0
+```
+
+---
+
+🛠 Example Flow
+
+```bash
+git tag -a v2.0 -m "Release 2.0: New features added"
+git push origin v2.0
+```
+
+---
+
+* Great! Since you're starting a repo from scratch, using Git tags to mark **milestones** is a solid practice — especially for:
+
+* **Initial commit**
+* **First working version**
+* **Feature completion**
+* **Stable releases**
+* **Refactors**
+* **Breaking changes**
+
+---
+
+✅ Example Git Tag Workflow for a New Project
+
+Here’s a chronological example of tagging milestones as you develop:
+
+---
+
+🏁 1. Initial setup
+
+```bash
+git commit -m "Initial commit with project skeleton"
+git tag -a v0.1.0 -m "Project initialized"
+```
+
+---
+
+🛠 2. First working prototype
+
+```bash
+git commit -m "Basic API working with test endpoint"
+git tag -a v0.2.0 -m "First working prototype"
+```
+
+---
+
+🚀 3. MVP (Minimum Viable Product)
+
+```bash
+git commit -m "Completed core features"
+git tag -a v1.0.0 -m "MVP release"
+```
+
+---
+
+⚙ 4. Major refactor or performance upgrade
+
+```bash
+git commit -m "Refactored module structure and optimized performance"
+git tag -a v1.1.0 -m "Code refactor and performance improvements"
+```
+
+---
+
+💥 5. Breaking change
+
+```bash
+git commit -m "Changed API request format (breaking change)"
+git tag -a v2.0.0 -m "Breaking change: API format updated"
+```
+
+---
+
+📦 6. Hotfix
+
+```bash
+git commit -m "Fixed bug in login flow"
+git tag -a v2.0.1 -m "Hotfix: login bug"
+```
+
+---
+
+✅ Best Practices for Tagging Milestones
+
+| Tag      | Use for                             | Example Message                       |
+| -------- | ----------------------------------- | ------------------------------------- |
+| `v0.1.0` | Initial setup or planning milestone | "Initial commit and folder structure" |
+| `v0.2.0` | Prototype or early feature stage    | "First prototype with basic UI"       |
+| `v1.0.0` | MVP or first stable release         | "Core features implemented"           |
+| `v1.1.0` | Feature additions or refactors      | "Added reporting module"              |
+| `v2.0.0` | Breaking changes                    | "Overhauled backend data model"       |
+| `v2.0.1` | Bug fix or hotfix                   | "Fixed crash on logout"               |
+
+---
+
+🧪 Bonus: View tags with commit logs
+
+```bash
+git log --oneline --decorate --graph
+```
+
+You’ll see where each tag sits in your commit history.
+
+---
 
 ## BEST PRACTICE
 
