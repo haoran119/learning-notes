@@ -3585,6 +3585,102 @@ spec:
 
 ### Testing
 
+#### Linting
+
+---
+
+🔍 What is Linting?
+
+**Linting** is the process of automatically analyzing source code to detect issues, errors, and deviations from coding standards *before* runtime.
+
+Think of a **linter** as a **spell-checker for code**:
+
+* It doesn’t execute your code.
+* Instead, it inspects it and warns about potential problems.
+
+The name comes from the original Unix tool **`lint`** (for C code in the 1970s).
+
+---
+
+✅ What Linting Catches
+
+1. **Syntax errors** (e.g., missing commas, unclosed brackets).
+2. **Code quality issues** (unused imports, unreachable code).
+3. **Stylistic issues** (wrong indentation, inconsistent quotes).
+4. **Potential bugs** (shadowed variables, reassigning constants).
+5. **Best practices** (avoiding wildcard imports, enforcing naming conventions).
+
+---
+
+🐍 Example in Python
+
+Suppose you write:
+
+```python
+def add(x,y):
+    return  x+ y
+
+print(add(2, 3))
+```
+
+A linter (e.g., **flake8**, **pylint**) might flag:
+
+* Missing space after `,` → `def add(x,y):`
+* Extra spaces → `return  x+ y`
+* Style issues: function name could be more descriptive
+
+A corrected version:
+
+```python
+def add(x: int, y: int) -> int:
+    return x + y
+
+print(add(2, 3))
+```
+
+---
+
+⚙️ Popular Linters
+
+* **Python**: flake8, pylint, ruff, mypy (type checking)
+* **JavaScript/TypeScript**: ESLint
+* **Go**: golint, staticcheck
+* **C/C++**: clang-tidy
+* **General**: Prettier (formatter), SonarLint (IDE plugin)
+
+---
+
+🤝 Linting vs Formatting
+
+* **Linting**: Finds *problems and bad patterns*.
+* **Formatting**: Makes code style consistent (whitespace, quotes, indentation).
+
+  * Example: `black` (Python), `prettier` (JS).
+
+Often you use both together:
+
+* Formatter fixes style automatically.
+* Linter enforces rules and warns about deeper issues.
+
+---
+
+🚀 Why Use Linting in Projects?
+
+* **Consistency**: Everyone’s code looks the same.
+* **Catch bugs early**: Prevents trivial mistakes before tests run.
+* **Improves readability**: Makes onboarding easier.
+* **CI/CD integration**: Blocks bad code from merging (pre-commit hooks, GitHub Actions).
+
+---
+
+👉 Since you’re building a **FastAPI project**, linting is usually set up with:
+
+* `ruff` or `flake8` (fast linting)
+* `black` (formatting)
+* `mypy` (optional static typing)
+
+---
+
 #### [Playwright](https://playwright.dev/)
 
 * Playwright enables reliable end-to-end testing for modern web apps.
