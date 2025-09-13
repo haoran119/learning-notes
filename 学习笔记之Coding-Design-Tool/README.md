@@ -2014,6 +2014,53 @@ Yes! Many people use **both together**:
 * ChatGPT is a free-to-use AI system. Use it for engaging conversations, gain insights, automate tasks, and witness the future of AI, all in one place.
 * [ChatGPT Cheat Sheet for Beginners | Superhuman](https://www.superhuman.ai/c/cheat-sheet-beginners?utm_source=www.joinsuperhuman.ai&utm_medium=newsletter)
 
+##### [Codex](https://chatgpt.com/codex)
+
+* [openai/codex: Lightweight coding agent that runs in your terminal](https://github.com/openai/codex)
+* OpenAI **Codex** was a family of AI models (built on GPT-3) that specialized in **code generation and understanding**. It powered products like GitHub Copilot when it was first launched in 2021. Here’s a quick introduction:
+
+---
+
+🔹 What Codex Was
+
+* **Purpose**: Unlike general GPT models, Codex was fine-tuned on billions of lines of public code from GitHub and other sources.
+* **Capabilities**: It could write code, translate between programming languages, explain snippets, generate functions from comments, and even help with API usage.
+* **Integration**: Developers used it through the [OpenAI API](https://platform.openai.com/) and through IDE integrations like **VSCode Copilot**.
+
+---
+
+🔹 Key Features
+
+1. **Natural Language → Code**
+   You could describe what you wanted in English, and Codex generated working code (Python, JavaScript, C++, etc.).
+   Example: *“Make a Python function that fetches a webpage and counts how many times the word ‘AI’ appears.”*
+
+2. **Code → Explanation**
+   Codex could take a block of code and explain what it does in plain language.
+
+3. **Multi-language Support**
+   It worked across **dozens of programming languages**, from mainstream (Python, Java, JavaScript) to niche ones (Haskell, Perl).
+
+4. **Interactive Development**
+   Codex made pair-programming more natural by offering **inline suggestions** and **auto-completions** as you typed.
+
+---
+
+🔹 Limitations
+
+* **Outdated**: Codex itself is no longer actively maintained. Its features were merged into later GPT models (like GPT-4 and GPT-4.1), which now have **much better coding ability**.
+* **Accuracy**: Sometimes generated code looked plausible but had **logical or security flaws**.
+* **Licensing**: Since Codex trained partly on public GitHub repos, there were ongoing debates about **copyright and attribution**.
+
+---
+
+🔹 Where It Stands Now
+
+* GitHub Copilot, Cursor, and Claude Code are today’s successors, offering **more advanced versions of what Codex pioneered**.
+* OpenAI no longer markets Codex separately — it’s essentially been absorbed into GPT-4/5 coding capabilities.
+
+---
+
 #### [Claude](https://www.anthropic.com/claude?utm_source=chatgpt.com)
 
 * Meet Claude, your thinking partner
