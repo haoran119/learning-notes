@@ -850,6 +850,127 @@ You’ll see where each tag sits in your commit history.
 
 ---
 
+### git worktree
+
+* `git worktree` is a powerful and underused Git feature that allows you to **have multiple working directories (worktrees) linked to a single Git repository** — all sharing the same `.git` data.
+
+---
+
+🧠 Why use `git worktree`?
+
+With `git worktree`, you can:
+
+* Work on **multiple branches simultaneously** without needing to stash or commit.
+* Avoid juggling multiple clones of the same repo.
+* Test or build one branch while coding in another.
+* Use it in **CI pipelines**, **subdir builds**, or **parallel PR reviews**.
+
+---
+
+✅ Basic Concepts
+
+Your **main repo** is still the "primary" working tree.
+
+You can then create **additional directories (worktrees)** that are tied to **different branches or commits**.
+
+---
+
+📌 Common Use Cases and Commands
+
+🔧 1. Add a worktree for a different branch
+
+```bash
+git worktree add ../my-feature-dir feature-branch
+```
+
+* If `feature-branch` exists: it's checked out there
+* If `feature-branch` doesn’t exist: it will be created from current `HEAD`
+
+📁 This creates a new folder (`../my-feature-dir`) with the contents of `feature-branch`.
+
+---
+
+🆕 2. Create a worktree for a **new feature branch**
+
+```bash
+git worktree add -b new-feature ../new-feature-dir main
+```
+
+* `-b new-feature`: create and check out a new branch
+* Based on `main`
+
+---
+
+🔍 3. List all worktrees
+
+```bash
+git worktree list
+```
+
+Example output:
+
+```
+/path/to/main       1234567 [main]
+/path/to/feature    abcdef1 [feature]
+```
+
+---
+
+❌ 4. Remove a worktree
+
+```bash
+git worktree remove ../feature-dir
+```
+
+* Deletes the **worktree folder**
+* Doesn't delete the **branch** unless you do it manually
+
+---
+
+🧠 Important Notes
+
+* You **cannot checkout the same branch** in two worktrees at once.
+* Each worktree is **isolated**, but shares the Git object store.
+* **Commits made in one worktree are immediately visible** to the main repo and other worktrees.
+* Helps you **avoid `git stash` hell** when juggling features.
+
+---
+
+🧪 Example Workflow
+
+```bash
+# You're on main
+git checkout main
+
+# Add a worktree for reviewing a PR
+git worktree add ../pr-review pr/123
+
+# Now you can:
+cd ../pr-review
+# Review, test, fix — and push if needed
+```
+
+---
+
+🛠️ Useful Add-ons
+
+* `git worktree prune`: remove stale/unreachable worktrees
+* Use with `gh pr checkout <num>` to test PRs in separate folders
+
+---
+
+✅ Summary Cheat Sheet
+
+| Action                      | Command                                              |
+| --------------------------- | ---------------------------------------------------- |
+| List all worktrees          | `git worktree list`                                  |
+| Add worktree for branch     | `git worktree add ../path branch`                    |
+| Add worktree for new branch | `git worktree add -b new-branch ../path base-branch` |
+| Remove a worktree           | `git worktree remove ../path`                        |
+| Clean up stale              | `git worktree prune`                                 |
+
+---
+
 ## BEST PRACTICE
 
 * [Git 12 岁了，为你送上 12 个 Git 的使用技巧！ - Linux学习](https://mp.weixin.qq.com/s/JZGmwYGp9ZGjYJfTu7SVJQ)
