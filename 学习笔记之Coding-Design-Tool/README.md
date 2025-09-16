@@ -5073,6 +5073,82 @@ node server.js
 
 ---
 
+#### [PlantUML](https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000)
+
+* PlantUML Web Server
+* PlantUML is an **open-source tool for creating diagrams from plain text descriptions**. Instead of dragging and dropping shapes in a GUI tool, you write a lightweight **domain-specific language (DSL)**, and PlantUML renders it into a visual diagram.
+
+👉 Official site: [plantuml.com](https://www.plantuml.com/)
+
+---
+
+🔑 Key Features
+
+* **Text-based diagrams**
+
+  * Define diagrams using simple markup syntax.
+  * Easy to version-control in Git.
+  * Works well in documentation pipelines (Markdown, Sphinx, Asciidoctor, etc.).
+
+* **Wide range of diagram types**
+
+  * UML: sequence, class, activity, use case, state, component, deployment
+  * Non-UML: ER diagrams, mind maps, Gantt charts, ArchiMate, WBS
+  * C4 model support (software architecture diagrams)
+
+* **Integrations**
+
+  * Works inside VS Code, IntelliJ, Eclipse, Jupyter Notebooks
+  * GitHub/GitLab/Bitbucket render PlantUML diagrams directly in `.md` files (with plugins or CI)
+
+* **Multiple output formats**
+
+  * PNG, SVG, PDF, ASCII art
+  * Can be embedded in HTML or exported automatically
+
+---
+
+📄 Example
+
+PlantUML Source
+
+```plantuml
+@startuml
+Alice -> Bob: Hello
+Bob --> Alice: Hi!
+@enduml
+```
+
+Output (Sequence Diagram)
+
+Alice → Bob: *Hello*
+Bob → Alice: *Hi!*
+
+*(The link you shared is exactly this: a live-rendered sequence diagram.)*
+
+---
+
+🚀 Why PlantUML is Useful
+
+* **Documentation-as-code** → diagrams live alongside source code.
+* **Repeatability** → regenerate diagrams automatically in CI/CD pipelines.
+* **Collaboration** → diagrams can be reviewed in pull requests.
+* **Lightweight** → no heavy GUI tools needed.
+
+---
+
+⚖️ PlantUML vs Alternatives
+
+* **PlantUML**: text-based, great for UML & architecture diagrams.
+* **Mermaid.js**: Markdown-style syntax, integrated with GitHub/GitLab/Obsidian.
+* **Draw\.io / Lucidchart**: GUI-based, more visual but harder to version-control.
+
+---
+
+✅ In short: **PlantUML turns simple text into professional UML and other diagrams**, making it ideal for developers who prefer code-like diagramming and want diagrams integrated into their software workflows.
+
+---
+
 #### [PuTTY](https://www.putty.org/)
 
 * Download PuTTY - a free SSH and telnet client for Windows
