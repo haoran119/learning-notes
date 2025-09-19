@@ -3284,6 +3284,108 @@ ChatGPT (with tools enabled) can process multi-doc files, compare sections, and 
 
 ---
 
+#### [Spec Kit](https://github.com/github/spec-kit)
+
+* github/spec-kit: 💫 Toolkit to help you get started with Spec-Driven Development
+* [Spec-driven development with AI: Get started with a new open source toolkit - The GitHub Blog](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/)
+* Here’s a summary of **GitHub Spec-Kit**, what it is, why it matters, and how it works — and how it fits into workflows and trade-offs. If you want, I can also sketch how you could try using it in your FastAPI project.
+
+---
+
+What is GitHub Spec-Kit
+
+* Spec-Kit is an **open source toolkit** by GitHub for what they call *Specification-Driven Development (SDD)*. ([The GitHub Blog][1])
+* The main idea: instead of writing code first and docs/specs after, you start with a **specification**. That spec becomes the *source of truth* that guides planning, task breakdown, test generation, and implementation. ([The GitHub Blog][1])
+* It integrates with AI coding agents/tools like GitHub Copilot, Claude Code, Gemini CLI, etc. These agents help generate parts of the implementation (code, tests, tasks) based on the specification. ([GitHub][2])
+
+---
+
+Why Spec-Driven Development + Spec-Kit Matters
+
+Spec-Kit tries to address several common problems in modern development, especially where AI or code generation is involved:
+
+1. **Ambiguous requirements / "vibe coding"**
+   When prompts or ideas are vague, AI or even human devs may misunderstand what needs to be built. Specs help clarify the “what” and “why”. ([The GitHub Blog][1])
+
+2. **Fragmented decision/context**
+   Architecture choices, constraints, non-functional requirements often get “lost” in chat threads, docs, or in code comments. Spec-Kit encourages capturing them up front. ([Microsoft Developer][3])
+
+3. **Better alignment between planning → tasks → implementation**
+   Using structured phases (specify → plan → tasks → implement) helps ensure you don’t skip steps (e.g. planning/tech design) or do work that turns out inconsistent with requirements. ([The GitHub Blog][1])
+
+4. **Testing / validation baked into the process**
+   Spec-Kit’s spec isn’t just words: it includes test (“test scenarios”) elements so that what’s specified drives both tests and implementation. ([GitHub][4])
+
+5. **Better use of AI agents**
+   AI tools are powerful but can drift. By giving AI agents a spec plus tasks/plans, you reduce drift and make generated outputs more predictable. ([The GitHub Blog][1])
+
+---
+
+How Spec-Kit Works / Key Components
+
+Here are the moving parts in how Spec-Kit is built, and what you do with it:
+
+| Phase         | What you do                                                                                                         | Purpose / Output                                    |
+| ------------- | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| **Specify**   | You write/specify what you want: what the system should do, “what” and “why” (not the how).                         | A specification document that becomes the contract. |
+| **Plan**      | Based on spec, you do the technical planning: architecture, constraints, tech stack, non-functional considerations. | High-level design / plan.                           |
+| **Tasks**     | Break down the plan into actionable tasks. Possibly generate tests or test descriptions tied to spec.               | A task list, potentially test skeletons.            |
+| **Implement** | Write code (often with AI assistance), run tests, ensure implementation matches spec.                               | Working implementation and tests.                   |
+
+Other aspects:
+
+* **CLI tool (Specify CLI)** to bootstrap a project, generate skeletons/templates. ([GitHub][2])
+* **Templates** for various AI agents / scripting styles: e.g. support for different agents like Copilot / Claude / Gemini CLI, and different scripting environments (shell, PowerShell) etc. ([GitHub][5])
+* **Spec merging with tests**: Spec-Kit includes that test scenarios are part of the spec; they are not afterthoughts. ([GitHub][4])
+
+---
+
+Limitations, Trade-offs, and Things to Watch
+
+Spec-Kit is promising, but there are trade-offs and things to be aware of:
+
+* **Early / experimental**: It’s newly released, so some features might be rough, documentation evolving, community practices not yet mature. ([Visual Studio Magazine][6])
+* **Overhead**: Writing specs, plans, tasks adds structure, but it also takes time upfront. For smaller/simple projects, this might feel like overkill.
+* **AI dependency**: The value increases when you’re using AI agents. If you don’t use them much, or use them poorly, some benefits may not materialize.
+* **Flexibility vs rigidity**: If specs are too rigid, or people treat them as immutable, that can reduce adaptability. The process needs to allow updates to the spec as things learn more.
+* **Tooling integration**: It works via CLI/templates/support for agents etc., but integrating into existing pipelines/workflows may require adjustments.
+
+---
+
+How to Get Started with Spec-Kit
+
+Here’s a rough sketch of how you might use Spec-Kit in a project:
+
+1. Install / initialize:
+
+   ```bash
+   uvx --from git+https://github.com/github/spec-kit.git specify init <PROJECT_NAME>
+   ```
+2. Use `/specify` (or the specify command) to write the specification: focus on *what* the system does and *why*, not how.
+3. Use `/plan` to decide how you’ll build it (tech stack, architecture, constraints, etc.).
+4. Use `/tasks` to break down into actionable tasks; generate tests or spec items.
+5. Implement via your usual dev setup, refer back to spec & tests. Adjust spec if needed.
+
+---
+
+Why It’s Interesting / Where It Fits
+
+* For feature development, especially new features (greenfield or sizeable ones), Spec-Kit can reduce misunderstanding or drift.
+* When using AI-assisted coding, it adds guardrails so generated code more likely matches intended behavior.
+* For teams that want better alignment between product/PM/design + engineering.
+* Probably less useful for small projects or trivial tasks unless the cost of misunderstanding is high.
+
+---
+
+If you like, I can also map how Spec-Kit compares to your existing approach (env file + settings.yaml + tests), and suggest how to adopt it in your FastAPI workflow so you get the benefits without too much overhead. Do you want me to draft that for you?
+
+[1]: https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/?utm_source=chatgpt.com "Spec-driven development with AI: Get started with a new open source toolkit"
+[2]: https://github.com/github/spec-kit?utm_source=chatgpt.com "GitHub - github/spec-kit: Toolkit to help you get started with Spec ..."
+[3]: https://developer.microsoft.com/blog/spec-driven-development-spec-kit?utm_source=chatgpt.com "Diving Into Spec-Driven Development With GitHub Spec Kit"
+[4]: https://github.com/github/spec-kit/blob/main/spec-driven.md?utm_source=chatgpt.com "spec-kit/spec-driven.md at main · github/spec-kit · GitHub"
+[5]: https://github.com/github/spec-kit/releases?utm_source=chatgpt.com "Releases · github/spec-kit"
+[6]: https://visualstudiomagazine.com/articles/2025/09/16/github-spec-kit-experiment-a-lot-of-questions.aspx?utm_source=chatgpt.com "GitHub Spec Kit Experiment: 'A Lot of Questions'"
+
 ### CI / CD / DevOps
 
 * Continuous integration（CI）
