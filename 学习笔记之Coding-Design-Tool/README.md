@@ -3735,6 +3735,49 @@ spec:
 
 ### Testing
 
+#### Contract Tests
+
+Contract Tests are a type of automated test used to ensure that two systems (often a **service provider** and a **service consumer**) can communicate correctly with each other, based on a shared **contract**.
+
+Think of them as an agreement:
+
+* The **consumer** (e.g., your frontend or another microservice) says, *“I expect the provider’s API to return this kind of data when I send this kind of request.”*
+* The **provider** (e.g., your backend FastAPI service) says, *“I guarantee I will respond with that structure and behavior.”*
+
+### Why They Matter
+
+* **Prevent integration failures**: Instead of waiting until full end-to-end integration to find mismatches, contract tests detect them early.
+* **Safe parallel development**: Teams working on different services can move independently, confident that the agreed contract won’t be broken.
+* **Faster CI/CD pipelines**: Contract tests are lighter than full system integration tests but stronger than unit tests, catching API mismatches without deploying the whole system.
+
+### How They Work
+
+1. **Define the contract**: Usually as JSON schema, OpenAPI/Swagger spec, or Pact file.
+2. **Consumer test**: The consumer generates expectations of API calls and validates that they match the contract.
+3. **Provider test**: The provider runs the contract to ensure it serves responses consistent with those expectations.
+4. **Verification**: Both sides exchange or publish their contracts (often via a broker) so mismatches are caught before release.
+
+### Example
+
+* Consumer expects `GET /users/123` →
+
+  ```json
+  {
+    "id": 123,
+    "name": "Alice"
+  }
+  ```
+* Provider must guarantee that calling `/users/123` returns at least those fields, in the expected format.
+  If provider adds a new field, that’s fine. If it removes `name` or changes `id` type, the contract test fails.
+
+### Tools Commonly Used
+
+* **Pact** (popular in microservices for consumer-driven contract testing)
+* **Spring Cloud Contract** (for JVM ecosystem)
+* **Postman/Newman** or **OpenAPI validators** (for schema-based checks)
+
+---
+
 #### Linting
 
 ---
