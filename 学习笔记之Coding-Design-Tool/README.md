@@ -1880,6 +1880,10 @@ paths:
 
 ### AI
 
+#### [caveman](https://github.com/juliusbrussee/caveman)
+
+* A Claude Code skill for 30+ AI agents that compresses output by ~65-75% through terse, caveman-style communication while maintaining technical accuracy. "why use many token when few token do trick"
+
 #### [Crawl AI](https://www.crawlai.org/)
 
 * AI Development Platform - Build Custom AI Easily | Crawl AI
