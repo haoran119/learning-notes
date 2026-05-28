@@ -2265,6 +2265,8 @@ Let me know if you’d like a deep dive into specific benchmarks, pricing scenar
 * [Prompts & Summaries of Lessons](https://learn.deeplearning.ai/courses/claude-code-a-highly-agentic-coding-assistant/lesson/hhfj3/prompts-&-summaries-of-lessons)
 * [Claude Code: Agentic Coding Assistant Best Practices - NotebookLM](https://notebooklm.google.com/notebook/ceadb9ee-e7f4-4297-8b05-89e0aee74a73)
 
+##### [Agent Skills with Anthropic - DeepLearning.AI](https://www.deeplearning.ai/courses/agent-skills-with-anthropic)
+
 #### [Cursor](https://cursor.com/en)
 
 * The AI Code Editor
@@ -3419,6 +3421,17 @@ Or:
 > “What does this clause mean in plain English?”
 
 ChatGPT (with tools enabled) can process multi-doc files, compare sections, and generate high-level insights, similar to NotebookLM — and with broader flexibility (code, web, image, etc.).
+
+---
+
+#### Skills
+
+Skills are reusable instruction packs that shape how AI coding agents behave across projects. They are useful when you want consistent habits such as clearer reasoning, smaller diffs, lower token usage, or project-specific workflows without rewriting the same prompt every time.
+
+* [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)
+    * A Karpathy-inspired guideline set for Claude Code and Cursor that targets common LLM coding problems: unchecked assumptions, over-engineered solutions, unrelated edits, and weak verification. Its core principles are to think before coding, keep changes simple, edit surgically, and define success criteria that can be tested.
+* [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)
+    * A Claude Code skill focused on reducing token usage by making agent responses shorter and more direct. It removes filler while keeping substance, includes hooks for Claude Code sessions, and can compress memory/context files so future sessions start with less prompt overhead.
 
 ---
 
